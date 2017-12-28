@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="pref_preferred_result_labels">
+        <item>@string/pref_preferred_result_label_xml</item>
+        <item>@string/pref_preferred_result_label_java</item>
+        <item>@string/pref_preferred_result_label_explanation</item>
+    </array>
+
+    <array name="pref_preferred_result_values">
+        <item>@string/pref_preferred_result_value_xml</item>
+        <item>@string/pref_preferred_result_value_java</item>
+        <item>@string/pref_preferred_result_value_explanation</item>
+    </array>
+
+</resources>

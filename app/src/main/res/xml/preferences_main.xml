@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="@bool/pref_show_GDC_AD_course_default"
+        android:key="@string/pref_show_GDC_AD_course"
+        android:summaryOff="@string/Hidden"
+        android:summaryOn="@string/Shown"
+        android:title="@string/GDC_AD_course" />
+
+    <CheckBoxPreference
+        android:defaultValue="@bool/pref_show_ND_AD_course_default"
+        android:key="@string/pref_show_ND_AD_course"
+        android:summaryOff="@string/Hidden"
+        android:summaryOn="@string/Shown"
+        android:title="@string/ND_AD_course" />
+
+    <ListPreference
+        android:defaultValue="@string/pref_preferred_result_value_java"
+        android:entries="@array/pref_preferred_result_labels"
+        android:entryValues="@array/pref_preferred_result_values"
+        android:key="@string/pref_preferred_result_key"
+        android:title="@string/pref_preferred_result_label" />
+
+</PreferenceScreen>
