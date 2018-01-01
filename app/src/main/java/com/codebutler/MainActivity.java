@@ -6,6 +6,9 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
+import android.support.v4.app.LoaderManager;
+import android.support.v4.content.CursorLoader;
+import android.support.v4.content.Loader;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.preference.PreferenceManager;
@@ -14,45 +17,61 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
-
-import com.codebutler.data.DatabaseHelper;
+import android.support.design.widget.FloatingActionButton;
+import com.codebutler.data.KeywordsLessonsAndCodeDbContract;
+import com.codebutler.data.KeywordsLessonsAndCodeDbHelper;
 
 public class MainActivity extends AppCompatActivity implements
-        KeywordEntriesListAdapter.ListItemClickHandler,
-        SharedPreferences.OnSharedPreferenceChangeListener {
+        KeywordEntriesRecycleViewAdapter.ListItemClickHandler,
+        SharedPreferences.OnSharedPreferenceChangeListener,
+        LoaderManager.LoaderCallbacks<Cursor> {
 
     //SQL globals
     public SQLiteDatabase mSQLiteDatabase;
-    public DatabaseHelper dbHelper;
+    public KeywordsLessonsAndCodeDbHelper dbHelper;
     Toast mToast;
+    public static final String[] KEYWORD_TABLE_ELEMENTS = {
+            KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_KEYWORD,
+            KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_TYPE,
+            KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_LESSONS,
+            KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_RELEVANT_CODE
+    };
+    public static final int INDEX_COLUMN_KEYWORD = 0;
+    public static final int INDEX_COLUMN_TYPE = 1;
+    public static final int INDEX_COLUMN_LESSONS = 2;
+    public static final int INDEX_COLUMN_RELEVANT_CODE = 3;
+    private static final int ID_KEYWORD_DATABASE_LOADER = 666;
 
     //RecyclerView globals
     private static final int NUM_RECYCLERVIEW_LIST_ITEMS = 100;
-    private KeywordEntriesListAdapter mKeywordEntriesListAdapter;
-    private RecyclerView mKeywordEntriesList;
+    private KeywordEntriesRecycleViewAdapter mKeywordEntriesRecycleViewAdapter;
+    private RecyclerView mKeywordEntriesRecylcleView;
+    private int mPosition = RecyclerView.NO_POSITION;
+    private ProgressBar mLoadingIndicator;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+
+    //Lifecycle methods
+    @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Finding the layouts
+        mLoadingIndicator = findViewById(R.id.pb_loading_indicator);
+        mKeywordEntriesRecylcleView = findViewById(R.id.keywords_list_view);
+
         setupSharedPreferences();
 
-        //Preparing the writing operation for the database
-        dbHelper = new DatabaseHelper(this);
-        mSQLiteDatabase = dbHelper.getWritableDatabase();
-        Cursor keywordCursor = dbHelper.getAllKeywordEntries();
-        Cursor lessonsCursor = dbHelper.getAllLessonEntries();
-        Cursor codeReferenceCursor = dbHelper.getAllCodeReferenceEntries();
-
         //Preparing the RecyclerView
-        mKeywordEntriesList = findViewById(R.id.keywords_list_view);
-        mKeywordEntriesList.setLayoutManager(new LinearLayoutManager(this));
-        mKeywordEntriesList.setHasFixedSize(true);
-        mKeywordEntriesListAdapter = new KeywordEntriesListAdapter(this, keywordCursor, this);
-        mKeywordEntriesList.setAdapter(mKeywordEntriesListAdapter);
+        mKeywordEntriesRecylcleView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+        mKeywordEntriesRecylcleView.setHasFixedSize(true);
+        mKeywordEntriesRecycleViewAdapter = new KeywordEntriesRecycleViewAdapter(this, this);
+        mKeywordEntriesRecylcleView.setAdapter(mKeywordEntriesRecycleViewAdapter);
+
+        showLoadingIndicatorInsteadOfRecycleView();
 
         //Adding the swipe to remove entry functionality
         new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
@@ -60,43 +79,59 @@ public class MainActivity extends AppCompatActivity implements
             public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
                 return false;
             }
-
             @Override
             public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
 
                 long id = (long) viewHolder.itemView.getTag();
 
-                dbHelper.removeKeywordEntry(id, mSQLiteDatabase);
+                // Building the appropriate uri with String row id appended
+                String stringId = Long.toString(id);
+                Uri uri = KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.CONTENT_URI;
+                uri = uri.buildUpon().appendPath(stringId).build();
 
-                mKeywordEntriesListAdapter.swapCursor(dbHelper.getAllKeywordEntries());
+                // Deleting a single row of data using a ContentResolver
+                getContentResolver().delete(uri, null, null);
+
+                //Restarting the loader to re-query for all tasks after a deletion
+                getSupportLoaderManager().restartLoader(ID_KEYWORD_DATABASE_LOADER, null, MainActivity.this);
             }
-        })
-                .attachToRecyclerView(mKeywordEntriesList);
+        }).attachToRecyclerView(mKeywordEntriesRecylcleView);
+
+        //Adding the Add Keyowrd Entry functionality in a FloatingActionButton
+        FloatingActionButton fabButton = findViewById(R.id.floatingActionButton);
+        fabButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                EditText userKeyword = findViewById(R.id.keywordEntryEditText);
+                startNewKeywordEntryActivity(userKeyword.getText().toString());
+            }
+        });
+
+        getSupportLoaderManager().initLoader(ID_KEYWORD_DATABASE_LOADER, null, this);
 
     }
-
-    @Override
-    protected void onDestroy() {
+    @Override protected void onDestroy() {
         super.onDestroy();
         PreferenceManager.getDefaultSharedPreferences(this).unregisterOnSharedPreferenceChangeListener(this);
     }
+    @Override protected void onResume() {
+        super.onResume();
+        getSupportLoaderManager().restartLoader(ID_KEYWORD_DATABASE_LOADER, null, this);
+    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    //Options Menu methods
+    @Override public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    @Override public boolean onOptionsItemSelected(MenuItem item) {
         int itemThatWasClickedId = item.getItemId();
 
         switch (itemThatWasClickedId) {
-            case R.id.action_refresh:dbHelper = new DatabaseHelper(this);
+            case R.id.action_refresh:dbHelper = new KeywordsLessonsAndCodeDbHelper(this);
                 mSQLiteDatabase = dbHelper.getWritableDatabase();
-                Cursor keywordCursor = dbHelper.getAllKeywordEntries();
-                mKeywordEntriesListAdapter = new KeywordEntriesListAdapter(this, keywordCursor, this);
-                mKeywordEntriesList.setAdapter(mKeywordEntriesListAdapter);
+                mKeywordEntriesRecycleViewAdapter = new KeywordEntriesRecycleViewAdapter(this,  this);
+                mKeywordEntriesRecylcleView.setAdapter(mKeywordEntriesRecycleViewAdapter);
                 return true;
             case R.id.action_search:
                 Context context = MainActivity.this;
@@ -104,10 +139,8 @@ public class MainActivity extends AppCompatActivity implements
                 Toast.makeText(context, textToShow, Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.action_add:
-                Intent startChildActivityIntent = new Intent(MainActivity.this, NewEntryActivity.class);
                 EditText userKeyword = findViewById(R.id.keywordEntryEditText);
-                startChildActivityIntent.putExtra(Intent.EXTRA_TEXT, userKeyword.getText().toString());
-                startActivity(startChildActivityIntent);
+                startNewKeywordEntryActivity(userKeyword.getText().toString());
                 return true;
             case R.id.action_settings:
                 Intent startSettingsActivity = new Intent(this, SettingsActivity.class);
@@ -116,21 +149,11 @@ public class MainActivity extends AppCompatActivity implements
         }
         return super.onOptionsItemSelected(item);
     }
-
-    @Override
-    public void onListItemClick(int clickedItemIndex) {
-        if (mToast != null) mToast.cancel();
-        String toastMessage = "Item #" + clickedItemIndex + " clicked.";
-        mToast = Toast.makeText(this, toastMessage, Toast.LENGTH_SHORT);
-        mToast.show();
+    private void startNewKeywordEntryActivity(String keyword) {
+        Intent startChildActivityIntent = new Intent(MainActivity.this, NewKeywordEntryActivity.class);
+        startChildActivityIntent.putExtra(Intent.EXTRA_TEXT, keyword);
+        startActivity(startChildActivityIntent);
     }
-
-    private void openWebPage(String url) {
-        Uri webpage = Uri.parse(url);
-        Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
-        if (intent.resolveActivity(getPackageManager()) != null) startActivity(intent);
-    }
-
     private void setupSharedPreferences() {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         setShowGDCADCourse(sharedPreferences.getBoolean(getString(R.string.pref_show_GDC_AD_course_key), getResources().getBoolean(R.bool.pref_show_GDC_AD_course_default)));
@@ -138,9 +161,7 @@ public class MainActivity extends AppCompatActivity implements
         setPreferredResultType(sharedPreferences.getString(getString(R.string.pref_preferred_result_key), getString(R.string.pref_preferred_result_value_java)));
         sharedPreferences.registerOnSharedPreferenceChangeListener(this);
     }
-
-    @Override
-    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+    @Override public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
         if (key.equals(getString(R.string.pref_show_GDC_AD_course_key))) {
             setShowGDCADCourse(sharedPreferences.getBoolean(key, getResources().getBoolean(R.bool.pref_show_GDC_AD_course_default)));
         }
@@ -149,7 +170,6 @@ public class MainActivity extends AppCompatActivity implements
         }
 
     }
-
     public void setShowGDCADCourse (boolean showCourse) {
 
     }
@@ -165,5 +185,49 @@ public class MainActivity extends AppCompatActivity implements
             case "explanations":
                 break;
         }
+    }
+
+    //RecycleView methods
+    @Override public void onListItemClick(int clickedItemIndex) {
+        if (mToast != null) mToast.cancel();
+        String toastMessage = "Item #" + clickedItemIndex + " clicked.";
+        mToast = Toast.makeText(this, toastMessage, Toast.LENGTH_SHORT);
+        mToast.show();
+    }
+    private void openWebPage(String url) {
+        Uri webpage = Uri.parse(url);
+        Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+        if (intent.resolveActivity(getPackageManager()) != null) startActivity(intent);
+    }
+    private void showRecycleViewInsteadOfLoadingIndicator() {
+        mLoadingIndicator.setVisibility(View.INVISIBLE);
+        mKeywordEntriesRecylcleView.setVisibility(View.VISIBLE);
+    }
+    private void showLoadingIndicatorInsteadOfRecycleView() {
+        mLoadingIndicator.setVisibility(View.VISIBLE);
+        mKeywordEntriesRecylcleView.setVisibility(View.INVISIBLE);
+    }
+
+    //Database methods
+    @Override public Loader<Cursor> onCreateLoader(int loaderId, Bundle args) {
+
+        switch (loaderId) {
+            case ID_KEYWORD_DATABASE_LOADER:
+                showLoadingIndicatorInsteadOfRecycleView();
+                Uri keywordQueryUri = KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.CONTENT_URI;
+                String sortOrder = KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_KEYWORD;
+                return new CursorLoader(this, keywordQueryUri, KEYWORD_TABLE_ELEMENTS, null, null, sortOrder);
+            default:
+                throw new RuntimeException("Loader Not Implemented: " + loaderId);
+        }
+    }
+    @Override public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
+        mKeywordEntriesRecycleViewAdapter.swapCursor(data);
+        if (mPosition == RecyclerView.NO_POSITION) mPosition = 0;
+        mKeywordEntriesRecylcleView.smoothScrollToPosition(mPosition);
+        if (data.getCount() != 0) showRecycleViewInsteadOfLoadingIndicator();
+    }
+    @Override public void onLoaderReset(Loader<Cursor> loader) {
+        mKeywordEntriesRecycleViewAdapter.swapCursor(null);
     }
 }

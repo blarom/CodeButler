@@ -5,19 +5,15 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import com.codebutler.data.KeywordsDbContract.*;
-import com.codebutler.data.LessonsDbContract.*;
-import com.codebutler.data.CodeDbContract.*;
+import com.codebutler.data.KeywordsLessonsAndCodeDbContract.*;
 
-import java.util.List;
-
-public class DatabaseHelper extends SQLiteOpenHelper {
+public class KeywordsLessonsAndCodeDbHelper extends SQLiteOpenHelper {
 
 
     private static final String DATABASE_NAME = "codebutler.db";
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 2;
 
-    public DatabaseHelper(Context context) {
+    public KeywordsLessonsAndCodeDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
@@ -26,16 +22,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         final String SQL_CREATE_KEYWORDS_TABLE = "CREATE TABLE " + KeywordsDbEntry.TABLE_NAME +
                 " (" +
-                KeywordsDbEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+                KeywordsDbEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 KeywordsDbEntry.COLUMN_KEYWORD + " TEXT NOT NULL, " +
-                KeywordsDbEntry.COLUMN_LANGUAGE + " TEXT NOT NULL, " +
+                KeywordsDbEntry.COLUMN_TYPE + " TEXT NOT NULL, " +
                 KeywordsDbEntry.COLUMN_LESSONS + " TEXT NOT NULL, " +
                 KeywordsDbEntry.COLUMN_RELEVANT_CODE + " TEXT NOT NULL" +
                 "); ";
 
         final String SQL_CREATE_LESSONS_TABLE = "CREATE TABLE " + LessonsDbEntry.TABLE_NAME +
                 " (" +
-                LessonsDbEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+                LessonsDbEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 LessonsDbEntry.COLUMN_LESSON_NUMBER + " TEXT NOT NULL, " +
                 LessonsDbEntry.COLUMN_LESSON_TITLE + " TEXT NOT NULL, " +
                 LessonsDbEntry.COLUMN_LINK + " TEXT NOT NULL" +
@@ -43,7 +39,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         final String SQL_CREATE_CODE_TABLE = "CREATE TABLE " + CodeReferenceDbEntry.TABLE_NAME +
                 " (" +
-                CodeReferenceDbEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+                CodeReferenceDbEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 CodeReferenceDbEntry.COLUMN_CODE_REFERENCE + " TEXT NOT NULL, " +
                 CodeReferenceDbEntry.COLUMN_LINK + " TEXT NOT NULL" +
                 "); ";
@@ -67,7 +63,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         ContentValues values = new ContentValues();
         values.put(KeywordsDbEntry.COLUMN_KEYWORD, keyword.getKeyword());
-        values.put(KeywordsDbEntry.COLUMN_LANGUAGE, keyword.getCodeLanguage());
+        values.put(KeywordsDbEntry.COLUMN_TYPE, keyword.getCodeLanguage());
         values.put(KeywordsDbEntry.COLUMN_LESSONS, keyword.getLessons());
         values.put(KeywordsDbEntry.COLUMN_RELEVANT_CODE, keyword.getRelevantCode());
 
@@ -126,17 +122,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public boolean removeKeywordEntry(long id, SQLiteDatabase sqLiteDatabase) {
         String whereClause = KeywordsDbEntry._ID + "=" + id;
-        boolean successfullyRemoved = sqLiteDatabase.delete(KeywordsDbContract.KeywordsDbEntry.TABLE_NAME, whereClause, null) > 0;
+        boolean successfullyRemoved = sqLiteDatabase.delete(KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.TABLE_NAME, whereClause, null) > 0;
         return successfullyRemoved;
     }
     public boolean removeLessonEntry(long id, SQLiteDatabase sqLiteDatabase) {
         String whereClause = LessonsDbEntry._ID + "=" + id;
-        boolean successfullyRemoved = sqLiteDatabase.delete(KeywordsDbContract.KeywordsDbEntry.TABLE_NAME, whereClause, null) > 0;
+        boolean successfullyRemoved = sqLiteDatabase.delete(KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.TABLE_NAME, whereClause, null) > 0;
         return successfullyRemoved;
     }
     public boolean removeCodeReferenceEntry(long id, SQLiteDatabase sqLiteDatabase) {
         String whereClause = CodeReferenceDbEntry._ID + "=" + id;
-        boolean successfullyRemoved = sqLiteDatabase.delete(KeywordsDbContract.KeywordsDbEntry.TABLE_NAME, whereClause, null) > 0;
+        boolean successfullyRemoved = sqLiteDatabase.delete(KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.TABLE_NAME, whereClause, null) > 0;
         return successfullyRemoved;
     }
 }

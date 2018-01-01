@@ -1,7 +1,9 @@
 package com.codebutler;
 
+import android.content.ContentValues;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,20 +11,21 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.codebutler.data.DatabaseHelper;
+import com.codebutler.data.KeywordsLessonsAndCodeDbContract;
+import com.codebutler.data.KeywordsLessonsAndCodeDbHelper;
 import com.codebutler.data.Keyword;
 
-public class NewEntryActivity extends AppCompatActivity {
+public class NewKeywordEntryActivity extends AppCompatActivity {
 
     private EditText mNewKeywordEditText;
-    private EditText mNewCodeLanguageEditText;
+    private EditText mNewTypeEditText;
     private EditText mNewLessonsEditText;
     private EditText mNewRelevantCodeEditText;
     Button mAddToKeywordlistButton;
 
     //SQL globals
     private SQLiteDatabase mSQLiteDatabase;
-    private DatabaseHelper dbHelper;
+    private KeywordsLessonsAndCodeDbHelper dbHelper;
     Toast mToast;
 
     @Override
@@ -32,7 +35,7 @@ public class NewEntryActivity extends AppCompatActivity {
 
         //Getting the user inputs to update the SQLite database
         mNewKeywordEditText = findViewById(R.id.keywordEditText);
-        mNewCodeLanguageEditText = findViewById(R.id.codeLanguageEditText);
+        mNewTypeEditText = findViewById(R.id.codeLanguageEditText);
         mNewLessonsEditText = findViewById(R.id.lessonsEditText);
         mNewRelevantCodeEditText = findViewById(R.id.relevantCodeEditText);
 
@@ -51,22 +54,29 @@ public class NewEntryActivity extends AppCompatActivity {
                 //If no keyword is entered, don't add anything to the database
                 if (mNewKeywordEditText.getText().length() == 0) return;
 
-                //Adding the new entry to the database
-                Keyword keyword = new Keyword(mNewKeywordEditText.getText().toString(),
-                        mNewCodeLanguageEditText.getText().toString(),
-                        mNewLessonsEditText.getText().toString(),
-                        mNewRelevantCodeEditText.getText().toString());
-                dbHelper.addKeyword(keyword);
+                // Put the user input into the a ContentValues object
+                ContentValues contentValues = new ContentValues();
+                contentValues.put(KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_KEYWORD, mNewKeywordEditText.getText().toString());
+                contentValues.put(KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_TYPE, mNewTypeEditText.getText().toString());
+                contentValues.put(KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_LESSONS, mNewLessonsEditText.getText().toString());
+                contentValues.put(KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_RELEVANT_CODE, mNewRelevantCodeEditText.getText().toString());
 
-                //Move the database cursor to the new entry
-                //mKeywordEntriesListAdapter.swapCursor(dbHelper.getAllKeywordEntries());
+                // Insert the content values via a ContentResolver
+                Uri uri = getContentResolver().insert(KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.CONTENT_URI, contentValues);
+
+                if(uri != null) {
+                    Toast.makeText(getBaseContext(), "Added " + mNewKeywordEditText.getText().toString() + " to the local database.", Toast.LENGTH_LONG).show();
+                }
 
                 //Cleaning things up visually
                 mNewKeywordEditText.clearFocus();
                 mNewKeywordEditText.getText().clear();
-                mNewCodeLanguageEditText.getText().clear();
+                mNewTypeEditText.getText().clear();
                 mNewLessonsEditText.getText().clear();
                 mNewRelevantCodeEditText.getText().clear();
+
+                // Finish activity (this returns back to MainActivity)
+                finish();
             }
         });
     }

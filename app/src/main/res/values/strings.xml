@@ -2,7 +2,7 @@
     <string name="app_name">Code Butler</string>
 
     <string name="default_keyword">NA</string>
-    <string name="default_codeLanguage">NA</string>
+    <string name="default_type">NA</string>
     <string name="default_lessons">NA</string>
     <string name="default_relevantCode">NA</string>
     <string name="keyword_hint">Keyword</string>

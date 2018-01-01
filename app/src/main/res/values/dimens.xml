@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="recyclerViewTextHeight">42dp</dimen>
+    <dimen name="recyclerViewItemHeight">40dp</dimen>
+    <dimen name="recyclerViewItemPaddingVertical">16dp</dimen>
+    <dimen name="recyclerViewItemPaddingHorizontal">16dp</dimen>
+    <dimen name="floatingActionButtonMargins">16dp</dimen>
+    <dimen name="recyclerViewStartMargin">16dp</dimen>
 </resources>
