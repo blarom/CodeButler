@@ -2,7 +2,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/colorPrimary"
     android:orientation="horizontal"
     android:maxHeight="@dimen/recyclerViewItemHeight"
@@ -12,25 +12,11 @@
     android:paddingTop="@dimen/recyclerViewItemPaddingVertical">
 
     <TextView
-        android:id="@+id/IDTextViewInList"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/recyclerViewItemHeight"
-        android:layout_marginStart="@dimen/recyclerViewStartMargin"
-        android:layout_marginLeft="@dimen/recyclerViewStartMargin"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textColor="@android:color/white"
-        android:textSize="16sp"
-        android:text="@string/default_keyword"/>
-
-    <TextView
         android:id="@+id/keywordTextViewInList"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/recyclerViewItemHeight"
         android:layout_marginStart="@dimen/recyclerViewStartMargin"
         android:layout_marginLeft="@dimen/recyclerViewStartMargin"
-        android:layout_gravity="center"
-        android:gravity="center"
         android:textColor="@android:color/white"
         android:textSize="16sp"
         android:text="@string/default_keyword"/>
@@ -41,8 +27,6 @@
         android:layout_height="@dimen/recyclerViewItemHeight"
         android:layout_marginStart="@dimen/recyclerViewStartMargin"
         android:layout_marginLeft="@dimen/recyclerViewStartMargin"
-        android:layout_gravity="center"
-        android:gravity="center"
         android:textSize="16sp"
         android:text="@string/default_type"/>
 
@@ -52,8 +36,6 @@
         android:layout_height="@dimen/recyclerViewItemHeight"
         android:layout_marginStart="@dimen/recyclerViewStartMargin"
         android:layout_marginLeft="@dimen/recyclerViewStartMargin"
-        android:layout_gravity="center"
-        android:gravity="center"
         android:textColor="@android:color/white"
         android:textSize="16sp"
         android:text="@string/default_lessons"/>
@@ -64,8 +46,6 @@
         android:layout_height="@dimen/recyclerViewItemHeight"
         android:layout_marginLeft="@dimen/recyclerViewStartMargin"
         android:layout_marginStart="@dimen/recyclerViewStartMargin"
-        android:layout_gravity="center"
-        android:gravity="center"
         android:textSize="16sp"
         android:text="@string/default_relevantCode"/>
 

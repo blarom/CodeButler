@@ -3,6 +3,10 @@ package com.codebutler.data;
 import android.net.Uri;
 import android.provider.BaseColumns;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class KeywordsLessonsAndCodeDbContract {
 
     public static final String AUTHORITY = "com.codebutler";
@@ -21,6 +25,35 @@ public class KeywordsLessonsAndCodeDbContract {
         public static final String COLUMN_LESSONS = "lessonsForKeyword";
         public static final String COLUMN_RELEVANT_CODE = "relevantCodeForKeyword";
 
+        public static String getSelectionForGivenKeywordsAndOperator(String keyword_list, String operator) {
+
+            String returnSQLCommand = null;
+            if(keyword_list.length()==0) return returnSQLCommand;
+
+            switch (operator) {
+                case "EXACT":
+                    //String returnSQLCommand = "SELECT * FROM " + TABLE_NAME + " WHERE " + COLUMN_KEYWORD + "= '" + keyword + "'";
+                    returnSQLCommand = COLUMN_KEYWORD + "='" + keyword_list + "'";
+                    break;
+                default: //operator is "AND" or "OR"
+                    List<String> keywords = new ArrayList<>();
+                    if (keyword_list.contains(" ")) keywords = Arrays.asList(keyword_list.split(" "));
+                    else if (keyword_list.contains(",")) keywords = Arrays.asList(keyword_list.split(","));
+                    else if (keyword_list.contains(";")) keywords = Arrays.asList(keyword_list.split(";"));
+                    else if (keyword_list.contains(".")) keywords = Arrays.asList(keyword_list.split("."));
+                    else keywords.add(keyword_list);
+
+                    returnSQLCommand = "'%" + keywords.get(0) + "%'";
+                    if (keywords.size()>=1) {
+                        returnSQLCommand = COLUMN_KEYWORD + " LIKE '%" + keywords.get(0) + "%'";
+                        for (int i = 1; i < keywords.size(); i++) {
+                            returnSQLCommand = returnSQLCommand + " " + operator + " " + COLUMN_KEYWORD + " LIKE '%" + keywords.get(i) + "%'";
+                        }
+                    }
+                    break;
+            }
+            return returnSQLCommand;
+        }
     }
 
     public static final class LessonsDbEntry implements BaseColumns {

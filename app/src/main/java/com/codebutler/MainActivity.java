@@ -30,11 +30,14 @@ public class MainActivity extends AppCompatActivity implements
         SharedPreferences.OnSharedPreferenceChangeListener,
         LoaderManager.LoaderCallbacks<Cursor> {
 
+    EditText mKeywordTeditText;
+
     //SQL globals
     public SQLiteDatabase mSQLiteDatabase;
     public KeywordsLessonsAndCodeDbHelper dbHelper;
     Toast mToast;
     public static final String[] KEYWORD_TABLE_ELEMENTS = {
+            KeywordsLessonsAndCodeDbContract.KeywordsDbEntry._ID,
             KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_KEYWORD,
             KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_TYPE,
             KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_LESSONS,
@@ -62,6 +65,7 @@ public class MainActivity extends AppCompatActivity implements
         //Finding the layouts
         mLoadingIndicator = findViewById(R.id.pb_loading_indicator);
         mKeywordEntriesRecylcleView = findViewById(R.id.keywords_list_view);
+        mKeywordTeditText = findViewById(R.id.keywordEntryEditText);
 
         setupSharedPreferences();
 
@@ -82,15 +86,35 @@ public class MainActivity extends AppCompatActivity implements
             @Override
             public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
 
-                long id = (long) viewHolder.itemView.getTag();
+                String requested_keyword = mKeywordTeditText.getText().toString();
 
-                // Building the appropriate uri with String row id appended
-                String stringId = Long.toString(id);
-                Uri uri = KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.CONTENT_URI;
-                uri = uri.buildUpon().appendPath(stringId).build();
+                //Getting the list id of the eleemnt the user wants to delete
+                int id = (int) viewHolder.itemView.getTag();
 
-                // Deleting a single row of data using a ContentResolver
-                getContentResolver().delete(uri, null, null);
+                //Preparing the Uri
+                String stringId = Integer.toString(id);
+                Uri keywordQueryUri = KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.CONTENT_URI;
+                keywordQueryUri = keywordQueryUri.buildUpon().appendPath(stringId).build();
+
+                //Preparing the arguments the user wants to delete
+                //String selection = KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_KEYWORD + " = ?";
+                //String[] selectionArgs = {"'" + requested_keyword + "'"};
+                String selection = null;
+                String[] selectionArgs = null;
+
+                // Deletes the words that match the selection criteria
+                int mRowsDeleted = 0;
+                mRowsDeleted = getContentResolver().delete(keywordQueryUri, selection, selectionArgs);
+
+//                long id = (long) viewHolder.itemView.getTag();
+//
+//                // Building the appropriate uri with String row id appended
+//                String stringId = Long.toString(id);
+//                Uri uri = KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.CONTENT_URI;
+//                uri = uri.buildUpon().appendPath(stringId).build();
+//
+//                // Deleting a single row of data using a ContentResolver
+//                getContentResolver().delete(uri, null, null);
 
                 //Restarting the loader to re-query for all tasks after a deletion
                 getSupportLoaderManager().restartLoader(ID_KEYWORD_DATABASE_LOADER, null, MainActivity.this);
@@ -129,7 +153,7 @@ public class MainActivity extends AppCompatActivity implements
 
         switch (itemThatWasClickedId) {
             case R.id.action_refresh:dbHelper = new KeywordsLessonsAndCodeDbHelper(this);
-                mSQLiteDatabase = dbHelper.getWritableDatabase();
+                getSupportLoaderManager().restartLoader(ID_KEYWORD_DATABASE_LOADER, null, this);
                 mKeywordEntriesRecycleViewAdapter = new KeywordEntriesRecycleViewAdapter(this,  this);
                 mKeywordEntriesRecylcleView.setAdapter(mKeywordEntriesRecycleViewAdapter);
                 return true;
@@ -215,8 +239,10 @@ public class MainActivity extends AppCompatActivity implements
             case ID_KEYWORD_DATABASE_LOADER:
                 showLoadingIndicatorInsteadOfRecycleView();
                 Uri keywordQueryUri = KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.CONTENT_URI;
+                String requested_keyword = mKeywordTeditText.getText().toString();
+                String selection = KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.getSelectionForGivenKeywordsAndOperator(requested_keyword, "AND");
                 String sortOrder = KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_KEYWORD;
-                return new CursorLoader(this, keywordQueryUri, KEYWORD_TABLE_ELEMENTS, null, null, sortOrder);
+                return new CursorLoader(this, keywordQueryUri, KEYWORD_TABLE_ELEMENTS, selection, null, sortOrder);
             default:
                 throw new RuntimeException("Loader Not Implemented: " + loaderId);
         }

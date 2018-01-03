@@ -42,11 +42,10 @@ public class KeywordEntriesRecycleViewAdapter extends RecyclerView.Adapter<Keywo
         int keywordIndex = mKeywordDatabaseCursor.getColumnIndex(KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_KEYWORD);
         int typeIndex = mKeywordDatabaseCursor.getColumnIndex(KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_TYPE);
 
-
         // Determine the values of the wanted data
         final int id = mKeywordDatabaseCursor.getInt(idIndex);
         String keyword = mKeywordDatabaseCursor.getString(keywordIndex);
-        int type = mKeywordDatabaseCursor.getInt(typeIndex);
+        String type = mKeywordDatabaseCursor.getString(typeIndex);
 
         //Set values
         holder.itemView.setTag(id);
@@ -65,7 +64,6 @@ public class KeywordEntriesRecycleViewAdapter extends RecyclerView.Adapter<Keywo
 
     class KeywordEntryViewHolder extends RecyclerView.ViewHolder implements OnClickListener {
 
-        TextView iDTextViewInList;
         TextView keywordTextViewInRecycleView;
         TextView typeTextViewInRecycleView;
         TextView lessonsTextViewInList;
@@ -73,7 +71,6 @@ public class KeywordEntriesRecycleViewAdapter extends RecyclerView.Adapter<Keywo
 
         public KeywordEntryViewHolder(View itemView) {
             super(itemView);
-            iDTextViewInList = itemView.findViewById(R.id.IDTextViewInList);
             keywordTextViewInRecycleView = itemView.findViewById(R.id.keywordTextViewInList);
             typeTextViewInRecycleView = itemView.findViewById(R.id.typeTextViewInList);
             lessonsTextViewInList = itemView.findViewById(R.id.lessonsTextViewInList);
