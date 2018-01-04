@@ -31,11 +31,10 @@ public class MainActivity extends AppCompatActivity implements
         LoaderManager.LoaderCallbacks<Cursor> {
 
     EditText mKeywordTeditText;
+    Toast mToast;
 
     //SQL globals
-    public SQLiteDatabase mSQLiteDatabase;
     public KeywordsLessonsAndCodeDbHelper dbHelper;
-    Toast mToast;
     public static final String[] KEYWORD_TABLE_ELEMENTS = {
             KeywordsLessonsAndCodeDbContract.KeywordsDbEntry._ID,
             KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_KEYWORD,
@@ -43,10 +42,10 @@ public class MainActivity extends AppCompatActivity implements
             KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_LESSONS,
             KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_RELEVANT_CODE
     };
-    public static final int INDEX_COLUMN_KEYWORD = 0;
-    public static final int INDEX_COLUMN_TYPE = 1;
-    public static final int INDEX_COLUMN_LESSONS = 2;
-    public static final int INDEX_COLUMN_RELEVANT_CODE = 3;
+    public static final int INDEX_COLUMN_KEYWORD = 1;
+    public static final int INDEX_COLUMN_TYPE = 2;
+    public static final int INDEX_COLUMN_LESSONS = 3;
+    public static final int INDEX_COLUMN_RELEVANT_CODE = 4;
     private static final int ID_KEYWORD_DATABASE_LOADER = 666;
 
     //RecyclerView globals
