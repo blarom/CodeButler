@@ -14,6 +14,44 @@
         android:id="@+id/keywordEntryEditText"
         android:hint="@string/keyword_hint"/>
 
+    <RadioGroup
+        android:id="@+id/search_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <RadioButton
+            android:id="@+id/search_exact"
+            android:layout_marginStart="@dimen/searchButtonsLeftRightMargins"
+            android:layout_marginLeft="@dimen/searchButtonsLeftRightMargins"
+            android:layout_marginEnd="@dimen/searchButtonsLeftRightMargins"
+            android:layout_marginRight="@dimen/searchButtonsLeftRightMargins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exact"/>
+
+        <RadioButton
+            android:id="@+id/search_and"
+            android:layout_marginStart="@dimen/searchButtonsLeftRightMargins"
+            android:layout_marginLeft="@dimen/searchButtonsLeftRightMargins"
+            android:layout_marginEnd="@dimen/searchButtonsLeftRightMargins"
+            android:layout_marginRight="@dimen/searchButtonsLeftRightMargins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/and_operator"/>
+
+        <RadioButton
+            android:id="@+id/search_or"
+            android:layout_marginStart="@dimen/searchButtonsLeftRightMargins"
+            android:layout_marginLeft="@dimen/searchButtonsLeftRightMargins"
+            android:layout_marginEnd="@dimen/searchButtonsLeftRightMargins"
+            android:layout_marginRight="@dimen/searchButtonsLeftRightMargins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/or_operator"/>
+    </RadioGroup>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/keywords_list_view"
         android:layout_width="match_parent"

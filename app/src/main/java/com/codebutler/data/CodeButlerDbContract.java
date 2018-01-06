@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class KeywordsLessonsAndCodeDbContract {
+public class CodeButlerDbContract {
 
     public static final String AUTHORITY = "com.codebutler";
     public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + AUTHORITY);

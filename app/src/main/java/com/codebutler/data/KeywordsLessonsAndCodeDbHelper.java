@@ -5,7 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import com.codebutler.data.KeywordsLessonsAndCodeDbContract.*;
+import com.codebutler.data.CodeButlerDbContract.*;
 
 public class KeywordsLessonsAndCodeDbHelper extends SQLiteOpenHelper {
 
@@ -122,17 +122,17 @@ public class KeywordsLessonsAndCodeDbHelper extends SQLiteOpenHelper {
 
     public boolean removeKeywordEntry(long id, SQLiteDatabase sqLiteDatabase) {
         String whereClause = KeywordsDbEntry._ID + "=" + id;
-        boolean successfullyRemoved = sqLiteDatabase.delete(KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.TABLE_NAME, whereClause, null) > 0;
+        boolean successfullyRemoved = sqLiteDatabase.delete(CodeButlerDbContract.KeywordsDbEntry.TABLE_NAME, whereClause, null) > 0;
         return successfullyRemoved;
     }
     public boolean removeLessonEntry(long id, SQLiteDatabase sqLiteDatabase) {
         String whereClause = LessonsDbEntry._ID + "=" + id;
-        boolean successfullyRemoved = sqLiteDatabase.delete(KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.TABLE_NAME, whereClause, null) > 0;
+        boolean successfullyRemoved = sqLiteDatabase.delete(CodeButlerDbContract.KeywordsDbEntry.TABLE_NAME, whereClause, null) > 0;
         return successfullyRemoved;
     }
     public boolean removeCodeReferenceEntry(long id, SQLiteDatabase sqLiteDatabase) {
         String whereClause = CodeReferenceDbEntry._ID + "=" + id;
-        boolean successfullyRemoved = sqLiteDatabase.delete(KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.TABLE_NAME, whereClause, null) > 0;
+        boolean successfullyRemoved = sqLiteDatabase.delete(CodeButlerDbContract.KeywordsDbEntry.TABLE_NAME, whereClause, null) > 0;
         return successfullyRemoved;
     }
 }

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "990927591035",
+    "firebase_url": "https://codebutlerdatabase.firebaseio.com",
+    "project_id": "codebutlerdatabase",
+    "storage_bucket": "codebutlerdatabase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990927591035:android:c39f3c3d34de3dde",
+        "android_client_info": {
+          "package_name": "com.codebutler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990927591035-q0obpd4qbqv13dohd97g64ge16d6aihb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXWsQBb3TeAXhuRU9hrgFo53PG3lfuU_E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.CursorLoader;
@@ -20,9 +19,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 import android.support.design.widget.FloatingActionButton;
-import com.codebutler.data.KeywordsLessonsAndCodeDbContract;
+
+import com.codebutler.data.CodeButlerDbContract;
 import com.codebutler.data.KeywordsLessonsAndCodeDbHelper;
 
 public class MainActivity extends AppCompatActivity implements
@@ -32,15 +33,16 @@ public class MainActivity extends AppCompatActivity implements
 
     EditText mKeywordTeditText;
     Toast mToast;
+    String mSearchType;
 
     //SQL globals
     public KeywordsLessonsAndCodeDbHelper dbHelper;
     public static final String[] KEYWORD_TABLE_ELEMENTS = {
-            KeywordsLessonsAndCodeDbContract.KeywordsDbEntry._ID,
-            KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_KEYWORD,
-            KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_TYPE,
-            KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_LESSONS,
-            KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_RELEVANT_CODE
+            CodeButlerDbContract.KeywordsDbEntry._ID,
+            CodeButlerDbContract.KeywordsDbEntry.COLUMN_KEYWORD,
+            CodeButlerDbContract.KeywordsDbEntry.COLUMN_TYPE,
+            CodeButlerDbContract.KeywordsDbEntry.COLUMN_LESSONS,
+            CodeButlerDbContract.KeywordsDbEntry.COLUMN_RELEVANT_CODE
     };
     public static final int INDEX_COLUMN_KEYWORD = 1;
     public static final int INDEX_COLUMN_TYPE = 2;
@@ -65,6 +67,20 @@ public class MainActivity extends AppCompatActivity implements
         mLoadingIndicator = findViewById(R.id.pb_loading_indicator);
         mKeywordEntriesRecylcleView = findViewById(R.id.keywords_list_view);
         mKeywordTeditText = findViewById(R.id.keywordEntryEditText);
+        final RadioGroup search_type = findViewById(R.id.search_type);
+        search_type.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+
+                int selectedId = search_type.getCheckedRadioButtonId();
+                switch (selectedId) {
+                    case R.id.search_exact: mSearchType = "EXACT"; break;
+                    case R.id.search_and: mSearchType = "AND"; break;
+                    case R.id.search_or: mSearchType = "OR"; break;
+                    default: mSearchType = "OR";
+                }
+            }
+        });
 
         setupSharedPreferences();
 
@@ -92,11 +108,11 @@ public class MainActivity extends AppCompatActivity implements
 
                 //Preparing the Uri
                 String stringId = Integer.toString(id);
-                Uri keywordQueryUri = KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.CONTENT_URI;
+                Uri keywordQueryUri = CodeButlerDbContract.KeywordsDbEntry.CONTENT_URI;
                 keywordQueryUri = keywordQueryUri.buildUpon().appendPath(stringId).build();
 
                 //Preparing the arguments the user wants to delete
-                //String selection = KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_KEYWORD + " = ?";
+                //String selection = CodeButlerDbContract.KeywordsDbEntry.COLUMN_KEYWORD + " = ?";
                 //String[] selectionArgs = {"'" + requested_keyword + "'"};
                 String selection = null;
                 String[] selectionArgs = null;
@@ -109,7 +125,7 @@ public class MainActivity extends AppCompatActivity implements
 //
 //                // Building the appropriate uri with String row id appended
 //                String stringId = Long.toString(id);
-//                Uri uri = KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.CONTENT_URI;
+//                Uri uri = CodeButlerDbContract.KeywordsDbEntry.CONTENT_URI;
 //                uri = uri.buildUpon().appendPath(stringId).build();
 //
 //                // Deleting a single row of data using a ContentResolver
@@ -118,6 +134,7 @@ public class MainActivity extends AppCompatActivity implements
                 //Restarting the loader to re-query for all tasks after a deletion
                 getSupportLoaderManager().restartLoader(ID_KEYWORD_DATABASE_LOADER, null, MainActivity.this);
             }
+
         }).attachToRecyclerView(mKeywordEntriesRecylcleView);
 
         //Adding the Add Keyowrd Entry functionality in a FloatingActionButton
@@ -216,6 +233,16 @@ public class MainActivity extends AppCompatActivity implements
         String toastMessage = "Item #" + clickedItemIndex + " clicked.";
         mToast = Toast.makeText(this, toastMessage, Toast.LENGTH_SHORT);
         mToast.show();
+
+        //startSelectedItemDetailsActivity.setData(uriForDateClicked);
+        EditText userKeyword = findViewById(R.id.keywordEntryEditText);
+        startNewSelectedItemDetailsActivity(userKeyword.getText().toString());
+    }
+    private void startNewSelectedItemDetailsActivity(String keyword) {
+        Intent startChildActivityIntent = new Intent(MainActivity.this, SelectedItemDetailsActivity.class);
+        startChildActivityIntent.putExtra(Intent.EXTRA_TEXT, keyword);
+        //TODO Implement SharedPreferences
+        startActivity(startChildActivityIntent);
     }
     private void openWebPage(String url) {
         Uri webpage = Uri.parse(url);
@@ -237,10 +264,10 @@ public class MainActivity extends AppCompatActivity implements
         switch (loaderId) {
             case ID_KEYWORD_DATABASE_LOADER:
                 showLoadingIndicatorInsteadOfRecycleView();
-                Uri keywordQueryUri = KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.CONTENT_URI;
+                Uri keywordQueryUri = CodeButlerDbContract.KeywordsDbEntry.CONTENT_URI;
                 String requested_keyword = mKeywordTeditText.getText().toString();
-                String selection = KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.getSelectionForGivenKeywordsAndOperator(requested_keyword, "AND");
-                String sortOrder = KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_KEYWORD;
+                String selection = CodeButlerDbContract.KeywordsDbEntry.getSelectionForGivenKeywordsAndOperator(requested_keyword, mSearchType);
+                String sortOrder = CodeButlerDbContract.KeywordsDbEntry.COLUMN_KEYWORD;
                 return new CursorLoader(this, keywordQueryUri, KEYWORD_TABLE_ELEMENTS, selection, null, sortOrder);
             default:
                 throw new RuntimeException("Loader Not Implemented: " + loaderId);

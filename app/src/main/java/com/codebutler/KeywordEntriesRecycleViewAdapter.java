@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.view.View.OnClickListener;
 
-import com.codebutler.data.KeywordsLessonsAndCodeDbContract;
+import com.codebutler.data.CodeButlerDbContract;
 
 
-public class KeywordEntriesRecycleViewAdapter extends RecyclerView.Adapter<KeywordEntriesRecycleViewAdapter.KeywordEntryViewHolder> {
+public class KeywordEntriesRecycleViewAdapter extends RecyclerView.Adapter<KeywordEntriesRecycleViewAdapter.KeywordEntryViewHolder>  {
 
     private Context mContext;
     private Cursor mKeywordDatabaseCursor;
@@ -38,9 +38,9 @@ public class KeywordEntriesRecycleViewAdapter extends RecyclerView.Adapter<Keywo
         if (!mKeywordDatabaseCursor.moveToPosition(position)) return;
 
         // Indices for the _id, description, and priority columns
-        int idIndex = mKeywordDatabaseCursor.getColumnIndex(KeywordsLessonsAndCodeDbContract.KeywordsDbEntry._ID);
-        int keywordIndex = mKeywordDatabaseCursor.getColumnIndex(KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_KEYWORD);
-        int typeIndex = mKeywordDatabaseCursor.getColumnIndex(KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_TYPE);
+        int idIndex = mKeywordDatabaseCursor.getColumnIndex(CodeButlerDbContract.KeywordsDbEntry._ID);
+        int keywordIndex = mKeywordDatabaseCursor.getColumnIndex(CodeButlerDbContract.KeywordsDbEntry.COLUMN_KEYWORD);
+        int typeIndex = mKeywordDatabaseCursor.getColumnIndex(CodeButlerDbContract.KeywordsDbEntry.COLUMN_TYPE);
 
         // Determine the values of the wanted data
         final int id = mKeywordDatabaseCursor.getInt(idIndex);

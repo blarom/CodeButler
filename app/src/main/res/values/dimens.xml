@@ -5,4 +5,5 @@
     <dimen name="recyclerViewItemPaddingHorizontal">16dp</dimen>
     <dimen name="floatingActionButtonMargins">16dp</dimen>
     <dimen name="recyclerViewStartMargin">16dp</dimen>
+    <dimen name="searchButtonsLeftRightMargins">20dp</dimen>
 </resources>

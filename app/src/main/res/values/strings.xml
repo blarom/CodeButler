@@ -6,7 +6,7 @@
     <string name="default_lessons">NA</string>
     <string name="default_relevantCode">NA</string>
     <string name="keyword_hint">Keyword</string>
-    <string name="codeLanguage_hint">Language</string>
+    <string name="type_hint">Subject Type</string>
     <string name="lessons_hint">Relevant Lessons</string>
     <string name="relevantCode_hint">Relevant Code</string>
     <string name="add_button_text">ADD</string>
@@ -37,5 +37,10 @@
     <string name="pref_preferred_result_value_xml" translatable="false">xml</string>
     <string name="pref_preferred_result_value_java" translatable="false">java</string>
     <string name="pref_preferred_result_value_explanation" translatable="false">explanations</string>
+
+    <!--Radio Buttons-->
+    <string name="exact">Exact</string>
+    <string name="and_operator">AND</string>
+    <string name="or_operator">OR</string>
 
 </resources>

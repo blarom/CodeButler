@@ -1,0 +1,287 @@
+Lesson No.,Lesson Title,Lesson Link
+UD.GDC.AD.2.4,A Brief Intro to Android Studio,https://classroom.udacity.com/courses/ud851-emea/lessons/93affc67-3f0b-4f9b-b3a4-a7a26f241a86/concepts/0eb4fac2-9d1b-477d-bafb-1743f715d4a5
+UD.GDC.AD.2.5,"Coding, GitHub and Flow",https://classroom.udacity.com/courses/ud851-emea/lessons/93affc67-3f0b-4f9b-b3a4-a7a26f241a86/concepts/115d08bb-f114-46fa-b693-5c6ce1445c07
+UD.GDC.AD.2.7,Creating our First Project,https://classroom.udacity.com/courses/ud851-emea/lessons/93affc67-3f0b-4f9b-b3a4-a7a26f241a86/concepts/f0aca178-1ff3-4786-bcf6-dddbb76b159d
+UD.GDC.AD.2.8,Android Min and Target Versions,https://classroom.udacity.com/courses/ud851-emea/lessons/93affc67-3f0b-4f9b-b3a4-a7a26f241a86/concepts/382dabfc-7477-46e1-99de-d050916d61e8
+UD.GDC.AD.2.10,Running Your Code,https://classroom.udacity.com/courses/ud851-emea/lessons/93affc67-3f0b-4f9b-b3a4-a7a26f241a86/concepts/02f2daf0-9f99-408a-b954-f12f373dee1a
+UD.GDC.AD.2.11,Android Software Stack,https://classroom.udacity.com/courses/ud851-emea/lessons/93affc67-3f0b-4f9b-b3a4-a7a26f241a86/concepts/17476436-0b3e-46e3-a858-36d1e35b4491
+UD.GDC.AD.2.12,"Activities, Packages, and Layouts",https://classroom.udacity.com/courses/ud851-emea/lessons/93affc67-3f0b-4f9b-b3a4-a7a26f241a86/concepts/200e9ec2-a5ec-4e4b-b0d9-bdc0a02d705f
+UD.GDC.AD.2.14,Android Layouts Primer,https://classroom.udacity.com/courses/ud851-emea/lessons/93affc67-3f0b-4f9b-b3a4-a7a26f241a86/concepts/cdbfd437-de24-4903-8f01-37c29427cb38
+UD.GDC.AD.2.15,Exercise: Framing Favorite Toys,https://classroom.udacity.com/courses/ud851-emea/lessons/93affc67-3f0b-4f9b-b3a4-a7a26f241a86/concepts/01267ed4-e09e-4800-87f4-64e5745393cb
+UD.GDC.AD.2.16,Exercise: Toying with FavoriteToys,https://classroom.udacity.com/courses/ud851-emea/lessons/93affc67-3f0b-4f9b-b3a4-a7a26f241a86/concepts/ebe17315-13a6-452b-828e-aa3de89c4c09
+UD.GDC.AD.2.17,Exercise: See More FavoriteToys,https://classroom.udacity.com/courses/ud851-emea/lessons/93affc67-3f0b-4f9b-b3a4-a7a26f241a86/concepts/8030c4d7-7819-41cb-8add-e5c5d35caf1d
+UD.GDC.AD.2.18,Visual Layout Editor,https://classroom.udacity.com/courses/ud851-emea/lessons/93affc67-3f0b-4f9b-b3a4-a7a26f241a86/concepts/43e77b25-5212-4a18-99c4-51f20d4e27e0
+UD.GDC.AD.2.19,Handling Different Screen,https://classroom.udacity.com/courses/ud851-emea/lessons/93affc67-3f0b-4f9b-b3a4-a7a26f241a86/concepts/396af661-4041-49f8-8673-016060e99e63
+UD.GDC.AD.2.22,Exercise: Update Sunshine Layout,https://classroom.udacity.com/courses/ud851-emea/lessons/93affc67-3f0b-4f9b-b3a4-a7a26f241a86/concepts/42960413-c083-4f92-b000-ceb9bd90ae3b
+UD.GDC.AD.2.24,Exercise: Add Scrolling Weather,https://classroom.udacity.com/courses/ud851-emea/lessons/93affc67-3f0b-4f9b-b3a4-a7a26f241a86/concepts/0bfb8489-0571-455f-aab4-2f54bf60e83c
+UD.GDC.AD.3.2,Logging,https://classroom.udacity.com/courses/ud851-emea/lessons/e5d74e43-743c-455e-9a70-7545a2da9783/concepts/68647b6e-1bea-49e1-a33f-eb2a2ad14de1
+UD.GDC.AD.3.4,Exercise: Create a Layout,https://classroom.udacity.com/courses/ud851-emea/lessons/e5d74e43-743c-455e-9a70-7545a2da9783/concepts/df87e335-ec8d-4383-9e32-78f8e0f982f1
+UD.GDC.AD.3.5,Resources,https://classroom.udacity.com/courses/ud851-emea/lessons/e5d74e43-743c-455e-9a70-7545a2da9783/concepts/098396ee-917e-47f8-95cd-b10ca27ac2a7
+UD.GDC.AD.3.6,On Menus,https://classroom.udacity.com/courses/ud851-emea/lessons/e5d74e43-743c-455e-9a70-7545a2da9783/concepts/b14b510c-1fa4-415f-825e-445aed179c2b
+UD.GDC.AD.3.7,Exercise: Add a Menu,https://classroom.udacity.com/courses/ud851-emea/lessons/e5d74e43-743c-455e-9a70-7545a2da9783/concepts/6dbe6d69-1d5d-44e4-9af7-36526ba7f09e
+UD.GDC.AD.3.8,Exercise: Build our URL,https://classroom.udacity.com/courses/ud851-emea/lessons/e5d74e43-743c-455e-9a70-7545a2da9783/concepts/6429b4ab-c9ee-45d2-9d7c-d18a8364827d
+UD.GDC.AD.3.9,Fetching an HTTP Request,https://classroom.udacity.com/courses/ud851-emea/lessons/e5d74e43-743c-455e-9a70-7545a2da9783/concepts/195163c8-abbb-424a-90ab-2ee6d07720a3
+UD.GDC.AD.3.10,Permissions,https://classroom.udacity.com/courses/ud851-emea/lessons/e5d74e43-743c-455e-9a70-7545a2da9783/concepts/8ef25888-bcf3-4dcd-aff2-ab75db99daa5
+UD.GDC.AD.3.12,Exercise: Connect to the Internet,https://classroom.udacity.com/courses/ud851-emea/lessons/e5d74e43-743c-455e-9a70-7545a2da9783/concepts/d8ef20e6-8d9f-454b-850a-896bff47a627
+UD.GDC.AD.3.17,Exercise: Missing Permissions,https://classroom.udacity.com/courses/ud851-emea/lessons/e5d74e43-743c-455e-9a70-7545a2da9783/concepts/c1c96d4c-c231-4653-bbbd-19e3cbadc1da
+UD.GDC.AD.3.13,Thread Basics,https://classroom.udacity.com/courses/ud851-emea/lessons/e5d74e43-743c-455e-9a70-7545a2da9783/concepts/dcae6dc4-bdf0-4c93-b70c-09cd47ff2d09
+UD.GDC.AD.3.14,AsyncTask,https://classroom.udacity.com/courses/ud851-emea/lessons/e5d74e43-743c-455e-9a70-7545a2da9783/concepts/72597e43-7640-4290-bba2-bd5b57add22b
+UD.GDC.AD.3.16,Exercise: Create an AsyncTask,https://classroom.udacity.com/courses/ud851-emea/lessons/e5d74e43-743c-455e-9a70-7545a2da9783/concepts/1cde0c2f-18e7-4528-8610-bfb04a81fe9c
+UD.GDC.AD.3.18,Exercise: Add Polish,https://classroom.udacity.com/courses/ud851-emea/lessons/e5d74e43-743c-455e-9a70-7545a2da9783/concepts/591ff476-467a-4696-8501-3b6fa465118c
+UD.GDC.AD.3.19,JSON Format,https://classroom.udacity.com/courses/ud851-emea/lessons/e5d74e43-743c-455e-9a70-7545a2da9783/concepts/efd15f16-1716-4e58-b64a-07db817743b2
+UD.GDC.AD.3.20,Quiz: JSON by Hand,https://classroom.udacity.com/courses/ud851-emea/lessons/e5d74e43-743c-455e-9a70-7545a2da9783/concepts/28ad45a2-c02f-4e95-9785-ac47b8024ae6
+UD.GDC.AD.3.21,Quiz: Parse JSON,https://classroom.udacity.com/courses/ud851-emea/lessons/e5d74e43-743c-455e-9a70-7545a2da9783/concepts/8ed3a385-34d5-4ea5-acbe-8b0be72ee9b6
+UD.GDC.AD.3.22,Exercise: Networking,https://classroom.udacity.com/courses/ud851-emea/lessons/e5d74e43-743c-455e-9a70-7545a2da9783/concepts/82cd942e-462c-4518-bb14-61782ea86a73
+UD.GDC.AD.3.23,Exercise: Menus,https://classroom.udacity.com/courses/ud851-emea/lessons/e5d74e43-743c-455e-9a70-7545a2da9783/concepts/c4aba829-2bb7-42a0-9214-42fef3534b93
+UD.GDC.AD.3.24,Exercise: Add Loading Polish,https://classroom.udacity.com/courses/ud851-emea/lessons/e5d74e43-743c-455e-9a70-7545a2da9783/concepts/d6dd3b5a-70c1-48ab-97d9-59ef9d10062f
+UD.GDC.AD.4.2,Why RecyclerView?,https://classroom.udacity.com/courses/ud851-emea/lessons/c81cb722-d20a-495a-83c6-6890a6142aac/concepts/4a33d15a-b216-48b3-ac80-d87e4ad2f617
+UD.GDC.AD.4.3,How RecyclerView Works,https://classroom.udacity.com/courses/ud851-emea/lessons/c81cb722-d20a-495a-83c6-6890a6142aac/concepts/cb0ec846-675f-4d8d-9734-e30c8fc24865
+UD.GDC.AD.4.4,Using RecyclerView,https://classroom.udacity.com/courses/ud851-emea/lessons/c81cb722-d20a-495a-83c6-6890a6142aac/concepts/d2b8c779-f484-4ffa-8fae-d167b4602d62
+UD.GDC.AD.4.5,Why ViewHolders?,https://classroom.udacity.com/courses/ud851-emea/lessons/c81cb722-d20a-495a-83c6-6890a6142aac/concepts/7a6c5761-5b2c-4df0-aff4-a435d0edf673
+UD.GDC.AD.4.7,Visualizing ViewHolders,https://classroom.udacity.com/courses/ud851-emea/lessons/c81cb722-d20a-495a-83c6-6890a6142aac/concepts/b5b57ddb-6291-4354-a4c5-8b568e19d3fa
+UD.GDC.AD.4.8,Creating RecyclerView Layout,https://classroom.udacity.com/courses/ud851-emea/lessons/c81cb722-d20a-495a-83c6-6890a6142aac/concepts/21851494-974b-4ae7-9acf-eedc827fc4a8
+UD.GDC.AD.4.9,Exercise: Create RecyclerView,https://classroom.udacity.com/courses/ud851-emea/lessons/c81cb722-d20a-495a-83c6-6890a6142aac/concepts/1f679415-8a96-42c6-9880-7be8a15cee20
+UD.GDC.AD.4.10,Items and ViewHolders,https://classroom.udacity.com/courses/ud851-emea/lessons/c81cb722-d20a-495a-83c6-6890a6142aac/concepts/fba68446-3268-4f51-afbb-e76a84a4ac3e
+UD.GDC.AD.4.11,Exercise: Items and ViewHolders,https://classroom.udacity.com/courses/ud851-emea/lessons/c81cb722-d20a-495a-83c6-6890a6142aac/concepts/b9f86b85-4597-4aba-a806-b8f89b7f92da
+UD.GDC.AD.4.12,RecyclerView and Adapters,https://classroom.udacity.com/courses/ud851-emea/lessons/c81cb722-d20a-495a-83c6-6890a6142aac/concepts/5432ad56-89fe-415c-8561-bca0b9a425dc
+UD.GDC.AD.4.14,Creating an Adapter,https://classroom.udacity.com/courses/ud851-emea/lessons/c81cb722-d20a-495a-83c6-6890a6142aac/concepts/ae70fe56-dbd3-446c-be43-b8da0f076ea6
+UD.GDC.AD.4.15,Exercise: Create an Adapter,https://classroom.udacity.com/courses/ud851-emea/lessons/c81cb722-d20a-495a-83c6-6890a6142aac/concepts/da2717b1-66ae-4d2b-b158-bf631cd58852
+UD.GDC.AD.4.16,RecyclerView Layout Manager,https://classroom.udacity.com/courses/ud851-emea/lessons/c81cb722-d20a-495a-83c6-6890a6142aac/concepts/1f84d82c-4b55-4dfc-969b-46bf1dfaf5e3
+UD.GDC.AD.4.17,Wiring Up RecyclerView,https://classroom.udacity.com/courses/ud851-emea/lessons/c81cb722-d20a-495a-83c6-6890a6142aac/concepts/5ae0f3eb-e0ee-41ec-bfe4-bfa77a2a6d0d
+UD.GDC.AD.4.18,Exercise: Wiring Up RecyclerView,https://classroom.udacity.com/courses/ud851-emea/lessons/c81cb722-d20a-495a-83c6-6890a6142aac/concepts/9957af27-ffb9-4ebd-9e26-b685d2f3ee3c
+UD.GDC.AD.4.19,Visualizing Recycling,https://classroom.udacity.com/courses/ud851-emea/lessons/c81cb722-d20a-495a-83c6-6890a6142aac/concepts/846e99cc-25ad-4380-b8b2-842fb6f1c95d
+UD.GDC.AD.4.20,Responding to Item Clicks,https://classroom.udacity.com/courses/ud851-emea/lessons/c81cb722-d20a-495a-83c6-6890a6142aac/concepts/3da2dca7-50a2-413b-958c-987080988ae1
+UD.GDC.AD.4.21,Exercise: Click Handling,https://classroom.udacity.com/courses/ud851-emea/lessons/c81cb722-d20a-495a-83c6-6890a6142aac/concepts/31051465-f946-4d30-bbab-c6087304e566
+UD.GDC.AD.4.22,Exercise: Create a RecyclerView,https://classroom.udacity.com/courses/ud851-emea/lessons/c81cb722-d20a-495a-83c6-6890a6142aac/concepts/367dc8f7-4639-4650-8468-b08717a69e84
+UD.GDC.AD.4.23,Exercise: Click Handling,https://classroom.udacity.com/courses/ud851-emea/lessons/c81cb722-d20a-495a-83c6-6890a6142aac/concepts/ff963dd4-15f9-42e0-b3c1-bcdbe9cd296c
+UD.GDC.AD.5.3,Intents Framework,https://classroom.udacity.com/courses/ud851-emea/lessons/5a9d75c2-eb50-4a06-b1ed-b30645f27fdf/concepts/2dc3babf-a708-44e9-ab73-cca3ce923569
+UD.GDC.AD.5.5,Creating an Activity,https://classroom.udacity.com/courses/ud851-emea/lessons/5a9d75c2-eb50-4a06-b1ed-b30645f27fdf/concepts/73e97b9e-4ca1-4520-baa1-1f475f5b7bfb
+UD.GDC.AD.5.6,Quiz: Exercise: Create an Activity,https://classroom.udacity.com/courses/ud851-emea/lessons/5a9d75c2-eb50-4a06-b1ed-b30645f27fdf/concepts/49ef8e42-0df7-4047-b8cb-9d60e7554bb2
+UD.GDC.AD.5.7,Creating an Intent,https://classroom.udacity.com/courses/ud851-emea/lessons/5a9d75c2-eb50-4a06-b1ed-b30645f27fdf/concepts/cf6969ea-6a24-447a-a8bd-f811f3c41efa
+UD.GDC.AD.5.8,Quiz: Exercise: Start an Activity,https://classroom.udacity.com/courses/ud851-emea/lessons/5a9d75c2-eb50-4a06-b1ed-b30645f27fdf/concepts/5fa19347-3989-491e-bf16-59fc863c1c70
+UD.GDC.AD.5.9,Passing Data Between Activities,https://classroom.udacity.com/courses/ud851-emea/lessons/5a9d75c2-eb50-4a06-b1ed-b30645f27fdf/concepts/09312b2f-2fe9-4632-b07a-969a2764c339
+UD.GDC.AD.5.11,What are Implicit Intents?,https://classroom.udacity.com/courses/ud851-emea/lessons/5a9d75c2-eb50-4a06-b1ed-b30645f27fdf/concepts/df9a7f90-5f73-49c9-b592-ce6380d7e9e6
+UD.GDC.AD.5.12,Creating Implicit Intents,https://classroom.udacity.com/courses/ud851-emea/lessons/5a9d75c2-eb50-4a06-b1ed-b30645f27fdf/concepts/579b5278-ea46-4a96-b94d-d4ae7b88953f
+UD.GDC.AD.5.13,Quiz: Exercise: Open a Web Page,https://classroom.udacity.com/courses/ud851-emea/lessons/5a9d75c2-eb50-4a06-b1ed-b30645f27fdf/concepts/32fe66db-1d33-41f7-817d-dc461dcec9a5
+UD.GDC.AD.5.14,Understanding URIs,https://classroom.udacity.com/courses/ud851-emea/lessons/5a9d75c2-eb50-4a06-b1ed-b30645f27fdf/concepts/520bc5b3-61a9-4d3e-a431-a6dac5de0651
+UD.GDC.AD.5.16,Creating a Map Intent,https://classroom.udacity.com/courses/ud851-emea/lessons/5a9d75c2-eb50-4a06-b1ed-b30645f27fdf/concepts/611a448b-9832-47e4-b28b-4b63784304b9
+UD.GDC.AD.5.17,Quiz: Exercise: Show a Map,https://classroom.udacity.com/courses/ud851-emea/lessons/5a9d75c2-eb50-4a06-b1ed-b30645f27fdf/concepts/e3cfc9dd-75bd-4f79-aae0-9cd08125849f
+UD.GDC.AD.5.18,Sharing is Caring!,https://classroom.udacity.com/courses/ud851-emea/lessons/5a9d75c2-eb50-4a06-b1ed-b30645f27fdf/concepts/41d33f9c-74e4-4713-9469-07ba977bde20
+UD.GDC.AD.5.19,Media Types,https://classroom.udacity.com/courses/ud851-emea/lessons/5a9d75c2-eb50-4a06-b1ed-b30645f27fdf/concepts/170ba8b7-e63d-4b42-8a68-c08fcb1776b4
+UD.GDC.AD.5.20,Implementing a Share Intent,https://classroom.udacity.com/courses/ud851-emea/lessons/5a9d75c2-eb50-4a06-b1ed-b30645f27fdf/concepts/46fd722a-b201-4cc3-ae65-073827fede71
+UD.GDC.AD.5.21,Quiz: Exercise: Create a Share Intent,https://classroom.udacity.com/courses/ud851-emea/lessons/5a9d75c2-eb50-4a06-b1ed-b30645f27fdf/concepts/fbf200c2-3602-4933-94bd-7e0d78b7482a
+UD.GDC.AD.5.23,Quiz: Exercise: Add a New Activity,https://classroom.udacity.com/courses/ud851-emea/lessons/5a9d75c2-eb50-4a06-b1ed-b30645f27fdf/concepts/859f2ea4-ff3a-4c83-bff2-2be04c82949e
+UD.GDC.AD.5.24,Quiz: Exercise: Send Data,https://classroom.udacity.com/courses/ud851-emea/lessons/5a9d75c2-eb50-4a06-b1ed-b30645f27fdf/concepts/635a159d-214d-44ae-a1f1-e450fb20a101
+UD.GDC.AD.5.25,Quiz: Exercise: Add Sharing,https://classroom.udacity.com/courses/ud851-emea/lessons/5a9d75c2-eb50-4a06-b1ed-b30645f27fdf/concepts/652cbaaf-f580-4873-af4f-990f8130c9ef
+UD.GDC.AD.6.3,Android Activity Lifecycle,https://classroom.udacity.com/courses/ud851-emea/lessons/ed13cc93-2861-43bf-b7ed-395a166ab975/concepts/36769da8-9092-4342-b3b4-451aaa2cc80e
+UD.GDC.AD.6.4,Reto on the Android Activity Lifecycle,https://classroom.udacity.com/courses/ud851-emea/lessons/ed13cc93-2861-43bf-b7ed-395a166ab975/concepts/9f8e379f-8bcc-419a-849f-4307eefbd047
+UD.GDC.AD.6.5,Exercise: Lifecycle Events,https://classroom.udacity.com/courses/ud851-emea/lessons/ed13cc93-2861-43bf-b7ed-395a166ab975/concepts/984bbb5c-e1f7-45a8-8c67-d80ab376b89e
+UD.GDC.AD.6.6,Why does this Happen?,https://classroom.udacity.com/courses/ud851-emea/lessons/ed13cc93-2861-43bf-b7ed-395a166ab975/concepts/fa0da649-8f05-454b-aab2-94b9e0bbbba8
+UD.GDC.AD.6.7,Save and Restore Instance State,https://classroom.udacity.com/courses/ud851-emea/lessons/ed13cc93-2861-43bf-b7ed-395a166ab975/concepts/b97146c5-7c12-4565-821d-6cafbd8bbb90
+UD.GDC.AD.6.8,Exercise: Persisting Data,https://classroom.udacity.com/courses/ud851-emea/lessons/ed13cc93-2861-43bf-b7ed-395a166ab975/concepts/ffcf2875-65d3-490f-9875-63b498584055
+UD.GDC.AD.6.9,Exercise: Fix the Lifecycle Display,https://classroom.udacity.com/courses/ud851-emea/lessons/ed13cc93-2861-43bf-b7ed-395a166ab975/concepts/019628c7-7d19-409a-942d-b58c3eccb13a
+UD.GDC.AD.6.10,App Termination,https://classroom.udacity.com/courses/ud851-emea/lessons/ed13cc93-2861-43bf-b7ed-395a166ab975/concepts/69d70427-1629-4ac8-a3d4-24c37f811588
+UD.GDC.AD.6.11,Preparing for Termination,https://classroom.udacity.com/courses/ud851-emea/lessons/ed13cc93-2861-43bf-b7ed-395a166ab975/concepts/283a3dc9-151b-47ab-b4f5-f7984d6ac00a
+UD.GDC.AD.6.12,Persisting Data With an Old Friend,https://classroom.udacity.com/courses/ud851-emea/lessons/ed13cc93-2861-43bf-b7ed-395a166ab975/concepts/41c11a34-f723-4694-9bab-0cb03c02fa9b
+UD.GDC.AD.6.13,Exercise: Persisting Data Part Two,https://classroom.udacity.com/courses/ud851-emea/lessons/ed13cc93-2861-43bf-b7ed-395a166ab975/concepts/4babfd84-d0a2-48ea-9623-26e7fc8b2a13
+UD.GDC.AD.6.14,AsyncTask and Loaders,https://classroom.udacity.com/courses/ud851-emea/lessons/ed13cc93-2861-43bf-b7ed-395a166ab975/concepts/0e29911f-bacc-4358-a1c6-b7d55e327f4a
+UD.GDC.AD.6.16,Leveraging Loaders,https://classroom.udacity.com/courses/ud851-emea/lessons/ed13cc93-2861-43bf-b7ed-395a166ab975/concepts/29dfb358-58ec-4364-8f1d-74488de38424
+UD.GDC.AD.6.17,Exercise: Add an AsyncTaskLoader,https://classroom.udacity.com/courses/ud851-emea/lessons/ed13cc93-2861-43bf-b7ed-395a166ab975/concepts/d7a8f3a4-ddc5-4ceb-91f9-328cae878e17
+UD.GDC.AD.6.18,Caching with Loaders,https://classroom.udacity.com/courses/ud851-emea/lessons/ed13cc93-2861-43bf-b7ed-395a166ab975/concepts/a5c2264c-3715-4ba8-9c85-5ac100736202
+UD.GDC.AD.6.19,Exercise: Caching with Loaders,https://classroom.udacity.com/courses/ud851-emea/lessons/ed13cc93-2861-43bf-b7ed-395a166ab975/concepts/2f63bd3e-83b1-4b19-b5d4-da668882d677
+UD.GDC.AD.6.20,Exercise: AsyncTaskLoader in Sunshine,https://classroom.udacity.com/courses/ud851-emea/lessons/ed13cc93-2861-43bf-b7ed-395a166ab975/concepts/f0467b0c-62d7-4551-8ece-c56769f46643
+UD.GDC.AD.7.2,Introducing the Visualizer,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/514ea500-9907-463e-ab88-3469a2b70997
+UD.GDC.AD.7.3,Visualizer Code,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/2b863b87-8bef-4cb1-b5e0-17c12b73a2a8
+UD.GDC.AD.7.5,Data Persistence,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/fc984b93-d21e-44c5-9263-b8f6f3840cf3
+UD.GDC.AD.7.7,Preference Fragments,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/f7582bf0-6411-432e-9731-1f3009e773c6
+UD.GDC.AD.7.8,Setting up the Settings Activity,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/b3cbbd1c-7377-40a6-9a00-a7c5a9e0c004
+UD.GDC.AD.7.9,Exercise: Setup Settings,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/116f0e9a-a76b-4b92-95f2-2e4293e2e336
+UD.GDC.AD.7.10,Making a PreferenceFragment,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/1698503c-c787-4869-aab9-bbc163ac4233
+UD.GDC.AD.7.11,Exercise: Make a Preference Fragment,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/a362f4d0-3252-44fd-82d6-bcad0e5de3b0
+UD.GDC.AD.7.12,Reading From SharedPreferences,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/9adf95f7-144f-4dbd-9bd7-88240a6b433e
+UD.GDC.AD.7.13,Exercise: Reading from SharedPreferences,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/03a84332-e916-47c9-b443-bded3ad74978
+UD.GDC.AD.7.14,Use Resources!,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/b0cdbc56-6afe-4f10-83a1-a8b75d8717e2
+UD.GDC.AD.7.15,Exercise: Use Resources,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/d3372181-7ae4-472c-8920-50f06dbdedb2
+UD.GDC.AD.7.16,Why Aren’t The Preferences Changing?,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/8c4160b7-be6a-4198-b5f2-5b181b1e2822
+UD.GDC.AD.7.17,Preference Change Listener,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/48ec44e3-438b-4513-8c0b-14893a2c2f91
+UD.GDC.AD.7.18,Exercise: Preference Change Listener,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/3aa15964-7630-4d61-84b0-4e1435a5b68f
+UD.GDC.AD.7.19,Add Two More Checkboxes,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/e2833428-4afc-4154-b3ee-e68aff463ab8
+UD.GDC.AD.7.20,Exercise: Add Two More Checkboxes,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/5093bd21-0583-440c-9f8f-c58052d91a1f
+UD.GDC.AD.7.21,List Preference,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/2e31df3c-e5cb-42fe-8393-e6604ef69b1b
+UD.GDC.AD.7.22,Exercise: List Preference,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/e1a307dd-7709-48e5-bc82-38245cad119b
+UD.GDC.AD.7.23,Preference Summary,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/1b8a10c0-8aa0-4438-b8da-db6686f5df56
+UD.GDC.AD.7.24,Exercise: Preference Summary,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/acecab7e-0052-487d-a6f3-898c22f3ecfa
+UD.GDC.AD.7.25,Edit Text Preference,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/ab1c0aac-80f7-4507-9c7f-2b519275d314
+UD.GDC.AD.7.26,Exercise: Edit Text Preference,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/668a0e3a-1754-4eb2-b93d-146483e33e67
+UD.GDC.AD.7.27,Edit Size Crashes,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/4c0999da-a16b-4801-9544-2a7f75bf8e2f
+UD.GDC.AD.7.28,Edit Text Preference Constraints,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/d82e3306-12c7-42fd-af8f-05c874f69034
+UD.GDC.AD.7.29,Exercise: Edit Text Preference Constraints,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/d82e3306-12c7-42fd-af8f-05c874f69034
+UD.GDC.AD.7.31,Should it be a Setting,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/3a15c609-ba40-4501-bfff-89d8cbb42cf9
+UD.GDC.AD.7.32,Exercise: Create the SettingsActivity in Sunshine,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/7410ba84-e8a6-4d43-a1cd-25165fa1eb65
+UD.GDC.AD.7.33,Solution: Create the SettingsActivity in Sunshine,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/3b94732f-bd75-4da5-8f7f-52b67af8160f
+UD.GDC.AD.7.34,Exercise: Create the PreferenceFragment in Sunshine,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/eb405b65-4ad2-4672-845f-3fb7b64c9238
+UD.GDC.AD.7.35,Exercise: Update the MainActivity,https://classroom.udacity.com/courses/ud851-emea/lessons/1392b674-18b6-4636-b36b-da7d37a319e3/concepts/eb405b65-4ad2-4672-845f-3fb7b64c9238
+UD.GDC.AD.8.2,Why SQLite?,https://classroom.udacity.com/courses/ud851-emea/lessons/b5ab398b-2d15-4840-b3ff-0171e84d1c8d/concepts/50345eea-c1ea-41e4-8547-43d88d7f4b9b
+UD.GDC.AD.8.5,Creating the Contract,https://classroom.udacity.com/courses/ud851-emea/lessons/b5ab398b-2d15-4840-b3ff-0171e84d1c8d/concepts/a16a031d-68e4-496b-9e24-d98e7cd3c0b2
+UD.GDC.AD.8.6,Running Unit Tests,https://classroom.udacity.com/courses/ud851-emea/lessons/b5ab398b-2d15-4840-b3ff-0171e84d1c8d/concepts/94302e18-e24e-4eb0-8767-17dfaceb6c30
+UD.GDC.AD.8.7,Exercise: Create the Contract,https://classroom.udacity.com/courses/ud851-emea/lessons/b5ab398b-2d15-4840-b3ff-0171e84d1c8d/concepts/007fe9c2-5746-4cf5-a7ab-973122e27b4c
+UD.GDC.AD.8.8,Creating the database,https://classroom.udacity.com/courses/ud851-emea/lessons/b5ab398b-2d15-4840-b3ff-0171e84d1c8d/concepts/6394e715-add9-4ea0-ab87-fef77f51e08b
+UD.GDC.AD.8.9,Exercise: Create The Database,https://classroom.udacity.com/courses/ud851-emea/lessons/b5ab398b-2d15-4840-b3ff-0171e84d1c8d/concepts/3d40dfeb-256c-44b3-95ab-5cdc17d58f7c
+UD.GDC.AD.8.10,Querying All Guests,https://classroom.udacity.com/courses/ud851-emea/lessons/b5ab398b-2d15-4840-b3ff-0171e84d1c8d/concepts/c32adc4d-b3b5-4d3b-8ece-aadf47621172
+UD.GDC.AD.8.11,Exercise: Query All Guests,https://classroom.udacity.com/courses/ud851-emea/lessons/b5ab398b-2d15-4840-b3ff-0171e84d1c8d/concepts/1628f9f3-74ab-4e1c-8a66-40bdf35c0f1a
+UD.GDC.AD.8.12,Updating the Adapter,https://classroom.udacity.com/courses/ud851-emea/lessons/b5ab398b-2d15-4840-b3ff-0171e84d1c8d/concepts/6a7a11c1-0fc3-429f-982f-d2fcf02fa0f3
+UD.GDC.AD.8.13,Exercise: Update The Adapter,https://classroom.udacity.com/courses/ud851-emea/lessons/b5ab398b-2d15-4840-b3ff-0171e84d1c8d/concepts/3aac633a-42b0-4dbc-b03c-1a98f3fdfe86
+UD.GDC.AD.8.14,Adding Guests,https://classroom.udacity.com/courses/ud851-emea/lessons/b5ab398b-2d15-4840-b3ff-0171e84d1c8d/concepts/52c40c8b-7153-4a28-99a6-bf62245a2a23
+UD.GDC.AD.8.15,Exercise: Add Guests,https://classroom.udacity.com/courses/ud851-emea/lessons/b5ab398b-2d15-4840-b3ff-0171e84d1c8d/concepts/9e4db2ba-0f63-4420-a960-2a2d71e91f51
+UD.GDC.AD.8.16,Removing Guests,https://classroom.udacity.com/courses/ud851-emea/lessons/b5ab398b-2d15-4840-b3ff-0171e84d1c8d/concepts/97ae81f2-37cc-411a-8d81-05cf52686657
+UD.GDC.AD.8.17,Exercise: Remove Guests,https://classroom.udacity.com/courses/ud851-emea/lessons/b5ab398b-2d15-4840-b3ff-0171e84d1c8d/concepts/74f05bfa-ca7d-4a1e-91d2-b60b3c60e363
+UD.GDC.AD.8.18,Exercise: Sunshine Database,https://classroom.udacity.com/courses/ud851-emea/lessons/b5ab398b-2d15-4840-b3ff-0171e84d1c8d/concepts/7bbb8cd5-778a-4f76-8d61-a58de9f6d576
+UD.GDC.AD.8.19,Exercise: Invalid Inserts in,https://classroom.udacity.com/courses/ud851-emea/lessons/b5ab398b-2d15-4840-b3ff-0171e84d1c8d/concepts/cc4eab6d-4946-4952-a3e1-7998640a811c
+UD.GDC.AD.8.20,Exercise: Resolve Conflicts,https://classroom.udacity.com/courses/ud851-emea/lessons/b5ab398b-2d15-4840-b3ff-0171e84d1c8d/concepts/b76e2e77-cda2-4cea-9f4d-4b0df7aa91d4
+UD.GDC.AD.9.2,ContentProviders,https://classroom.udacity.com/courses/ud851-emea/lessons/950e6939-1786-4659-89de-5af2dec70716/concepts/fa808eb7-10fa-4e50-88d3-6f4e00f76c43
+UD.GDC.AD.9.3,ContentProvider Advantages,https://classroom.udacity.com/courses/ud851-emea/lessons/950e6939-1786-4659-89de-5af2dec70716/concepts/ae4f2510-15ce-432d-8cb8-ad6af3c21fc9
+UD.GDC.AD.9.4,DroidTermsExample,https://classroom.udacity.com/courses/ud851-emea/lessons/950e6939-1786-4659-89de-5af2dec70716/concepts/5d60c738-e54a-464b-b642-30f1fe1cbf7b
+UD.GDC.AD.9.5,Exercise: Setup QuizExample,https://classroom.udacity.com/courses/ud851-emea/lessons/950e6939-1786-4659-89de-5af2dec70716/concepts/7cbd7b3c-b225-403e-bd11-7fc986190b05
+UD.GDC.AD.9.6,ContentProvider Permissions,https://classroom.udacity.com/courses/ud851-emea/lessons/950e6939-1786-4659-89de-5af2dec70716/concepts/230eaac9-8e47-487d-9292-2b328506d7dc
+UD.GDC.AD.9.7,Exercise: Add the Permission,https://classroom.udacity.com/courses/ud851-emea/lessons/950e6939-1786-4659-89de-5af2dec70716/concepts/3895160f-4375-4005-8b71-9057aaf4da20
+UD.GDC.AD.9.8,The ContentResolver,https://classroom.udacity.com/courses/ud851-emea/lessons/950e6939-1786-4659-89de-5af2dec70716/concepts/3d646513-7d7f-46de-97e8-772b79257a5a
+UD.GDC.AD.9.9,Four Basic Operations,https://classroom.udacity.com/courses/ud851-emea/lessons/950e6939-1786-4659-89de-5af2dec70716/concepts/8ddb8908-47f5-4cce-b51c-55cc58218120
+UD.GDC.AD.9.10,Uniform Resource Identifier,https://classroom.udacity.com/courses/ud851-emea/lessons/950e6939-1786-4659-89de-5af2dec70716/concepts/3acf5882-a585-4a01-ab24-a32f97460314
+UD.GDC.AD.9.17,Calling the ContentProvider,https://classroom.udacity.com/courses/ud851-emea/lessons/950e6939-1786-4659-89de-5af2dec70716/concepts/ab0d201b-eaa8-4ab3-9494-207df9894799
+UD.GDC.AD.9.18,Exercise: Make an AsyncTask,https://classroom.udacity.com/courses/ud851-emea/lessons/950e6939-1786-4659-89de-5af2dec70716/concepts/63008d55-8c9e-4940-9e09-88e84a24df45
+UD.GDC.AD.9.19,Structure of the Data,https://classroom.udacity.com/courses/ud851-emea/lessons/950e6939-1786-4659-89de-5af2dec70716/concepts/0936369f-d687-479a-9de9-0a31ec5d61cd
+UD.GDC.AD.9.20,Working with Cursors Review,https://classroom.udacity.com/courses/ud851-emea/lessons/950e6939-1786-4659-89de-5af2dec70716/concepts/23d65612-3684-4e38-80d9-ca26dafa60ef
+UD.GDC.AD.9.21,Exercise: Use the Cursor,https://classroom.udacity.com/courses/ud851-emea/lessons/950e6939-1786-4659-89de-5af2dec70716/concepts/1d11a38f-0fe3-482a-90b3-c726d5268abc
+UD.GDC.AD.9.22,Solution: Use the Cursor,https://classroom.udacity.com/courses/ud851-emea/lessons/950e6939-1786-4659-89de-5af2dec70716/concepts/f0ca2615-a88e-485c-96d5-b9060f479e8a
+UD.GDC.AD.10.3,Exercise: Data Design,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/ca7d0be2-c766-4547-bc5d-9e731a95ab9f
+UD.GDC.AD.10.4,Steps to Create a Provider,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/306e6698-0b8c-4ca7-aaf9-4d997e0679e3
+UD.GDC.AD.10.5,Create TaskContentProvider,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/68023f3a-c838-4faf-a3bc-8f1ff5813e2f
+UD.GDC.AD.10.6,Exercise: Create and Register a ContentProvider,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/d7539a95-5a39-4f9f-be7b-7e58cfc03e1b
+UD.GDC.AD.10.7,Define the URI Structure,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/27590722-3ddb-4e4f-81ac-ba1e51b2ae0d
+UD.GDC.AD.10.8,Wildcard Characters,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/98a693e4-6b31-40d2-b7dc-6013bfc4f853
+UD.GDC.AD.10.10,Exercise: Change the Contract,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/a076b71c-620e-4dd8-900e-bb8b43f3314a
+UD.GDC.AD.10.11,Build the URIMatcher,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/4a90b536-c469-4843-914d-5cfdfd400318
+UD.GDC.AD.10.14,Exercise: Add a URIMatcher,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/370a0bde-0d29-474e-9c84-4622430ac35d
+UD.GDC.AD.10.15,A Small Note on Testing,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/cb1c595b-506c-467a-8409-82ea7e048fb7
+UD.GDC.AD.10.16,Resolver to Database Flow,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/07b1e4d4-2fda-4d9e-b17c-128ac9e70114
+UD.GDC.AD.10.17,Overview of Provider Functions,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/c32ab081-41b3-455b-bfa2-8a8ca891a8d7
+UD.GDC.AD.10.19,Insert,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/ec60d944-974c-4004-a8fd-5d1a73b435ec
+UD.GDC.AD.10.20,Hook it up to the UI,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/d47bbf36-b4e3-45ef-bcf3-a67dc16ef8f4
+UD.GDC.AD.10.21,Exercise: Implement Insert,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/e7e9be36-0d53-494b-b4fb-809bfe78eee3
+UD.GDC.AD.10.22,Query,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/57f7b9b9-4cff-4904-bb09-215f54faf3d1
+UD.GDC.AD.10.23,Display the Tasks,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/6e3f720f-2ce9-40db-a6fc-6e7e2b7d269c
+UD.GDC.AD.10.24,Exercise: Implement Query,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/584eca2d-5eab-4506-b9ab-a8d68b4c6e58
+UD.GDC.AD.10.25,Query for One Item,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/6ab6e693-3860-47df-8aa8-9b480a34bb8b
+UD.GDC.AD.10.26,Query for One Item Part Two,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/321827bf-ab90-443f-b461-e540ccbfe0c6
+UD.GDC.AD.10.27,Exercise: Selection and SelectionArgs,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/83e17509-110e-4c21-a218-039a8830dd63
+UD.GDC.AD.10.28,Exercise: Implement Delete,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/382fab34-06d1-4575-a1d9-2fa1a03c1ca9
+UD.GDC.AD.10.29,Exercise: Swipe to Delete,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/5df774ba-e121-4c63-9821-9a78437bfecd
+UD.GDC.AD.10.30,Update,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/57431143-8bf9-4728-a8ce-d5891e471515
+UD.GDC.AD.10.31,getType,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/f6c6e7ae-bce2-4679-97b7-a4fe2b6f7ac5
+UD.GDC.AD.10.35,Exercise: Sunshine ContentProvider and Query,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/27c0980b-e54c-4456-ac55-68926e5d05dc
+UD.GDC.AD.10.36,Solution: Sunshine ContentProvider and Query,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/0efecd60-f755-430b-ae94-016c0acde015
+UD.GDC.AD.10.37,Exercise: bulkInsert,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/891b5a92-5d0c-49a5-8d7c-09e5d2de59a4
+UD.GDC.AD.10.38,Solution: bulkInsert,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/093b15bd-c7d3-428a-8e0d-8add3bc28bc5
+UD.GDC.AD.10.39,Exercise: Add Delete Functionality,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/ba1446df-3c04-47d1-883f-e8908ea2a28f
+UD.GDC.AD.10.40,Solution: Add Delete Functionality,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/5cfdd27b-16c5-46b1-a08a-52560d286508
+UD.GDC.AD.10.41,Exercise: Using a CursorLoader,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/6a39c872-78e5-4513-a017-26aaf15856b0
+UD.GDC.AD.10.42,Solution: Using a CursorLoader,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/4fe7cf7c-8198-4bf9-b8c9-e9cbb2560e3a
+UD.GDC.AD.10.43,Exercise: More Weather Details,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/c92968b5-488e-490e-b21c-9d7249318f90
+UD.GDC.AD.10.44,Solution: More Weather Details,https://classroom.udacity.com/courses/ud851-emea/lessons/88171055-d9e6-4da5-acc4-b92a302a75a8/concepts/bf959ca5-f336-4270-b1a0-0002ddabf4cf
+UD.GDC.AD.11.4,Services,https://classroom.udacity.com/courses/ud851-emea/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/ca763d82-cc5a-40c1-8dc5-5022831d6b00
+UD.GDC.AD.11.5,Services vs,https://classroom.udacity.com/courses/ud851-emea/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/eae519be-ec05-46b0-8084-fc571e635ec8
+UD.GDC.AD.11.7,Starting Services,https://classroom.udacity.com/courses/ud851-emea/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/99c4abf6-9b5b-45da-bb2b-5b736929b5fd
+UD.GDC.AD.11.8,Running Services in the Background,https://classroom.udacity.com/courses/ud851-emea/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/e850e8d6-8121-4559-b08e-88527a58ffb0
+UD.GDC.AD.11.9,Intent Services,https://classroom.udacity.com/courses/ud851-emea/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/feb81f04-ab52-4a7b-a54b-879511256537
+UD.GDC.AD.11.12,Plan for Adding an IntentService,https://classroom.udacity.com/courses/ud851-emea/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/b5fefa2c-c349-4a1d-a38d-7468ae2dde49
+UD.GDC.AD.11.13,Exercise: Add an IntentService,https://classroom.udacity.com/courses/ud851-emea/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/e6545460-7e5d-4406-914c-9098947bfa8a
+UD.GDC.AD.11.14,Notifications,https://classroom.udacity.com/courses/ud851-emea/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/d8aae9f4-0212-4102-befe-cb72233a20d6
+UD.GDC.AD.11.15,Notifications in Oreo,https://classroom.udacity.com/courses/ud851-emea/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/8575ae70-664b-4ab7-8f1a-f770ae096b05
+UD.GDC.AD.11.16,Pending Intents,https://classroom.udacity.com/courses/ud851-emea/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/c763355c-218d-4a6c-94de-ecc20b8e4fdf
+UD.GDC.AD.11.17,Exercise: Notifications,https://classroom.udacity.com/courses/ud851-emea/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/dd7d98f2-decb-42f0-95c2-7f0da074249d
+UD.GDC.AD.11.18,Notification Actions,https://classroom.udacity.com/courses/ud851-emea/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/c252e2da-8d8c-4f50-82c6-c061d554695e
+UD.GDC.AD.11.19,Exercise: Adding Actions to Notifications,https://classroom.udacity.com/courses/ud851-emea/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/78d04f47-4b94-449e-b2f9-d91d52f17090
+UD.GDC.AD.11.20,Foreground Services,https://classroom.udacity.com/courses/ud851-emea/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/6a5efe0f-94c6-401d-8b8d-4175c0028151
+UD.GDC.AD.11.23,Scheduling Jobs,https://classroom.udacity.com/courses/ud851-emea/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/bd589300-dbc0-45aa-810d-c8e80f650175
+UD.GDC.AD.11.24,Exercise: Adding a JobService,https://classroom.udacity.com/courses/ud851-emea/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/ce41b95f-eaae-4503-b9f3-65f5f98161b4
+UD.GDC.AD.11.25,Exercise: Schedule with FirebaseJobDispatcher,https://classroom.udacity.com/courses/ud851-emea/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/5215ff23-343f-49a9-9684-cf8b9084cfb7
+UD.GDC.AD.11.26,Broadcast Receivers,https://classroom.udacity.com/courses/ud851-emea/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/9ee9ced0-9cb3-4909-83f2-2e5be04b1e8e
+UD.GDC.AD.11.27,Exercise: Show When Charging,https://classroom.udacity.com/courses/ud851-emea/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/44d8ed97-7091-45c1-b8ad-0f4dfd42c256
+UD.GDC.AD.11.28,Exercise: Getting the Current Battery State,https://classroom.udacity.com/courses/ud851-emea/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/8c074bea-0ad1-46aa-ae51-b41b8e1943d3
+UD.GDC.AD.11.30,Exercise: Synchronizing The Weather,https://classroom.udacity.com/courses/ud851-emea/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/05751ff9-df01-42e9-9cb3-5c8a2904d6b5
+UD.GDC.AD.11.31,Exercise: SmarterSyncing,https://classroom.udacity.com/courses/ud851-emea/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/05751ff9-df01-42e9-9cb3-5c8a2904d6b5
+UD.GDC.AD.11.32,Exercise: Sunshine FirebaseJobDispatcher,https://classroom.udacity.com/courses/ud851-emea/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/3ac594fa-2597-4956-ae0e-99706ceb206e
+UD.GDC.AD.11.33,Exercise: Sunshine Notifications,https://classroom.udacity.com/courses/ud851-emea/lessons/f5ef4e52-c485-4c85-a26a-3231c17d6154/concepts/7f2d0cbd-0c0e-441d-b1d2-380a13bded23
+UD.GDC.AD.12.2,Views & View Groups,https://classroom.udacity.com/courses/ud851-emea/lessons/92320789-2acc-42cc-9d64-b1d0e5f1947a/concepts/c586d96d-82af-4820-a67a-3a74d8a4e50e
+UD.GDC.AD.12.4,Constraint Layout,https://classroom.udacity.com/courses/ud851-emea/lessons/92320789-2acc-42cc-9d64-b1d0e5f1947a/concepts/7cba836c-c3e4-4d2d-8523-d261dd7eadff
+UD.GDC.AD.12.5,Installing the Constraint Layout Library,https://classroom.udacity.com/courses/ud851-emea/lessons/92320789-2acc-42cc-9d64-b1d0e5f1947a/concepts/bcd012a2-40fd-47a1-bd42-140b6524812d
+UD.GDC.AD.12.6,Design the Boarding Pass,https://classroom.udacity.com/courses/ud851-emea/lessons/92320789-2acc-42cc-9d64-b1d0e5f1947a/concepts/2e40a366-c9b4-4a54-b752-478f255d46e5
+UD.GDC.AD.12.7,Adding Shapes and Images,https://classroom.udacity.com/courses/ud851-emea/lessons/92320789-2acc-42cc-9d64-b1d0e5f1947a/concepts/9e51fa9e-1aa5-4f60-8f10-4f9bce6b39c0
+UD.GDC.AD.12.8,Adding Vector Images,https://classroom.udacity.com/courses/ud851-emea/lessons/92320789-2acc-42cc-9d64-b1d0e5f1947a/concepts/9d65d0c9-95cd-44b6-a66d-2b796c80d524
+UD.GDC.AD.12.9,Exercise: Constraint Layout,https://classroom.udacity.com/courses/ud851-emea/lessons/92320789-2acc-42cc-9d64-b1d0e5f1947a/concepts/54f2d650-4015-491d-a08b-1935a36a6ccd
+UD.GDC.AD.12.10,The Hierarchy Viewer,https://classroom.udacity.com/courses/ud851-emea/lessons/92320789-2acc-42cc-9d64-b1d0e5f1947a/concepts/4e29b718-9857-4b93-95f3-f7a357745f0e
+UD.GDC.AD.12.12,Data Binding,https://classroom.udacity.com/courses/ud851-emea/lessons/92320789-2acc-42cc-9d64-b1d0e5f1947a/concepts/da897ef2-cd36-4753-8def-fa2b08837767
+UD.GDC.AD.12.13,Exercise: Data Binding,https://classroom.udacity.com/courses/ud851-emea/lessons/92320789-2acc-42cc-9d64-b1d0e5f1947a/concepts/d63389b0-4092-4062-8274-de606b5f2548
+UD.GDC.AD.12.14,Accessibility & Internationalization,https://classroom.udacity.com/courses/ud851-emea/lessons/92320789-2acc-42cc-9d64-b1d0e5f1947a/concepts/7b5821f2-a851-470a-9b79-f1e2ccc515d8
+UD.GDC.AD.12.15,Accessibility,https://classroom.udacity.com/courses/ud851-emea/lessons/92320789-2acc-42cc-9d64-b1d0e5f1947a/concepts/b90582ff-9ac8-4e44-a6e5-ad6e4464e7d2
+UD.GDC.AD.12.17,Localization,https://classroom.udacity.com/courses/ud851-emea/lessons/92320789-2acc-42cc-9d64-b1d0e5f1947a/concepts/0124ee43-1e8c-4c8a-8d19-e98ef6125940
+UD.GDC.AD.12.18,Responsive Design,https://classroom.udacity.com/courses/ud851-emea/lessons/92320789-2acc-42cc-9d64-b1d0e5f1947a/concepts/d0a07b3a-9654-47fd-8079-9970a888b9b9
+UD.GDC.AD.12.19,Exercise: Landscape Layout,https://classroom.udacity.com/courses/ud851-emea/lessons/92320789-2acc-42cc-9d64-b1d0e5f1947a/concepts/e6302d8a-2043-4f46-ab12-68037a08e963
+UD.GDC.AD.12.20,Exercise: Sunshine's New Layout,https://classroom.udacity.com/courses/ud851-emea/lessons/92320789-2acc-42cc-9d64-b1d0e5f1947a/concepts/327118c9-0362-43df-bbb1-862d36350ef9
+UD.GDC.AD.12.21,Solution: Sunshine's New Layout,https://classroom.udacity.com/courses/ud851-emea/lessons/92320789-2acc-42cc-9d64-b1d0e5f1947a/concepts/2173c940-278d-43eb-afa1-a32a35d5282c
+UD.GDC.AD.12.22,Exercise: Sunshine Today's List Item,https://classroom.udacity.com/courses/ud851-emea/lessons/92320789-2acc-42cc-9d64-b1d0e5f1947a/concepts/ce18735b-8c45-4cb4-8c5d-6e7c3ddf5e69
+UD.GDC.AD.12.23,Solution: Sunshine Today's List Item,https://classroom.udacity.com/courses/ud851-emea/lessons/92320789-2acc-42cc-9d64-b1d0e5f1947a/concepts/39d4b075-7ab8-43dd-bfa6-9d6f8d8b2c2e
+UD.GDC.AD.12.24,Exercise: Data Binding in Sunshine,https://classroom.udacity.com/courses/ud851-emea/lessons/92320789-2acc-42cc-9d64-b1d0e5f1947a/concepts/b8792261-808e-4aeb-9dd8-071b54856e71
+UD.GDC.AD.12.25,Solution: Data Binding in Sunshine,https://classroom.udacity.com/courses/ud851-emea/lessons/92320789-2acc-42cc-9d64-b1d0e5f1947a/concepts/035e7f79-854a-42bb-837b-8c88636e2ecd
+UD.GDC.AD.13.2,Android Design Principles,https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/7f07bc71-07da-43b6-9c6f-536f2d61464f
+UD.GDC.AD.13.4,Visual Mocks and Keylines,https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/26a5b3bb-8a96-4d95-9382-0c07be016725
+UD.GDC.AD.13.5,Color Guidelines,https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/2971aec8-bed3-4ac6-ad7e-da183ebae30a
+UD.GDC.AD.13.8,Font Guidelines,https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/5c8f293f-8a77-484b-b6cc-e5d16d195be9
+UD.GDC.AD.13.9,Changing Colors and Fonts,https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/192dd939-99f6-445e-bb74-14ce4971fb59
+UD.GDC.AD.13.10,Exercise: Add Colors and Fonts!,https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/bdfedc63-31ef-426c-85bf-d362fa537914
+UD.GDC.AD.13.11,Styles and Themes,https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/dcdb6fb6-62d1-42de-9064-9679cedbdb51
+UD.GDC.AD.13.12,Style a Mail Layout,https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/f2d5a94d-8eb1-44fc-99de-ff6c029b21f2
+UD.GDC.AD.13.13,Style Inheritance,https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/ad81ecee-9535-49c7-8f50-215686e7b91b
+UD.GDC.AD.13.14,Exercise: Create a New Style,https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/6cf0fd68-34ed-4d2b-ab1d-1095012978fd
+UD.GDC.AD.13.15,Designing for Multiple Screens,https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/6babee86-e74a-4b40-aea2-77f9ec1a35e7
+UD.GDC.AD.13.16,Screen Density,https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/c1658065-2a8a-4bad-8f4f-66a9460d0944
+UD.GDC.AD.13.18,Resource Folder Qualifiers,https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/2d84a1c9-89d1-4402-b5ea-c95acd42096c
+UD.GDC.AD.13.19,Smallest Width Qualifier,https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/7bcae198-ddf2-4e8a-bbe5-95dffb996d5a
+UD.GDC.AD.13.21,Creating a Tablet Layout,https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/b7907f50-90f5-401f-b949-c5a7f541617f
+UD.GDC.AD.13.22,Exercise: Code a Custom Layout,https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/3e980517-5218-41de-94f9-d2dbc1708d08
+UD.GDC.AD.13.23,Touch Selectors,https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/575fedd5-f1e2-42b8-810b-5a3c96aa21eb
+UD.GDC.AD.13.24,Exercise: Code Your Own Selector,https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/42e45851-c7dd-412f-8c8a-a9c3bbc4cb8b
+UD.GDC.AD.13.26,"Exercise: Add Colors, Fonts, and Dimensions",https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/65f6b874-e1d1-4def-9d45-5a2955c16e72
+UD.GDC.AD.13.27,"Solution: Add Colors, Fonts, and Dimensions",https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/228e8a2d-182b-4d9f-ab3d-1529be1eeea0
+UD.GDC.AD.13.28,Exercise: Create and Apply Styles,https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/a54927b3-71cc-4b67-8ef2-182c5301229a
+UD.GDC.AD.13.29,Solution: Create and Apply Styles,https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/8df59ff4-dcc1-47b4-870f-4fca1777f69e
+UD.GDC.AD.13.30,Exercise: Add a Touch Selector,https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/48fb2d45-759f-4309-999f-f3bf3e28bd01
+UD.GDC.AD.13.31,Solution: Add a Touch Selector,https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/48fb2d45-759f-4309-999f-f3bf3e28bd01
+UD.GDC.AD.13.32,Exercise: Add Resource Qualifiers,https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/8c94df2e-7ec0-4843-8814-5334a7e16788
+UD.GDC.AD.13.33,Solution: Add Resource Qualifiers,https://classroom.udacity.com/courses/ud851-emea/lessons/ff18726d-c08f-4246-b11a-060dcc1bac9e/concepts/bbd3cf19-cb01-4c71-9956-711ec33b8f71
+UD.UFT.1,Gradle creation fail in Exercises 10.XX due to color reference,https://discussions.udacity.com/t/gradle-creation-fail-in-exercises-10-xx-due-to-color-reference/476028/3
+UD.UFT.2,Creating a SQLite database with multiple tables,https://discussions.udacity.com/t/creating-a-sqlite-database-with-multiple-tables/502112/9
+SO.1,How to use LIKE clause in query function,https://stackoverflow.com/questions/11686497/how-to-use-like-clause-in-query-function
+UD.FIW.1.2,Course Content,https://classroom.udacity.com/courses/ud0352/lessons/daa58d76-0146-4c52-b5d8-45e32a3dfb08/concepts/ea441fa6-869c-4221-9246-ffdf920325bf
+UD.FIW.1.3,Favorite Features,https://classroom.udacity.com/courses/ud0352/lessons/daa58d76-0146-4c52-b5d8-45e32a3dfb08/concepts/110be876-4461-4b14-9ae8-3bd158413d8c
+UD.FIW.1.7,Firing Up FriendlyChat,https://classroom.udacity.com/courses/ud0352/lessons/daa58d76-0146-4c52-b5d8-45e32a3dfb08/concepts/8bf43289-f20b-431f-bc9d-5dc223c506e7
+UD.FIW.1.8,Create a Firebase Project for Android,https://classroom.udacity.com/courses/ud0352/lessons/daa58d76-0146-4c52-b5d8-45e32a3dfb08/concepts/30f87781-896d-4ba4-8e5a-6ac95dbde072
+UD.FIW.1.12,Add Firebase SDK,https://classroom.udacity.com/courses/ud0352/lessons/daa58d76-0146-4c52-b5d8-45e32a3dfb08/concepts/a21a2a11-c636-4ce3-b264-b860d285a3a4
+UD.FIW.1.15,Database Structure,https://classroom.udacity.com/courses/ud0352/lessons/daa58d76-0146-4c52-b5d8-45e32a3dfb08/concepts/4fc670ff-94bd-47f8-9883-22ad94cc5b35
+UD.FIW.1.16,Exploring the Database,https://classroom.udacity.com/courses/ud0352/lessons/daa58d76-0146-4c52-b5d8-45e32a3dfb08/concepts/2dc64dc1-b2f4-466b-8fb5-e5381e03bef2
+UD.FIW.1.17,Database Implementation - Writing 1,https://classroom.udacity.com/courses/ud0352/lessons/daa58d76-0146-4c52-b5d8-45e32a3dfb08/concepts/ce4df3ed-3413-412d-99a7-1aba02364fda
+UD.FIW.1.18,Database Implementation - Writing 2,https://classroom.udacity.com/courses/ud0352/lessons/daa58d76-0146-4c52-b5d8-45e32a3dfb08/concepts/e3fc800e-d978-4dcf-968e-677495dd9ebf
+UD.FIW.1.19,Quiz: Database Implementation - Writing 3,https://classroom.udacity.com/courses/ud0352/lessons/daa58d76-0146-4c52-b5d8-45e32a3dfb08/concepts/9326b697-1bd9-4aba-ac3b-4755716ae7be
+UD.FIW.1.20,Database Rules for Testing,https://classroom.udacity.com/courses/ud0352/lessons/daa58d76-0146-4c52-b5d8-45e32a3dfb08/concepts/9326b697-1bd9-4aba-ac3b-4755716ae7be
+UD.FIW.1.21,Reading from the Firebase Realtime Database,https://classroom.udacity.com/courses/ud0352/lessons/daa58d76-0146-4c52-b5d8-45e32a3dfb08/concepts/6b6d3008-1869-44eb-b272-194e39766300
+UD.FIW.1.22,Database Implementation - Reading,https://classroom.udacity.com/courses/ud0352/lessons/daa58d76-0146-4c52-b5d8-45e32a3dfb08/concepts/34331b1b-e903-41f6-b9c5-8817cf786fb6
+UD.FIW.1.26,Database Security Rules,https://classroom.udacity.com/courses/ud0352/lessons/daa58d76-0146-4c52-b5d8-45e32a3dfb08/concepts/b1d107aa-5a83-4cd4-b10c-11485a68e5a7
+UD.FIW.1.27,Advanced Database Rules,https://classroom.udacity.com/courses/ud0352/lessons/daa58d76-0146-4c52-b5d8-45e32a3dfb08/concepts/60c2664c-3419-4b96-a2cb-42865f29e89f
+UD.FIW.1.30,FirebaseUI Authentication,https://classroom.udacity.com/courses/ud0352/lessons/daa58d76-0146-4c52-b5d8-45e32a3dfb08/concepts/ab8155f6-fc6f-424a-bffa-fedf236ef482
+UD.FIW.1.31,Authentication in the Console,https://classroom.udacity.com/courses/ud0352/lessons/daa58d76-0146-4c52-b5d8-45e32a3dfb08/concepts/1787f282-da87-446c-95ab-c9a228cfddd0
+UD.FIW.1.33,Authentication Overview,https://classroom.udacity.com/courses/ud0352/lessons/daa58d76-0146-4c52-b5d8-45e32a3dfb08/concepts/015fc7ee-23fc-4c0a-aa67-c795602774b3
+UD.FIW.1.34,AuthStateListener and AuthUI,https://classroom.udacity.com/courses/ud0352/lessons/daa58d76-0146-4c52-b5d8-45e32a3dfb08/concepts/37fe03ae-14af-4a2d-83b8-17ae2e91bb28
+UD.FIW.1.35,Signing In FriendlyChat,https://classroom.udacity.com/courses/ud0352/lessons/daa58d76-0146-4c52-b5d8-45e32a3dfb08/concepts/bc33923b-5328-4edd-96f4-6acc47c8429f
+UD.FIW.1.36,Handling Cancelled Sign In,https://classroom.udacity.com/courses/ud0352/lessons/daa58d76-0146-4c52-b5d8-45e32a3dfb08/concepts/48022087-c4c2-4f2d-b09b-91a7b908e9de
+UD.FIW.1.37, 37. Auth in app - Signing Out,https://classroom.udacity.com/courses/ud0352/lessons/daa58d76-0146-4c52-b5d8-45e32a3dfb08/concepts/81c6660b-fc36-4ff4-a51e-3e646f95a901
+UD.FIW.1.38, 38. Saturday Check In,

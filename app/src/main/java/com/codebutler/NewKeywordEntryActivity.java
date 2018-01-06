@@ -11,9 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.codebutler.data.KeywordsLessonsAndCodeDbContract;
+import com.codebutler.data.CodeButlerDbContract;
 import com.codebutler.data.KeywordsLessonsAndCodeDbHelper;
-import com.codebutler.data.Keyword;
 
 public class NewKeywordEntryActivity extends AppCompatActivity {
 
@@ -56,13 +55,13 @@ public class NewKeywordEntryActivity extends AppCompatActivity {
 
                 // Put the user input into the a ContentValues object
                 ContentValues contentValues = new ContentValues();
-                contentValues.put(KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_KEYWORD, mNewKeywordEditText.getText().toString());
-                contentValues.put(KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_TYPE, mNewTypeEditText.getText().toString());
-                contentValues.put(KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_LESSONS, mNewLessonsEditText.getText().toString());
-                contentValues.put(KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.COLUMN_RELEVANT_CODE, mNewRelevantCodeEditText.getText().toString());
+                contentValues.put(CodeButlerDbContract.KeywordsDbEntry.COLUMN_KEYWORD, mNewKeywordEditText.getText().toString());
+                contentValues.put(CodeButlerDbContract.KeywordsDbEntry.COLUMN_TYPE, mNewTypeEditText.getText().toString());
+                contentValues.put(CodeButlerDbContract.KeywordsDbEntry.COLUMN_LESSONS, mNewLessonsEditText.getText().toString());
+                contentValues.put(CodeButlerDbContract.KeywordsDbEntry.COLUMN_RELEVANT_CODE, mNewRelevantCodeEditText.getText().toString());
 
                 // Insert the content values via a ContentResolver
-                Uri uri = getContentResolver().insert(KeywordsLessonsAndCodeDbContract.KeywordsDbEntry.CONTENT_URI, contentValues);
+                Uri uri = getContentResolver().insert(CodeButlerDbContract.KeywordsDbEntry.CONTENT_URI, contentValues);
 
                 if(uri != null) {
                     Toast.makeText(getBaseContext(), "Added " + mNewKeywordEditText.getText().toString() + " to the local database.", Toast.LENGTH_LONG).show();
