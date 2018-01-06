@@ -42,7 +42,7 @@
         </activity>
 
         <provider
-            android:name=".data.KeywordsLessonsAndCodeContentProvider"
+            android:name=".data.CodeButlerContentProvider"
             android:authorities="com.codebutler"/>
 
     </application>

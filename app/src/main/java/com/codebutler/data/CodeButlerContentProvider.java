@@ -11,9 +11,9 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
 
-public class KeywordsLessonsAndCodeContentProvider extends ContentProvider {
+public class CodeButlerContentProvider extends ContentProvider {
 
-    private KeywordsLessonsAndCodeDbHelper mDbHelper;
+    private CodeButlerDbHelper mDbHelper;
 
     public static final int KEYWORDS = 100;
     public static final int KEYWORD_WITH_ID = 101;
@@ -44,7 +44,7 @@ public class KeywordsLessonsAndCodeContentProvider extends ContentProvider {
     @Override
     public boolean onCreate() {
 
-        mDbHelper = new KeywordsLessonsAndCodeDbHelper(getContext());
+        mDbHelper = new CodeButlerDbHelper(getContext());
 
         return false;
     }

@@ -7,13 +7,13 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import com.codebutler.data.CodeButlerDbContract.*;
 
-public class KeywordsLessonsAndCodeDbHelper extends SQLiteOpenHelper {
+public class CodeButlerDbHelper extends SQLiteOpenHelper {
 
 
     private static final String DATABASE_NAME = "codebutler.db";
     private static final int DATABASE_VERSION = 2;
 
-    public KeywordsLessonsAndCodeDbHelper(Context context) {
+    public CodeButlerDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 

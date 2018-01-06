@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.codebutler.data.CodeButlerDbContract;
-import com.codebutler.data.KeywordsLessonsAndCodeDbHelper;
+import com.codebutler.data.CodeButlerDbHelper;
 
 public class NewKeywordEntryActivity extends AppCompatActivity {
 
@@ -24,7 +24,7 @@ public class NewKeywordEntryActivity extends AppCompatActivity {
 
     //SQL globals
     private SQLiteDatabase mSQLiteDatabase;
-    private KeywordsLessonsAndCodeDbHelper dbHelper;
+    private CodeButlerDbHelper dbHelper;
     Toast mToast;
 
     @Override

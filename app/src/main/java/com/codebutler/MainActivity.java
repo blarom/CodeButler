@@ -24,7 +24,7 @@ import android.widget.Toast;
 import android.support.design.widget.FloatingActionButton;
 
 import com.codebutler.data.CodeButlerDbContract;
-import com.codebutler.data.KeywordsLessonsAndCodeDbHelper;
+import com.codebutler.data.CodeButlerDbHelper;
 
 public class MainActivity extends AppCompatActivity implements
         KeywordEntriesRecycleViewAdapter.ListItemClickHandler,
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements
     String mSearchType;
 
     //SQL globals
-    public KeywordsLessonsAndCodeDbHelper dbHelper;
+    public CodeButlerDbHelper dbHelper;
     public static final String[] KEYWORD_TABLE_ELEMENTS = {
             CodeButlerDbContract.KeywordsDbEntry._ID,
             CodeButlerDbContract.KeywordsDbEntry.COLUMN_KEYWORD,
@@ -168,7 +168,7 @@ public class MainActivity extends AppCompatActivity implements
         int itemThatWasClickedId = item.getItemId();
 
         switch (itemThatWasClickedId) {
-            case R.id.action_refresh:dbHelper = new KeywordsLessonsAndCodeDbHelper(this);
+            case R.id.action_refresh:dbHelper = new CodeButlerDbHelper(this);
                 getSupportLoaderManager().restartLoader(ID_KEYWORD_DATABASE_LOADER, null, this);
                 mKeywordEntriesRecycleViewAdapter = new KeywordEntriesRecycleViewAdapter(this,  this);
                 mKeywordEntriesRecylcleView.setAdapter(mKeywordEntriesRecycleViewAdapter);
