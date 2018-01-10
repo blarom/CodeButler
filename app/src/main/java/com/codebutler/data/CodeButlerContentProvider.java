@@ -10,6 +10,8 @@ import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
+import java.util.List;
+
 
 public class CodeButlerContentProvider extends ContentProvider {
 
@@ -17,12 +19,15 @@ public class CodeButlerContentProvider extends ContentProvider {
 
     public static final int KEYWORDS = 100;
     public static final int KEYWORD_WITH_ID = 101;
+    public static final int KEYWORD_WITH_VALUE_COLUMN_SOURCE = 102;
 
     public static final int LESSONS = 200;
     public static final int LESSON_WITH_ID = 201;
+    public static final int LESSON_WITH_VALUE_COLUMN_SOURCE = 202;
 
     public static final int CODE_REFERENCES = 300;
     public static final int CODE_REFERENCE_WITH_ID = 301;
+    public static final int CODE_REFERENCE_WITH_VALUE_COLUMN_SOURCE = 302;
 
     private static final UriMatcher sUriMatcher = buildUriMatcher();
 
@@ -149,7 +154,7 @@ public class CodeButlerContentProvider extends ContentProvider {
 
 
     @Override
-    public int delete(@NonNull Uri uri, @Nullable String s, @Nullable String[] strings) {
+    public int delete(@NonNull Uri uri, @Nullable String selection, @Nullable String[] selectionArgs) {
 
         //Get the database
         final SQLiteDatabase db = mDbHelper.getWritableDatabase();
@@ -165,6 +170,11 @@ public class CodeButlerContentProvider extends ContentProvider {
             case KEYWORD_WITH_ID:
                 String id = uri.getPathSegments().get(1);
                 tasksDeleted = db.delete(CodeButlerDbContract.KeywordsDbEntry.TABLE_NAME, "_id=?", new String[]{id});
+                break;
+            case KEYWORDS:
+                tasksDeleted = db.delete(CodeButlerDbContract.KeywordsDbEntry.TABLE_NAME, selection, selectionArgs);
+                //String argument = uri.getPathSegments().get(2);
+                //tasksDeleted = db.delete(CodeButlerDbContract.KeywordsDbEntry.TABLE_NAME, selection, new String[]{argument});
                 break;
             default:
                 throw new UnsupportedOperationException("Unknown uri: " + uri);

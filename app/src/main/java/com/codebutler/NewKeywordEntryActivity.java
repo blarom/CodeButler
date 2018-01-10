@@ -59,6 +59,7 @@ public class NewKeywordEntryActivity extends AppCompatActivity {
                 contentValues.put(CodeButlerDbContract.KeywordsDbEntry.COLUMN_TYPE, mNewTypeEditText.getText().toString());
                 contentValues.put(CodeButlerDbContract.KeywordsDbEntry.COLUMN_LESSONS, mNewLessonsEditText.getText().toString());
                 contentValues.put(CodeButlerDbContract.KeywordsDbEntry.COLUMN_RELEVANT_CODE, mNewRelevantCodeEditText.getText().toString());
+                contentValues.put(CodeButlerDbContract.KeywordsDbEntry.COLUMN_SOURCE, getResources().getString(R.string.userIsTheSource));
 
                 // Insert the content values via a ContentResolver
                 Uri uri = getContentResolver().insert(CodeButlerDbContract.KeywordsDbEntry.CONTENT_URI, contentValues);

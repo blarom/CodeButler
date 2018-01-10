@@ -12,7 +12,6 @@ import android.view.View.OnClickListener;
 
 import com.codebutler.data.CodeButlerDbContract;
 
-
 public class KeywordEntriesRecycleViewAdapter extends RecyclerView.Adapter<KeywordEntriesRecycleViewAdapter.KeywordEntryViewHolder>  {
 
     private Context mContext;

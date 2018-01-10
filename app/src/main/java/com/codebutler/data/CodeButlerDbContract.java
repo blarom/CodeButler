@@ -24,6 +24,7 @@ public class CodeButlerDbContract {
         public static final String COLUMN_TYPE = "typeForKeyword";
         public static final String COLUMN_LESSONS = "lessonsForKeyword";
         public static final String COLUMN_RELEVANT_CODE = "relevantCodeForKeyword";
+        public static final String COLUMN_SOURCE = "databaseSource";
 
         public static String getSelectionForGivenKeywordsAndOperator(String keyword_list, String operator) {
 
@@ -54,6 +55,16 @@ public class CodeButlerDbContract {
             }
             return returnSQLCommand;
         }
+
+        public static String getSelectionForGivenSource(String source) {
+
+            String returnSQLCommand = null;
+            if(source.length()==0) return returnSQLCommand;
+            else {
+                returnSQLCommand = COLUMN_SOURCE + "='" + source + "'";
+            }
+            return returnSQLCommand;
+        }
     }
 
     public static final class LessonsDbEntry implements BaseColumns {
@@ -64,6 +75,7 @@ public class CodeButlerDbContract {
         public static final String COLUMN_LESSON_NUMBER = "lessonNumber";
         public static final String COLUMN_LESSON_TITLE = "lessonTitle";
         public static final String COLUMN_LINK = "lessonsLink";
+        public static final String COLUMN_SOURCE = "databaseSource";
 
     }
 
@@ -74,6 +86,7 @@ public class CodeButlerDbContract {
         public static final String TABLE_NAME = "codeTable";
         public static final String COLUMN_CODE_REFERENCE = "codeReference";
         public static final String COLUMN_LINK = "codeLink";
+        public static final String COLUMN_SOURCE = "databaseSource";
 
     }
 }

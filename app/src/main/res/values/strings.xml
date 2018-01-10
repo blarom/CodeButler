@@ -38,9 +38,17 @@
     <string name="pref_preferred_result_value_java" translatable="false">java</string>
     <string name="pref_preferred_result_value_explanation" translatable="false">explanations</string>
 
+
+    <string name="search_filter">Search Filter</string>
+
     <!--Radio Buttons-->
-    <string name="exact">Exact</string>
+    <string name="exact">Exact Match</string>
     <string name="and_operator">AND</string>
     <string name="or_operator">OR</string>
+
+    <string name="databaseVersionKey">databaseVersion</string>
+    <string name="defaultDatabaseVersion">0</string>
+    <string name="userIsTheSource">USER</string>
+    <string name="UdacityMappingIsTheSource">UM</string>
 
 </resources>

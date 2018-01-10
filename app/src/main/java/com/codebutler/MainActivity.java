@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.net.Uri;
+import android.support.annotation.NonNull;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
@@ -14,6 +15,7 @@ import android.support.v7.preference.PreferenceManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -25,6 +27,8 @@ import android.support.design.widget.FloatingActionButton;
 
 import com.codebutler.data.CodeButlerDbContract;
 import com.codebutler.data.CodeButlerDbHelper;
+
+import android.database.DatabaseUtils;
 
 public class MainActivity extends AppCompatActivity implements
         KeywordEntriesRecycleViewAdapter.ListItemClickHandler,
@@ -42,12 +46,14 @@ public class MainActivity extends AppCompatActivity implements
             CodeButlerDbContract.KeywordsDbEntry.COLUMN_KEYWORD,
             CodeButlerDbContract.KeywordsDbEntry.COLUMN_TYPE,
             CodeButlerDbContract.KeywordsDbEntry.COLUMN_LESSONS,
-            CodeButlerDbContract.KeywordsDbEntry.COLUMN_RELEVANT_CODE
+            CodeButlerDbContract.KeywordsDbEntry.COLUMN_RELEVANT_CODE,
+            CodeButlerDbContract.KeywordsDbEntry.COLUMN_SOURCE
     };
     public static final int INDEX_COLUMN_KEYWORD = 1;
     public static final int INDEX_COLUMN_TYPE = 2;
     public static final int INDEX_COLUMN_LESSONS = 3;
     public static final int INDEX_COLUMN_RELEVANT_CODE = 4;
+    public static final int INDEX_COLUMN_SOURCE = 5;
     private static final int ID_KEYWORD_DATABASE_LOADER = 666;
 
     //RecyclerView globals
@@ -56,7 +62,6 @@ public class MainActivity extends AppCompatActivity implements
     private RecyclerView mKeywordEntriesRecylcleView;
     private int mPosition = RecyclerView.NO_POSITION;
     private ProgressBar mLoadingIndicator;
-
 
     //Lifecycle methods
     @Override protected void onCreate(Bundle savedInstanceState) {
@@ -67,21 +72,9 @@ public class MainActivity extends AppCompatActivity implements
         mLoadingIndicator = findViewById(R.id.pb_loading_indicator);
         mKeywordEntriesRecylcleView = findViewById(R.id.keywords_list_view);
         mKeywordTeditText = findViewById(R.id.keywordEntryEditText);
-        final RadioGroup search_type = findViewById(R.id.search_type);
-        search_type.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
 
-                int selectedId = search_type.getCheckedRadioButtonId();
-                switch (selectedId) {
-                    case R.id.search_exact: mSearchType = "EXACT"; break;
-                    case R.id.search_and: mSearchType = "AND"; break;
-                    case R.id.search_or: mSearchType = "OR"; break;
-                    default: mSearchType = "OR";
-                }
-            }
-        });
-
+        //Initialization methods
+        getSearchType();
         setupSharedPreferences();
 
         //Preparing the RecyclerView
@@ -103,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements
 
                 String requested_keyword = mKeywordTeditText.getText().toString();
 
-                //Getting the list id of the eleemnt the user wants to delete
+                //Getting the list id of the element the user wants to delete
                 int id = (int) viewHolder.itemView.getTag();
 
                 //Preparing the Uri
@@ -147,7 +140,9 @@ public class MainActivity extends AppCompatActivity implements
             }
         });
 
+        initializeDatabasesForNewDatabaseVersion();
         getSupportLoaderManager().initLoader(ID_KEYWORD_DATABASE_LOADER, null, this);
+
 
     }
     @Override protected void onDestroy() {
@@ -281,5 +276,51 @@ public class MainActivity extends AppCompatActivity implements
     }
     @Override public void onLoaderReset(Loader<Cursor> loader) {
         mKeywordEntriesRecycleViewAdapter.swapCursor(null);
+    }
+    private void initializeDatabasesForNewDatabaseVersion() {
+
+        //Reading the previous database version from SharedPreferences
+        SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
+        int defaultValueIfSharedPrefDoesNotExist = Integer.parseInt(getResources().getString(R.string.defaultDatabaseVersion));
+        long databaseVersionInSharedPreferences = sharedPref.getInt(getString(R.string.databaseVersionKey), defaultValueIfSharedPrefDoesNotExist);
+
+        //If the database version was incremented, clear and re-initialize the database and register the new database version
+        if (databaseVersionInSharedPreferences < CodeButlerDbHelper.DATABASE_VERSION) {
+
+            //create Udacity Mapping database rows from the csv in assets
+            CodeButlerDbHelper dbHelper = new CodeButlerDbHelper(this);
+            dbHelper.initializeKeywordsDatabase();
+
+            //save the current database version
+            SharedPreferences.Editor editor = sharedPref.edit();
+            editor.putInt(getString(R.string.databaseVersionKey), CodeButlerDbHelper.DATABASE_VERSION);
+            editor.apply();
+        }
+
+        getSupportLoaderManager().restartLoader(ID_KEYWORD_DATABASE_LOADER, null, this);
+    }
+    private void getCursorDump() {
+        Log.v("Cursor Dump", DatabaseUtils.dumpCursorToString(getContentResolver() .query(CodeButlerDbContract.KeywordsDbEntry.CONTENT_URI, KEYWORD_TABLE_ELEMENTS, null, null, null)));
+    }
+    //Helper methods
+    private void getSearchType() {
+        RadioGroup search_type = findViewById(R.id.search_type);
+        mSearchType = getValueFromRadioButtons();
+        search_type.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                mSearchType = getValueFromRadioButtons();
+            }
+        });
+    }
+    @NonNull private String getValueFromRadioButtons() {
+        RadioGroup search_type = findViewById(R.id.search_type);
+        int selectedId = search_type.getCheckedRadioButtonId();
+        switch (selectedId) {
+            case R.id.search_exact: return "EXACT";
+            case R.id.search_and: return "AND";
+            case R.id.search_or: return "OR";
+            default: return  "OR";
+        }
     }
 }
