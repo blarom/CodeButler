@@ -4,9 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/colorPrimary"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:maxHeight="@dimen/recyclerViewItemHeight"
-    android:paddingBottom="@dimen/recyclerViewItemPaddingVertical"
     android:paddingLeft="@dimen/recyclerViewItemPaddingHorizontal"
     android:paddingRight="@dimen/recyclerViewItemPaddingHorizontal"
     android:paddingTop="@dimen/recyclerViewItemPaddingVertical">
@@ -21,14 +20,26 @@
         android:textSize="16sp"
         android:text="@string/default_keyword"/>
 
-    <TextView
-        android:id="@+id/typeTextViewInList"
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/recyclerViewItemHeight"
+        android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/recyclerViewStartMargin"
         android:layout_marginLeft="@dimen/recyclerViewStartMargin"
-        android:textSize="16sp"
-        android:text="@string/default_type"/>
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/typeLabelTextViewInList"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/recyclerViewItemHeight"
+            android:textSize="14sp"
+            android:text="@string/type_label"/>
+        <TextView
+            android:id="@+id/typeTextViewInList"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/recyclerViewItemHeight"
+            android:textSize="14sp"
+            android:text="@string/default_type"/>
+    </LinearLayout>
+
 
     <TextView
         android:id="@+id/lessonsTextViewInList"
@@ -37,7 +48,8 @@
         android:layout_marginStart="@dimen/recyclerViewStartMargin"
         android:layout_marginLeft="@dimen/recyclerViewStartMargin"
         android:textColor="@android:color/white"
-        android:textSize="16sp"
+        android:textSize="14sp"
+        android:visibility="gone"
         android:text="@string/default_lessons"/>
 
     <TextView
@@ -46,7 +58,30 @@
         android:layout_height="@dimen/recyclerViewItemHeight"
         android:layout_marginLeft="@dimen/recyclerViewStartMargin"
         android:layout_marginStart="@dimen/recyclerViewStartMargin"
-        android:textSize="16sp"
+        android:textSize="14sp"
+        android:visibility="gone"
         android:text="@string/default_relevantCode"/>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/recyclerViewStartMargin"
+        android:layout_marginStart="@dimen/recyclerViewStartMargin">
+
+        <TextView
+            android:id="@+id/sourceLabelTextViewInList"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/recyclerViewItemHeight"
+            android:textSize="14sp"
+            android:text="@string/source_label"/>
+
+        <TextView
+            android:id="@+id/sourceTextViewInList"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/recyclerViewItemHeight"
+            android:textSize="14sp"
+            android:text="@string/default_source"/>
+
+
+    </LinearLayout>
 </LinearLayout>

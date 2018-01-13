@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="recyclerViewItemHeight">40dp</dimen>
-    <dimen name="recyclerViewItemPaddingVertical">16dp</dimen>
-    <dimen name="recyclerViewItemPaddingHorizontal">16dp</dimen>
-    <dimen name="floatingActionButtonMargins">16dp</dimen>
-    <dimen name="recyclerViewStartMargin">16dp</dimen>
-    <dimen name="searchButtonsLeftRightMargins">20dp</dimen>
+    <dimen name="recyclerViewItemHeight">24dp</dimen>
+    <dimen name="recyclerViewItemPaddingVertical">4dp</dimen>
+    <dimen name="recyclerViewItemPaddingHorizontal">4dp</dimen>
+    <dimen name="floatingActionButtonMargins">4dp</dimen>
+    <dimen name="recyclerViewStartMargin">8dp</dimen>
+    <dimen name="recyclerViewTopMargin">8dp</dimen>
+    <dimen name="searchButtonsLeftRightMargins">3dp</dimen>
+    <dimen name="clearButtonsLeftRightMargin">5dp</dimen>
 </resources>

@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.database.Cursor;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -19,10 +20,11 @@ public class CodeButlerDbHelper extends SQLiteOpenHelper {
 
 
     private static final String DATABASE_NAME = "codebutler.db";
-    public static final int DATABASE_VERSION = 20;
+    public static final int DATABASE_VERSION = 29;
     private int mOriginalNumberOfColumnsInKeywordsDatabase = 6;
     private int mNewNumberOfColumnsInKeywordsDatabase = 6;
     private Context mContext;
+    private Boolean mDatabaseAlreadyExists;
 
     public CodeButlerDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -59,12 +61,14 @@ public class CodeButlerDbHelper extends SQLiteOpenHelper {
                 KeywordsDbEntry.COLUMN_SOURCE + " TEXT NOT NULL" +
                 "); ";
 
-        if (false) {//(mOriginalNumberOfColumnsInKeywordsDatabase != mNewNumberOfColumnsInKeywordsDatabase) {
+        if (mDatabaseAlreadyExists == null) { mDatabaseAlreadyExists = false; }
+        if (true) {//(mOriginalNumberOfColumnsInKeywordsDatabase != mNewNumberOfColumnsInKeywordsDatabase) {
             sqLiteDatabase.execSQL(SQL_CREATE_KEYWORDS_TABLE);
             sqLiteDatabase.execSQL(SQL_CREATE_LESSONS_TABLE);
             sqLiteDatabase.execSQL(SQL_CREATE_CODE_TABLE);
         }
         else {
+            if (!mDatabaseAlreadyExists) sqLiteDatabase.execSQL(SQL_CREATE_KEYWORDS_TABLE);
             sqLiteDatabase.execSQL(SQL_CREATE_LESSONS_TABLE);
             sqLiteDatabase.execSQL(SQL_CREATE_CODE_TABLE);
         }
@@ -74,21 +78,30 @@ public class CodeButlerDbHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-        if (false) {//(mOriginalNumberOfColumnsInKeywordsDatabase != mNewNumberOfColumnsInKeywordsDatabase) {
+        mDatabaseAlreadyExists = false;
+        if (true) {//(mOriginalNumberOfColumnsInKeywordsDatabase != mNewNumberOfColumnsInKeywordsDatabase) {
             sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + KeywordsDbEntry.TABLE_NAME);
             sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + LessonsDbEntry.TABLE_NAME);
             sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + CodeReferenceDbEntry.TABLE_NAME);
+            onCreate(sqLiteDatabase);
         }
         else {
-            //Delete all values from the Udacity Mapping database rows
-            String selection = CodeButlerDbContract.KeywordsDbEntry.COLUMN_SOURCE + "=?";
-            String[] selectionArgs = {"UM"};
-            sqLiteDatabase.delete(KeywordsDbEntry.TABLE_NAME, selection, selectionArgs);
-
-            sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + LessonsDbEntry.TABLE_NAME);
-            sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + CodeReferenceDbEntry.TABLE_NAME);
+            try {
+                //Delete all values from the Udacity Mapping database rows
+                String selection = CodeButlerDbContract.KeywordsDbEntry.COLUMN_SOURCE + "=?";
+                String[] selectionArgs = {"COURSE"};
+                sqLiteDatabase.delete(KeywordsDbEntry.TABLE_NAME, selection, selectionArgs);
+                sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + LessonsDbEntry.TABLE_NAME);
+                sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + CodeReferenceDbEntry.TABLE_NAME);
+                onCreate(sqLiteDatabase);
+            } catch (SQLException e) {
+                mDatabaseAlreadyExists = true;
+                sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + KeywordsDbEntry.TABLE_NAME);
+                sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + LessonsDbEntry.TABLE_NAME);
+                sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + CodeReferenceDbEntry.TABLE_NAME);
+                onCreate(sqLiteDatabase);
+            }
         }
-        onCreate(sqLiteDatabase);
     }
 
     public void initializeKeywordsDatabase() {
@@ -96,7 +109,7 @@ public class CodeButlerDbHelper extends SQLiteOpenHelper {
         //Inspiration from: https://stackoverflow.com/questions/2887119/populate-android-database-from-csv-file
         BufferedReader fileReader = null;
         try {
-            InputStream in = mContext.getAssets().open("UdacityMapper-KeywordsTEST.csv");
+            InputStream in = mContext.getAssets().open("UdacityMapper-Keywords.csv");
             InputStreamReader inputStreamReader = new InputStreamReader(in);
             fileReader = new BufferedReader(inputStreamReader);
 

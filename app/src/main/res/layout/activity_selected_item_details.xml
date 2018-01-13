@@ -30,7 +30,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
         <TextView
-            android:id="@+id/relevantLessonsTextView"
+            android:id="@+id/lessonsTextView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -39,6 +39,14 @@
 
         <TextView
             android:id="@+id/relevantCodeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <TextView
+            android:id="@+id/sourceTextView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"

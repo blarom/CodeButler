@@ -1,10 +1,14 @@
 package com.codebutler;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.codebutler.data.CodeButlerDbContract;
 
 import java.util.Arrays;
 import java.util.List;
@@ -13,55 +17,77 @@ public class SelectedItemDetailsActivity extends AppCompatActivity {
 
     private TextView mKeywordTextView;
     private TextView mTypeTextView;
-    private String mRelevantLessons;
-    private String mRelevantCode;
+    private TextView mLessonsTextView;
+    private TextView mRelevantCodeTextView;
+    private TextView mSourceTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selected_item_details);
 
-        mKeywordTextView = findViewById(R.id.keywordTextView);
-        mRelevantLessons = "N/A";
-        mRelevantCode = "N/A";
-
         Intent intentThatStartedThisActivity = getIntent();
-        String userKeyword;
-        if (intentThatStartedThisActivity.hasExtra(Intent.EXTRA_TEXT)) {
-            userKeyword = intentThatStartedThisActivity.getStringExtra(Intent.EXTRA_TEXT);
-            //TODO modify to get bundle from MainActivity
-            mKeywordTextView.setText(userKeyword);
+        int item_id = 0;
+        if (intentThatStartedThisActivity.hasExtra("RecyclerViewIndex")) {
+            item_id = intentThatStartedThisActivity.getIntExtra("RecyclerViewIndex",0);
         }
 
-        populateLinearLayout(mRelevantLessons, "LESSON");
-        populateLinearLayout(mRelevantCode, "CODE");
-    }
-    public void populateLinearLayout(String relevantItems, String itemType) {
+        //Preparing the Uri
+        String stringId = Integer.toString(item_id);
+        Uri clickedItemQueryUri = CodeButlerDbContract.KeywordsDbEntry.CONTENT_URI;
+        //clickedItemQueryUri = clickedItemQueryUri.buildUpon().appendPath(stringId).build();
 
-        LinearLayout selectedItemViewsLinearLayout = findViewById(R.id.selectedItemViewsLinearLayout);
-        String itemLink;
+        //Retrieving the values from the database
+        Cursor cursor = getContentResolver().query(clickedItemQueryUri,
+                MainActivity.KEYWORD_TABLE_ELEMENTS,
+                CodeButlerDbContract.KeywordsDbEntry._ID +" = ?",
+                new String[]{stringId},
+                null);
 
-        if (!relevantItems.equals("N/A")) {
-            List<String> parsedList = Arrays.asList(relevantItems.split(","));
-            for (String item : parsedList) {
-                item = item.trim();
-                switch(itemType) {
-                    case "LESSON": itemLink = getLessonLinkFromDatabase(item); break;
-                    case "CODE": itemLink = getCodeLinkFromDatabase(item); break;
-                    default: itemLink = getLessonLinkFromDatabase(item); break;
-                }
+        String keyword = "";
+        String type = "";
+        String lessons = "";
+        String relevantCode = "";
+        String source = "";
 
-                TextView currentItemTextView = new TextView(this);
-                currentItemTextView.setText(item);
-
-                selectedItemViewsLinearLayout.addView(currentItemTextView);
+        if (cursor != null) {
+            if (cursor.moveToFirst()){
+                keyword = cursor.getString(cursor.getColumnIndex(CodeButlerDbContract.KeywordsDbEntry.COLUMN_KEYWORD));
+                type = cursor.getString(cursor.getColumnIndex(CodeButlerDbContract.KeywordsDbEntry.COLUMN_TYPE));
+                lessons = cursor.getString(cursor.getColumnIndex(CodeButlerDbContract.KeywordsDbEntry.COLUMN_LESSONS));
+                relevantCode = cursor.getString(cursor.getColumnIndex(CodeButlerDbContract.KeywordsDbEntry.COLUMN_RELEVANT_CODE));
+                source = cursor.getString(cursor.getColumnIndex(CodeButlerDbContract.KeywordsDbEntry.COLUMN_SOURCE));
             }
+            cursor.close();
         }
-    }
-    public String getLessonLinkFromDatabase(String lesson) {
-        return "";
-    }
-    public String getCodeLinkFromDatabase(String lesson) {
-        return "";
+        mKeywordTextView = findViewById(R.id.keywordTextView);
+        mTypeTextView = findViewById(R.id.typeTextView);
+        mLessonsTextView = findViewById(R.id.lessonsTextView);
+        mRelevantCodeTextView = findViewById(R.id.relevantCodeTextView);
+        mSourceTextView = findViewById(R.id.sourceTextView);
+
+        //Making the text more readable
+        if (source.equals(MainActivity.KEYWORD_COURSE)) {
+            if (lessons.contains(MainActivity.KEYWORD_GDC_AD)) source = MainActivity.EXPLANATION_GDC_AD;
+            else if (lessons.contains(MainActivity.KEYWORD_ND_AD)) source = MainActivity.EXPLANATION_ND_AD;
+            else if (lessons.contains(MainActivity.KEYWORD_FIW)) source = MainActivity.EXPLANATION_FIW;
+        }
+        else if (source.equals(MainActivity.KEYWORD_FORUM)) source = MainActivity.EXPLANATION_FORUM;
+        else if (source.equals(MainActivity.KEYWORD_USER)) source = MainActivity.EXPLANATION_USER;
+
+        if (type.equals(MainActivity.KEYWORD_JAVA)) type = MainActivity.EXPLANATION_JAVA;
+        else if (type.equals(MainActivity.KEYWORD_LESSON)) type = MainActivity.EXPLANATION_LESSON;
+        else if (type.equals(MainActivity.KEYWORD_RESOURCE_XML)) type = MainActivity.EXPLANATION_RESOURCE_XML;
+        else if (type.equals(MainActivity.KEYWORD_MANIFEST_XML)) type = MainActivity.EXPLANATION_MANIFEST_XML;
+        else if (type.equals(MainActivity.KEYWORD_GRADLE)) type = MainActivity.EXPLANATION_GRADLE;
+        else if (type.equals(MainActivity.KEYWORD_JSON)) type = MainActivity.EXPLANATION_JSON;
+
+
+        mKeywordTextView.setText(keyword);
+        mTypeTextView.setText(type);
+        mLessonsTextView.setText(lessons);
+        mRelevantCodeTextView.setText(relevantCode);
+        mSourceTextView.setText(source);
+
     }
 }

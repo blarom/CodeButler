@@ -2,18 +2,39 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <CheckBoxPreference
+        android:defaultValue="@bool/pref_show_user_values_default"
+        android:key="@string/pref_show_user_values_key"
+        android:summaryOff="@string/Hidden"
+        android:summaryOn="@string/Shown"
+        android:title="@string/user_values" />
+
+    <CheckBoxPreference
         android:defaultValue="@bool/pref_show_GDC_AD_course_default"
-        android:key="@string/pref_show_GDC_AD_course"
+        android:key="@string/pref_show_GDC_AD_course_key"
         android:summaryOff="@string/Hidden"
         android:summaryOn="@string/Shown"
         android:title="@string/GDC_AD_course" />
 
     <CheckBoxPreference
         android:defaultValue="@bool/pref_show_ND_AD_course_default"
-        android:key="@string/pref_show_ND_AD_course"
+        android:key="@string/pref_show_ND_AD_course_key"
         android:summaryOff="@string/Hidden"
         android:summaryOn="@string/Shown"
         android:title="@string/ND_AD_course" />
+
+    <CheckBoxPreference
+        android:defaultValue="@bool/pref_show_FIW_course_default"
+        android:key="@string/pref_show_FIW_course_key"
+        android:summaryOff="@string/Hidden"
+        android:summaryOn="@string/Shown"
+        android:title="@string/FIW_course" />
+
+    <CheckBoxPreference
+        android:defaultValue="@bool/pref_show_forum_threads_default"
+        android:key="@string/pref_show_forum_threads_key"
+        android:summaryOff="@string/Hidden"
+        android:summaryOn="@string/Shown"
+        android:title="@string/forum" />
 
     <ListPreference
         android:defaultValue="@string/pref_preferred_result_value_java"

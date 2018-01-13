@@ -3,6 +3,8 @@ package com.codebutler.data;
 import android.net.Uri;
 import android.provider.BaseColumns;
 
+import com.codebutler.MainActivity;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -26,15 +28,49 @@ public class CodeButlerDbContract {
         public static final String COLUMN_RELEVANT_CODE = "relevantCodeForKeyword";
         public static final String COLUMN_SOURCE = "databaseSource";
 
-        public static String getSelectionForGivenKeywordsAndOperator(String keyword_list, String operator) {
+        public static String getSelectionForGivenKeywordsAndOperator(String keyword_list, String operator, Boolean[] showSources) {
 
+            //Making sure the user selected something to display
             String returnSQLCommand = null;
-            if(keyword_list.length()==0) return returnSQLCommand;
+            Boolean atLeastOneSourceIsShown = false;
+            for (Boolean showCurrentSource : showSources) { if (showCurrentSource) atLeastOneSourceIsShown = true; }
+            if (!atLeastOneSourceIsShown || keyword_list.length()==0) return returnSQLCommand;
 
+            returnSQLCommand = "";
+
+            //Returning a valid filtering SQL command for the Source
+            if (MainActivity.atLeastOneCourseIsShown) {
+                returnSQLCommand = "("+ COLUMN_SOURCE + "='" + MainActivity.KEYWORD_COURSE + "'";
+                if (showSources[MainActivity.SHOW_FORUM_THREADS_KEY]) {
+                    returnSQLCommand += " OR " + COLUMN_SOURCE + "='" + MainActivity.KEYWORD_FORUM + "'";
+
+                    if (showSources[MainActivity.SHOW_USER_VALUES_KEY]) {
+                        returnSQLCommand += " OR " + COLUMN_SOURCE + "='" + MainActivity.KEYWORD_USER + "'";
+                    }
+                }
+            }
+            else {
+                if (showSources[MainActivity.SHOW_FORUM_THREADS_KEY]) {
+                    returnSQLCommand += "(" + COLUMN_SOURCE + "='" + MainActivity.KEYWORD_FORUM + "'";
+
+                    if (showSources[MainActivity.SHOW_USER_VALUES_KEY]) {
+                        returnSQLCommand += " OR " + COLUMN_SOURCE + "='" + MainActivity.KEYWORD_USER + "'";
+                    }
+                }
+                else {
+                    if (showSources[MainActivity.SHOW_USER_VALUES_KEY]) {
+                        returnSQLCommand += "(" + COLUMN_SOURCE + "='" + MainActivity.KEYWORD_USER + "'";
+                    }
+                }
+            }
+
+            returnSQLCommand += ") AND (";
+
+            //Returning a valid filtering SQL command for the keywords
             switch (operator) {
                 case "EXACT":
                     //String returnSQLCommand = "SELECT * FROM " + TABLE_NAME + " WHERE " + COLUMN_KEYWORD + "= '" + keyword + "'";
-                    returnSQLCommand = COLUMN_KEYWORD + "='" + keyword_list + "'";
+                    returnSQLCommand += COLUMN_KEYWORD + "='" + keyword_list + "'";
                     break;
                 default: //operator is "AND" or "OR"
                     List<String> keywords = new ArrayList<>();
@@ -44,15 +80,49 @@ public class CodeButlerDbContract {
                     else if (keyword_list.contains(".")) keywords = Arrays.asList(keyword_list.split("."));
                     else keywords.add(keyword_list);
 
-                    returnSQLCommand = "'%" + keywords.get(0) + "%'";
+                    //returnSQLCommand += "'%" + keywords.get(0) + "%'";
                     if (keywords.size()>=1) {
-                        returnSQLCommand = COLUMN_KEYWORD + " LIKE '%" + keywords.get(0) + "%'";
+                        returnSQLCommand += COLUMN_KEYWORD + " LIKE '%" + keywords.get(0) + "%'";
                         for (int i = 1; i < keywords.size(); i++) {
-                            returnSQLCommand = returnSQLCommand + " " + operator + " " + COLUMN_KEYWORD + " LIKE '%" + keywords.get(i) + "%'";
+                            returnSQLCommand += " " + operator + " " + COLUMN_KEYWORD + " LIKE '%" + keywords.get(i) + "%'";
                         }
                     }
                     break;
             }
+
+            returnSQLCommand += ")";
+
+            //Returning a valid filtering SQL command for the course type
+            Boolean alreadyHasAtLeastOneCourse = false;
+            if (showSources[MainActivity.SHOW_USER_VALUES_KEY] && !(MainActivity.atLeastOneCourseIsShown || showSources[MainActivity.SHOW_FORUM_THREADS_KEY])) {
+                //If the user values are shown but all other values are hidden, don't add an extra clause to the SQL query
+                return returnSQLCommand;
+            }
+            else {
+                returnSQLCommand += " AND (";
+                if (showSources[MainActivity.SHOW_GDC_AD_COURSE_KEY]) {
+                    returnSQLCommand += COLUMN_LESSONS + " LIKE '%" + MainActivity.KEYWORD_GDC_AD + "%'";
+                    alreadyHasAtLeastOneCourse = true;
+                }
+                if (showSources[MainActivity.SHOW_ND_AD_COURSE_KEY]) {
+                    if (alreadyHasAtLeastOneCourse) returnSQLCommand += " OR ";
+                    returnSQLCommand += COLUMN_LESSONS + " LIKE '%" + MainActivity.KEYWORD_ND_AD + "%'";
+                    alreadyHasAtLeastOneCourse = true;
+                }
+                if (showSources[MainActivity.SHOW_FIW_COURSE_KEY]) {
+                    if (alreadyHasAtLeastOneCourse) returnSQLCommand += " OR ";
+                    returnSQLCommand += COLUMN_LESSONS + " LIKE '%" + MainActivity.KEYWORD_FIW + "%'";
+                    alreadyHasAtLeastOneCourse = true;
+                }
+                if (showSources[MainActivity.SHOW_FORUM_THREADS_KEY]) {
+                    if (alreadyHasAtLeastOneCourse) returnSQLCommand += " OR ";
+                    returnSQLCommand += COLUMN_LESSONS + " LIKE '%" + MainActivity.KEYWORD_UFT + "%' OR " + COLUMN_LESSONS + " LIKE '%" + MainActivity.KEYWORD_SO + "%'";
+                    alreadyHasAtLeastOneCourse = true;
+                }
+                returnSQLCommand += ")";
+            }
+
+
             return returnSQLCommand;
         }
 

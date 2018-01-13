@@ -8,16 +8,39 @@
     android:orientation="vertical"
     tools:context="com.codebutler.MainActivity">
 
-    <EditText
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/keywordEntryEditText"
-        android:hint="@string/keyword_hint"/>
+        android:layout_margin="5dp" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/keywordEntryEditText"
+            android:singleLine="true"
+            android:hint="@string/keyword_hint"/>
+
+        <Button
+            android:id="@+id/button_clear"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="@dimen/clearButtonsLeftRightMargin"
+            android:layout_marginRight="@dimen/clearButtonsLeftRightMargin"
+            android:drawableLeft="@drawable/ic_clear_black_24dp"
+            android:drawableStart="@drawable/ic_clear_black_24dp"
+            android:background="@android:color/transparent"
+            />
+    </FrameLayout>
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/search_filter"/>
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:text="@string/search_type"/>
 
     <RadioGroup
         android:id="@+id/search_type"
@@ -27,15 +50,16 @@
         android:layout_gravity="center_horizontal">
 
         <RadioButton
-            android:id="@+id/search_exact"
+            android:id="@+id/search_or"
             android:layout_marginStart="@dimen/searchButtonsLeftRightMargins"
             android:layout_marginLeft="@dimen/searchButtonsLeftRightMargins"
             android:layout_marginEnd="@dimen/searchButtonsLeftRightMargins"
             android:layout_marginRight="@dimen/searchButtonsLeftRightMargins"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:checked="true"
-            android:text="@string/exact"/>
+            android:text="@string/or_operator"/>
 
         <RadioButton
             android:id="@+id/search_and"
@@ -45,21 +69,24 @@
             android:layout_marginRight="@dimen/searchButtonsLeftRightMargins"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/and_operator"/>
 
         <RadioButton
-            android:id="@+id/search_or"
+            android:id="@+id/search_exact"
             android:layout_marginStart="@dimen/searchButtonsLeftRightMargins"
             android:layout_marginLeft="@dimen/searchButtonsLeftRightMargins"
             android:layout_marginEnd="@dimen/searchButtonsLeftRightMargins"
             android:layout_marginRight="@dimen/searchButtonsLeftRightMargins"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/or_operator"/>
+            android:layout_weight="1"
+            android:text="@string/exact"/>
     </RadioGroup>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/keywords_list_view"
+        android:layout_marginTop="@dimen/recyclerViewTopMargin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

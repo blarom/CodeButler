@@ -2,10 +2,13 @@
     <string name="app_name">Code Butler</string>
 
     <string name="default_keyword">NA</string>
+    <string name="type_label">Type:\u0020</string>
     <string name="default_type">NA</string>
     <string name="default_lessons">NA</string>
     <string name="default_relevantCode">NA</string>
-    <string name="keyword_hint">Keyword</string>
+    <string name="source_label">Source:\u0020</string>
+    <string name="default_source">Course</string>
+    <string name="keyword_hint">Keywords</string>
     <string name="type_hint">Subject Type</string>
     <string name="lessons_hint">Relevant Lessons</string>
     <string name="relevantCode_hint">Relevant Code</string>
@@ -16,39 +19,71 @@
     <string name="settings">Settings</string>
 
     <!--Preferences menu courses options-->
+    <string name="user_values">My references</string>
     <string name="GDC_AD_course">Google Developer Challenge:\nAndroid Development</string>
     <string name="ND_AD_course">Udacity Nanodegree:\nAndroid Development</string>
-    <string name="pref_show_GDC_AD_course">Show contents from Google Developer Challenge - Android Develoepr course</string>
+    <string name="FIW_course">Udacity Firebase In A Weekend</string>
+    <string name="forum">Forums (Udacity, StackOverflow, etc..)</string>
+    <string name="pref_show_user_values">Show my references</string>
+    <string name="pref_show_user_values_key" translatable="false">show_user_values</string>
+    <string name="pref_show_GDC_AD_course">Show contents from Udacity Android Developer Challenge</string>
     <string name="pref_show_GDC_AD_course_key" translatable="false">show_GDC_AD_course</string>
-    <string name="pref_show_ND_AD_course">Show contents from Google Developer Challenge - Android Develoepr course</string>
+    <string name="pref_show_ND_AD_course">Show contents from Udacity Android Developer Nanodegree</string>
     <string name="pref_show_ND_AD_course_key" translatable="false">show_ND_AD_course</string>
+    <string name="pref_show_FIW_course">Show contents from Udacity Firebase in a Weekend</string>
+    <string name="pref_show_FIW_course_key" translatable="false">show_FIW_course</string>
+    <string name="pref_show_forum_threads">Show contents from forum threads</string>
+    <string name="pref_show_forum_threads_key" translatable="false">show_forum_threads</string>
     <string name="Shown">Shown</string>
     <string name="Hidden">Hidden</string>
 
     <!--Preferences menu preferred result options-->
-    <string name="pref_preferred_result_type">Google Developer Challenge - Android Development</string>
     <string name="pref_preferred_result_label">Preferred result type</string>
     <string name="pref_preferred_result_key">preferred_result</string>
 
-    <string name="pref_preferred_result_label_xml">xml</string>
+    <string name="pref_preferred_result_label_resource_xml">Resource xml</string>
+    <string name="pref_preferred_result_label_manifest_xml">Manifest xml</string>
     <string name="pref_preferred_result_label_java">Java</string>
-    <string name="pref_preferred_result_label_explanation">Explanations</string>
+    <string name="pref_preferred_result_label_gradle">Gradle</string>
+    <string name="pref_preferred_result_label_json">JSON</string>
+    <string name="pref_preferred_result_label_lesson">Lesson</string>
 
-    <string name="pref_preferred_result_value_xml" translatable="false">xml</string>
+    <string name="pref_preferred_result_value_resource_xml" translatable="false">resource xml</string>
+    <string name="pref_preferred_result_value_manifest_xml" translatable="false">manifest xml</string>
     <string name="pref_preferred_result_value_java" translatable="false">java</string>
-    <string name="pref_preferred_result_value_explanation" translatable="false">explanations</string>
+    <string name="pref_preferred_result_value_gradle" translatable="false">gradle</string>
+    <string name="pref_preferred_result_value_json" translatable="false">json</string>
+    <string name="pref_preferred_result_value_lesson" translatable="false">lesson</string>
 
 
-    <string name="search_filter">Search Filter</string>
+    <string name="search_type">Search Type</string>
 
     <!--Radio Buttons-->
-    <string name="exact">Exact Match</string>
-    <string name="and_operator">AND</string>
-    <string name="or_operator">OR</string>
+    <string name="exact">Exact match</string>
+    <string name="and_operator">All keywords</string>
+    <string name="or_operator">Any keyword</string>
 
     <string name="databaseVersionKey">databaseVersion</string>
     <string name="defaultDatabaseVersion">0</string>
     <string name="userIsTheSource">USER</string>
+    <string name="courseIsTheSource">COURSE</string>
+    <string name="forumIsTheSource">FORUM</string>
     <string name="UdacityMappingIsTheSource">UM</string>
+
+    <string name="courseCode_GDCAD">UD.GDC.AD</string>
+    <string name="courseCode_NDAD">UD.ND.AD</string>
+    <string name="courseCode_FIW">UD.FIW</string>
+    <string name="udacity_thread">UD.UFT</string>
+    <string name="stackoverflow_thread">SO</string>
+
+    <string name="recyclerViewSourceExplanationGDCAD">Udacity Android Developer Challenge</string>
+    <string name="recyclerViewSourceExplanationNDAD">Udacity Android Developer Nanodegree</string>
+    <string name="recyclerViewSourceExplanationFIW">Udacity Firebase in a Weekend course</string>
+    <string name="recyclerViewSourceExplanationUSER">User-created</string>
+    <string name="recyclerViewSourceExplanationFORUM">Various Forums</string>
+
+    <string name="user_keywords">user_keywords</string>
+    <string name="CodeBulterSharedPrefs">CodeBulterSharedPrefs</string>
+
 
 </resources>

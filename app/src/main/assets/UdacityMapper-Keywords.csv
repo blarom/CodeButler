@@ -1,633 +1,633 @@
-Keyword,Type,Lesson,Relevant Code
-android studio,lesson,UD.GDC.AD.2.4,N/A
-gitub,lesson,UD.GDC.AD.2.5,N/A
-android studio,lesson,UD.GDC.AD.2.7,N/A
-create project,lesson,UD.GDC.AD.2.7,N/A
-new project,lesson,UD.GDC.AD.2.7,N/A
-min version,lesson,UD.GDC.AD.2.8,N/A
-target version,lesson,UD.GDC.AD.2.8,N/A
-api,lesson,UD.GDC.AD.2.8,N/A
-emulator,lesson,UD.GDC.AD.2.10,N/A
-gradle,lesson,UD.GDC.AD.2.11,N/A
-command line,lesson,UD.GDC.AD.2.11,N/A
-adb (android debug bridge),lesson,UD.GDC.AD.2.11,N/A
-activity,lesson,UD.GDC.AD.2.12,N/A
-manifest,lesson,UD.GDC.AD.2.12,N/A
-launcher,lesson,UD.GDC.AD.2.12,N/A
-main,lesson,UD.GDC.AD.2.12,N/A
-xml,lesson,UD.GDC.AD.2.14,N/A
-UI (user interface),lesson,UD.GDC.AD.2.14,N/A
-container views,lesson,UD.GDC.AD.2.14,N/A
-view properties,lesson,UD.GDC.AD.2.14,N/A
-R class,java,UD.GDC.AD.2.14,N/A
-setContentView,java,UD.GDC.AD.2.14,N/A
-inflate,java,UD.GDC.AD.2.14,N/A
-FrameLayout  ,resource xml,"UD.GDC.AD.2.15, UD.GDC.AD.2.22","UD.GDC.AD.T01.01, UD.GDC.AD.S01.01"
-padding  ,resource xml,"UD.GDC.AD.2.15, UD.GDC.AD.2.22","UD.GDC.AD.T01.01, UD.GDC.AD.S01.01"
-text size  ,resource xml,"UD.GDC.AD.2.15, UD.GDC.AD.2.22","UD.GDC.AD.T01.01, UD.GDC.AD.S01.01"
-id  ,resource xml,"UD.GDC.AD.2.16, UD.GDC.AD.2.22","UD.GDC.AD.T01.02, UD.GDC.AD.S01.01, UD.GDC.AD.S01.02"
-append string to TextView  ,java,"UD.GDC.AD.2.16, UD.GDC.AD.2.22","UD.GDC.AD.T01.02, UD.GDC.AD.S01.01, UD.GDC.AD.S01.02"
-ScrollView  ,resource xml,UD.GDC.AD.2.17,"UD.GDC.AD.T01.03, UD.GDC.AD.S01.01"
-ConstraintLayout  ,resource xml,UD.GDC.AD.2.18,N/A
-choosing a layout in android studio layout editor,lesson,UD.GDC.AD.2.19,N/A
-reference to view  ,java,UD.GDC.AD.2.24,UD.GDC.AD.S01.02
-findByViewId,java,UD.GDC.AD.2.24,UD.GDC.AD.S01.02
-intro to logging levels,lesson,UD.GDC.AD.3.2,N/A
-intro to log syntax,java,UD.GDC.AD.3.2,N/A
-LinearLayout  ,resource xml,UD.GDC.AD.3.4,UD.GDC.AD.T02.01
-orientation  ,resource xml,UD.GDC.AD.3.4,UD.GDC.AD.T02.01
-xmkns:app  ,resource xml,UD.GDC.AD.3.4,UD.GDC.AD.T02.01
-text hint  ,resource xml,UD.GDC.AD.3.4,UD.GDC.AD.T02.01
-intro to res directory,lesson,UD.GDC.AD.3.5,N/A
-intro to resource types,lesson,UD.GDC.AD.3.5,N/A
-getString  ,java,UD.GDC.AD.3.5,N/A
-xliff:g  ,resource xml,UD.GDC.AD.3.5,N/A
-string  ,resource xml,UD.GDC.AD.3.5,N/A
-intro to android menu,lesson,UD.GDC.AD.3.6,N/A
-intro to Action Bar,lesson,UD.GDC.AD.3.6,N/A
-ActionBar onCreateOptionsMenu  ,java,"UD.GDC.AD.3.7, UD.GDC.AD.3.23","UD.GDC.AD.T02.02, UD.GDC.AD.S02.02, UD.GDC.AD.T03.06"
-ActionBar getMenuInflater  ,java,"UD.GDC.AD.3.7, UD.GDC.AD.3.23","UD.GDC.AD.T02.02, UD.GDC.AD.S02.02, UD.GDC.AD.T03.06"
-ActionBar onOptionsItemSelected  ,java,"UD.GDC.AD.3.7, UD.GDC.AD.3.23","UD.GDC.AD.T02.02, UD.GDC.AD.S02.02, UD.GDC.AD.T03.06"
-ActionBar menu,resource xml,"UD.GDC.AD.3.7, UD.GDC.AD.3.23","UD.GDC.AD.T02.02, UD.GDC.AD.S02.02, UD.GDC.AD.T03.06"
-ActionBar menu showAsAction ifRoom,resource xml,"UD.GDC.AD.3.7, UD.GDC.AD.3.23","UD.GDC.AD.T02.02, UD.GDC.AD.S02.02, UD.GDC.AD.T03.06"
-ActionBar menu orderInCategory  ,resource xml,"UD.GDC.AD.3.7, UD.GDC.AD.3.23","UD.GDC.AD.T02.02, UD.GDC.AD.S02.02, UD.GDC.AD.T03.06"
-buildUrl  ,java,"UD.GDC.AD.3.8, UD.GDC.AD.3.22","UD.GDC.AD.T02.03, UD.GDC.AD.S02.01"
-URL  ,java,"UD.GDC.AD.3.8, UD.GDC.AD.3.22","UD.GDC.AD.T02.03, UD.GDC.AD.S02.01"
-Uri.parse  ,java,"UD.GDC.AD.3.8, UD.GDC.AD.3.22","UD.GDC.AD.T02.03, UD.GDC.AD.S02.01"
-appendQueryParameter  ,java,"UD.GDC.AD.3.8, UD.GDC.AD.3.22","UD.GDC.AD.T02.03, UD.GDC.AD.S02.01"
-MalformedURLException  ,java,"UD.GDC.AD.3.8, UD.GDC.AD.3.22","UD.GDC.AD.T02.03, UD.GDC.AD.S02.01"
-intro to http request,lesson,UD.GDC.AD.3.9,N/A
-HttpUrlConnection  ,java,UD.GDC.AD.3.9,N/A
-openConnection  ,java,UD.GDC.AD.3.9,N/A
-inputStream  ,java,UD.GDC.AD.3.9,N/A
-Scanner  ,java,UD.GDC.AD.3.9,N/A
-UTF encoding in JSON/JS and Android,lesson,UD.GDC.AD.3.9,N/A
-intro to permissions,lesson,UD.GDC.AD.3.10,N/A
-INTERNET permission in manifest,manifest xml,UD.GDC.AD.3.12,"UD.GDC.AD.T02.04, UD.GDC.AD.S02.01"
-IOException  ,java,UD.GDC.AD.3.12,"UD.GDC.AD.T02.04, UD.GDC.AD.S02.01"
-intro to threads,lesson,UD.GDC.AD.3.13,N/A
-intro to AsyncTask,lesson,UD.GDC.AD.3.14,N/A
-AsyncTask  ,java,"UD.GDC.AD.3.16, UD.GDC.AD.3.22","UD.GDC.AD.T02.05, UD.GDC.AD.S02.01"
-AsyncTask doInBackground  ,java,"UD.GDC.AD.3.16, UD.GDC.AD.3.22","UD.GDC.AD.T02.05, UD.GDC.AD.S02.01"
-AsyncTask onPostExecute  ,java,"UD.GDC.AD.3.16, UD.GDC.AD.3.22","UD.GDC.AD.T02.05, UD.GDC.AD.S02.01"
-AsyncTask execute  ,java,"UD.GDC.AD.3.16, UD.GDC.AD.3.22","UD.GDC.AD.T02.05, UD.GDC.AD.S02.01"
-visibility  ,resource xml,"UD.GDC.AD.3.18, UD.GDC.AD.3.24","UD.GDC.AD.T02.06, UD.GDC.AD.S02.03"
-ProgressBar  ,resource xml,"UD.GDC.AD.3.18, UD.GDC.AD.3.24","UD.GDC.AD.T02.06, UD.GDC.AD.S02.03"
-loading indicator,resource xml,"UD.GDC.AD.3.18, UD.GDC.AD.3.24","UD.GDC.AD.T02.06, UD.GDC.AD.S02.03"
-ProgressBar  ,java,"UD.GDC.AD.3.18, UD.GDC.AD.3.24","UD.GDC.AD.T02.06, UD.GDC.AD.S02.03"
-loading indicator,java,"UD.GDC.AD.3.18, UD.GDC.AD.3.24","UD.GDC.AD.T02.06, UD.GDC.AD.S02.03"
-setVisibility  ,java,"UD.GDC.AD.3.18, UD.GDC.AD.3.24","UD.GDC.AD.T02.06, UD.GDC.AD.S02.03"
-AsyncTask onPreExecute  ,java,"UD.GDC.AD.3.18, UD.GDC.AD.3.24","UD.GDC.AD.T02.06, UD.GDC.AD.S02.03"
-intro to JSON,JSON,"UD.GDC.AD.3.19, UD.GDC.AD.3.20",N/A
-reading JSON code,JSON,"UD.GDC.AD.3.19, UD.GDC.AD.3.20",N/A
-intro to RecyclerView,lesson,"UD.GDC.AD.4.2, UD.GDC.AD.4.3, UD.GDC.AD.4.4, UD.GDC.AD.4.5, UD.GDC.AD.4.7, UD.GDC.AD.4.8",N/A
-com.android.support:recyclerview,gradle,"UD.GDC.AD.4.9, UD.GDC.AD.4.22","UD.GDC.AD.T03.01, UD.GDC.AD.S03.01"
-RecycleView compile,gradle,"UD.GDC.AD.4.9, UD.GDC.AD.4.22","UD.GDC.AD.T03.01, UD.GDC.AD.S03.01"
-RecycleView dependency,gradle,"UD.GDC.AD.4.9, UD.GDC.AD.4.22","UD.GDC.AD.T03.01, UD.GDC.AD.S03.01"
-RecycleView,resource xml,"UD.GDC.AD.4.9, UD.GDC.AD.4.22","UD.GDC.AD.T03.01, UD.GDC.AD.S03.01"
-sp units,lesson,"UD.GDC.AD.4.10, UD.GDC.AD.13.8, UD.GDC.AD.13.15",N/A
-dp units,lesson,"UD.GDC.AD.4.10, UD.GDC.AD.13.8, UD.GDC.AD.13.15",N/A
-intro to RecycleView Adapter,lesson,UD.GDC.AD.4.10,N/A
-intro to ViewHolder,lesson,UD.GDC.AD.4.10,N/A
-RecycleView item layout,resource xml,"UD.GDC.AD.4.11, UD.GDC.AD.4.22","UD.GDC.AD.T03.02, UD.GDC.AD.S03.01"
-fontFamily,resource xml,UD.GDC.AD.4.11,UD.GDC.AD.T03.02
-RecycleView ViewHolder,java,UD.GDC.AD.4.11,UD.GDC.AD.T03.02
-RecycleView bind,java,UD.GDC.AD.4.11,UD.GDC.AD.T03.02
-String.valueOf,java,UD.GDC.AD.4.11,UD.GDC.AD.T03.02
-RecycleView Adapter,lesson,UD.GDC.AD.4.12,N/A
-RecycleView onCreateViewHolder,lesson,UD.GDC.AD.4.12,N/A
-RecycleView onBindViewHolder,lesson,UD.GDC.AD.4.12,N/A
-RecycleView Adapter,java,"UD.GDC.AD.4.14, UD.GDC.AD.4.15, UD.GDC.AD.4.22","UD.GDC.AD.T03.03, UD.GDC.AD.S03.01"
-RecycleView onCreateViewHolder,java,"UD.GDC.AD.4.14, UD.GDC.AD.4.15, UD.GDC.AD.4.22","UD.GDC.AD.T03.03, UD.GDC.AD.S03.01"
-RecycleView onBindViewHolder,java,"UD.GDC.AD.4.14, UD.GDC.AD.4.15, UD.GDC.AD.4.22","UD.GDC.AD.T03.03, UD.GDC.AD.S03.01"
-RecycleView getItemCount,java,"UD.GDC.AD.4.14, UD.GDC.AD.4.15, UD.GDC.AD.4.22","UD.GDC.AD.T03.03, UD.GDC.AD.S03.01"
-intro to RecycleView LayoutManager,java,"UD.GDC.AD.4.16, UD.GDC.AD.4.17, UD.GDC.AD.4.19",N/A
-RecycleView setLayoutManager,java,"UD.GDC.AD.4.18, UD.GDC.AD.4.22","UD.GDC.AD.T03.04, UD.GDC.AD.S03.01"
-RecycleView setHasFixedSize,java,"UD.GDC.AD.4.17, UD.GDC.AD.4.18, UD.GDC.AD.4.22","UD.GDC.AD.T03.04, UD.GDC.AD.S03.01"
-RecycleView setAdapter,java,"UD.GDC.AD.4.17, UD.GDC.AD.4.18, UD.GDC.AD.4.22","UD.GDC.AD.T03.04, UD.GDC.AD.S03.01"
-RecycleView ItemClickListener,java,UD.GDC.AD.4.20,N/A
-Toast management,java,UD.GDC.AD.4.20,N/A
-RecycleView notifyDataSetChanged,java,"UD.GDC.AD.4.22, UD.GDC.AD.8.15","UD.GDC.AD.S03.01, UD.GDC.AD.T07.05"
-RecycleView refresh/reset,java,"UD.GDC.AD.4.19, UD.GDC.AD.4.22","UD.GDC.AD.T03.06, UD.GDC.AD.S03.01"
-RecycleView viewHolderCount,java,UD.GDC.AD.4.19,UD.GDC.AD.T03.05
-RecycleView OnClickHandler interface,java,"UD.GDC.AD.4.21, UD.GDC.AD.4.23, UD.GDC.AD.10.43, UD.GDC.AD.10.44","UD.GDC.AD.T03.07, UD.GDC.AD.S03.02, UD.GDC.AD.S09.05"
-RecycleView ItemClickListener/ItemClickHandler,java,"UD.GDC.AD.4.21, UD.GDC.AD.4.23","UD.GDC.AD.T03.07, UD.GDC.AD.S03.02"
-RecycleView onListItemClick/onClick,java,"UD.GDC.AD.4.21, UD.GDC.AD.4.23, UD.GDC.AD.10.43, UD.GDC.AD.10.44","UD.GDC.AD.T03.07, UD.GDC.AD.S03.02, UD.GDC.AD.S09.05"
-RecycleView with AsyncTask for data loading,java,UD.GDC.AD.4.22,UD.GDC.AD.S03.01
-intro to intents,java,"UD.GDC.AD.5.3, UD.GDC.AD.5.7",N/A
-create activity,java,"UD.GDC.AD.5.5, UD.GDC.AD.5.6","UD.GDC.AD.T04a.01, UD.GDC.AD.S04.01"
-android:parentActivityName,java,UD.GDC.AD.5.6,"UD.GDC.AD.T04a.01, UD.GDC.AD.S04.01"
-activity meta-data,java,UD.GDC.AD.5.6,"UD.GDC.AD.T04a.01, UD.GDC.AD.S04.01"
-android.support.PARENT_ACTIVITY,java,UD.GDC.AD.5.6,"UD.GDC.AD.T04a.01, UD.GDC.AD.S04.01"
-back arrow (up button) in menu,resource xml,UD.GDC.AD.5.6,"UD.GDC.AD.T04a.01, UD.GDC.AD.S04.01"
-create Intent,java,UD.GDC.AD.5.8,"UD.GDC.AD.T04a.02, UD.GDC.AD.S04.02"
-startActivity,java,UD.GDC.AD.5.8,"UD.GDC.AD.T04a.02, UD.GDC.AD.S04.02"
-putExtra,java,UD.GDC.AD.5.9,"UD.GDC.AD.T04a.03, UD.GDC.AD.S04.02"
-getIntent,java,UD.GDC.AD.5.9,"UD.GDC.AD.T04a.03, UD.GDC.AD.S04.02"
-hasExtra,java,UD.GDC.AD.5.9,"UD.GDC.AD.T04a.03, UD.GDC.AD.S04.02"
-getStringExtra,java,UD.GDC.AD.5.9,"UD.GDC.AD.T04a.03, UD.GDC.AD.S04.02"
-Intent.EXTRA_TEXT,java,UD.GDC.AD.5.9,"UD.GDC.AD.T04a.03, UD.GDC.AD.S04.02"
-intro to implicit intents,java,"UD.GDC.AD.5.11, UD.GDC.AD.5.12",N/A
-Uri.parse,java,UD.GDC.AD.5.13,UD.GDC.AD.T04b.01
-open Web page intent,java,UD.GDC.AD.5.13,UD.GDC.AD.T04b.01
-resolveActivity,java,UD.GDC.AD.5.13,UD.GDC.AD.T04b.01
-getPackageManager,java,UD.GDC.AD.5.13,UD.GDC.AD.T04b.01
-Intent.ACTION_VIEW,java,UD.GDC.AD.5.13,UD.GDC.AD.T04b.01
-intro to open map intent / URLs,java,UD.GDC.AD.5.14,N/A
-geo Uri,java,UD.GDC.AD.5.16,N/A
-Uri.Builder,java,"UD.GDC.AD.5.16, UD.GDC.AD.5.17","UD.GDC.AD.T04b.02, UD.GDC.AD.S04.03"
-Uri builder.scheme,java,"UD.GDC.AD.5.16, UD.GDC.AD.5.17","UD.GDC.AD.T04b.02, UD.GDC.AD.S04.03"
-Uri builder.path,java,"UD.GDC.AD.5.16, UD.GDC.AD.5.17","UD.GDC.AD.T04b.02, UD.GDC.AD.S04.03"
-Uri builder.query,java,"UD.GDC.AD.5.16, UD.GDC.AD.5.17","UD.GDC.AD.T04b.02, UD.GDC.AD.S04.03"
-Intent.setData,java,"UD.GDC.AD.5.16, UD.GDC.AD.5.17","UD.GDC.AD.T04b.02, UD.GDC.AD.S04.03"
-intro to ShareIntent / ShareCompat,java,UD.GDC.AD.5.18,N/A
-intro to Media Type / MIME,java,UD.GDC.AD.5.19,N/A
-ShareCompat.IntentBuilder,java,"UD.GDC.AD.5.20, UD.GDC.AD.5.21","UD.GDC.AD.T04b.03, UD.GDC.AD.S04.03"
-ShareCompat setChooserTitle,java,"UD.GDC.AD.5.20, UD.GDC.AD.5.21","UD.GDC.AD.T04b.03, UD.GDC.AD.S04.03"
-ShareCompat setType,java,"UD.GDC.AD.5.20, UD.GDC.AD.5.21","UD.GDC.AD.T04b.03, UD.GDC.AD.S04.03"
-ShareCompat setText,java,"UD.GDC.AD.5.20, UD.GDC.AD.5.21","UD.GDC.AD.T04b.03, UD.GDC.AD.S04.03"
-mime,java,"UD.GDC.AD.5.20, UD.GDC.AD.5.21","UD.GDC.AD.T04b.03, UD.GDC.AD.S04.03"
-ShareCompat setChooserTitle,java,"UD.GDC.AD.5.20, UD.GDC.AD.5.21","UD.GDC.AD.T04b.03, UD.GDC.AD.S04.03"
-ShareCompat startChooser,java,"UD.GDC.AD.5.20, UD.GDC.AD.5.21","UD.GDC.AD.T04b.03, UD.GDC.AD.S04.03"
-intro to activity lifecyle,lesson,"UD.GDC.AD.6.3, UD.GDC.AD.6.4, UD.GDC.AD.6.6",N/A
-activity lifecyle onStart,java,UD.GDC.AD.6.5,UD.GDC.AD.T05a.01
-activity lifecyle onPause,java,UD.GDC.AD.6.5,UD.GDC.AD.T05a.01
-activity lifecyle onStop,java,UD.GDC.AD.6.5,UD.GDC.AD.T05a.01
-activity lifecyle onDestry,java,UD.GDC.AD.6.5,UD.GDC.AD.T05a.01
-activity lifecyle onCreate,java,UD.GDC.AD.6.5,UD.GDC.AD.T05a.01
-activity lifecyle onResume,java,UD.GDC.AD.6.5,UD.GDC.AD.T05a.01
-onSaveInstanceState,java,"UD.GDC.AD.6.7, UD.GDC.AD.6.8",UD.GDC.AD.T05a.02
-Bundle,java,"UD.GDC.AD.6.7, UD.GDC.AD.6.8",UD.GDC.AD.T05a.02
-Bundle putString,java,"UD.GDC.AD.6.7, UD.GDC.AD.6.8, UD.GDC.AD.6.12, UD.GDC.AD.6.13","UD.GDC.AD.T05a.02, UD.GDC.AD.T05b.01"
-savedInstanceState containsKey,java,"UD.GDC.AD.6.7, UD.GDC.AD.6.8",UD.GDC.AD.T05a.02
-savedInstanceState getString,java,"UD.GDC.AD.6.7, UD.GDC.AD.6.8, UD.GDC.AD.6.12, UD.GDC.AD.6.13","UD.GDC.AD.T05a.02, UD.GDC.AD.T05b.01"
-onSaveInstanceState rotation,java,UD.GDC.AD.6.9,UD.GDC.AD.T05a.03
-intro to saving data upon app termination,lesson,"UD.GDC.AD.6.10, UD.GDC.AD.6.11",N/A
-onSaveInstanceState persist data,java,"UD.GDC.AD.6.7, UD.GDC.AD.6.8, UD.GDC.AD.6.12, UD.GDC.AD.6.13","UD.GDC.AD.T05a.02, UD.GDC.AD.T05b.01"
-raw JSON from http,java,"UD.GDC.AD.6.12, UD.GDC.AD.6.13",UD.GDC.AD.T05b.01
-intro to AsyncTaskLoader,lesson,UD.GDC.AD.6.14,N/A
-AsyncTaskLoader,java,"UD.GDC.AD.6.16, UD.GDC.AD.6.17",UD.GDC.AD.T05b.02
-implements LoaderManager.LoaderCallbacks,java,"UD.GDC.AD.6.16, UD.GDC.AD.6.17, UD.GDC.AD.6.20, UD.GDC.AD.10.43, UD.GDC.AD.10.44","UD.GDC.AD.T05b.02, UD.GDC.AD.S05.01, UD.GDC.AD.S09.05"
-AsyncTaskLoader onCreateLoader,java,"UD.GDC.AD.6.16, UD.GDC.AD.6.17, UD.GDC.AD.6.20","UD.GDC.AD.T05b.02, UD.GDC.AD.S05.01"
-AsyncTaskLoader onStartLoading,java,"UD.GDC.AD.6.16, UD.GDC.AD.6.17, UD.GDC.AD.6.20","UD.GDC.AD.T05b.02, UD.GDC.AD.S05.01"
-AsyncTaskLoader loadInBackground,java,"UD.GDC.AD.6.16, UD.GDC.AD.6.17, UD.GDC.AD.6.20","UD.GDC.AD.T05b.02, UD.GDC.AD.S05.01"
-AsyncTaskLoader args,java,"UD.GDC.AD.6.16, UD.GDC.AD.6.17, UD.GDC.AD.6.20","UD.GDC.AD.T05b.02, UD.GDC.AD.S05.01"
-AsyncTaskLoader forceLoad,java,"UD.GDC.AD.6.16, UD.GDC.AD.6.17, UD.GDC.AD.6.20","UD.GDC.AD.T05b.02, UD.GDC.AD.S05.01"
-AsyncTaskLoader args.getString,java,"UD.GDC.AD.6.16, UD.GDC.AD.6.17, UD.GDC.AD.6.20","UD.GDC.AD.T05b.02, UD.GDC.AD.S05.01"
-TextUtils.isEmpty,java,"UD.GDC.AD.6.16, UD.GDC.AD.6.17",UD.GDC.AD.T05b.02
-LoaderManager,java,"UD.GDC.AD.6.16, UD.GDC.AD.6.17, UD.GDC.AD.6.20","UD.GDC.AD.T05b.02, UD.GDC.AD.S05.01"
-getSupportLoaderManager,java,"UD.GDC.AD.6.16, UD.GDC.AD.6.17, UD.GDC.AD.6.20","UD.GDC.AD.T05b.02, UD.GDC.AD.S05.01"
-getSupportLoaderManager getLoader,java,"UD.GDC.AD.6.16, UD.GDC.AD.6.17, UD.GDC.AD.6.20","UD.GDC.AD.T05b.02, UD.GDC.AD.S05.01"
-getSupportLoaderManager initLoader,java,"UD.GDC.AD.6.16, UD.GDC.AD.6.17, UD.GDC.AD.6.20","UD.GDC.AD.T05b.02, UD.GDC.AD.S05.01"
-getSupportLoaderManager restartLoader,java,"UD.GDC.AD.6.16, UD.GDC.AD.6.17, UD.GDC.AD.6.20","UD.GDC.AD.T05b.02, UD.GDC.AD.S05.01"
-intro to Loader caching,lesson,UD.GDC.AD.6.18,N/A
-Loader deliverResult,java,"UD.GDC.AD.6.19, UD.GDC.AD.6.20","UD.GDC.AD.T05b.03, UD.GDC.AD.S05.01"
-Loader caching,java,"UD.GDC.AD.6.19, UD.GDC.AD.6.20","UD.GDC.AD.T05b.03, UD.GDC.AD.S05.01"
-intro to preferences,lesson,"UD.GDC.AD.7.2, UD.GDC.AD.7.31",N/A
-checkSelfPermission,java,UD.GDC.AD.7.3,UD.GDC.AD.T06.01
-Manifest.permission.RECORD_AUDIO,java,UD.GDC.AD.7.3,UD.GDC.AD.T06.01
-Build.VERSION.SDK_INT,java,UD.GDC.AD.7.3,UD.GDC.AD.T06.01
-Build.VERSION_CODES,java,UD.GDC.AD.7.3,UD.GDC.AD.T06.01
-requestPermissions,java,UD.GDC.AD.7.3,UD.GDC.AD.T06.01
-PackageManager.PERMISSION_GRANTED,java,UD.GDC.AD.7.3,UD.GDC.AD.T06.01
-intro to Data Persistence,lesson,UD.GDC.AD.7.5,N/A
-intro to SharedPreferences,lesson,UD.GDC.AD.7.5,N/A
-intro to onSavedInstanceState,lesson,UD.GDC.AD.7.5,N/A
-intro to SQLite Database,lesson,"UD.GDC.AD.7.5, UD.GDC.AD.10.3",N/A
-SQLite directory,lesson,UD.GDC.AD.10.3,N/A
-SQLite item,lesson,UD.GDC.AD.10.3,N/A
-intro to Internal/External Storage,lesson,UD.GDC.AD.7.5,N/A
-intro to Server/Firebase,lesson,UD.GDC.AD.7.5,N/A
-intro to PreferenceFragment,lesson,UD.GDC.AD.7.7,N/A
-intro to Fragment,lesson,UD.GDC.AD.7.7,N/A
-Preferences SettingsActivity,java,"UD.GDC.AD.7.8, UD.GDC.AD.7.9, UD.GDC.AD.7.32 UD.GDC.AD.7.33","UD.GDC.AD.T06.01, UD.GDC.AD.S06.01"
-Preferences Settings button in menu,java,"UD.GDC.AD.7.8, UD.GDC.AD.7.9, UD.GDC.AD.7.32 UD.GDC.AD.7.33","UD.GDC.AD.T06.01, UD.GDC.AD.S06.01"
-compile com.android.support:preference-v7,gradle,"UD.GDC.AD.7.10, UD.GDC.AD.7.11, UD.GDC.AD.7.34","UD.GDC.AD.T06.02, UD.GDC.AD.S06.02"
-extends PreferenceFragmentCompat,java,"UD.GDC.AD.7.10, UD.GDC.AD.7.11, UD.GDC.AD.7.34","UD.GDC.AD.T06.02, UD.GDC.AD.S06.02"
-PreferenceScreen,resource xml,"UD.GDC.AD.7.10, UD.GDC.AD.7.11, UD.GDC.AD.7.34","UD.GDC.AD.T06.02, UD.GDC.AD.S06.02"
-CheckBoxPreference,resource xml,"UD.GDC.AD.7.10, UD.GDC.AD.7.11, UD.GDC.AD.7.34","UD.GDC.AD.T06.02, UD.GDC.AD.S06.02"
-addPreferencesFromResource,java,"UD.GDC.AD.7.10, UD.GDC.AD.7.11, UD.GDC.AD.7.34","UD.GDC.AD.T06.02, UD.GDC.AD.S06.02"
-preferenceTheme @style/PreferenceThemeOverla,resource xml,"UD.GDC.AD.7.10, UD.GDC.AD.7.11, UD.GDC.AD.7.34","UD.GDC.AD.T06.02, UD.GDC.AD.S06.02"
-setupSharedPreferences,java,"UD.GDC.AD.7.12, UD.GDC.AD.7.13, UD.GDC.AD.7.35","UD.GDC.AD.T06.03, UD.GDC.AD.S06.03"
-PreferenceManager.getDefaultSharedPreferences,java,"UD.GDC.AD.7.12, UD.GDC.AD.7.13, UD.GDC.AD.7.35","UD.GDC.AD.T06.03, UD.GDC.AD.S06.03"
-SharedPreferences resources,resource xml,"UD.GDC.AD.7.14, UD.GDC.AD.7.15, UD.GDC.AD.7.20, UD.GDC.AD.7.33, UD.GDC.AD.7.34","UD.GDC.AD.T06.04, UD.GDC.AD.T06.06, UD.GDC.AD.S06.02"
-implements SharedPreferences.OnSharedPreferenceChangeListener,lesson,"UD.GDC.AD.7.16, UD.GDC.AD.7.17, UD.GDC.AD.7.18, UD.GDC.AD.7.33, UD.GDC.AD.7.34","UD.GDC.AD.T06.05, UD.GDC.AD.S06.02, UD.GDC.AD.S06.03"
-registerOnSharedPreferenceChangeListener,java,"UD.GDC.AD.7.16, UD.GDC.AD.7.17, UD.GDC.AD.7.18, UD.GDC.AD.7.33, UD.GDC.AD.7.34","UD.GDC.AD.T06.05, UD.GDC.AD.S06.02, UD.GDC.AD.S06.03"
-unregisterOnSharedPreferenceChangeListener,java,"UD.GDC.AD.7.16, UD.GDC.AD.7.17, UD.GDC.AD.7.18, UD.GDC.AD.7.33, UD.GDC.AD.7.34","UD.GDC.AD.T06.05, UD.GDC.AD.S06.02, UD.GDC.AD.S06.03"
-SharedPreferences ListPreference,java,"UD.GDC.AD.7.21, UD.GDC.AD.7.22, UD.GDC.AD.7.34","UD.GDC.AD.T06.07, UD.GDC.AD.S06.02"
-SharedPreferences ListPreference,resource xml,"UD.GDC.AD.7.21, UD.GDC.AD.7.22, UD.GDC.AD.7.34","UD.GDC.AD.T06.07, UD.GDC.AD.S06.02"
-findPreference,java,"UD.GDC.AD.7.21, UD.GDC.AD.7.22, UD.GDC.AD.7.34","UD.GDC.AD.T06.07, UD.GDC.AD.S06.02"
-ListPreference,resource xml,"UD.GDC.AD.7.21, UD.GDC.AD.7.22, UD.GDC.AD.7.34","UD.GDC.AD.T06.07, UD.GDC.AD.S06.02"
-onSharedPreferenceChanged,java,"UD.GDC.AD.7.21, UD.GDC.AD.7.22, UD.GDC.AD.7.34","UD.GDC.AD.T06.07, UD.GDC.AD.S06.02"
-getPreferenceScreen,java,"UD.GDC.AD.7.21, UD.GDC.AD.7.22, UD.GDC.AD.7.34","UD.GDC.AD.T06.07, UD.GDC.AD.S06.02"
-getSharedPreferences,java,"UD.GDC.AD.7.21, UD.GDC.AD.7.22, UD.GDC.AD.7.34","UD.GDC.AD.T06.07, UD.GDC.AD.S06.02"
-instanceof CheckBoxPreference,java,"UD.GDC.AD.7.21, UD.GDC.AD.7.22, UD.GDC.AD.7.34","UD.GDC.AD.T06.07, UD.GDC.AD.S06.02"
-instanceof ListPreference,java,"UD.GDC.AD.7.21, UD.GDC.AD.7.22, UD.GDC.AD.7.34","UD.GDC.AD.T06.07, UD.GDC.AD.S06.02"
-Preference findIndexOfValue,java,"UD.GDC.AD.7.21, UD.GDC.AD.7.22, UD.GDC.AD.7.34","UD.GDC.AD.T06.07, UD.GDC.AD.S06.02"
-Preference setSummary,java,"UD.GDC.AD.7.21, UD.GDC.AD.7.22, UD.GDC.AD.7.34","UD.GDC.AD.T06.07, UD.GDC.AD.S06.02"
-Preference getEntries,java,"UD.GDC.AD.7.21, UD.GDC.AD.7.22, UD.GDC.AD.7.34","UD.GDC.AD.T06.07, UD.GDC.AD.S06.02"
-EditTextPreference,resource xml,"UD.GDC.AD.7.25, UD.GDC.AD.7.26",UD.GDC.AD.T06.09
-instanceof EditTextPreference,java,"UD.GDC.AD.7.25, UD.GDC.AD.7.26",UD.GDC.AD.T06.09
-intro to EditTextPreference Constraints,lesson,UD.GDC.AD.7.27,N/A
-Preference.OnPreferenceChangeListener,java,"UD.GDC.AD.7.28, UD.GDC.AD.7.29",UD.GDC.AD.T06.10
-onPreferenceChange,java,"UD.GDC.AD.7.28, UD.GDC.AD.7.29",UD.GDC.AD.T06.10
-NumberFormatException,java,"UD.GDC.AD.7.28, UD.GDC.AD.7.29",UD.GDC.AD.T06.10
-setOnPreferenceChangeListener,java,"UD.GDC.AD.7.28, UD.GDC.AD.7.29",UD.GDC.AD.T06.10
-setDisplayHomeAsUpEnabled,java,UD.GDC.AD.7.32 UD.GDC.AD.7.33,UD.GDC.AD.S06.01
-onBackPressed,java,UD.GDC.AD.7.32 UD.GDC.AD.7.33,UD.GDC.AD.S06.01
-"android:launchMode=""singleTop""",java,"UD.GDC.AD.7.8, UD.GDC.AD.7.9, UD.GDC.AD.7.32 UD.GDC.AD.7.33, UD.GDC.AD.11.17","UD.GDC.AD.T06.01, UD.GDC.AD.S06.01, UD.GDC.AD.T10.02"
-Preference getKey,java,UD.GDC.AD.7.33,UD.GDC.AD.S06.02
-intro to SQLite Database,lesson,"UD.GDC.AD.8.2, UD.GDC.AD.10.16",N/A
-intro to SQLite Database Contract,lesson,UD.GDC.AD.8.5,N/A
-intro to Unit Tests,lesson,"UD.GDC.AD.8.6, UD.GDC.AD.10.15",N/A
-SQLite implements BaseColumns,java,"UD.GDC.AD.8.7, UD.GDC.AD.8.18","UD.GDC.AD.T07.01, UD.GDC.AD.S07.01"
-SQLite TABLE_NAME,java,"UD.GDC.AD.8.7, UD.GDC.AD.8.18","UD.GDC.AD.T07.01, UD.GDC.AD.S07.01"
-SQLite extends SQLiteOpenHelper,java,"UD.GDC.AD.8.8, UD.GDC.AD.8.9, UD.GDC.AD.8.18","UD.GDC.AD.T07.02, UD.GDC.AD.S07.01"
-SQLite dBHelper,java,"UD.GDC.AD.8.8, UD.GDC.AD.8.9, UD.GDC.AD.8.18, UD.GDC.AD.10.6, UD.GDC.AD.10.35, UD.GDC.AD.10.36","UD.GDC.AD.T07.02, UD.GDC.AD.S07.01, UD.GDC.AD.T09.01, UD.GDC.AD.S09.01"
-SQLite SQLite DATABASE_NAME,java,"UD.GDC.AD.8.8, UD.GDC.AD.8.9, UD.GDC.AD.8.18","UD.GDC.AD.T07.02, UD.GDC.AD.S07.01"
-SQLite DATABASE_VERSION,java,"UD.GDC.AD.8.8, UD.GDC.AD.8.9, UD.GDC.AD.8.18","UD.GDC.AD.T07.02, UD.GDC.AD.S07.01"
-SQLite SQL_CREATE_WAITLIST_TABLE,java,"UD.GDC.AD.8.8, UD.GDC.AD.8.9, UD.GDC.AD.8.18","UD.GDC.AD.T07.02, UD.GDC.AD.S07.01"
-SQLite CREATE TABLE,java,"UD.GDC.AD.8.8, UD.GDC.AD.8.9, UD.GDC.AD.8.18","UD.GDC.AD.T07.02, UD.GDC.AD.S07.01"
-SQLite INTEGER PRIMARY KEY AUTOINCREMENT,java,"UD.GDC.AD.8.8, UD.GDC.AD.8.9, UD.GDC.AD.8.18","UD.GDC.AD.T07.02, UD.GDC.AD.S07.01"
-SQLite TEXT NOT NULL,java,"UD.GDC.AD.8.8, UD.GDC.AD.8.9, UD.GDC.AD.8.18","UD.GDC.AD.T07.02, UD.GDC.AD.S07.01"
-SQLite INTEGER NOT NULL,java,"UD.GDC.AD.8.8, UD.GDC.AD.8.9, UD.GDC.AD.8.18","UD.GDC.AD.T07.02, UD.GDC.AD.S07.01"
-SQLite NOT NULL,java,UD.GDC.AD.8.19,UD.GDC.AD.S07.02
-SQLite TIMESTAMP DEFAULT CURRENT_TIMESTAMP,java,"UD.GDC.AD.8.8, UD.GDC.AD.8.9, UD.GDC.AD.8.18","UD.GDC.AD.T07.02, UD.GDC.AD.S07.01"
-SQLite execSQL,java,"UD.GDC.AD.8.8, UD.GDC.AD.8.9, UD.GDC.AD.8.18","UD.GDC.AD.T07.02, UD.GDC.AD.S07.01"
-SQLite onUpgrade,java,"UD.GDC.AD.8.8, UD.GDC.AD.8.9, UD.GDC.AD.8.18","UD.GDC.AD.T07.02, UD.GDC.AD.S07.01"
-SQLite DROP TABLE IF EXISTS,java,"UD.GDC.AD.8.8, UD.GDC.AD.8.9, UD.GDC.AD.8.19","UD.GDC.AD.T07.02, UD.GDC.AD.S07.02"
-SQLite SQLiteDatabase,java,"UD.GDC.AD.8.10, UD.GDC.AD.8.11",UD.GDC.AD.T07.03
-SQLite getWritableDatabase,java,"UD.GDC.AD.8.10, UD.GDC.AD.8.11",UD.GDC.AD.T07.03
-SQLite Cursor,java,"UD.GDC.AD.8.10, UD.GDC.AD.8.11",UD.GDC.AD.T07.03
-SQLite query,java,"UD.GDC.AD.8.10, UD.GDC.AD.8.11",UD.GDC.AD.T07.03
-SQLite Cursor.getCount,java,"UD.GDC.AD.8.12, UD.GDC.AD.8.13",UD.GDC.AD.T07.04
-SQLite Cursor.moveToPosition,java,"UD.GDC.AD.8.12, UD.GDC.AD.8.13",UD.GDC.AD.T07.04
-SQLite Cursor.getColumnIndex,java,"UD.GDC.AD.8.12, UD.GDC.AD.8.13",UD.GDC.AD.T07.04
-SQLite Cursor.getInt,java,"UD.GDC.AD.8.12, UD.GDC.AD.8.13",UD.GDC.AD.T07.04
-SQLite Cursor.getString,java,"UD.GDC.AD.8.12, UD.GDC.AD.8.13",UD.GDC.AD.T07.04
-SQLite ContentValues put,java,"UD.GDC.AD.8.14, UD.GDC.AD.8.15",UD.GDC.AD.T07.05
-SQLite insert,java,"UD.GDC.AD.8.14, UD.GDC.AD.8.15",UD.GDC.AD.T07.05
-MainActivity.class.getSimpleName LOG_TAG,java,"UD.GDC.AD.8.14, UD.GDC.AD.8.15",UD.GDC.AD.T07.05
-SQLite swapCursor,java,"UD.GDC.AD.8.14, UD.GDC.AD.8.15",UD.GDC.AD.T07.05
-SQLite Cursor.close,java,"UD.GDC.AD.8.14, UD.GDC.AD.8.15",UD.GDC.AD.T07.05
-Edittext clearFocus,java,"UD.GDC.AD.8.14, UD.GDC.AD.8.15",UD.GDC.AD.T07.05
-SQLite delete,java,"UD.GDC.AD.8.16, UD.GDC.AD.8.17, UD.GDC.AD.11.30","UD.GDC.AD.T07.06, UD.GDC.AD.S10.01"
-ItemTouchHelper SimpleCallback,java,"UD.GDC.AD.8.16, UD.GDC.AD.8.17",UD.GDC.AD.T07.06
-ItemTouchHelper onMove,java,"UD.GDC.AD.8.16, UD.GDC.AD.8.17",UD.GDC.AD.T07.06
-ItemTouchHelper onSwiped,java,"UD.GDC.AD.8.16, UD.GDC.AD.8.17",UD.GDC.AD.T07.06
-ItemTouchHelper attachToRecyclerView,java,"UD.GDC.AD.8.16, UD.GDC.AD.8.17",UD.GDC.AD.T07.06
-viewHolder.itemView.getTag,java,"UD.GDC.AD.8.16, UD.GDC.AD.8.17",UD.GDC.AD.T07.06
-Cursor.getLong ID,java,"UD.GDC.AD.8.16, UD.GDC.AD.8.17",UD.GDC.AD.T07.06
-holder.itemView.setTag,java,"UD.GDC.AD.8.16, UD.GDC.AD.8.17",UD.GDC.AD.T07.06
-SQLite UNIQUE ON CONFLICT REPLACE,java,UD.GDC.AD.8.20,UD.GDC.AD.S07.03
-intro to ContentProvider,lesson,"UD.GDC.AD.9.2, UD.GDC.AD.9.3, UD.GDC.AD.9.4, UD.GDC.AD.9.5, UD.GDC.AD.10.4, UD.GDC.AD.10.16",N/A
-ContentProvider Permissions TERMS_READ,resource xml,UD.GDC.AD.9.7,UD.GDC.AD.T08.01
-intro to ContentResolver,lesson,"UD.GDC.AD.9.8, UD.GDC.AD.9.17, UD.GDC.AD.10.16",N/A
-ContentResolver getContentResolver,java,"UD.GDC.AD.9.7, UD.GDC.AD.11.30","UD.GDC.AD.T08.01, UD.GDC.AD.S10.01"
-ContentResolver Resolver.query,lesson,UD.GDC.AD.9.9,N/A
-ContentResolver Resolver.insert,lesson,UD.GDC.AD.9.9,N/A
-ContentResolver Resolver.update,lesson,UD.GDC.AD.9.9,N/A
-ContentResolver Resolver.delete,lesson,UD.GDC.AD.9.9,N/A
-intro to Uri (Uniform Resource Identifier),lesson,"UD.GDC.AD.9.10, UD.GDC.AD.10.4",N/A
-UriMatcher,lesson,"UD.GDC.AD.10.4, UD.GDC.AD.10.16",N/A
-UriMatcher wildcard characters,lesson,UD.GDC.AD.10.8,N/A
-ContentProvider prefix,lesson,UD.GDC.AD.9.10,N/A
-ContentProvider authority,lesson,"UD.GDC.AD.9.10, UD.GDC.AD.10.10",N/A
-ContentProvider scheme,lesson,UD.GDC.AD.10.10,N/A
-ContentProvider path,lesson,UD.GDC.AD.10.10,N/A
-ContentProvider data,lesson,UD.GDC.AD.9.10,N/A
-ContentProvider contract documentation,lesson,UD.GDC.AD.9.10,N/A
-Contract CONTENT_URI,lesson,UD.GDC.AD.9.10,N/A
-Contract CONTENT_URI,java,UD.GDC.AD.9.18,UD.GDC.AD.T08.02
-ContentResolver Resolver.query,java,UD.GDC.AD.9.18,UD.GDC.AD.T08.02
-ContentResolver Cursor,java,UD.GDC.AD.9.18,UD.GDC.AD.T08.02
-intro to ContentResolver Cursor data structure,lesson,UD.GDC.AD.9.19,N/A
-ContentResolver Cursor projection,lesson,UD.GDC.AD.9.19,N/A
-ContentResolver Cursor selection,lesson,UD.GDC.AD.9.19,N/A
-ContentResolver Cursor selection arguments,lesson,UD.GDC.AD.9.19,N/A
-ContentResolver Cursor sort order,lesson,UD.GDC.AD.9.19,N/A
-ContentResolver Cursor moveToNext,lesson,UD.GDC.AD.9.20,N/A
-ContentResolver Cursor moveToFirst,lesson,UD.GDC.AD.9.20,N/A
-ContentResolver Cursor getColumnIndex,lesson,UD.GDC.AD.9.20,N/A
-ContentResolver Cursor getInt / getString / getLong,lesson,UD.GDC.AD.9.20,N/A
-ContentResolver Cursor getCount,lesson,UD.GDC.AD.9.20,N/A
-ContentResolver Cursor getColumnIndex,java,"UD.GDC.AD.9.21, UD.GDC.AD.9.22",UD.GDC.AD.T08.03
-ContentResolver Cursor moveToNext,java,"UD.GDC.AD.9.21, UD.GDC.AD.9.22",UD.GDC.AD.T08.03
-ContentResolver Cursor moveToFirst,java,"UD.GDC.AD.9.21, UD.GDC.AD.9.22",UD.GDC.AD.T08.03
-ContentResolver Cursor close,java,"UD.GDC.AD.9.21, UD.GDC.AD.9.22",UD.GDC.AD.T08.03
-extends ContentProvider,java,"UD.GDC.AD.9.5, UD.GDC.AD.10.6",UD.GDC.AD.T09.01
-register ContentProvider in manifest provider,manifest xml,"UD.GDC.AD.9.5, UD.GDC.AD.10.6, UD.GDC.AD.10.35, UD.GDC.AD.10.36","UD.GDC.AD.T09.01, UD.GDC.AD.S09.01"
-ContentProvider authority,java,UD.GDC.AD.10.10,UD.GDC.AD.T09.02
-ContentProvider Uri,java,UD.GDC.AD.10.10,UD.GDC.AD.T09.02
-Uri buildUpon,java,UD.GDC.AD.10.10,UD.GDC.AD.T09.02
-Uri appendPath,java,UD.GDC.AD.10.10,UD.GDC.AD.T09.02
-UriMatcher,java,"UD.GDC.AD.10.14, UD.GDC.AD.10.35, UD.GDC.AD.10.36","UD.GDC.AD.T09.03, UD.GDC.AD.S09.01"
-UriMatcher.NO_MATCH,java,"UD.GDC.AD.10.14, UD.GDC.AD.10.35, UD.GDC.AD.10.36","UD.GDC.AD.T09.03, UD.GDC.AD.S09.01"
-UriMatcher addURI,java,"UD.GDC.AD.10.14, UD.GDC.AD.10.35, UD.GDC.AD.10.36","UD.GDC.AD.T09.03, UD.GDC.AD.S09.01"
-Uri getLastPathSegment,java,"UD.GDC.AD.10.35, UD.GDC.AD.10.36",UD.GDC.AD.S09.01
-Cursor setNotificationUri,java,"UD.GDC.AD.10.35, UD.GDC.AD.10.36",UD.GDC.AD.S09.01
-ContentProvider onCreate,lesson,UD.GDC.AD.10.17,N/A
-ContentProvider insert,lesson,UD.GDC.AD.10.17,N/A
-ContentProvider query,lesson,UD.GDC.AD.10.17,N/A
-ContentProvider update,lesson,UD.GDC.AD.10.17,N/A
-ContentProvider delete,lesson,UD.GDC.AD.10.17,N/A
-ContentProvider getType,lesson,UD.GDC.AD.10.17,N/A
-ContentProvider ContentValues,lesson,UD.GDC.AD.10.17,N/A
-ContentProvider Cursor,lesson,UD.GDC.AD.10.17,N/A
-ContentProvider insert,java,"UD.GDC.AD.10.19, UD.GDC.AD.10.20, UD.GDC.AD.10.21",UD.GDC.AD.T09.04
-match Uri,java,"UD.GDC.AD.10.19, UD.GDC.AD.10.20, UD.GDC.AD.10.21",UD.GDC.AD.T09.04
-ContentUris.withAppendedId,java,"UD.GDC.AD.10.19, UD.GDC.AD.10.20, UD.GDC.AD.10.21",UD.GDC.AD.T09.04
-android.database.SQLException,java,"UD.GDC.AD.10.19, UD.GDC.AD.10.20, UD.GDC.AD.10.21",UD.GDC.AD.T09.04
-UnsupportedOperationException,java,"UD.GDC.AD.10.19, UD.GDC.AD.10.20, UD.GDC.AD.10.21",UD.GDC.AD.T09.04
-getContentResolver notifyChange,java,"UD.GDC.AD.10.19, UD.GDC.AD.10.20, UD.GDC.AD.10.21",UD.GDC.AD.T09.04
-getContentResolver insert,java,"UD.GDC.AD.10.19, UD.GDC.AD.10.20, UD.GDC.AD.10.21",UD.GDC.AD.T09.04
-ContentProvider query,java,"UD.GDC.AD.10.22, UD.GDC.AD.10.23, UD.GDC.AD.10.24",UD.GDC.AD.T09.05
-SQLite getReadableDatabase,java,"UD.GDC.AD.10.22, UD.GDC.AD.10.23, UD.GDC.AD.10.24",UD.GDC.AD.T09.05
-getContentResolver query,java,"UD.GDC.AD.10.22, UD.GDC.AD.10.23, UD.GDC.AD.10.24",UD.GDC.AD.T09.05
-ContentProvider WHERE clause,lesson,UD.GDC.AD.10.25,N/A
-ContentProvider query single item,lesson,UD.GDC.AD.10.25,N/A
-Uri getPathsegments,lesson,UD.GDC.AD.10.25,N/A
-ContentProvider delete,java,"UD.GDC.AD.10.28, UD.GDC.AD.10.39, UD.GDC.AD.10.40","UD.GDC.AD.T09.06, UD.GDC.AD.S09.03"
-getContentResolver delete,java,"UD.GDC.AD.10.28, UD.GDC.AD.10.39, UD.GDC.AD.10.40","UD.GDC.AD.T09.06, UD.GDC.AD.S09.03"
-swipe to delete RecycleView on Swipe,java,UD.GDC.AD.10.29,UD.GDC.AD.T09.07
-getContentResolver delete Uri,java,UD.GDC.AD.10.29,UD.GDC.AD.T09.07
-getSupportLoaderManager restartLoader,java,UD.GDC.AD.10.29,UD.GDC.AD.T09.07
-ContentProvider update,lesson,UD.GDC.AD.10.30,N/A
-ContentProvider getType,lesson,UD.GDC.AD.10.31,N/A
-SQLite bulkInsert,java,"UD.GDC.AD.10.37, UD.GDC.AD.10.38",UD.GDC.AD.S09.02
-SQLite beginTransaction,java,"UD.GDC.AD.10.37, UD.GDC.AD.10.38",UD.GDC.AD.S09.02
-IllegalArgumentException,java,"UD.GDC.AD.10.37, UD.GDC.AD.10.38","UD.GDC.AD.S09.02, UD.GDC.AD.T11.02"
-SQLite setTransactionSuccessful,java,"UD.GDC.AD.10.37, UD.GDC.AD.10.38",UD.GDC.AD.S09.02
-SQLite endTransaction,java,"UD.GDC.AD.10.37, UD.GDC.AD.10.38",UD.GDC.AD.S09.02
-CursorLoader,java,"UD.GDC.AD.10.41, UD.GDC.AD.10.42",UD.GDC.AD.S09.04
-column indexes for database using ContentResolver,java,UD.UFT.2,
-onCreateLoader,java,"UD.GDC.AD.10.41, UD.GDC.AD.10.42, UD.GDC.AD.10.43, UD.GDC.AD.10.44","UD.GDC.AD.S09.04, UD.GDC.AD.S09.05"
-RuntimeException,java,"UD.GDC.AD.10.41, UD.GDC.AD.10.42",UD.GDC.AD.S09.04
-RecycleView smoothScrollToPosition,java,"UD.GDC.AD.10.41, UD.GDC.AD.10.42",UD.GDC.AD.S09.04
-RecyclerView.NO_POSITION,java,"UD.GDC.AD.10.41, UD.GDC.AD.10.42",UD.GDC.AD.S09.04
-getIntent getData,java,"UD.GDC.AD.10.43, UD.GDC.AD.10.44",UD.GDC.AD.S09.05
-NullPointerException,java,"UD.GDC.AD.10.43, UD.GDC.AD.10.44",UD.GDC.AD.S09.05
-onLoadFinished,java,"UD.GDC.AD.10.43, UD.GDC.AD.10.44",UD.GDC.AD.S09.05
-check if Cursor has valid data moveToFirst,java,"UD.GDC.AD.10.43, UD.GDC.AD.10.44",UD.GDC.AD.S09.05
-String.format,java,"UD.GDC.AD.10.43, UD.GDC.AD.10.44",UD.GDC.AD.S09.05
-onLoaderReset,java,"UD.GDC.AD.10.43, UD.GDC.AD.10.44",UD.GDC.AD.S09.05
-intro to Services,lesson,"UD.GDC.AD.11.4, UD.GDC.AD.11.5",N/A
-Service startService,lesson,UD.GDC.AD.11.7,N/A
-Service scheduleService,lesson,"UD.GDC.AD.11.7, UD.GDC.AD.11.8",N/A
-Service bindService,lesson,UD.GDC.AD.11.7,N/A
-Service JobService,lesson,UD.GDC.AD.11.7,N/A
-Service JobScheduler,lesson,UD.GDC.AD.11.7,N/A
-Service stopSelf,lesson,UD.GDC.AD.11.8,N/A
-Service onStartCommand,lesson,UD.GDC.AD.11.8,N/A
-IntentService,lesson,UD.GDC.AD.11.9,N/A
-IntentService onHandleIntent,lesson,UD.GDC.AD.11.9,N/A
-extends IntentService,java,"UD.GDC.AD.11.12, UD.GDC.AD.11.13, UD.GDC.AD.11.30","UD.GDC.AD.T10.01, UD.GDC.AD.S10.01"
-IntentService onHandleIntent,java,"UD.GDC.AD.11.12, UD.GDC.AD.11.13, UD.GDC.AD.11.30","UD.GDC.AD.T10.01, UD.GDC.AD.S10.01"
-IntentService getAction,java,"UD.GDC.AD.11.12, UD.GDC.AD.11.13, UD.GDC.AD.11.30","UD.GDC.AD.T10.01, UD.GDC.AD.S10.01"
-intro to Notifications,lesson,UD.GDC.AD.11.14,N/A
-NotificationChannel,lesson,UD.GDC.AD.11.15,N/A
-Notification Manager,lesson,UD.GDC.AD.11.15,N/A
-intro to PendingIntent,lesson,UD.GDC.AD.11.16,N/A
-PendingIntent,java,UD.GDC.AD.11.17,UD.GDC.AD.T10.02
-PendingIntent.getActivity,java,UD.GDC.AD.11.17,UD.GDC.AD.T10.02
-PendingIntent.FLAG_UPDATE_CURRENT,java,UD.GDC.AD.11.17,UD.GDC.AD.T10.02
-BitmapFactory.decodeResource,java,UD.GDC.AD.11.17,UD.GDC.AD.T10.02
-NotificationManager,java,UD.GDC.AD.11.17,UD.GDC.AD.T10.02
-Context.NOTIFICATION_SERVICE,java,"UD.GDC.AD.11.17, UD.GDC.AD.11.33","UD.GDC.AD.T10.02, UD.GDC.AD.S10.04"
-NotificationManager createNotificationChannel,java,UD.GDC.AD.11.17,UD.GDC.AD.T10.02
-NotificationCompat.Builder,java,"UD.GDC.AD.11.17, UD.GDC.AD.11.33","UD.GDC.AD.T10.02, UD.GDC.AD.S10.04"
-NotificationCompat.Builder setColor,java,"UD.GDC.AD.11.17, UD.GDC.AD.11.33","UD.GDC.AD.T10.02, UD.GDC.AD.S10.04"
-NotificationCompat.Builder setSmallIcon,java,"UD.GDC.AD.11.17, UD.GDC.AD.11.33","UD.GDC.AD.T10.02, UD.GDC.AD.S10.04"
-NotificationCompat.Builder setLargeIcon,java,"UD.GDC.AD.11.17, UD.GDC.AD.11.33","UD.GDC.AD.T10.02, UD.GDC.AD.S10.04"
-NotificationCompat.Builder setContentTitle,java,"UD.GDC.AD.11.17, UD.GDC.AD.11.33","UD.GDC.AD.T10.02, UD.GDC.AD.S10.04"
-NotificationCompat.Builder setContentText,java,"UD.GDC.AD.11.17, UD.GDC.AD.11.33","UD.GDC.AD.T10.02, UD.GDC.AD.S10.04"
-ContextCompat,java,UD.GDC.AD.11.33,UD.GDC.AD.S10.04
-TaskStackBuilder,java,UD.GDC.AD.11.33,UD.GDC.AD.S10.04
-addNextIntentWithParentStack,java,UD.GDC.AD.11.33,UD.GDC.AD.S10.04
-NotificationCompat.Builder setStyle,java,UD.GDC.AD.11.17,UD.GDC.AD.T10.02
-NotificationCompat.BigTextStyle,java,UD.GDC.AD.11.17,UD.GDC.AD.T10.02
-NotificationCompat.Builder setDefaults,java,UD.GDC.AD.11.17,UD.GDC.AD.T10.02
-NotificationCompat.Builder setContentIntent,java,"UD.GDC.AD.11.17, UD.GDC.AD.11.33","UD.GDC.AD.T10.02, UD.GDC.AD.S10.04"
-NotificationCompat.Builder setAutoCancel,java,"UD.GDC.AD.11.17, UD.GDC.AD.11.33","UD.GDC.AD.T10.02, UD.GDC.AD.S10.04"
-NotificationCompat.Builder setPriority,java,UD.GDC.AD.11.17,UD.GDC.AD.T10.02
-NotificationCompat.Builder notify,java,"UD.GDC.AD.11.17, UD.GDC.AD.11.33","UD.GDC.AD.T10.02, UD.GDC.AD.S10.04"
-NotificationCompat.Builder build,java,"UD.GDC.AD.11.17, UD.GDC.AD.11.33","UD.GDC.AD.T10.02, UD.GDC.AD.S10.04"
-android.permission.VIBRATE,resource xml,UD.GDC.AD.11.17,UD.GDC.AD.T10.02
-intro to Notification Actions,java,"UD.GDC.AD.11.18, UD.GDC.AD.11.19",UD.GDC.AD.T10.03
-NotificationManager cancelAll,java,"UD.GDC.AD.11.18, UD.GDC.AD.11.19",UD.GDC.AD.T10.03
-IntentService setAction,java,"UD.GDC.AD.11.18, UD.GDC.AD.11.19",UD.GDC.AD.T10.03
-PendingIntent ACTION_IGNORE_PENDING_INTENT_ID,java,"UD.GDC.AD.11.18, UD.GDC.AD.11.19",UD.GDC.AD.T10.03
-PendingIntent Action,java,"UD.GDC.AD.11.18, UD.GDC.AD.11.19",UD.GDC.AD.T10.03
-dismiss notification,java,"UD.GDC.AD.11.18, UD.GDC.AD.11.19",UD.GDC.AD.T10.03
-PendingIntent.FLAG_CANCEL_CURRENT,java,"UD.GDC.AD.11.18, UD.GDC.AD.11.19",UD.GDC.AD.T10.03
-PendingIntent getPendingIntent,java,UD.GDC.AD.11.33,UD.GDC.AD.S10.04
-intro to Foreground Services,lesson,UD.GDC.AD.11.20,N/A
-FirebaseJobDispatcher,java,UD.GDC.AD.11.23,N/A
-Driver,java,UD.GDC.AD.11.23,N/A
-GooglePlayDriver,java,UD.GDC.AD.11.23,N/A
-FirebaseJobDispatcher newJobBuilder,java,UD.GDC.AD.11.23,N/A
-FirebaseJobDispatcher setService,java,UD.GDC.AD.11.23,N/A
-FirebaseJobDispatcher setTag,java,UD.GDC.AD.11.23,N/A
-FirebaseJobDispatcher setRecurring,java,UD.GDC.AD.11.23,N/A
-FirebaseJobDispatcher setLifetime Lifetime.UNTIL_NEXT_BOOT,java,UD.GDC.AD.11.23,N/A
-FirebaseJobDispatcher setTrigger Trigger.executionWindow,java,UD.GDC.AD.11.23,N/A
-FirebaseJobDispatcher setReplaceCurrent,java,UD.GDC.AD.11.23,N/A
-FirebaseJobDispatcher setRetryStrategy RetryStrategy.DEFAULT_EXPONENTIAL,java,UD.GDC.AD.11.23,N/A
-FirebaseJobDispatcher setConstraints Constraint.ON_UNMETERED_NETWORK / Constraint.DEVICE_CHARGING,java,UD.GDC.AD.11.23,N/A
-FirebaseJobDispatcher build,java,UD.GDC.AD.11.23,N/A
-GooglePlayServices,lesson,UD.GDC.AD.11.23,N/A
-compile com.firebase:firebase-jobdispatcher,gradle,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.32","UD.GDC.AD.T10.04, UD.GDC.AD.S10.03"
-extends JobService,java,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.32","UD.GDC.AD.T10.04, UD.GDC.AD.S10.03"
-onStartJob,java,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.32","UD.GDC.AD.T10.04, UD.GDC.AD.S10.03"
-jobFinished,java,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.32","UD.GDC.AD.T10.04, UD.GDC.AD.S10.03"
-jobParameters,java,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.32","UD.GDC.AD.T10.04, UD.GDC.AD.S10.03"
-onStopJob,java,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.32","UD.GDC.AD.T10.04, UD.GDC.AD.S10.03"
-intent-filter com.firebase.jobdispatcher.ACTION_EXECUTE,manifest xml,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.32","UD.GDC.AD.T10.04, UD.GDC.AD.S10.03"
-synchronized method,java,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.31","UD.GDC.AD.T10.04, UD.GDC.AD.S10.02"
-Job initialize,java,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.31","UD.GDC.AD.T10.04, UD.GDC.AD.S10.02"
-@NonNull,java,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.30","UD.GDC.AD.T10.04, UD.GDC.AD.S10.01"
-Driver,java,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.32","UD.GDC.AD.T10.04, UD.GDC.AD.S10.03"
-GooglePlayDriver,java,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.32","UD.GDC.AD.T10.04, UD.GDC.AD.S10.03"
-FirebaseJobDispatcher,java,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.32","UD.GDC.AD.T10.04, UD.GDC.AD.S10.03"
-FirebaseJobDispatcher newJobBuilder,java,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.32","UD.GDC.AD.T10.04, UD.GDC.AD.S10.03"
-FirebaseJobDispatcher setService,java,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.32","UD.GDC.AD.T10.04, UD.GDC.AD.S10.03"
-FirebaseJobDispatcher setTag,java,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.32","UD.GDC.AD.T10.04, UD.GDC.AD.S10.03"
-FirebaseJobDispatcher setRecurring,java,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.32","UD.GDC.AD.T10.04, UD.GDC.AD.S10.03"
-FirebaseJobDispatcher setLifetime Lifetime.UNTIL_NEXT_BOOT,java,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.32","UD.GDC.AD.T10.04, UD.GDC.AD.S10.03"
-FirebaseJobDispatcher setLifetime Lifetime.FOREVER,java,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.32","UD.GDC.AD.T10.04, UD.GDC.AD.S10.03"
-FirebaseJobDispatcher setTrigger Trigger.executionWindow,java,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.32","UD.GDC.AD.T10.04, UD.GDC.AD.S10.03"
-FirebaseJobDispatcher setReplaceCurrent,java,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.32","UD.GDC.AD.T10.04, UD.GDC.AD.S10.03"
-FirebaseJobDispatcher setRetryStrategy RetryStrategy.DEFAULT_EXPONENTIAL,java,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.32","UD.GDC.AD.T10.04, UD.GDC.AD.S10.03"
-FirebaseJobDispatcher setConstraints Constraint.ON_UNMETERED_NETWORK / Constraint.DEVICE_CHARGING,java,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.32","UD.GDC.AD.T10.04, UD.GDC.AD.S10.03"
-FirebaseJobDispatcher setConstraints Constraint.ON_ANY_NETWORK,java,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.32","UD.GDC.AD.T10.04, UD.GDC.AD.S10.03"
-FirebaseJobDispatcher build,java,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.32","UD.GDC.AD.T10.04, UD.GDC.AD.S10.03"
-FirebaseJobDispatcher schedule,java,"UD.GDC.AD.11.24, UD.GDC.AD.11.25, UD.GDC.AD.11.32","UD.GDC.AD.T10.04, UD.GDC.AD.S10.03"
-intro to Broadcast Receivers,lesson,UD.GDC.AD.11.26,N/A
-System Broadcast Intent,lesson,UD.GDC.AD.11.26,N/A
-android.intent.action.SCREEN_ON,lesson,UD.GDC.AD.11.26,N/A
-android.intent.action.MEDIA_MOUNTED,lesson,UD.GDC.AD.11.26,N/A
-android.intent.action.HEADSET_PLUG,lesson,UD.GDC.AD.11.26,N/A
-android.intent.action.BATTERY_LOW,lesson,UD.GDC.AD.11.26,N/A
-android.intent.action.DOWNLOAD_COMPLETE,lesson,UD.GDC.AD.11.26,N/A
-android.intent.action.AUDI_BECOMING_NOISY,lesson,UD.GDC.AD.11.26,N/A
-setImageResource,java,UD.GDC.AD.11.27,UD.GDC.AD.T10.05
-extends BroadcastReceiver,java,UD.GDC.AD.11.27,UD.GDC.AD.T10.05
-BroadcastReceiver onReceive,java,UD.GDC.AD.11.27,UD.GDC.AD.T10.05
-IntentFilter,java,UD.GDC.AD.11.27,UD.GDC.AD.T10.05
-IntentFilter addAction,java,UD.GDC.AD.11.27,UD.GDC.AD.T10.05
-Intent.ACTION_POWER_CONNECTED,java,UD.GDC.AD.11.27,UD.GDC.AD.T10.05
-Intent.ACTION_POWER_DISCONNECTED,java,UD.GDC.AD.11.27,UD.GDC.AD.T10.05
-BroadcastReceiver registerReceiver,java,"UD.GDC.AD.11.27, UD.GDC.AD.11.30","UD.GDC.AD.T10.05, UD.GDC.AD.S10.01"
-BroadcastReceiver unregisterReceiver,java,"UD.GDC.AD.11.27, UD.GDC.AD.11.30","UD.GDC.AD.T10.05, UD.GDC.AD.S10.01"
-BatteryManager,java,UD.GDC.AD.11.28,UD.GDC.AD.T10.06
-BATTERY_SERVICE,java,UD.GDC.AD.11.28,UD.GDC.AD.T10.06
-BatteryManager isCharging,java,UD.GDC.AD.11.28,UD.GDC.AD.T10.06
-Intent.ACTION_BATTERY_CHANGED,java,UD.GDC.AD.11.28,UD.GDC.AD.T10.06
-BatteryManager.EXTRA_STATUS,java,UD.GDC.AD.11.28,UD.GDC.AD.T10.06
-BatteryManager.BATTERY_STATUS_CHARGING,java,UD.GDC.AD.11.28,UD.GDC.AD.T10.06
-BatteryManager.BATTERY_STATUS_FULL,java,UD.GDC.AD.11.28,UD.GDC.AD.T10.06
-SQLite bulkInsert,java,UD.GDC.AD.11.30,UD.GDC.AD.S10.01
-IntentService startService,java,UD.GDC.AD.11.30,UD.GDC.AD.S10.01
-TimeUnit.HOURS.toSeconds,java,UD.GDC.AD.11.32,UD.GDC.AD.S10.03
-ViewGroup,lesson,UD.GDC.AD.12.2,N/A
-LinearLayout,lesson,UD.GDC.AD.12.2,N/A
-RelativeLayout,lesson,UD.GDC.AD.12.2,N/A
-GridLayout,lesson,UD.GDC.AD.12.2,N/A
-wrap_content,lesson,UD.GDC.AD.12.2,N/A
-match_parent,lesson,UD.GDC.AD.12.2,N/A
-gravity,lesson,UD.GDC.AD.12.2,N/A
-padding,lesson,UD.GDC.AD.12.2,N/A
-margin,lesson,UD.GDC.AD.12.2,N/A
-visibility,lesson,UD.GDC.AD.12.2,N/A
-ConstraintLayout,lesson,"UD.GDC.AD.12.4, UD.GDC.AD.12.5",N/A
-ConstraintLayout,java,"UD.GDC.AD.12.6, UD.GDC.AD.12.7, UD.GDC.AD.12.8, UD.GDC.AD.12.9, UD.GDC.AD.12.20, UD.GDC.AD.12.21","UD.GDC.AD.T11.01, UD.GDC.AD.S11.01"
-compile com.android.support.constraint:constraint-layout dependency,gradle,"UD.GDC.AD.12.6, UD.GDC.AD.12.7, UD.GDC.AD.12.8, UD.GDC.AD.12.9, UD.GDC.AD.12.20, UD.GDC.AD.12.21","UD.GDC.AD.T11.01, UD.GDC.AD.S11.01"
-tools:text,resource xml,"UD.GDC.AD.12.6, UD.GDC.AD.12.7, UD.GDC.AD.12.8, UD.GDC.AD.12.9",UD.GDC.AD.T11.01
-ImageView,resource xml,"UD.GDC.AD.12.6, UD.GDC.AD.12.7, UD.GDC.AD.12.8, UD.GDC.AD.12.9",UD.GDC.AD.T11.01
-android:background,resource xml,"UD.GDC.AD.12.6, UD.GDC.AD.12.7, UD.GDC.AD.12.8, UD.GDC.AD.12.9",UD.GDC.AD.T11.01
-import svg image,resource xml,"UD.GDC.AD.12.6, UD.GDC.AD.12.7, UD.GDC.AD.12.8, UD.GDC.AD.12.9",UD.GDC.AD.T11.01
-drawable,resource xml,"UD.GDC.AD.12.6, UD.GDC.AD.12.7, UD.GDC.AD.12.8, UD.GDC.AD.12.9",UD.GDC.AD.T11.01
-android:letterSpacing,resource xml,"UD.GDC.AD.12.6, UD.GDC.AD.12.7, UD.GDC.AD.12.8, UD.GDC.AD.12.9",UD.GDC.AD.T11.01
-constraint bias,resource xml,"UD.GDC.AD.12.6, UD.GDC.AD.12.7, UD.GDC.AD.12.8, UD.GDC.AD.12.9",UD.GDC.AD.T11.01
-mipmap,resource xml,"UD.GDC.AD.12.6, UD.GDC.AD.12.7, UD.GDC.AD.12.8, UD.GDC.AD.12.9",UD.GDC.AD.T11.01
-ConstraintLayout,resource xml,"UD.GDC.AD.12.6, UD.GDC.AD.12.7, UD.GDC.AD.12.8, UD.GDC.AD.12.9",UD.GDC.AD.T11.01
-constraint.Guideline,resource xml,"UD.GDC.AD.12.6, UD.GDC.AD.12.7, UD.GDC.AD.12.8, UD.GDC.AD.12.10",UD.GDC.AD.S11.02
-bools,resource xml,"UD.GDC.AD.12.6, UD.GDC.AD.12.7, UD.GDC.AD.12.8, UD.GDC.AD.12.10",UD.GDC.AD.S11.02
-RecycleView Adapter getItemViewType,java,"UD.GDC.AD.12.6, UD.GDC.AD.12.7, UD.GDC.AD.12.8, UD.GDC.AD.12.9, UD.GDC.AD.12.20, UD.GDC.AD.12.21","UD.GDC.AD.T11.01, UD.GDC.AD.S11.02"
-Hierarchy Viewer,lesson,UD.GDC.AD.12.10,N/A
-Android Device Monitor,lesson,UD.GDC.AD.12.10,N/A
-data binding,lesson,UD.GDC.AD.12.12,N/A
-databinding.enabled,gradle,"UD.GDC.AD.12.12, UD.GDC.AD.12.13, UD.GDC.AD.12.24, UD.GDC.AD.12.15","UD.GDC.AD.T11.02, UD.GDC.AD.S11.03"
-layout root tag,resource xml,"UD.GDC.AD.12.12, UD.GDC.AD.12.13, UD.GDC.AD.12.24, UD.GDC.AD.12.15","UD.GDC.AD.T11.02, UD.GDC.AD.S11.03"
-ActivityMainBinding,java,"UD.GDC.AD.12.12, UD.GDC.AD.12.13, UD.GDC.AD.12.24, UD.GDC.AD.12.15","UD.GDC.AD.T11.02, UD.GDC.AD.S11.03"
-DataBindingUtil setContentView,java,"UD.GDC.AD.12.12, UD.GDC.AD.12.13, UD.GDC.AD.12.24, UD.GDC.AD.12.15","UD.GDC.AD.T11.02, UD.GDC.AD.S11.03"
-ActivityMainBinding setText,java,"UD.GDC.AD.12.12, UD.GDC.AD.12.13, UD.GDC.AD.12.24, UD.GDC.AD.12.15","UD.GDC.AD.T11.02, UD.GDC.AD.S11.03"
-formatter.format,java,"UD.GDC.AD.12.12, UD.GDC.AD.12.13",UD.GDC.AD.T11.02
-TimeUnit.MINUTES.toHours,java,"UD.GDC.AD.12.12, UD.GDC.AD.12.13",UD.GDC.AD.T11.02
-TimeUnit.HOURS.toMinutes,java,"UD.GDC.AD.12.12, UD.GDC.AD.12.13",UD.GDC.AD.T11.02
-intro to accessibility & internationalization,lesson,"UD.GDC.AD.12.14, UD.GDC.AD.12.15",N/A
-contentDescription,lesson,"UD.GDC.AD.12.14, UD.GDC.AD.12.15",N/A
-localization,lesson,UD.GDC.AD.12.17,N/A
-"responsive layout, landscape & portrait",resource xml,"UD.GDC.AD.12.18, UD.GDC.AD.12.19",UD.GDC.AD.T11.03
-include layout tag,resource xml,"UD.GDC.AD.12.18, UD.GDC.AD.12.19, UD.GDC.AD.12.24, UD.GDC.AD.12.15","UD.GDC.AD.T11.03, UD.GDC.AD.S11.03"
-binding an include layout,java,"UD.GDC.AD.12.18, UD.GDC.AD.12.19, UD.GDC.AD.12.24, UD.GDC.AD.12.15","UD.GDC.AD.T11.03, UD.GDC.AD.S11.03"
-intro to Android design principles,lesson,UD.GDC.AD.13.2,N/A
-mockup,lesson,UD.GDC.AD.13.4,N/A
-keyline,lesson,UD.GDC.AD.13.4,N/A
-color guidelines,lesson,UD.GDC.AD.13.5,N/A
-primary color colorPrimary,lesson,"UD.GDC.AD.13.5, UD.GDC.AD.13.26, UD.GDC.AD.13.27",UD.GDC.AD.S12.01
-accent color colorAccent,lesson,"UD.GDC.AD.13.5, UD.GDC.AD.13.26, UD.GDC.AD.13.27",UD.GDC.AD.S12.01
-font guidelines,lesson,"UD.GDC.AD.13.8, UD.GDC.AD.13.22, UD.GDC.AD.13.23",UD.GDC.AD.S12.01
-roboto font,lesson,UD.GDC.AD.13.8,N/A
-font-family,lesson,"UD.GDC.AD.13.8, UD.GDC.AD.13.22, UD.GDC.AD.13.23",UD.GDC.AD.S12.01
-sans-serif font,lesson,"UD.GDC.AD.13.8, UD.GDC.AD.13.22, UD.GDC.AD.13.23",UD.GDC.AD.S12.01
-mdpi,lesson,"UD.GDC.AD.13.8, UD.GDC.AD.13.15",N/A
-hdpi,lesson,"UD.GDC.AD.13.8, UD.GDC.AD.13.15",N/A
-xhdpi,lesson,"UD.GDC.AD.13.8, UD.GDC.AD.13.15",N/A
-xxhdpi,lesson,"UD.GDC.AD.13.8, UD.GDC.AD.13.15",N/A
-xxxhdpi,lesson,"UD.GDC.AD.13.8, UD.GDC.AD.13.15",N/A
-color resource,resource xml,"UD.GDC.AD.13.9, UD.GDC.AD.13.10",UD.GDC.AD.T12.01
-android:fontFamily,resource xml,"UD.GDC.AD.13.9, UD.GDC.AD.13.10",UD.GDC.AD.T12.01
-vectorDrawables.useSupportLibrary,gradle,UD.UFT.1,UD.GDC.AD.T10.01
-style tag,resource xml,"UD.GDC.AD.13.11, UD.GDC.AD.13.12, UD.GDC.AD.13.13, UD.GDC.AD.13.14, UD.GDC.AD.13.28, UD.GDC.AD.13.29","UD.GDC.AD.T12.02, UD.GDC.AD.S12.02"
-intro to designing for different screens,lesson,UD.GDC.AD.13.14,N/A
-intro to screen density,lesson,UD.GDC.AD.13.15,N/A
-intro to resource folder qualifiers,lesson,UD.GDC.AD.13.18,N/A
-intro to sw (smallest width) resource qualifier,lesson,UD.GDC.AD.13.19,N/A
-sw600dp,resource xml,"UD.GDC.AD.13.20, UD.GDC.AD.13.21",UD.GDC.AD.T12.03
-touch selector,resource xml,"UD.GDC.AD.13.22, UD.GDC.AD.13.23, UD.GDC.AD.13.30, UD.GDC.AD.13.31","UD.GDC.AD.T12.04, UD.GDC.AD.S12.03"
-touch selector tag,resource xml,"UD.GDC.AD.13.22, UD.GDC.AD.13.23, UD.GDC.AD.13.30, UD.GDC.AD.13.31","UD.GDC.AD.T12.04, UD.GDC.AD.S12.03"
-touch selector android:state_pressed,resource xml,"UD.GDC.AD.13.22, UD.GDC.AD.13.23, UD.GDC.AD.13.30, UD.GDC.AD.13.31","UD.GDC.AD.T12.04, UD.GDC.AD.S12.03"
-touch selector android:state_activated,resource xml,"UD.GDC.AD.13.22, UD.GDC.AD.13.23, UD.GDC.AD.13.30, UD.GDC.AD.13.31","UD.GDC.AD.T12.04, UD.GDC.AD.S12.03"
-touch selector android:state_selected,resource xml,"UD.GDC.AD.13.22, UD.GDC.AD.13.23, UD.GDC.AD.13.30, UD.GDC.AD.13.31","UD.GDC.AD.T12.04, UD.GDC.AD.S12.03"
-touch selector android:state_focused,resource xml,"UD.GDC.AD.13.30, UD.GDC.AD.13.31",UD.GDC.AD.S12.03
-touch selector android:state_enabled,resource xml,"UD.GDC.AD.13.30, UD.GDC.AD.13.31",UD.GDC.AD.S12.03
-touch selector android:state_window_focused,resource xml,"UD.GDC.AD.13.30, UD.GDC.AD.13.31",UD.GDC.AD.S12.03
-touch selector android:background,resource xml,"UD.GDC.AD.13.22, UD.GDC.AD.13.23, UD.GDC.AD.13.30, UD.GDC.AD.13.31","UD.GDC.AD.T12.04, UD.GDC.AD.S12.03"
-colorPrimaryLight,resource xml,"UD.GDC.AD.13.26, UD.GDC.AD.13.27",UD.GDC.AD.S12.01
-colorPrimaryDark,resource xml,"UD.GDC.AD.13.26, UD.GDC.AD.13.27",UD.GDC.AD.S12.01
-primary_text,resource xml,"UD.GDC.AD.13.26, UD.GDC.AD.13.27",UD.GDC.AD.S12.01
-secondary_text,resource xml,"UD.GDC.AD.13.26, UD.GDC.AD.13.27",UD.GDC.AD.S12.01
-dimens @dimen,resource xml,"UD.GDC.AD.13.26, UD.GDC.AD.13.27",UD.GDC.AD.S12.01
-AppTheme,resource xml,"UD.GDC.AD.13.28, UD.GDC.AD.13.29",UD.GDC.AD.S12.02
-actionBarStyle,resource xml,"UD.GDC.AD.13.28, UD.GDC.AD.13.29",UD.GDC.AD.S12.02
-style @style,resource xml,"UD.GDC.AD.13.28, UD.GDC.AD.13.29",UD.GDC.AD.S12.02
-landscape & portrait layout resource files,resource xml,"UD.GDC.AD.13.33, UD.GDC.AD.13.34",UD.GDC.AD.S12.04
-SQLite database with mutliple tables,java,UD.UFT.2,UD.UFT.GH.1
-contentResolver query contains like,java,SO.1,N/A
-intro to Firebase,lesson,"UD.FIW.1.2, UD.FIW.1.3",N/A
-setting up a Firebase project,lesson,"UD.FIW.1.7, UD.FIW.1.8",N/A
-setting debug certificate,lesson,UD.FIW.1.8,N/A
-classpath com.google.gms:google-services,gradle,"UD.FIW.1.8, UD.FIW.1.12",UD.FIW.1.1
-google-services.json,lesson,UD.FIW.1.8,N/A
-apply plugin com.google.gms.google-services,gradle,"UD.FIW.1.8, UD.FIW.1.12",UD.FIW.1.1
-Firebase database structure,lesson,UD.FIW.1.15,N/A
-com.google.firebase:firebase-database,gradle,UD.FIW.1.17,UD.FIW.1.1
-FirebaseDatabase,java,UD.FIW.1.17,UD.FIW.1.1
-DatabaseReference,java,UD.FIW.1.17,UD.FIW.1.1
-FirebaseDatabase.getInstance,java,UD.FIW.1.17,UD.FIW.1.1
-DatabaseReference getReference child,java,UD.FIW.1.17,UD.FIW.1.1
-FirebaseDatabase preparing keys for storage,java,UD.FIW.1.18,UD.FIW.1.1
-FirebaseDatabase push setValue,java,UD.FIW.1.19,UD.FIW.1.1
-FirebaseDatabase user authentication read write,json,UD.FIW.1.20,N/A
-FirebaseDatabase auth != null,json,UD.FIW.1.20,N/A
-FirebaseDatabase in the console,json,UD.FIW.1.20,N/A
-intro to FirebaseDatabase listeners,lesson,UD.FIW.1.21,N/A
-FirebaseDatabase ChildEventListener,java,UD.FIW.1.22,UD.FIW.1.1
-FirebaseDatabase ChildEventListener onChildAdded,java,UD.FIW.1.22,UD.FIW.1.1
-FirebaseDatabase ChildEventListener onChildChanged,java,UD.FIW.1.22,UD.FIW.1.1
-FirebaseDatabase ChildEventListener onChildRemoved,java,UD.FIW.1.22,UD.FIW.1.1
-FirebaseDatabase ChildEventListener onChildRemoved,java,UD.FIW.1.22,UD.FIW.1.1
-FirebaseDatabase ChildEventListener onChildMoved,java,UD.FIW.1.22,UD.FIW.1.1
-FirebaseDatabase ChildEventListener onCancelled,java,UD.FIW.1.22,UD.FIW.1.1
-FirebaseDatabase addChildEventListener,java,UD.FIW.1.22,UD.FIW.1.1
-FirebaseDatabase ChildEventListener DataSnapshot getValue,java,UD.FIW.1.22,UD.FIW.1.1
-FirebaseDatabase user authentication validate,json,UD.FIW.1.22,UD.FIW.1.1
-FirebaseDatabase security variable now,lesson,"UD.FIW.1.26, UD.FIW.1.27",N/A
-FirebaseDatabase security variable root,lesson,"UD.FIW.1.26, UD.FIW.1.27",N/A
-FirebaseDatabase security variable data,lesson,"UD.FIW.1.26, UD.FIW.1.27",N/A
-FirebaseDatabase security variable $variables,lesson,"UD.FIW.1.26, UD.FIW.1.27",N/A
-FirebaseDatabase security variable auth,lesson,"UD.FIW.1.26, UD.FIW.1.27",N/A
-FirebaseDatabase security variable auth email,lesson,"UD.FIW.1.26, UD.FIW.1.27",N/A
-FirebaseDatabase security variable auth email_verified,lesson,"UD.FIW.1.26, UD.FIW.1.27",N/A
-FirebaseDatabase security variable auth name,lesson,"UD.FIW.1.26, UD.FIW.1.27",N/A
-FirebaseDatabase security variable auth sub,lesson,"UD.FIW.1.26, UD.FIW.1.27",N/A
-FirebaseDatabase security variable auth firebase.identities,lesson,"UD.FIW.1.26, UD.FIW.1.27",N/A
-FirebaseDatabase security variable auth firebase.sign_in_provider,lesson,"UD.FIW.1.26, UD.FIW.1.27",N/A
-intro to FirebaseUI authentication,lesson,"UD.FIW.1.30, UD.FIW.1.30",N/A
-FirebaseUI authentication dependencies,gradle,UD.FIW.1.33,UD.FIW.1.1
-Firebase authentication AuthStateListener,java,"UD.FIW.1.34, UD.FIW.1.35",UD.FIW.1.1
-Firebase authentication FirebaseAuth.getInstance,java,UD.FIW.1.34,UD.FIW.1.1
-Firebase authentication addAuthStateListener,java,"UD.FIW.1.34, UD.FIW.1.35",UD.FIW.1.1
-Firebase authentication removeAuthStateListener,java,"UD.FIW.1.34, UD.FIW.1.35",UD.FIW.1.1
-Firebase authentication FirebaseUser getDisplayName,java,"UD.FIW.1.34, UD.FIW.1.35",UD.FIW.1.1
-Firebase authentication FirebaseAuth.getCurrentUser,java,UD.FIW.1.34,UD.FIW.1.1
-Firebase authentication AuthUI.IdpConfig,java,UD.FIW.1.34,UD.FIW.1.1
-Firebase authentication setIsSmartLockEnabled,java,UD.FIW.1.34,UD.FIW.1.1
-Firebase authentication RC_SIGN_IN,java,UD.FIW.1.34,UD.FIW.1.1
-onActivityResult requestCode,java,UD.FIW.1.36,UD.FIW.1.1
-onActivityResult resultCode,java,UD.FIW.1.36,UD.FIW.1.1
-onActivityResult finish,java,UD.FIW.1.36,UD.FIW.1.1
-onActivityResult RESULT_OK,java,UD.FIW.1.36,UD.FIW.1.1
-onActivityResult RESULT_CANCELED,java,UD.FIW.1.36,UD.FIW.1.1
-Firebase authentication AuthUI getInstance signOut,java,UD.FIW.1.37,UD.FIW.1.1
+Keyword,Type,Lesson,Relevant Code,Source
+android studio,lesson,UD.GDC.AD.2.4,N/A,COURSE
+gitub,lesson,UD.GDC.AD.2.5,N/A,COURSE
+android studio,lesson,UD.GDC.AD.2.7,N/A,COURSE
+create project,lesson,UD.GDC.AD.2.7,N/A,COURSE
+new project,lesson,UD.GDC.AD.2.7,N/A,COURSE
+min version,lesson,UD.GDC.AD.2.8,N/A,COURSE
+target version,lesson,UD.GDC.AD.2.8,N/A,COURSE
+api,lesson,UD.GDC.AD.2.8,N/A,COURSE
+emulator,lesson,UD.GDC.AD.2.10,N/A,COURSE
+gradle,lesson,UD.GDC.AD.2.11,N/A,COURSE
+command line,lesson,UD.GDC.AD.2.11,N/A,COURSE
+adb (android debug bridge),lesson,UD.GDC.AD.2.11,N/A,COURSE
+activity,lesson,UD.GDC.AD.2.12,N/A,COURSE
+manifest,lesson,UD.GDC.AD.2.12,N/A,COURSE
+launcher,lesson,UD.GDC.AD.2.12,N/A,COURSE
+main,lesson,UD.GDC.AD.2.12,N/A,COURSE
+xml,lesson,UD.GDC.AD.2.14,N/A,COURSE
+UI (user interface),lesson,UD.GDC.AD.2.14,N/A,COURSE
+container views,lesson,UD.GDC.AD.2.14,N/A,COURSE
+view properties,lesson,UD.GDC.AD.2.14,N/A,COURSE
+R class,java,UD.GDC.AD.2.14,N/A,COURSE
+setContentView,java,UD.GDC.AD.2.14,N/A,COURSE
+inflate,java,UD.GDC.AD.2.14,N/A,COURSE
+FrameLayout  ,resource xml,UD.GDC.AD.2.15;UD.GDC.AD.2.22,UD.GDC.AD.T01.01;UD.GDC.AD.S01.01,COURSE
+padding  ,resource xml,UD.GDC.AD.2.15;UD.GDC.AD.2.22,UD.GDC.AD.T01.01;UD.GDC.AD.S01.01,COURSE
+text size  ,resource xml,UD.GDC.AD.2.15;UD.GDC.AD.2.22,UD.GDC.AD.T01.01;UD.GDC.AD.S01.01,COURSE
+id  ,resource xml,UD.GDC.AD.2.16;UD.GDC.AD.2.22,UD.GDC.AD.T01.02;UD.GDC.AD.S01.01;UD.GDC.AD.S01.02,COURSE
+append string to TextView  ,java,UD.GDC.AD.2.16;UD.GDC.AD.2.22,UD.GDC.AD.T01.02;UD.GDC.AD.S01.01;UD.GDC.AD.S01.02,COURSE
+ScrollView  ,resource xml,UD.GDC.AD.2.17,UD.GDC.AD.T01.03;UD.GDC.AD.S01.01,COURSE
+ConstraintLayout  ,resource xml,UD.GDC.AD.2.18,N/A,COURSE
+choosing a layout in android studio layout editor,lesson,UD.GDC.AD.2.19,N/A,COURSE
+reference to view  ,java,UD.GDC.AD.2.24,UD.GDC.AD.S01.02,COURSE
+findByViewId,java,UD.GDC.AD.2.24,UD.GDC.AD.S01.02,COURSE
+intro to logging levels,lesson,UD.GDC.AD.3.2,N/A,COURSE
+intro to log syntax,java,UD.GDC.AD.3.2,N/A,COURSE
+LinearLayout  ,resource xml,UD.GDC.AD.3.4,UD.GDC.AD.T02.01,COURSE
+orientation  ,resource xml,UD.GDC.AD.3.4,UD.GDC.AD.T02.01,COURSE
+xmkns:app  ,resource xml,UD.GDC.AD.3.4,UD.GDC.AD.T02.01,COURSE
+text hint  ,resource xml,UD.GDC.AD.3.4,UD.GDC.AD.T02.01,COURSE
+intro to res directory,lesson,UD.GDC.AD.3.5,N/A,COURSE
+intro to resource types,lesson,UD.GDC.AD.3.5,N/A,COURSE
+getString  ,java,UD.GDC.AD.3.5,N/A,COURSE
+xliff:g  ,resource xml,UD.GDC.AD.3.5,N/A,COURSE
+string  ,resource xml,UD.GDC.AD.3.5,N/A,COURSE
+intro to android menu,lesson,UD.GDC.AD.3.6,N/A,COURSE
+intro to Action Bar,lesson,UD.GDC.AD.3.6,N/A,COURSE
+ActionBar onCreateOptionsMenu  ,java,UD.GDC.AD.3.7;UD.GDC.AD.3.23,UD.GDC.AD.T02.02;UD.GDC.AD.S02.02;UD.GDC.AD.T03.06,COURSE
+ActionBar getMenuInflater  ,java,UD.GDC.AD.3.7;UD.GDC.AD.3.23,UD.GDC.AD.T02.02;UD.GDC.AD.S02.02;UD.GDC.AD.T03.06,COURSE
+ActionBar onOptionsItemSelected  ,java,UD.GDC.AD.3.7;UD.GDC.AD.3.23,UD.GDC.AD.T02.02;UD.GDC.AD.S02.02;UD.GDC.AD.T03.06,COURSE
+ActionBar menu,resource xml,UD.GDC.AD.3.7;UD.GDC.AD.3.23,UD.GDC.AD.T02.02;UD.GDC.AD.S02.02;UD.GDC.AD.T03.06,COURSE
+ActionBar menu showAsAction ifRoom,resource xml,UD.GDC.AD.3.7;UD.GDC.AD.3.23,UD.GDC.AD.T02.02;UD.GDC.AD.S02.02;UD.GDC.AD.T03.06,COURSE
+ActionBar menu orderInCategory  ,resource xml,UD.GDC.AD.3.7;UD.GDC.AD.3.23,UD.GDC.AD.T02.02;UD.GDC.AD.S02.02;UD.GDC.AD.T03.06,COURSE
+buildUrl  ,java,UD.GDC.AD.3.8;UD.GDC.AD.3.22,UD.GDC.AD.T02.03;UD.GDC.AD.S02.01,COURSE
+URL  ,java,UD.GDC.AD.3.8;UD.GDC.AD.3.22,UD.GDC.AD.T02.03;UD.GDC.AD.S02.01,COURSE
+Uri.parse  ,java,UD.GDC.AD.3.8;UD.GDC.AD.3.22,UD.GDC.AD.T02.03;UD.GDC.AD.S02.01,COURSE
+appendQueryParameter  ,java,UD.GDC.AD.3.8;UD.GDC.AD.3.22,UD.GDC.AD.T02.03;UD.GDC.AD.S02.01,COURSE
+MalformedURLException  ,java,UD.GDC.AD.3.8;UD.GDC.AD.3.22,UD.GDC.AD.T02.03;UD.GDC.AD.S02.01,COURSE
+intro to http request,lesson,UD.GDC.AD.3.9,N/A,COURSE
+HttpUrlConnection  ,java,UD.GDC.AD.3.9,N/A,COURSE
+openConnection  ,java,UD.GDC.AD.3.9,N/A,COURSE
+inputStream  ,java,UD.GDC.AD.3.9,N/A,COURSE
+Scanner  ,java,UD.GDC.AD.3.9,N/A,COURSE
+UTF encoding in JSON/JS and Android,lesson,UD.GDC.AD.3.9,N/A,COURSE
+intro to permissions,lesson,UD.GDC.AD.3.10,N/A,COURSE
+INTERNET permission in manifest,manifest xml,UD.GDC.AD.3.12,UD.GDC.AD.T02.04;UD.GDC.AD.S02.01,COURSE
+IOException  ,java,UD.GDC.AD.3.12,UD.GDC.AD.T02.04;UD.GDC.AD.S02.01,COURSE
+intro to threads,lesson,UD.GDC.AD.3.13,N/A,COURSE
+intro to AsyncTask,lesson,UD.GDC.AD.3.14,N/A,COURSE
+AsyncTask  ,java,UD.GDC.AD.3.16;UD.GDC.AD.3.22,UD.GDC.AD.T02.05;UD.GDC.AD.S02.01,COURSE
+AsyncTask doInBackground  ,java,UD.GDC.AD.3.16;UD.GDC.AD.3.22,UD.GDC.AD.T02.05;UD.GDC.AD.S02.01,COURSE
+AsyncTask onPostExecute  ,java,UD.GDC.AD.3.16;UD.GDC.AD.3.22,UD.GDC.AD.T02.05;UD.GDC.AD.S02.01,COURSE
+AsyncTask execute  ,java,UD.GDC.AD.3.16;UD.GDC.AD.3.22,UD.GDC.AD.T02.05;UD.GDC.AD.S02.01,COURSE
+visibility  ,resource xml,UD.GDC.AD.3.18;UD.GDC.AD.3.24,UD.GDC.AD.T02.06;UD.GDC.AD.S02.03,COURSE
+ProgressBar  ,resource xml,UD.GDC.AD.3.18;UD.GDC.AD.3.24,UD.GDC.AD.T02.06;UD.GDC.AD.S02.03,COURSE
+loading indicator,resource xml,UD.GDC.AD.3.18;UD.GDC.AD.3.24,UD.GDC.AD.T02.06;UD.GDC.AD.S02.03,COURSE
+ProgressBar  ,java,UD.GDC.AD.3.18;UD.GDC.AD.3.24,UD.GDC.AD.T02.06;UD.GDC.AD.S02.03,COURSE
+loading indicator,java,UD.GDC.AD.3.18;UD.GDC.AD.3.24,UD.GDC.AD.T02.06;UD.GDC.AD.S02.03,COURSE
+setVisibility  ,java,UD.GDC.AD.3.18;UD.GDC.AD.3.24,UD.GDC.AD.T02.06;UD.GDC.AD.S02.03,COURSE
+AsyncTask onPreExecute  ,java,UD.GDC.AD.3.18;UD.GDC.AD.3.24,UD.GDC.AD.T02.06;UD.GDC.AD.S02.03,COURSE
+intro to JSON,JSON,UD.GDC.AD.3.19;UD.GDC.AD.3.20,N/A,COURSE
+reading JSON code,JSON,UD.GDC.AD.3.19;UD.GDC.AD.3.20,N/A,COURSE
+intro to RecyclerView,lesson,UD.GDC.AD.4.2;UD.GDC.AD.4.3;UD.GDC.AD.4.4;UD.GDC.AD.4.5;UD.GDC.AD.4.7;UD.GDC.AD.4.8,N/A,COURSE
+com.android.support:recyclerview,gradle,UD.GDC.AD.4.9;UD.GDC.AD.4.22,UD.GDC.AD.T03.01;UD.GDC.AD.S03.01,COURSE
+RecycleView compile,gradle,UD.GDC.AD.4.9;UD.GDC.AD.4.22,UD.GDC.AD.T03.01;UD.GDC.AD.S03.01,COURSE
+RecycleView dependency,gradle,UD.GDC.AD.4.9;UD.GDC.AD.4.22,UD.GDC.AD.T03.01;UD.GDC.AD.S03.01,COURSE
+RecycleView,resource xml,UD.GDC.AD.4.9;UD.GDC.AD.4.22,UD.GDC.AD.T03.01;UD.GDC.AD.S03.01,COURSE
+sp units,lesson,UD.GDC.AD.4.10;UD.GDC.AD.13.8;UD.GDC.AD.13.15,N/A,COURSE
+dp units,lesson,UD.GDC.AD.4.10;UD.GDC.AD.13.8;UD.GDC.AD.13.15,N/A,COURSE
+intro to RecycleView Adapter,lesson,UD.GDC.AD.4.10,N/A,COURSE
+intro to ViewHolder,lesson,UD.GDC.AD.4.10,N/A,COURSE
+RecycleView item layout,resource xml,UD.GDC.AD.4.11;UD.GDC.AD.4.22,UD.GDC.AD.T03.02;UD.GDC.AD.S03.01,COURSE
+fontFamily,resource xml,UD.GDC.AD.4.11,UD.GDC.AD.T03.02,COURSE
+RecycleView ViewHolder,java,UD.GDC.AD.4.11,UD.GDC.AD.T03.02,COURSE
+RecycleView bind,java,UD.GDC.AD.4.11,UD.GDC.AD.T03.02,COURSE
+String.valueOf,java,UD.GDC.AD.4.11,UD.GDC.AD.T03.02,COURSE
+RecycleView Adapter,lesson,UD.GDC.AD.4.12,N/A,COURSE
+RecycleView onCreateViewHolder,lesson,UD.GDC.AD.4.12,N/A,COURSE
+RecycleView onBindViewHolder,lesson,UD.GDC.AD.4.12,N/A,COURSE
+RecycleView Adapter,java,UD.GDC.AD.4.14;UD.GDC.AD.4.15;UD.GDC.AD.4.22,UD.GDC.AD.T03.03;UD.GDC.AD.S03.01,COURSE
+RecycleView onCreateViewHolder,java,UD.GDC.AD.4.14;UD.GDC.AD.4.15;UD.GDC.AD.4.22,UD.GDC.AD.T03.03;UD.GDC.AD.S03.01,COURSE
+RecycleView onBindViewHolder,java,UD.GDC.AD.4.14;UD.GDC.AD.4.15;UD.GDC.AD.4.22,UD.GDC.AD.T03.03;UD.GDC.AD.S03.01,COURSE
+RecycleView getItemCount,java,UD.GDC.AD.4.14;UD.GDC.AD.4.15;UD.GDC.AD.4.22,UD.GDC.AD.T03.03;UD.GDC.AD.S03.01,COURSE
+intro to RecycleView LayoutManager,java,UD.GDC.AD.4.16;UD.GDC.AD.4.17;UD.GDC.AD.4.19,N/A,COURSE
+RecycleView setLayoutManager,java,UD.GDC.AD.4.18;UD.GDC.AD.4.22,UD.GDC.AD.T03.04;UD.GDC.AD.S03.01,COURSE
+RecycleView setHasFixedSize,java,UD.GDC.AD.4.17;UD.GDC.AD.4.18;UD.GDC.AD.4.22,UD.GDC.AD.T03.04;UD.GDC.AD.S03.01,COURSE
+RecycleView setAdapter,java,UD.GDC.AD.4.17;UD.GDC.AD.4.18;UD.GDC.AD.4.22,UD.GDC.AD.T03.04;UD.GDC.AD.S03.01,COURSE
+RecycleView ItemClickListener,java,UD.GDC.AD.4.20,N/A,COURSE
+Toast management,java,UD.GDC.AD.4.20,N/A,COURSE
+RecycleView notifyDataSetChanged,java,UD.GDC.AD.4.22;UD.GDC.AD.8.15,UD.GDC.AD.S03.01;UD.GDC.AD.T07.05,COURSE
+RecycleView refresh/reset,java,UD.GDC.AD.4.19;UD.GDC.AD.4.22,UD.GDC.AD.T03.06;UD.GDC.AD.S03.01,COURSE
+RecycleView viewHolderCount,java,UD.GDC.AD.4.19,UD.GDC.AD.T03.05,COURSE
+RecycleView OnClickHandler interface,java,UD.GDC.AD.4.21;UD.GDC.AD.4.23;UD.GDC.AD.10.43;UD.GDC.AD.10.44,UD.GDC.AD.T03.07;UD.GDC.AD.S03.02;UD.GDC.AD.S09.05,COURSE
+RecycleView ItemClickListener/ItemClickHandler,java,UD.GDC.AD.4.21;UD.GDC.AD.4.23,UD.GDC.AD.T03.07;UD.GDC.AD.S03.02,COURSE
+RecycleView onListItemClick/onClick,java,UD.GDC.AD.4.21;UD.GDC.AD.4.23;UD.GDC.AD.10.43;UD.GDC.AD.10.44,UD.GDC.AD.T03.07;UD.GDC.AD.S03.02;UD.GDC.AD.S09.05,COURSE
+RecycleView with AsyncTask for data loading,java,UD.GDC.AD.4.22,UD.GDC.AD.S03.01,COURSE
+intro to intents,java,UD.GDC.AD.5.3;UD.GDC.AD.5.7,N/A,COURSE
+create activity,java,UD.GDC.AD.5.5;UD.GDC.AD.5.6,UD.GDC.AD.T04a.01;UD.GDC.AD.S04.01,COURSE
+android:parentActivityName,java,UD.GDC.AD.5.6,UD.GDC.AD.T04a.01;UD.GDC.AD.S04.01,COURSE
+activity meta-data,java,UD.GDC.AD.5.6,UD.GDC.AD.T04a.01;UD.GDC.AD.S04.01,COURSE
+android.support.PARENT_ACTIVITY,java,UD.GDC.AD.5.6,UD.GDC.AD.T04a.01;UD.GDC.AD.S04.01,COURSE
+back arrow (up button) in menu,resource xml,UD.GDC.AD.5.6,UD.GDC.AD.T04a.01;UD.GDC.AD.S04.01,COURSE
+create Intent,java,UD.GDC.AD.5.8,UD.GDC.AD.T04a.02;UD.GDC.AD.S04.02,COURSE
+startActivity,java,UD.GDC.AD.5.8,UD.GDC.AD.T04a.02;UD.GDC.AD.S04.02,COURSE
+putExtra,java,UD.GDC.AD.5.9,UD.GDC.AD.T04a.03;UD.GDC.AD.S04.02,COURSE
+getIntent,java,UD.GDC.AD.5.9,UD.GDC.AD.T04a.03;UD.GDC.AD.S04.02,COURSE
+hasExtra,java,UD.GDC.AD.5.9,UD.GDC.AD.T04a.03;UD.GDC.AD.S04.02,COURSE
+getStringExtra,java,UD.GDC.AD.5.9,UD.GDC.AD.T04a.03;UD.GDC.AD.S04.02,COURSE
+Intent.EXTRA_TEXT,java,UD.GDC.AD.5.9,UD.GDC.AD.T04a.03;UD.GDC.AD.S04.02,COURSE
+intro to implicit intents,java,UD.GDC.AD.5.11;UD.GDC.AD.5.12,N/A,COURSE
+Uri.parse,java,UD.GDC.AD.5.13,UD.GDC.AD.T04b.01,COURSE
+open Web page intent,java,UD.GDC.AD.5.13,UD.GDC.AD.T04b.01,COURSE
+resolveActivity,java,UD.GDC.AD.5.13,UD.GDC.AD.T04b.01,COURSE
+getPackageManager,java,UD.GDC.AD.5.13,UD.GDC.AD.T04b.01,COURSE
+Intent.ACTION_VIEW,java,UD.GDC.AD.5.13,UD.GDC.AD.T04b.01,COURSE
+intro to open map intent / URLs,java,UD.GDC.AD.5.14,N/A,COURSE
+geo Uri,java,UD.GDC.AD.5.16,N/A,COURSE
+Uri.Builder,java,UD.GDC.AD.5.16;UD.GDC.AD.5.17,UD.GDC.AD.T04b.02;UD.GDC.AD.S04.03,COURSE
+Uri builder.scheme,java,UD.GDC.AD.5.16;UD.GDC.AD.5.17,UD.GDC.AD.T04b.02;UD.GDC.AD.S04.03,COURSE
+Uri builder.path,java,UD.GDC.AD.5.16;UD.GDC.AD.5.17,UD.GDC.AD.T04b.02;UD.GDC.AD.S04.03,COURSE
+Uri builder.query,java,UD.GDC.AD.5.16;UD.GDC.AD.5.17,UD.GDC.AD.T04b.02;UD.GDC.AD.S04.03,COURSE
+Intent.setData,java,UD.GDC.AD.5.16;UD.GDC.AD.5.17,UD.GDC.AD.T04b.02;UD.GDC.AD.S04.03,COURSE
+intro to ShareIntent / ShareCompat,java,UD.GDC.AD.5.18,N/A,COURSE
+intro to Media Type / MIME,java,UD.GDC.AD.5.19,N/A,COURSE
+ShareCompat.IntentBuilder,java,UD.GDC.AD.5.20;UD.GDC.AD.5.21,UD.GDC.AD.T04b.03;UD.GDC.AD.S04.03,COURSE
+ShareCompat setChooserTitle,java,UD.GDC.AD.5.20;UD.GDC.AD.5.21,UD.GDC.AD.T04b.03;UD.GDC.AD.S04.03,COURSE
+ShareCompat setType,java,UD.GDC.AD.5.20;UD.GDC.AD.5.21,UD.GDC.AD.T04b.03;UD.GDC.AD.S04.03,COURSE
+ShareCompat setText,java,UD.GDC.AD.5.20;UD.GDC.AD.5.21,UD.GDC.AD.T04b.03;UD.GDC.AD.S04.03,COURSE
+mime,java,UD.GDC.AD.5.20;UD.GDC.AD.5.21,UD.GDC.AD.T04b.03;UD.GDC.AD.S04.03,COURSE
+ShareCompat setChooserTitle,java,UD.GDC.AD.5.20;UD.GDC.AD.5.21,UD.GDC.AD.T04b.03;UD.GDC.AD.S04.03,COURSE
+ShareCompat startChooser,java,UD.GDC.AD.5.20;UD.GDC.AD.5.21,UD.GDC.AD.T04b.03;UD.GDC.AD.S04.03,COURSE
+intro to activity lifecyle,lesson,UD.GDC.AD.6.3;UD.GDC.AD.6.4;UD.GDC.AD.6.6,N/A,COURSE
+activity lifecyle onStart,java,UD.GDC.AD.6.5,UD.GDC.AD.T05a.01,COURSE
+activity lifecyle onPause,java,UD.GDC.AD.6.5,UD.GDC.AD.T05a.01,COURSE
+activity lifecyle onStop,java,UD.GDC.AD.6.5,UD.GDC.AD.T05a.01,COURSE
+activity lifecyle onDestry,java,UD.GDC.AD.6.5,UD.GDC.AD.T05a.01,COURSE
+activity lifecyle onCreate,java,UD.GDC.AD.6.5,UD.GDC.AD.T05a.01,COURSE
+activity lifecyle onResume,java,UD.GDC.AD.6.5,UD.GDC.AD.T05a.01,COURSE
+onSaveInstanceState,java,UD.GDC.AD.6.7;UD.GDC.AD.6.8,UD.GDC.AD.T05a.02,COURSE
+Bundle,java,UD.GDC.AD.6.7;UD.GDC.AD.6.8,UD.GDC.AD.T05a.02,COURSE
+Bundle putString,java,UD.GDC.AD.6.7;UD.GDC.AD.6.8;UD.GDC.AD.6.12;UD.GDC.AD.6.13,UD.GDC.AD.T05a.02;UD.GDC.AD.T05b.01,COURSE
+savedInstanceState containsKey,java,UD.GDC.AD.6.7;UD.GDC.AD.6.8,UD.GDC.AD.T05a.02,COURSE
+savedInstanceState getString,java,UD.GDC.AD.6.7;UD.GDC.AD.6.8;UD.GDC.AD.6.12;UD.GDC.AD.6.13,UD.GDC.AD.T05a.02;UD.GDC.AD.T05b.01,COURSE
+onSaveInstanceState rotation,java,UD.GDC.AD.6.9,UD.GDC.AD.T05a.03,COURSE
+intro to saving data upon app termination,lesson,UD.GDC.AD.6.10;UD.GDC.AD.6.11,N/A,COURSE
+onSaveInstanceState persist data,java,UD.GDC.AD.6.7;UD.GDC.AD.6.8;UD.GDC.AD.6.12;UD.GDC.AD.6.13,UD.GDC.AD.T05a.02;UD.GDC.AD.T05b.01,COURSE
+raw JSON from http,java,UD.GDC.AD.6.12;UD.GDC.AD.6.13,UD.GDC.AD.T05b.01,COURSE
+intro to AsyncTaskLoader,lesson,UD.GDC.AD.6.14,N/A,COURSE
+AsyncTaskLoader,java,UD.GDC.AD.6.16;UD.GDC.AD.6.17,UD.GDC.AD.T05b.02,COURSE
+implements LoaderManager.LoaderCallbacks,java,UD.GDC.AD.6.16;UD.GDC.AD.6.17;UD.GDC.AD.6.20;UD.GDC.AD.10.43;UD.GDC.AD.10.44,UD.GDC.AD.T05b.02;UD.GDC.AD.S05.01;UD.GDC.AD.S09.05,COURSE
+AsyncTaskLoader onCreateLoader,java,UD.GDC.AD.6.16;UD.GDC.AD.6.17;UD.GDC.AD.6.20,UD.GDC.AD.T05b.02;UD.GDC.AD.S05.01,COURSE
+AsyncTaskLoader onStartLoading,java,UD.GDC.AD.6.16;UD.GDC.AD.6.17;UD.GDC.AD.6.20,UD.GDC.AD.T05b.02;UD.GDC.AD.S05.01,COURSE
+AsyncTaskLoader loadInBackground,java,UD.GDC.AD.6.16;UD.GDC.AD.6.17;UD.GDC.AD.6.20,UD.GDC.AD.T05b.02;UD.GDC.AD.S05.01,COURSE
+AsyncTaskLoader args,java,UD.GDC.AD.6.16;UD.GDC.AD.6.17;UD.GDC.AD.6.20,UD.GDC.AD.T05b.02;UD.GDC.AD.S05.01,COURSE
+AsyncTaskLoader forceLoad,java,UD.GDC.AD.6.16;UD.GDC.AD.6.17;UD.GDC.AD.6.20,UD.GDC.AD.T05b.02;UD.GDC.AD.S05.01,COURSE
+AsyncTaskLoader args.getString,java,UD.GDC.AD.6.16;UD.GDC.AD.6.17;UD.GDC.AD.6.20,UD.GDC.AD.T05b.02;UD.GDC.AD.S05.01,COURSE
+TextUtils.isEmpty,java,UD.GDC.AD.6.16;UD.GDC.AD.6.17,UD.GDC.AD.T05b.02,COURSE
+LoaderManager,java,UD.GDC.AD.6.16;UD.GDC.AD.6.17;UD.GDC.AD.6.20,UD.GDC.AD.T05b.02;UD.GDC.AD.S05.01,COURSE
+getSupportLoaderManager,java,UD.GDC.AD.6.16;UD.GDC.AD.6.17;UD.GDC.AD.6.20,UD.GDC.AD.T05b.02;UD.GDC.AD.S05.01,COURSE
+getSupportLoaderManager getLoader,java,UD.GDC.AD.6.16;UD.GDC.AD.6.17;UD.GDC.AD.6.20,UD.GDC.AD.T05b.02;UD.GDC.AD.S05.01,COURSE
+getSupportLoaderManager initLoader,java,UD.GDC.AD.6.16;UD.GDC.AD.6.17;UD.GDC.AD.6.20,UD.GDC.AD.T05b.02;UD.GDC.AD.S05.01,COURSE
+getSupportLoaderManager restartLoader,java,UD.GDC.AD.6.16;UD.GDC.AD.6.17;UD.GDC.AD.6.20,UD.GDC.AD.T05b.02;UD.GDC.AD.S05.01,COURSE
+intro to Loader caching,lesson,UD.GDC.AD.6.18,N/A,COURSE
+Loader deliverResult,java,UD.GDC.AD.6.19;UD.GDC.AD.6.20,UD.GDC.AD.T05b.03;UD.GDC.AD.S05.01,COURSE
+Loader caching,java,UD.GDC.AD.6.19;UD.GDC.AD.6.20,UD.GDC.AD.T05b.03;UD.GDC.AD.S05.01,COURSE
+intro to preferences,lesson,UD.GDC.AD.7.2;UD.GDC.AD.7.31,N/A,COURSE
+checkSelfPermission,java,UD.GDC.AD.7.3,UD.GDC.AD.T06.01,COURSE
+Manifest.permission.RECORD_AUDIO,java,UD.GDC.AD.7.3,UD.GDC.AD.T06.01,COURSE
+Build.VERSION.SDK_INT,java,UD.GDC.AD.7.3,UD.GDC.AD.T06.01,COURSE
+Build.VERSION_CODES,java,UD.GDC.AD.7.3,UD.GDC.AD.T06.01,COURSE
+requestPermissions,java,UD.GDC.AD.7.3,UD.GDC.AD.T06.01,COURSE
+PackageManager.PERMISSION_GRANTED,java,UD.GDC.AD.7.3,UD.GDC.AD.T06.01,COURSE
+intro to Data Persistence,lesson,UD.GDC.AD.7.5,N/A,COURSE
+intro to SharedPreferences,lesson,UD.GDC.AD.7.5,N/A,COURSE
+intro to onSavedInstanceState,lesson,UD.GDC.AD.7.5,N/A,COURSE
+intro to SQLite Database,lesson,UD.GDC.AD.7.5;UD.GDC.AD.10.3,N/A,COURSE
+SQLite directory,lesson,UD.GDC.AD.10.3,N/A,COURSE
+SQLite item,lesson,UD.GDC.AD.10.3,N/A,COURSE
+intro to Internal/External Storage,lesson,UD.GDC.AD.7.5,N/A,COURSE
+intro to Server/Firebase,lesson,UD.GDC.AD.7.5,N/A,COURSE
+intro to PreferenceFragment,lesson,UD.GDC.AD.7.7,N/A,COURSE
+intro to Fragment,lesson,UD.GDC.AD.7.7,N/A,COURSE
+Preferences SettingsActivity,java,UD.GDC.AD.7.8;UD.GDC.AD.7.9;UD.GDC.AD.7.32 UD.GDC.AD.7.33,UD.GDC.AD.T06.01;UD.GDC.AD.S06.01,COURSE
+Preferences Settings button in menu,java,UD.GDC.AD.7.8;UD.GDC.AD.7.9;UD.GDC.AD.7.32 UD.GDC.AD.7.33,UD.GDC.AD.T06.01;UD.GDC.AD.S06.01,COURSE
+compile com.android.support:preference-v7,gradle,UD.GDC.AD.7.10;UD.GDC.AD.7.11;UD.GDC.AD.7.34,UD.GDC.AD.T06.02;UD.GDC.AD.S06.02,COURSE
+extends PreferenceFragmentCompat,java,UD.GDC.AD.7.10;UD.GDC.AD.7.11;UD.GDC.AD.7.34,UD.GDC.AD.T06.02;UD.GDC.AD.S06.02,COURSE
+PreferenceScreen,resource xml,UD.GDC.AD.7.10;UD.GDC.AD.7.11;UD.GDC.AD.7.34,UD.GDC.AD.T06.02;UD.GDC.AD.S06.02,COURSE
+CheckBoxPreference,resource xml,UD.GDC.AD.7.10;UD.GDC.AD.7.11;UD.GDC.AD.7.34,UD.GDC.AD.T06.02;UD.GDC.AD.S06.02,COURSE
+addPreferencesFromResource,java,UD.GDC.AD.7.10;UD.GDC.AD.7.11;UD.GDC.AD.7.34,UD.GDC.AD.T06.02;UD.GDC.AD.S06.02,COURSE
+preferenceTheme @style/PreferenceThemeOverla,resource xml,UD.GDC.AD.7.10;UD.GDC.AD.7.11;UD.GDC.AD.7.34,UD.GDC.AD.T06.02;UD.GDC.AD.S06.02,COURSE
+setupSharedPreferences,java,UD.GDC.AD.7.12;UD.GDC.AD.7.13;UD.GDC.AD.7.35,UD.GDC.AD.T06.03;UD.GDC.AD.S06.03,COURSE
+PreferenceManager.getDefaultSharedPreferences,java,UD.GDC.AD.7.12;UD.GDC.AD.7.13;UD.GDC.AD.7.35,UD.GDC.AD.T06.03;UD.GDC.AD.S06.03,COURSE
+SharedPreferences resources,resource xml,UD.GDC.AD.7.14;UD.GDC.AD.7.15;UD.GDC.AD.7.20;UD.GDC.AD.7.33;UD.GDC.AD.7.34,UD.GDC.AD.T06.04;UD.GDC.AD.T06.06;UD.GDC.AD.S06.02,COURSE
+implements SharedPreferences.OnSharedPreferenceChangeListener,lesson,UD.GDC.AD.7.16;UD.GDC.AD.7.17;UD.GDC.AD.7.18;UD.GDC.AD.7.33;UD.GDC.AD.7.34,UD.GDC.AD.T06.05;UD.GDC.AD.S06.02;UD.GDC.AD.S06.03,COURSE
+registerOnSharedPreferenceChangeListener,java,UD.GDC.AD.7.16;UD.GDC.AD.7.17;UD.GDC.AD.7.18;UD.GDC.AD.7.33;UD.GDC.AD.7.34,UD.GDC.AD.T06.05;UD.GDC.AD.S06.02;UD.GDC.AD.S06.03,COURSE
+unregisterOnSharedPreferenceChangeListener,java,UD.GDC.AD.7.16;UD.GDC.AD.7.17;UD.GDC.AD.7.18;UD.GDC.AD.7.33;UD.GDC.AD.7.34,UD.GDC.AD.T06.05;UD.GDC.AD.S06.02;UD.GDC.AD.S06.03,COURSE
+SharedPreferences ListPreference,java,UD.GDC.AD.7.21;UD.GDC.AD.7.22;UD.GDC.AD.7.34,UD.GDC.AD.T06.07;UD.GDC.AD.S06.02,COURSE
+SharedPreferences ListPreference,resource xml,UD.GDC.AD.7.21;UD.GDC.AD.7.22;UD.GDC.AD.7.34,UD.GDC.AD.T06.07;UD.GDC.AD.S06.02,COURSE
+findPreference,java,UD.GDC.AD.7.21;UD.GDC.AD.7.22;UD.GDC.AD.7.34,UD.GDC.AD.T06.07;UD.GDC.AD.S06.02,COURSE
+ListPreference,resource xml,UD.GDC.AD.7.21;UD.GDC.AD.7.22;UD.GDC.AD.7.34,UD.GDC.AD.T06.07;UD.GDC.AD.S06.02,COURSE
+onSharedPreferenceChanged,java,UD.GDC.AD.7.21;UD.GDC.AD.7.22;UD.GDC.AD.7.34,UD.GDC.AD.T06.07;UD.GDC.AD.S06.02,COURSE
+getPreferenceScreen,java,UD.GDC.AD.7.21;UD.GDC.AD.7.22;UD.GDC.AD.7.34,UD.GDC.AD.T06.07;UD.GDC.AD.S06.02,COURSE
+getSharedPreferences,java,UD.GDC.AD.7.21;UD.GDC.AD.7.22;UD.GDC.AD.7.34,UD.GDC.AD.T06.07;UD.GDC.AD.S06.02,COURSE
+instanceof CheckBoxPreference,java,UD.GDC.AD.7.21;UD.GDC.AD.7.22;UD.GDC.AD.7.34,UD.GDC.AD.T06.07;UD.GDC.AD.S06.02,COURSE
+instanceof ListPreference,java,UD.GDC.AD.7.21;UD.GDC.AD.7.22;UD.GDC.AD.7.34,UD.GDC.AD.T06.07;UD.GDC.AD.S06.02,COURSE
+Preference findIndexOfValue,java,UD.GDC.AD.7.21;UD.GDC.AD.7.22;UD.GDC.AD.7.34,UD.GDC.AD.T06.07;UD.GDC.AD.S06.02,COURSE
+Preference setSummary,java,UD.GDC.AD.7.21;UD.GDC.AD.7.22;UD.GDC.AD.7.34,UD.GDC.AD.T06.07;UD.GDC.AD.S06.02,COURSE
+Preference getEntries,java,UD.GDC.AD.7.21;UD.GDC.AD.7.22;UD.GDC.AD.7.34,UD.GDC.AD.T06.07;UD.GDC.AD.S06.02,COURSE
+EditTextPreference,resource xml,UD.GDC.AD.7.25;UD.GDC.AD.7.26,UD.GDC.AD.T06.09,COURSE
+instanceof EditTextPreference,java,UD.GDC.AD.7.25;UD.GDC.AD.7.26,UD.GDC.AD.T06.09,COURSE
+intro to EditTextPreference Constraints,lesson,UD.GDC.AD.7.27,N/A,COURSE
+Preference.OnPreferenceChangeListener,java,UD.GDC.AD.7.28;UD.GDC.AD.7.29,UD.GDC.AD.T06.10,COURSE
+onPreferenceChange,java,UD.GDC.AD.7.28;UD.GDC.AD.7.29,UD.GDC.AD.T06.10,COURSE
+NumberFormatException,java,UD.GDC.AD.7.28;UD.GDC.AD.7.29,UD.GDC.AD.T06.10,COURSE
+setOnPreferenceChangeListener,java,UD.GDC.AD.7.28;UD.GDC.AD.7.29,UD.GDC.AD.T06.10,COURSE
+setDisplayHomeAsUpEnabled,java,UD.GDC.AD.7.32 UD.GDC.AD.7.33,UD.GDC.AD.S06.01,COURSE
+onBackPressed,java,UD.GDC.AD.7.32 UD.GDC.AD.7.33,UD.GDC.AD.S06.01,COURSE
+"android:launchMode=""singleTop""",java,UD.GDC.AD.7.8;UD.GDC.AD.7.9;UD.GDC.AD.7.32 UD.GDC.AD.7.33;UD.GDC.AD.11.17,UD.GDC.AD.T06.01;UD.GDC.AD.S06.01;UD.GDC.AD.T10.02,COURSE
+Preference getKey,java,UD.GDC.AD.7.33,UD.GDC.AD.S06.02,COURSE
+intro to SQLite Database,lesson,UD.GDC.AD.8.2;UD.GDC.AD.10.16,N/A,COURSE
+intro to SQLite Database Contract,lesson,UD.GDC.AD.8.5,N/A,COURSE
+intro to Unit Tests,lesson,UD.GDC.AD.8.6;UD.GDC.AD.10.15,N/A,COURSE
+SQLite implements BaseColumns,java,UD.GDC.AD.8.7;UD.GDC.AD.8.18,UD.GDC.AD.T07.01;UD.GDC.AD.S07.01,COURSE
+SQLite TABLE_NAME,java,UD.GDC.AD.8.7;UD.GDC.AD.8.18,UD.GDC.AD.T07.01;UD.GDC.AD.S07.01,COURSE
+SQLite extends SQLiteOpenHelper,java,UD.GDC.AD.8.8;UD.GDC.AD.8.9;UD.GDC.AD.8.18,UD.GDC.AD.T07.02;UD.GDC.AD.S07.01,COURSE
+SQLite dBHelper,java,UD.GDC.AD.8.8;UD.GDC.AD.8.9;UD.GDC.AD.8.18;UD.GDC.AD.10.6;UD.GDC.AD.10.35;UD.GDC.AD.10.36,UD.GDC.AD.T07.02;UD.GDC.AD.S07.01;UD.GDC.AD.T09.01;UD.GDC.AD.S09.01,COURSE
+SQLite SQLite DATABASE_NAME,java,UD.GDC.AD.8.8;UD.GDC.AD.8.9;UD.GDC.AD.8.18,UD.GDC.AD.T07.02;UD.GDC.AD.S07.01,COURSE
+SQLite DATABASE_VERSION,java,UD.GDC.AD.8.8;UD.GDC.AD.8.9;UD.GDC.AD.8.18,UD.GDC.AD.T07.02;UD.GDC.AD.S07.01,COURSE
+SQLite SQL_CREATE_WAITLIST_TABLE,java,UD.GDC.AD.8.8;UD.GDC.AD.8.9;UD.GDC.AD.8.18,UD.GDC.AD.T07.02;UD.GDC.AD.S07.01,COURSE
+SQLite CREATE TABLE,java,UD.GDC.AD.8.8;UD.GDC.AD.8.9;UD.GDC.AD.8.18,UD.GDC.AD.T07.02;UD.GDC.AD.S07.01,COURSE
+SQLite INTEGER PRIMARY KEY AUTOINCREMENT,java,UD.GDC.AD.8.8;UD.GDC.AD.8.9;UD.GDC.AD.8.18,UD.GDC.AD.T07.02;UD.GDC.AD.S07.01,COURSE
+SQLite TEXT NOT NULL,java,UD.GDC.AD.8.8;UD.GDC.AD.8.9;UD.GDC.AD.8.18,UD.GDC.AD.T07.02;UD.GDC.AD.S07.01,COURSE
+SQLite INTEGER NOT NULL,java,UD.GDC.AD.8.8;UD.GDC.AD.8.9;UD.GDC.AD.8.18,UD.GDC.AD.T07.02;UD.GDC.AD.S07.01,COURSE
+SQLite NOT NULL,java,UD.GDC.AD.8.19,UD.GDC.AD.S07.02,COURSE
+SQLite TIMESTAMP DEFAULT CURRENT_TIMESTAMP,java,UD.GDC.AD.8.8;UD.GDC.AD.8.9;UD.GDC.AD.8.18,UD.GDC.AD.T07.02;UD.GDC.AD.S07.01,COURSE
+SQLite execSQL,java,UD.GDC.AD.8.8;UD.GDC.AD.8.9;UD.GDC.AD.8.18,UD.GDC.AD.T07.02;UD.GDC.AD.S07.01,COURSE
+SQLite onUpgrade,java,UD.GDC.AD.8.8;UD.GDC.AD.8.9;UD.GDC.AD.8.18,UD.GDC.AD.T07.02;UD.GDC.AD.S07.01,COURSE
+SQLite DROP TABLE IF EXISTS,java,UD.GDC.AD.8.8;UD.GDC.AD.8.9;UD.GDC.AD.8.19,UD.GDC.AD.T07.02;UD.GDC.AD.S07.02,COURSE
+SQLite SQLiteDatabase,java,UD.GDC.AD.8.10;UD.GDC.AD.8.11,UD.GDC.AD.T07.03,COURSE
+SQLite getWritableDatabase,java,UD.GDC.AD.8.10;UD.GDC.AD.8.11,UD.GDC.AD.T07.03,COURSE
+SQLite Cursor,java,UD.GDC.AD.8.10;UD.GDC.AD.8.11,UD.GDC.AD.T07.03,COURSE
+SQLite query,java,UD.GDC.AD.8.10;UD.GDC.AD.8.11,UD.GDC.AD.T07.03,COURSE
+SQLite Cursor.getCount,java,UD.GDC.AD.8.12;UD.GDC.AD.8.13,UD.GDC.AD.T07.04,COURSE
+SQLite Cursor.moveToPosition,java,UD.GDC.AD.8.12;UD.GDC.AD.8.13,UD.GDC.AD.T07.04,COURSE
+SQLite Cursor.getColumnIndex,java,UD.GDC.AD.8.12;UD.GDC.AD.8.13,UD.GDC.AD.T07.04,COURSE
+SQLite Cursor.getInt,java,UD.GDC.AD.8.12;UD.GDC.AD.8.13,UD.GDC.AD.T07.04,COURSE
+SQLite Cursor.getString,java,UD.GDC.AD.8.12;UD.GDC.AD.8.13,UD.GDC.AD.T07.04,COURSE
+SQLite ContentValues put,java,UD.GDC.AD.8.14;UD.GDC.AD.8.15,UD.GDC.AD.T07.05,COURSE
+SQLite insert,java,UD.GDC.AD.8.14;UD.GDC.AD.8.15,UD.GDC.AD.T07.05,COURSE
+MainActivity.class.getSimpleName LOG_TAG,java,UD.GDC.AD.8.14;UD.GDC.AD.8.15,UD.GDC.AD.T07.05,COURSE
+SQLite swapCursor,java,UD.GDC.AD.8.14;UD.GDC.AD.8.15,UD.GDC.AD.T07.05,COURSE
+SQLite Cursor.close,java,UD.GDC.AD.8.14;UD.GDC.AD.8.15,UD.GDC.AD.T07.05,COURSE
+Edittext clearFocus,java,UD.GDC.AD.8.14;UD.GDC.AD.8.15,UD.GDC.AD.T07.05,COURSE
+SQLite delete,java,UD.GDC.AD.8.16;UD.GDC.AD.8.17;UD.GDC.AD.11.30,UD.GDC.AD.T07.06;UD.GDC.AD.S10.01,COURSE
+ItemTouchHelper SimpleCallback,java,UD.GDC.AD.8.16;UD.GDC.AD.8.17,UD.GDC.AD.T07.06,COURSE
+ItemTouchHelper onMove,java,UD.GDC.AD.8.16;UD.GDC.AD.8.17,UD.GDC.AD.T07.06,COURSE
+ItemTouchHelper onSwiped,java,UD.GDC.AD.8.16;UD.GDC.AD.8.17,UD.GDC.AD.T07.06,COURSE
+ItemTouchHelper attachToRecyclerView,java,UD.GDC.AD.8.16;UD.GDC.AD.8.17,UD.GDC.AD.T07.06,COURSE
+viewHolder.itemView.getTag,java,UD.GDC.AD.8.16;UD.GDC.AD.8.17,UD.GDC.AD.T07.06,COURSE
+Cursor.getLong ID,java,UD.GDC.AD.8.16;UD.GDC.AD.8.17,UD.GDC.AD.T07.06,COURSE
+holder.itemView.setTag,java,UD.GDC.AD.8.16;UD.GDC.AD.8.17,UD.GDC.AD.T07.06,COURSE
+SQLite UNIQUE ON CONFLICT REPLACE,java,UD.GDC.AD.8.20,UD.GDC.AD.S07.03,COURSE
+intro to ContentProvider,lesson,UD.GDC.AD.9.2;UD.GDC.AD.9.3;UD.GDC.AD.9.4;UD.GDC.AD.9.5;UD.GDC.AD.10.4;UD.GDC.AD.10.16,N/A,COURSE
+ContentProvider Permissions TERMS_READ,resource xml,UD.GDC.AD.9.7,UD.GDC.AD.T08.01,COURSE
+intro to ContentResolver,lesson,UD.GDC.AD.9.8;UD.GDC.AD.9.17;UD.GDC.AD.10.16,N/A,COURSE
+ContentResolver getContentResolver,java,UD.GDC.AD.9.7;UD.GDC.AD.11.30,UD.GDC.AD.T08.01;UD.GDC.AD.S10.01,COURSE
+ContentResolver Resolver.query,lesson,UD.GDC.AD.9.9,N/A,COURSE
+ContentResolver Resolver.insert,lesson,UD.GDC.AD.9.9,N/A,COURSE
+ContentResolver Resolver.update,lesson,UD.GDC.AD.9.9,N/A,COURSE
+ContentResolver Resolver.delete,lesson,UD.GDC.AD.9.9,N/A,COURSE
+intro to Uri (Uniform Resource Identifier),lesson,UD.GDC.AD.9.10;UD.GDC.AD.10.4,N/A,COURSE
+UriMatcher,lesson,UD.GDC.AD.10.4;UD.GDC.AD.10.16,N/A,COURSE
+UriMatcher wildcard characters,lesson,UD.GDC.AD.10.8,N/A,COURSE
+ContentProvider prefix,lesson,UD.GDC.AD.9.10,N/A,COURSE
+ContentProvider authority,lesson,UD.GDC.AD.9.10;UD.GDC.AD.10.10,N/A,COURSE
+ContentProvider scheme,lesson,UD.GDC.AD.10.10,N/A,COURSE
+ContentProvider path,lesson,UD.GDC.AD.10.10,N/A,COURSE
+ContentProvider data,lesson,UD.GDC.AD.9.10,N/A,COURSE
+ContentProvider contract documentation,lesson,UD.GDC.AD.9.10,N/A,COURSE
+Contract CONTENT_URI,lesson,UD.GDC.AD.9.10,N/A,COURSE
+Contract CONTENT_URI,java,UD.GDC.AD.9.18,UD.GDC.AD.T08.02,COURSE
+ContentResolver Resolver.query,java,UD.GDC.AD.9.18,UD.GDC.AD.T08.02,COURSE
+ContentResolver Cursor,java,UD.GDC.AD.9.18,UD.GDC.AD.T08.02,COURSE
+intro to ContentResolver Cursor data structure,lesson,UD.GDC.AD.9.19,N/A,COURSE
+ContentResolver Cursor projection,lesson,UD.GDC.AD.9.19,N/A,COURSE
+ContentResolver Cursor selection,lesson,UD.GDC.AD.9.19,N/A,COURSE
+ContentResolver Cursor selection arguments,lesson,UD.GDC.AD.9.19,N/A,COURSE
+ContentResolver Cursor sort order,lesson,UD.GDC.AD.9.19,N/A,COURSE
+ContentResolver Cursor moveToNext,lesson,UD.GDC.AD.9.20,N/A,COURSE
+ContentResolver Cursor moveToFirst,lesson,UD.GDC.AD.9.20,N/A,COURSE
+ContentResolver Cursor getColumnIndex,lesson,UD.GDC.AD.9.20,N/A,COURSE
+ContentResolver Cursor getInt / getString / getLong,lesson,UD.GDC.AD.9.20,N/A,COURSE
+ContentResolver Cursor getCount,lesson,UD.GDC.AD.9.20,N/A,COURSE
+ContentResolver Cursor getColumnIndex,java,UD.GDC.AD.9.21;UD.GDC.AD.9.22,UD.GDC.AD.T08.03,COURSE
+ContentResolver Cursor moveToNext,java,UD.GDC.AD.9.21;UD.GDC.AD.9.22,UD.GDC.AD.T08.03,COURSE
+ContentResolver Cursor moveToFirst,java,UD.GDC.AD.9.21;UD.GDC.AD.9.22,UD.GDC.AD.T08.03,COURSE
+ContentResolver Cursor close,java,UD.GDC.AD.9.21;UD.GDC.AD.9.22,UD.GDC.AD.T08.03,COURSE
+extends ContentProvider,java,UD.GDC.AD.9.5;UD.GDC.AD.10.6,UD.GDC.AD.T09.01,COURSE
+register ContentProvider in manifest provider,manifest xml,UD.GDC.AD.9.5;UD.GDC.AD.10.6;UD.GDC.AD.10.35;UD.GDC.AD.10.36,UD.GDC.AD.T09.01;UD.GDC.AD.S09.01,COURSE
+ContentProvider authority,java,UD.GDC.AD.10.10,UD.GDC.AD.T09.02,COURSE
+ContentProvider Uri,java,UD.GDC.AD.10.10,UD.GDC.AD.T09.02,COURSE
+Uri buildUpon,java,UD.GDC.AD.10.10,UD.GDC.AD.T09.02,COURSE
+Uri appendPath,java,UD.GDC.AD.10.10,UD.GDC.AD.T09.02,COURSE
+UriMatcher,java,UD.GDC.AD.10.14;UD.GDC.AD.10.35;UD.GDC.AD.10.36,UD.GDC.AD.T09.03;UD.GDC.AD.S09.01,COURSE
+UriMatcher.NO_MATCH,java,UD.GDC.AD.10.14;UD.GDC.AD.10.35;UD.GDC.AD.10.36,UD.GDC.AD.T09.03;UD.GDC.AD.S09.01,COURSE
+UriMatcher addURI,java,UD.GDC.AD.10.14;UD.GDC.AD.10.35;UD.GDC.AD.10.36,UD.GDC.AD.T09.03;UD.GDC.AD.S09.01,COURSE
+Uri getLastPathSegment,java,UD.GDC.AD.10.35;UD.GDC.AD.10.36,UD.GDC.AD.S09.01,COURSE
+Cursor setNotificationUri,java,UD.GDC.AD.10.35;UD.GDC.AD.10.36,UD.GDC.AD.S09.01,COURSE
+ContentProvider onCreate,lesson,UD.GDC.AD.10.17,N/A,COURSE
+ContentProvider insert,lesson,UD.GDC.AD.10.17,N/A,COURSE
+ContentProvider query,lesson,UD.GDC.AD.10.17,N/A,COURSE
+ContentProvider update,lesson,UD.GDC.AD.10.17,N/A,COURSE
+ContentProvider delete,lesson,UD.GDC.AD.10.17,N/A,COURSE
+ContentProvider getType,lesson,UD.GDC.AD.10.17,N/A,COURSE
+ContentProvider ContentValues,lesson,UD.GDC.AD.10.17,N/A,COURSE
+ContentProvider Cursor,lesson,UD.GDC.AD.10.17,N/A,COURSE
+ContentProvider insert,java,UD.GDC.AD.10.19;UD.GDC.AD.10.20;UD.GDC.AD.10.21,UD.GDC.AD.T09.04,COURSE
+match Uri,java,UD.GDC.AD.10.19;UD.GDC.AD.10.20;UD.GDC.AD.10.21,UD.GDC.AD.T09.04,COURSE
+ContentUris.withAppendedId,java,UD.GDC.AD.10.19;UD.GDC.AD.10.20;UD.GDC.AD.10.21,UD.GDC.AD.T09.04,COURSE
+android.database.SQLException,java,UD.GDC.AD.10.19;UD.GDC.AD.10.20;UD.GDC.AD.10.21,UD.GDC.AD.T09.04,COURSE
+UnsupportedOperationException,java,UD.GDC.AD.10.19;UD.GDC.AD.10.20;UD.GDC.AD.10.21,UD.GDC.AD.T09.04,COURSE
+getContentResolver notifyChange,java,UD.GDC.AD.10.19;UD.GDC.AD.10.20;UD.GDC.AD.10.21,UD.GDC.AD.T09.04,COURSE
+getContentResolver insert,java,UD.GDC.AD.10.19;UD.GDC.AD.10.20;UD.GDC.AD.10.21,UD.GDC.AD.T09.04,COURSE
+ContentProvider query,java,UD.GDC.AD.10.22;UD.GDC.AD.10.23;UD.GDC.AD.10.24,UD.GDC.AD.T09.05,COURSE
+SQLite getReadableDatabase,java,UD.GDC.AD.10.22;UD.GDC.AD.10.23;UD.GDC.AD.10.24,UD.GDC.AD.T09.05,COURSE
+getContentResolver query,java,UD.GDC.AD.10.22;UD.GDC.AD.10.23;UD.GDC.AD.10.24,UD.GDC.AD.T09.05,COURSE
+ContentProvider WHERE clause,lesson,UD.GDC.AD.10.25,N/A,COURSE
+ContentProvider query single item,lesson,UD.GDC.AD.10.25,N/A,COURSE
+Uri getPathsegments,lesson,UD.GDC.AD.10.25,N/A,COURSE
+ContentProvider delete,java,UD.GDC.AD.10.28;UD.GDC.AD.10.39;UD.GDC.AD.10.40,UD.GDC.AD.T09.06;UD.GDC.AD.S09.03,COURSE
+getContentResolver delete,java,UD.GDC.AD.10.28;UD.GDC.AD.10.39;UD.GDC.AD.10.40,UD.GDC.AD.T09.06;UD.GDC.AD.S09.03,COURSE
+swipe to delete RecycleView on Swipe,java,UD.GDC.AD.10.29,UD.GDC.AD.T09.07,COURSE
+getContentResolver delete Uri,java,UD.GDC.AD.10.29,UD.GDC.AD.T09.07,COURSE
+getSupportLoaderManager restartLoader,java,UD.GDC.AD.10.29,UD.GDC.AD.T09.07,COURSE
+ContentProvider update,lesson,UD.GDC.AD.10.30,N/A,COURSE
+ContentProvider getType,lesson,UD.GDC.AD.10.31,N/A,COURSE
+SQLite bulkInsert,java,UD.GDC.AD.10.37;UD.GDC.AD.10.38,UD.GDC.AD.S09.02,COURSE
+SQLite beginTransaction,java,UD.GDC.AD.10.37;UD.GDC.AD.10.38,UD.GDC.AD.S09.02,COURSE
+IllegalArgumentException,java,UD.GDC.AD.10.37;UD.GDC.AD.10.38,UD.GDC.AD.S09.02;UD.GDC.AD.T11.02,COURSE
+SQLite setTransactionSuccessful,java,UD.GDC.AD.10.37;UD.GDC.AD.10.38,UD.GDC.AD.S09.02,COURSE
+SQLite endTransaction,java,UD.GDC.AD.10.37;UD.GDC.AD.10.38,UD.GDC.AD.S09.02,COURSE
+CursorLoader,java,UD.GDC.AD.10.41;UD.GDC.AD.10.42,UD.GDC.AD.S09.04,COURSE
+column indexes for database using ContentResolver,java,UD.UFT.2,,COURSE
+onCreateLoader,java,UD.GDC.AD.10.41;UD.GDC.AD.10.42;UD.GDC.AD.10.43;UD.GDC.AD.10.44,UD.GDC.AD.S09.04;UD.GDC.AD.S09.05,COURSE
+RuntimeException,java,UD.GDC.AD.10.41;UD.GDC.AD.10.42,UD.GDC.AD.S09.04,COURSE
+RecycleView smoothScrollToPosition,java,UD.GDC.AD.10.41;UD.GDC.AD.10.42,UD.GDC.AD.S09.04,COURSE
+RecyclerView.NO_POSITION,java,UD.GDC.AD.10.41;UD.GDC.AD.10.42,UD.GDC.AD.S09.04,COURSE
+getIntent getData,java,UD.GDC.AD.10.43;UD.GDC.AD.10.44,UD.GDC.AD.S09.05,COURSE
+NullPointerException,java,UD.GDC.AD.10.43;UD.GDC.AD.10.44,UD.GDC.AD.S09.05,COURSE
+onLoadFinished,java,UD.GDC.AD.10.43;UD.GDC.AD.10.44,UD.GDC.AD.S09.05,COURSE
+check if Cursor has valid data moveToFirst,java,UD.GDC.AD.10.43;UD.GDC.AD.10.44,UD.GDC.AD.S09.05,COURSE
+String.format,java,UD.GDC.AD.10.43;UD.GDC.AD.10.44,UD.GDC.AD.S09.05,COURSE
+onLoaderReset,java,UD.GDC.AD.10.43;UD.GDC.AD.10.44,UD.GDC.AD.S09.05,COURSE
+intro to Services,lesson,UD.GDC.AD.11.4;UD.GDC.AD.11.5,N/A,COURSE
+Service startService,lesson,UD.GDC.AD.11.7,N/A,COURSE
+Service scheduleService,lesson,UD.GDC.AD.11.7;UD.GDC.AD.11.8,N/A,COURSE
+Service bindService,lesson,UD.GDC.AD.11.7,N/A,COURSE
+Service JobService,lesson,UD.GDC.AD.11.7,N/A,COURSE
+Service JobScheduler,lesson,UD.GDC.AD.11.7,N/A,COURSE
+Service stopSelf,lesson,UD.GDC.AD.11.8,N/A,COURSE
+Service onStartCommand,lesson,UD.GDC.AD.11.8,N/A,COURSE
+IntentService,lesson,UD.GDC.AD.11.9,N/A,COURSE
+IntentService onHandleIntent,lesson,UD.GDC.AD.11.9,N/A,COURSE
+extends IntentService,java,UD.GDC.AD.11.12;UD.GDC.AD.11.13;UD.GDC.AD.11.30,UD.GDC.AD.T10.01;UD.GDC.AD.S10.01,COURSE
+IntentService onHandleIntent,java,UD.GDC.AD.11.12;UD.GDC.AD.11.13;UD.GDC.AD.11.30,UD.GDC.AD.T10.01;UD.GDC.AD.S10.01,COURSE
+IntentService getAction,java,UD.GDC.AD.11.12;UD.GDC.AD.11.13;UD.GDC.AD.11.30,UD.GDC.AD.T10.01;UD.GDC.AD.S10.01,COURSE
+intro to Notifications,lesson,UD.GDC.AD.11.14,N/A,COURSE
+NotificationChannel,lesson,UD.GDC.AD.11.15,N/A,COURSE
+Notification Manager,lesson,UD.GDC.AD.11.15,N/A,COURSE
+intro to PendingIntent,lesson,UD.GDC.AD.11.16,N/A,COURSE
+PendingIntent,java,UD.GDC.AD.11.17,UD.GDC.AD.T10.02,COURSE
+PendingIntent.getActivity,java,UD.GDC.AD.11.17,UD.GDC.AD.T10.02,COURSE
+PendingIntent.FLAG_UPDATE_CURRENT,java,UD.GDC.AD.11.17,UD.GDC.AD.T10.02,COURSE
+BitmapFactory.decodeResource,java,UD.GDC.AD.11.17,UD.GDC.AD.T10.02,COURSE
+NotificationManager,java,UD.GDC.AD.11.17,UD.GDC.AD.T10.02,COURSE
+Context.NOTIFICATION_SERVICE,java,UD.GDC.AD.11.17;UD.GDC.AD.11.33,UD.GDC.AD.T10.02;UD.GDC.AD.S10.04,COURSE
+NotificationManager createNotificationChannel,java,UD.GDC.AD.11.17,UD.GDC.AD.T10.02,COURSE
+NotificationCompat.Builder,java,UD.GDC.AD.11.17;UD.GDC.AD.11.33,UD.GDC.AD.T10.02;UD.GDC.AD.S10.04,COURSE
+NotificationCompat.Builder setColor,java,UD.GDC.AD.11.17;UD.GDC.AD.11.33,UD.GDC.AD.T10.02;UD.GDC.AD.S10.04,COURSE
+NotificationCompat.Builder setSmallIcon,java,UD.GDC.AD.11.17;UD.GDC.AD.11.33,UD.GDC.AD.T10.02;UD.GDC.AD.S10.04,COURSE
+NotificationCompat.Builder setLargeIcon,java,UD.GDC.AD.11.17;UD.GDC.AD.11.33,UD.GDC.AD.T10.02;UD.GDC.AD.S10.04,COURSE
+NotificationCompat.Builder setContentTitle,java,UD.GDC.AD.11.17;UD.GDC.AD.11.33,UD.GDC.AD.T10.02;UD.GDC.AD.S10.04,COURSE
+NotificationCompat.Builder setContentText,java,UD.GDC.AD.11.17;UD.GDC.AD.11.33,UD.GDC.AD.T10.02;UD.GDC.AD.S10.04,COURSE
+ContextCompat,java,UD.GDC.AD.11.33,UD.GDC.AD.S10.04,COURSE
+TaskStackBuilder,java,UD.GDC.AD.11.33,UD.GDC.AD.S10.04,COURSE
+addNextIntentWithParentStack,java,UD.GDC.AD.11.33,UD.GDC.AD.S10.04,COURSE
+NotificationCompat.Builder setStyle,java,UD.GDC.AD.11.17,UD.GDC.AD.T10.02,COURSE
+NotificationCompat.BigTextStyle,java,UD.GDC.AD.11.17,UD.GDC.AD.T10.02,COURSE
+NotificationCompat.Builder setDefaults,java,UD.GDC.AD.11.17,UD.GDC.AD.T10.02,COURSE
+NotificationCompat.Builder setContentIntent,java,UD.GDC.AD.11.17;UD.GDC.AD.11.33,UD.GDC.AD.T10.02;UD.GDC.AD.S10.04,COURSE
+NotificationCompat.Builder setAutoCancel,java,UD.GDC.AD.11.17;UD.GDC.AD.11.33,UD.GDC.AD.T10.02;UD.GDC.AD.S10.04,COURSE
+NotificationCompat.Builder setPriority,java,UD.GDC.AD.11.17,UD.GDC.AD.T10.02,COURSE
+NotificationCompat.Builder notify,java,UD.GDC.AD.11.17;UD.GDC.AD.11.33,UD.GDC.AD.T10.02;UD.GDC.AD.S10.04,COURSE
+NotificationCompat.Builder build,java,UD.GDC.AD.11.17;UD.GDC.AD.11.33,UD.GDC.AD.T10.02;UD.GDC.AD.S10.04,COURSE
+android.permission.VIBRATE,resource xml,UD.GDC.AD.11.17,UD.GDC.AD.T10.02,COURSE
+intro to Notification Actions,java,UD.GDC.AD.11.18;UD.GDC.AD.11.19,UD.GDC.AD.T10.03,COURSE
+NotificationManager cancelAll,java,UD.GDC.AD.11.18;UD.GDC.AD.11.19,UD.GDC.AD.T10.03,COURSE
+IntentService setAction,java,UD.GDC.AD.11.18;UD.GDC.AD.11.19,UD.GDC.AD.T10.03,COURSE
+PendingIntent ACTION_IGNORE_PENDING_INTENT_ID,java,UD.GDC.AD.11.18;UD.GDC.AD.11.19,UD.GDC.AD.T10.03,COURSE
+PendingIntent Action,java,UD.GDC.AD.11.18;UD.GDC.AD.11.19,UD.GDC.AD.T10.03,COURSE
+dismiss notification,java,UD.GDC.AD.11.18;UD.GDC.AD.11.19,UD.GDC.AD.T10.03,COURSE
+PendingIntent.FLAG_CANCEL_CURRENT,java,UD.GDC.AD.11.18;UD.GDC.AD.11.19,UD.GDC.AD.T10.03,COURSE
+PendingIntent getPendingIntent,java,UD.GDC.AD.11.33,UD.GDC.AD.S10.04,COURSE
+intro to Foreground Services,lesson,UD.GDC.AD.11.20,N/A,COURSE
+FirebaseJobDispatcher,java,UD.GDC.AD.11.23,N/A,COURSE
+Driver,java,UD.GDC.AD.11.23,N/A,COURSE
+GooglePlayDriver,java,UD.GDC.AD.11.23,N/A,COURSE
+FirebaseJobDispatcher newJobBuilder,java,UD.GDC.AD.11.23,N/A,COURSE
+FirebaseJobDispatcher setService,java,UD.GDC.AD.11.23,N/A,COURSE
+FirebaseJobDispatcher setTag,java,UD.GDC.AD.11.23,N/A,COURSE
+FirebaseJobDispatcher setRecurring,java,UD.GDC.AD.11.23,N/A,COURSE
+FirebaseJobDispatcher setLifetime Lifetime.UNTIL_NEXT_BOOT,java,UD.GDC.AD.11.23,N/A,COURSE
+FirebaseJobDispatcher setTrigger Trigger.executionWindow,java,UD.GDC.AD.11.23,N/A,COURSE
+FirebaseJobDispatcher setReplaceCurrent,java,UD.GDC.AD.11.23,N/A,COURSE
+FirebaseJobDispatcher setRetryStrategy RetryStrategy.DEFAULT_EXPONENTIAL,java,UD.GDC.AD.11.23,N/A,COURSE
+FirebaseJobDispatcher setConstraints Constraint.ON_UNMETERED_NETWORK / Constraint.DEVICE_CHARGING,java,UD.GDC.AD.11.23,N/A,COURSE
+FirebaseJobDispatcher build,java,UD.GDC.AD.11.23,N/A,COURSE
+GooglePlayServices,lesson,UD.GDC.AD.11.23,N/A,COURSE
+compile com.firebase:firebase-jobdispatcher,gradle,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.32,UD.GDC.AD.T10.04;UD.GDC.AD.S10.03,COURSE
+extends JobService,java,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.32,UD.GDC.AD.T10.04;UD.GDC.AD.S10.03,COURSE
+onStartJob,java,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.32,UD.GDC.AD.T10.04;UD.GDC.AD.S10.03,COURSE
+jobFinished,java,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.32,UD.GDC.AD.T10.04;UD.GDC.AD.S10.03,COURSE
+jobParameters,java,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.32,UD.GDC.AD.T10.04;UD.GDC.AD.S10.03,COURSE
+onStopJob,java,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.32,UD.GDC.AD.T10.04;UD.GDC.AD.S10.03,COURSE
+intent-filter com.firebase.jobdispatcher.ACTION_EXECUTE,manifest xml,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.32,UD.GDC.AD.T10.04;UD.GDC.AD.S10.03,COURSE
+synchronized method,java,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.31,UD.GDC.AD.T10.04;UD.GDC.AD.S10.02,COURSE
+Job initialize,java,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.31,UD.GDC.AD.T10.04;UD.GDC.AD.S10.02,COURSE
+@NonNull,java,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.30,UD.GDC.AD.T10.04;UD.GDC.AD.S10.01,COURSE
+Driver,java,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.32,UD.GDC.AD.T10.04;UD.GDC.AD.S10.03,COURSE
+GooglePlayDriver,java,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.32,UD.GDC.AD.T10.04;UD.GDC.AD.S10.03,COURSE
+FirebaseJobDispatcher,java,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.32,UD.GDC.AD.T10.04;UD.GDC.AD.S10.03,COURSE
+FirebaseJobDispatcher newJobBuilder,java,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.32,UD.GDC.AD.T10.04;UD.GDC.AD.S10.03,COURSE
+FirebaseJobDispatcher setService,java,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.32,UD.GDC.AD.T10.04;UD.GDC.AD.S10.03,COURSE
+FirebaseJobDispatcher setTag,java,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.32,UD.GDC.AD.T10.04;UD.GDC.AD.S10.03,COURSE
+FirebaseJobDispatcher setRecurring,java,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.32,UD.GDC.AD.T10.04;UD.GDC.AD.S10.03,COURSE
+FirebaseJobDispatcher setLifetime Lifetime.UNTIL_NEXT_BOOT,java,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.32,UD.GDC.AD.T10.04;UD.GDC.AD.S10.03,COURSE
+FirebaseJobDispatcher setLifetime Lifetime.FOREVER,java,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.32,UD.GDC.AD.T10.04;UD.GDC.AD.S10.03,COURSE
+FirebaseJobDispatcher setTrigger Trigger.executionWindow,java,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.32,UD.GDC.AD.T10.04;UD.GDC.AD.S10.03,COURSE
+FirebaseJobDispatcher setReplaceCurrent,java,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.32,UD.GDC.AD.T10.04;UD.GDC.AD.S10.03,COURSE
+FirebaseJobDispatcher setRetryStrategy RetryStrategy.DEFAULT_EXPONENTIAL,java,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.32,UD.GDC.AD.T10.04;UD.GDC.AD.S10.03,COURSE
+FirebaseJobDispatcher setConstraints Constraint.ON_UNMETERED_NETWORK / Constraint.DEVICE_CHARGING,java,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.32,UD.GDC.AD.T10.04;UD.GDC.AD.S10.03,COURSE
+FirebaseJobDispatcher setConstraints Constraint.ON_ANY_NETWORK,java,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.32,UD.GDC.AD.T10.04;UD.GDC.AD.S10.03,COURSE
+FirebaseJobDispatcher build,java,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.32,UD.GDC.AD.T10.04;UD.GDC.AD.S10.03,COURSE
+FirebaseJobDispatcher schedule,java,UD.GDC.AD.11.24;UD.GDC.AD.11.25;UD.GDC.AD.11.32,UD.GDC.AD.T10.04;UD.GDC.AD.S10.03,COURSE
+intro to Broadcast Receivers,lesson,UD.GDC.AD.11.26,N/A,COURSE
+System Broadcast Intent,lesson,UD.GDC.AD.11.26,N/A,COURSE
+android.intent.action.SCREEN_ON,lesson,UD.GDC.AD.11.26,N/A,COURSE
+android.intent.action.MEDIA_MOUNTED,lesson,UD.GDC.AD.11.26,N/A,COURSE
+android.intent.action.HEADSET_PLUG,lesson,UD.GDC.AD.11.26,N/A,COURSE
+android.intent.action.BATTERY_LOW,lesson,UD.GDC.AD.11.26,N/A,COURSE
+android.intent.action.DOWNLOAD_COMPLETE,lesson,UD.GDC.AD.11.26,N/A,COURSE
+android.intent.action.AUDI_BECOMING_NOISY,lesson,UD.GDC.AD.11.26,N/A,COURSE
+setImageResource,java,UD.GDC.AD.11.27,UD.GDC.AD.T10.05,COURSE
+extends BroadcastReceiver,java,UD.GDC.AD.11.27,UD.GDC.AD.T10.05,COURSE
+BroadcastReceiver onReceive,java,UD.GDC.AD.11.27,UD.GDC.AD.T10.05,COURSE
+IntentFilter,java,UD.GDC.AD.11.27,UD.GDC.AD.T10.05,COURSE
+IntentFilter addAction,java,UD.GDC.AD.11.27,UD.GDC.AD.T10.05,COURSE
+Intent.ACTION_POWER_CONNECTED,java,UD.GDC.AD.11.27,UD.GDC.AD.T10.05,COURSE
+Intent.ACTION_POWER_DISCONNECTED,java,UD.GDC.AD.11.27,UD.GDC.AD.T10.05,COURSE
+BroadcastReceiver registerReceiver,java,UD.GDC.AD.11.27;UD.GDC.AD.11.30,UD.GDC.AD.T10.05;UD.GDC.AD.S10.01,COURSE
+BroadcastReceiver unregisterReceiver,java,UD.GDC.AD.11.27;UD.GDC.AD.11.30,UD.GDC.AD.T10.05;UD.GDC.AD.S10.01,COURSE
+BatteryManager,java,UD.GDC.AD.11.28,UD.GDC.AD.T10.06,COURSE
+BATTERY_SERVICE,java,UD.GDC.AD.11.28,UD.GDC.AD.T10.06,COURSE
+BatteryManager isCharging,java,UD.GDC.AD.11.28,UD.GDC.AD.T10.06,COURSE
+Intent.ACTION_BATTERY_CHANGED,java,UD.GDC.AD.11.28,UD.GDC.AD.T10.06,COURSE
+BatteryManager.EXTRA_STATUS,java,UD.GDC.AD.11.28,UD.GDC.AD.T10.06,COURSE
+BatteryManager.BATTERY_STATUS_CHARGING,java,UD.GDC.AD.11.28,UD.GDC.AD.T10.06,COURSE
+BatteryManager.BATTERY_STATUS_FULL,java,UD.GDC.AD.11.28,UD.GDC.AD.T10.06,COURSE
+SQLite bulkInsert,java,UD.GDC.AD.11.30,UD.GDC.AD.S10.01,COURSE
+IntentService startService,java,UD.GDC.AD.11.30,UD.GDC.AD.S10.01,COURSE
+TimeUnit.HOURS.toSeconds,java,UD.GDC.AD.11.32,UD.GDC.AD.S10.03,COURSE
+ViewGroup,lesson,UD.GDC.AD.12.2,N/A,COURSE
+LinearLayout,lesson,UD.GDC.AD.12.2,N/A,COURSE
+RelativeLayout,lesson,UD.GDC.AD.12.2,N/A,COURSE
+GridLayout,lesson,UD.GDC.AD.12.2,N/A,COURSE
+wrap_content,lesson,UD.GDC.AD.12.2,N/A,COURSE
+match_parent,lesson,UD.GDC.AD.12.2,N/A,COURSE
+gravity,lesson,UD.GDC.AD.12.2,N/A,COURSE
+padding,lesson,UD.GDC.AD.12.2,N/A,COURSE
+margin,lesson,UD.GDC.AD.12.2,N/A,COURSE
+visibility,lesson,UD.GDC.AD.12.2,N/A,COURSE
+ConstraintLayout,lesson,UD.GDC.AD.12.4;UD.GDC.AD.12.5,N/A,COURSE
+ConstraintLayout,java,UD.GDC.AD.12.6;UD.GDC.AD.12.7;UD.GDC.AD.12.8;UD.GDC.AD.12.9;UD.GDC.AD.12.20;UD.GDC.AD.12.21,UD.GDC.AD.T11.01;UD.GDC.AD.S11.01,COURSE
+compile com.android.support.constraint:constraint-layout dependency,gradle,UD.GDC.AD.12.6;UD.GDC.AD.12.7;UD.GDC.AD.12.8;UD.GDC.AD.12.9;UD.GDC.AD.12.20;UD.GDC.AD.12.21,UD.GDC.AD.T11.01;UD.GDC.AD.S11.01,COURSE
+tools:text,resource xml,UD.GDC.AD.12.6;UD.GDC.AD.12.7;UD.GDC.AD.12.8;UD.GDC.AD.12.9,UD.GDC.AD.T11.01,COURSE
+ImageView,resource xml,UD.GDC.AD.12.6;UD.GDC.AD.12.7;UD.GDC.AD.12.8;UD.GDC.AD.12.9,UD.GDC.AD.T11.01,COURSE
+android:background,resource xml,UD.GDC.AD.12.6;UD.GDC.AD.12.7;UD.GDC.AD.12.8;UD.GDC.AD.12.9,UD.GDC.AD.T11.01,COURSE
+import svg image,resource xml,UD.GDC.AD.12.6;UD.GDC.AD.12.7;UD.GDC.AD.12.8;UD.GDC.AD.12.9,UD.GDC.AD.T11.01,COURSE
+drawable,resource xml,UD.GDC.AD.12.6;UD.GDC.AD.12.7;UD.GDC.AD.12.8;UD.GDC.AD.12.9,UD.GDC.AD.T11.01,COURSE
+android:letterSpacing,resource xml,UD.GDC.AD.12.6;UD.GDC.AD.12.7;UD.GDC.AD.12.8;UD.GDC.AD.12.9,UD.GDC.AD.T11.01,COURSE
+constraint bias,resource xml,UD.GDC.AD.12.6;UD.GDC.AD.12.7;UD.GDC.AD.12.8;UD.GDC.AD.12.9,UD.GDC.AD.T11.01,COURSE
+mipmap,resource xml,UD.GDC.AD.12.6;UD.GDC.AD.12.7;UD.GDC.AD.12.8;UD.GDC.AD.12.9,UD.GDC.AD.T11.01,COURSE
+ConstraintLayout,resource xml,UD.GDC.AD.12.6;UD.GDC.AD.12.7;UD.GDC.AD.12.8;UD.GDC.AD.12.9,UD.GDC.AD.T11.01,COURSE
+constraint.Guideline,resource xml,UD.GDC.AD.12.6;UD.GDC.AD.12.7;UD.GDC.AD.12.8;UD.GDC.AD.12.10,UD.GDC.AD.S11.02,COURSE
+bools,resource xml,UD.GDC.AD.12.6;UD.GDC.AD.12.7;UD.GDC.AD.12.8;UD.GDC.AD.12.10,UD.GDC.AD.S11.02,COURSE
+RecycleView Adapter getItemViewType,java,UD.GDC.AD.12.6;UD.GDC.AD.12.7;UD.GDC.AD.12.8;UD.GDC.AD.12.9;UD.GDC.AD.12.20;UD.GDC.AD.12.21,UD.GDC.AD.T11.01;UD.GDC.AD.S11.02,COURSE
+Hierarchy Viewer,lesson,UD.GDC.AD.12.10,N/A,COURSE
+Android Device Monitor,lesson,UD.GDC.AD.12.10,N/A,COURSE
+data binding,lesson,UD.GDC.AD.12.12,N/A,COURSE
+databinding.enabled,gradle,UD.GDC.AD.12.12;UD.GDC.AD.12.13;UD.GDC.AD.12.24;UD.GDC.AD.12.15,UD.GDC.AD.T11.02;UD.GDC.AD.S11.03,COURSE
+layout root tag,resource xml,UD.GDC.AD.12.12;UD.GDC.AD.12.13;UD.GDC.AD.12.24;UD.GDC.AD.12.15,UD.GDC.AD.T11.02;UD.GDC.AD.S11.03,COURSE
+ActivityMainBinding,java,UD.GDC.AD.12.12;UD.GDC.AD.12.13;UD.GDC.AD.12.24;UD.GDC.AD.12.15,UD.GDC.AD.T11.02;UD.GDC.AD.S11.03,COURSE
+DataBindingUtil setContentView,java,UD.GDC.AD.12.12;UD.GDC.AD.12.13;UD.GDC.AD.12.24;UD.GDC.AD.12.15,UD.GDC.AD.T11.02;UD.GDC.AD.S11.03,COURSE
+ActivityMainBinding setText,java,UD.GDC.AD.12.12;UD.GDC.AD.12.13;UD.GDC.AD.12.24;UD.GDC.AD.12.15,UD.GDC.AD.T11.02;UD.GDC.AD.S11.03,COURSE
+formatter.format,java,UD.GDC.AD.12.12;UD.GDC.AD.12.13,UD.GDC.AD.T11.02,COURSE
+TimeUnit.MINUTES.toHours,java,UD.GDC.AD.12.12;UD.GDC.AD.12.13,UD.GDC.AD.T11.02,COURSE
+TimeUnit.HOURS.toMinutes,java,UD.GDC.AD.12.12;UD.GDC.AD.12.13,UD.GDC.AD.T11.02,COURSE
+intro to accessibility & internationalization,lesson,UD.GDC.AD.12.14;UD.GDC.AD.12.15,N/A,COURSE
+contentDescription,lesson,UD.GDC.AD.12.14;UD.GDC.AD.12.15,N/A,COURSE
+localization,lesson,UD.GDC.AD.12.17,N/A,COURSE
+responsive layout;landscape & portrait,resource xml,UD.GDC.AD.12.18;UD.GDC.AD.12.19,UD.GDC.AD.T11.03,COURSE
+include layout tag,resource xml,UD.GDC.AD.12.18;UD.GDC.AD.12.19;UD.GDC.AD.12.24;UD.GDC.AD.12.15,UD.GDC.AD.T11.03;UD.GDC.AD.S11.03,COURSE
+binding an include layout,java,UD.GDC.AD.12.18;UD.GDC.AD.12.19;UD.GDC.AD.12.24;UD.GDC.AD.12.15,UD.GDC.AD.T11.03;UD.GDC.AD.S11.03,COURSE
+intro to Android design principles,lesson,UD.GDC.AD.13.2,N/A,COURSE
+mockup,lesson,UD.GDC.AD.13.4,N/A,COURSE
+keyline,lesson,UD.GDC.AD.13.4,N/A,COURSE
+color guidelines,lesson,UD.GDC.AD.13.5,N/A,COURSE
+primary color colorPrimary,lesson,UD.GDC.AD.13.5;UD.GDC.AD.13.26;UD.GDC.AD.13.27,UD.GDC.AD.S12.01,COURSE
+accent color colorAccent,lesson,UD.GDC.AD.13.5;UD.GDC.AD.13.26;UD.GDC.AD.13.27,UD.GDC.AD.S12.01,COURSE
+font guidelines,lesson,UD.GDC.AD.13.8;UD.GDC.AD.13.22;UD.GDC.AD.13.23,UD.GDC.AD.S12.01,COURSE
+roboto font,lesson,UD.GDC.AD.13.8,N/A,COURSE
+font-family,lesson,UD.GDC.AD.13.8;UD.GDC.AD.13.22;UD.GDC.AD.13.23,UD.GDC.AD.S12.01,COURSE
+sans-serif font,lesson,UD.GDC.AD.13.8;UD.GDC.AD.13.22;UD.GDC.AD.13.23,UD.GDC.AD.S12.01,COURSE
+mdpi,lesson,UD.GDC.AD.13.8;UD.GDC.AD.13.15,N/A,COURSE
+hdpi,lesson,UD.GDC.AD.13.8;UD.GDC.AD.13.15,N/A,COURSE
+xhdpi,lesson,UD.GDC.AD.13.8;UD.GDC.AD.13.15,N/A,COURSE
+xxhdpi,lesson,UD.GDC.AD.13.8;UD.GDC.AD.13.15,N/A,COURSE
+xxxhdpi,lesson,UD.GDC.AD.13.8;UD.GDC.AD.13.15,N/A,COURSE
+color resource,resource xml,UD.GDC.AD.13.9;UD.GDC.AD.13.10,UD.GDC.AD.T12.01,COURSE
+android:fontFamily,resource xml,UD.GDC.AD.13.9;UD.GDC.AD.13.10,UD.GDC.AD.T12.01,COURSE
+vectorDrawables.useSupportLibrary,gradle,UD.UFT.1,UD.GDC.AD.T10.01,COURSE
+style tag,resource xml,UD.GDC.AD.13.11;UD.GDC.AD.13.12;UD.GDC.AD.13.13;UD.GDC.AD.13.14;UD.GDC.AD.13.28;UD.GDC.AD.13.29,UD.GDC.AD.T12.02;UD.GDC.AD.S12.02,COURSE
+intro to designing for different screens,lesson,UD.GDC.AD.13.14,N/A,COURSE
+intro to screen density,lesson,UD.GDC.AD.13.15,N/A,COURSE
+intro to resource folder qualifiers,lesson,UD.GDC.AD.13.18,N/A,COURSE
+intro to sw (smallest width) resource qualifier,lesson,UD.GDC.AD.13.19,N/A,COURSE
+sw600dp,resource xml,UD.GDC.AD.13.20;UD.GDC.AD.13.21,UD.GDC.AD.T12.03,COURSE
+touch selector,resource xml,UD.GDC.AD.13.22;UD.GDC.AD.13.23;UD.GDC.AD.13.30;UD.GDC.AD.13.31,UD.GDC.AD.T12.04;UD.GDC.AD.S12.03,COURSE
+touch selector tag,resource xml,UD.GDC.AD.13.22;UD.GDC.AD.13.23;UD.GDC.AD.13.30;UD.GDC.AD.13.31,UD.GDC.AD.T12.04;UD.GDC.AD.S12.03,COURSE
+touch selector android:state_pressed,resource xml,UD.GDC.AD.13.22;UD.GDC.AD.13.23;UD.GDC.AD.13.30;UD.GDC.AD.13.31,UD.GDC.AD.T12.04;UD.GDC.AD.S12.03,COURSE
+touch selector android:state_activated,resource xml,UD.GDC.AD.13.22;UD.GDC.AD.13.23;UD.GDC.AD.13.30;UD.GDC.AD.13.31,UD.GDC.AD.T12.04;UD.GDC.AD.S12.03,COURSE
+touch selector android:state_selected,resource xml,UD.GDC.AD.13.22;UD.GDC.AD.13.23;UD.GDC.AD.13.30;UD.GDC.AD.13.31,UD.GDC.AD.T12.04;UD.GDC.AD.S12.03,COURSE
+touch selector android:state_focused,resource xml,UD.GDC.AD.13.30;UD.GDC.AD.13.31,UD.GDC.AD.S12.03,COURSE
+touch selector android:state_enabled,resource xml,UD.GDC.AD.13.30;UD.GDC.AD.13.31,UD.GDC.AD.S12.03,COURSE
+touch selector android:state_window_focused,resource xml,UD.GDC.AD.13.30;UD.GDC.AD.13.31,UD.GDC.AD.S12.03,COURSE
+touch selector android:background,resource xml,UD.GDC.AD.13.22;UD.GDC.AD.13.23;UD.GDC.AD.13.30;UD.GDC.AD.13.31,UD.GDC.AD.T12.04;UD.GDC.AD.S12.03,COURSE
+colorPrimaryLight,resource xml,UD.GDC.AD.13.26;UD.GDC.AD.13.27,UD.GDC.AD.S12.01,COURSE
+colorPrimaryDark,resource xml,UD.GDC.AD.13.26;UD.GDC.AD.13.27,UD.GDC.AD.S12.01,COURSE
+primary_text,resource xml,UD.GDC.AD.13.26;UD.GDC.AD.13.27,UD.GDC.AD.S12.01,COURSE
+secondary_text,resource xml,UD.GDC.AD.13.26;UD.GDC.AD.13.27,UD.GDC.AD.S12.01,COURSE
+dimens @dimen,resource xml,UD.GDC.AD.13.26;UD.GDC.AD.13.27,UD.GDC.AD.S12.01,COURSE
+AppTheme,resource xml,UD.GDC.AD.13.28;UD.GDC.AD.13.29,UD.GDC.AD.S12.02,COURSE
+actionBarStyle,resource xml,UD.GDC.AD.13.28;UD.GDC.AD.13.29,UD.GDC.AD.S12.02,COURSE
+style @style,resource xml,UD.GDC.AD.13.28;UD.GDC.AD.13.29,UD.GDC.AD.S12.02,COURSE
+landscape & portrait layout resource files,resource xml,UD.GDC.AD.13.33;UD.GDC.AD.13.34,UD.GDC.AD.S12.04,COURSE
+SQLite database with mutliple tables,java,UD.UFT.2,UD.UFT.GH.1,FORUM
+contentResolver query contains like,java,SO.1,N/A,FORUM
+intro to Firebase,lesson,UD.FIW.1.2;UD.FIW.1.3,N/A,COURSE
+setting up a Firebase project,lesson,UD.FIW.1.7;UD.FIW.1.8,N/A,COURSE
+setting debug certificate,lesson,UD.FIW.1.8,N/A,COURSE
+classpath com.google.gms:google-services,gradle,UD.FIW.1.8;UD.FIW.1.12,UD.FIW.1.1,COURSE
+google-services.json,lesson,UD.FIW.1.8,N/A,COURSE
+apply plugin com.google.gms.google-services,gradle,UD.FIW.1.8;UD.FIW.1.12,UD.FIW.1.1,COURSE
+Firebase database structure,lesson,UD.FIW.1.15,N/A,COURSE
+com.google.firebase:firebase-database,gradle,UD.FIW.1.17,UD.FIW.1.1,COURSE
+FirebaseDatabase,java,UD.FIW.1.17,UD.FIW.1.1,COURSE
+DatabaseReference,java,UD.FIW.1.17,UD.FIW.1.1,COURSE
+FirebaseDatabase.getInstance,java,UD.FIW.1.17,UD.FIW.1.1,COURSE
+DatabaseReference getReference child,java,UD.FIW.1.17,UD.FIW.1.1,COURSE
+FirebaseDatabase preparing keys for storage,java,UD.FIW.1.18,UD.FIW.1.1,COURSE
+FirebaseDatabase push setValue,java,UD.FIW.1.19,UD.FIW.1.1,COURSE
+FirebaseDatabase user authentication read write,json,UD.FIW.1.20,N/A,COURSE
+FirebaseDatabase auth != null,json,UD.FIW.1.20,N/A,COURSE
+FirebaseDatabase in the console,json,UD.FIW.1.20,N/A,COURSE
+intro to FirebaseDatabase listeners,lesson,UD.FIW.1.21,N/A,COURSE
+FirebaseDatabase ChildEventListener,java,UD.FIW.1.22,UD.FIW.1.1,COURSE
+FirebaseDatabase ChildEventListener onChildAdded,java,UD.FIW.1.22,UD.FIW.1.1,COURSE
+FirebaseDatabase ChildEventListener onChildChanged,java,UD.FIW.1.22,UD.FIW.1.1,COURSE
+FirebaseDatabase ChildEventListener onChildRemoved,java,UD.FIW.1.22,UD.FIW.1.1,COURSE
+FirebaseDatabase ChildEventListener onChildRemoved,java,UD.FIW.1.22,UD.FIW.1.1,COURSE
+FirebaseDatabase ChildEventListener onChildMoved,java,UD.FIW.1.22,UD.FIW.1.1,COURSE
+FirebaseDatabase ChildEventListener onCancelled,java,UD.FIW.1.22,UD.FIW.1.1,COURSE
+FirebaseDatabase addChildEventListener,java,UD.FIW.1.22,UD.FIW.1.1,COURSE
+FirebaseDatabase ChildEventListener DataSnapshot getValue,java,UD.FIW.1.22,UD.FIW.1.1,COURSE
+FirebaseDatabase user authentication validate,json,UD.FIW.1.22,UD.FIW.1.1,COURSE
+FirebaseDatabase security variable now,lesson,UD.FIW.1.26;UD.FIW.1.27,N/A,COURSE
+FirebaseDatabase security variable root,lesson,UD.FIW.1.26;UD.FIW.1.27,N/A,COURSE
+FirebaseDatabase security variable data,lesson,UD.FIW.1.26;UD.FIW.1.27,N/A,COURSE
+FirebaseDatabase security variable $variables,lesson,UD.FIW.1.26;UD.FIW.1.27,N/A,COURSE
+FirebaseDatabase security variable auth,lesson,UD.FIW.1.26;UD.FIW.1.27,N/A,COURSE
+FirebaseDatabase security variable auth email,lesson,UD.FIW.1.26;UD.FIW.1.27,N/A,COURSE
+FirebaseDatabase security variable auth email_verified,lesson,UD.FIW.1.26;UD.FIW.1.27,N/A,COURSE
+FirebaseDatabase security variable auth name,lesson,UD.FIW.1.26;UD.FIW.1.27,N/A,COURSE
+FirebaseDatabase security variable auth sub,lesson,UD.FIW.1.26;UD.FIW.1.27,N/A,COURSE
+FirebaseDatabase security variable auth firebase.identities,lesson,UD.FIW.1.26;UD.FIW.1.27,N/A,COURSE
+FirebaseDatabase security variable auth firebase.sign_in_provider,lesson,UD.FIW.1.26;UD.FIW.1.27,N/A,COURSE
+intro to FirebaseUI authentication,lesson,UD.FIW.1.30;UD.FIW.1.30,N/A,COURSE
+FirebaseUI authentication dependencies,gradle,UD.FIW.1.33,UD.FIW.1.1,COURSE
+Firebase authentication AuthStateListener,java,UD.FIW.1.34;UD.FIW.1.35,UD.FIW.1.1,COURSE
+Firebase authentication FirebaseAuth.getInstance,java,UD.FIW.1.34,UD.FIW.1.1,COURSE
+Firebase authentication addAuthStateListener,java,UD.FIW.1.34;UD.FIW.1.35,UD.FIW.1.1,COURSE
+Firebase authentication removeAuthStateListener,java,UD.FIW.1.34;UD.FIW.1.35,UD.FIW.1.1,COURSE
+Firebase authentication FirebaseUser getDisplayName,java,UD.FIW.1.34;UD.FIW.1.35,UD.FIW.1.1,COURSE
+Firebase authentication FirebaseAuth.getCurrentUser,java,UD.FIW.1.34,UD.FIW.1.1,COURSE
+Firebase authentication AuthUI.IdpConfig,java,UD.FIW.1.34,UD.FIW.1.1,COURSE
+Firebase authentication setIsSmartLockEnabled,java,UD.FIW.1.34,UD.FIW.1.1,COURSE
+Firebase authentication RC_SIGN_IN,java,UD.FIW.1.34,UD.FIW.1.1,COURSE
+onActivityResult requestCode,java,UD.FIW.1.36,UD.FIW.1.1,COURSE
+onActivityResult resultCode,java,UD.FIW.1.36,UD.FIW.1.1,COURSE
+onActivityResult finish,java,UD.FIW.1.36,UD.FIW.1.1,COURSE
+onActivityResult RESULT_OK,java,UD.FIW.1.36,UD.FIW.1.1,COURSE
+onActivityResult RESULT_CANCELED,java,UD.FIW.1.36,UD.FIW.1.1,COURSE
+Firebase authentication AuthUI getInstance signOut,java,UD.FIW.1.37,UD.FIW.1.1,COURSE
