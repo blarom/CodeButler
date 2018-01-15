@@ -9,4 +9,23 @@
         <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
     </style>
 
+    <style name="ItemGroupStyle">
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/selectedItemGroupLabelTextSize</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/selectedItemGroupTopMargin</item>
+    </style>
+
+    <style name="ItemSubgroupStyle">
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/selectedItemSubgroupLabelTextSize</item>
+        <item name="android:gravity">start</item>
+        <item name="android:layout_marginTop">@dimen/selectedItemSubgroupTopMargin</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
 </resources>

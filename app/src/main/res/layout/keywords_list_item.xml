@@ -8,7 +8,8 @@
     android:maxHeight="@dimen/recyclerViewItemHeight"
     android:paddingLeft="@dimen/recyclerViewItemPaddingHorizontal"
     android:paddingRight="@dimen/recyclerViewItemPaddingHorizontal"
-    android:paddingTop="@dimen/recyclerViewItemPaddingVertical">
+    android:paddingTop="@dimen/recyclerViewItemPaddingVertical"
+    android:paddingBottom="@dimen/recyclerViewItemPaddingVertical">
 
     <TextView
         android:id="@+id/keywordTextViewInList"
@@ -16,13 +17,14 @@
         android:layout_height="@dimen/recyclerViewItemHeight"
         android:layout_marginStart="@dimen/recyclerViewStartMargin"
         android:layout_marginLeft="@dimen/recyclerViewStartMargin"
-        android:textColor="@android:color/white"
-        android:textSize="16sp"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/recyclerViewElementTextSize"
         android:text="@string/default_keyword"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:layout_marginStart="@dimen/recyclerViewStartMargin"
         android:layout_marginLeft="@dimen/recyclerViewStartMargin"
         android:orientation="horizontal">
@@ -30,13 +32,15 @@
             android:id="@+id/typeLabelTextViewInList"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/recyclerViewItemHeight"
-            android:textSize="14sp"
+            android:textSize="@dimen/recyclerViewElementSubtextSize"
+            android:textColor="@color/textColorPrimary"
             android:text="@string/type_label"/>
         <TextView
             android:id="@+id/typeTextViewInList"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/recyclerViewItemHeight"
-            android:textSize="14sp"
+            android:textSize="@dimen/recyclerViewElementSubtextSize"
+            android:textColor="@color/textColorPrimary"
             android:text="@string/default_type"/>
     </LinearLayout>
 
@@ -47,8 +51,7 @@
         android:layout_height="@dimen/recyclerViewItemHeight"
         android:layout_marginStart="@dimen/recyclerViewStartMargin"
         android:layout_marginLeft="@dimen/recyclerViewStartMargin"
-        android:textColor="@android:color/white"
-        android:textSize="14sp"
+        android:textSize="@dimen/recyclerViewElementSubtextSize"
         android:visibility="gone"
         android:text="@string/default_lessons"/>
 
@@ -58,7 +61,7 @@
         android:layout_height="@dimen/recyclerViewItemHeight"
         android:layout_marginLeft="@dimen/recyclerViewStartMargin"
         android:layout_marginStart="@dimen/recyclerViewStartMargin"
-        android:textSize="14sp"
+        android:textSize="@dimen/recyclerViewElementSubtextSize"
         android:visibility="gone"
         android:text="@string/default_relevantCode"/>
 
@@ -72,16 +75,19 @@
             android:id="@+id/sourceLabelTextViewInList"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/recyclerViewItemHeight"
-            android:textSize="14sp"
+            android:textSize="@dimen/recyclerViewElementSubtextSize"
+            android:textColor="@color/textColorPrimary"
             android:text="@string/source_label"/>
 
         <TextView
             android:id="@+id/sourceTextViewInList"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/recyclerViewItemHeight"
-            android:textSize="14sp"
+            android:textSize="@dimen/recyclerViewElementSubtextSize"
+            android:textColor="@color/textColorPrimary"
             android:text="@string/default_source"/>
 
 
     </LinearLayout>
+
 </LinearLayout>

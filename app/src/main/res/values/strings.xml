@@ -1,24 +1,30 @@
 <resources>
     <string name="app_name">Code Butler</string>
 
-    <string name="default_keyword">NA</string>
+    <string name="default_keyword">N/A</string>
     <string name="type_label">Type:\u0020</string>
-    <string name="default_type">NA</string>
-    <string name="default_lessons">NA</string>
-    <string name="default_relevantCode">NA</string>
+    <string name="default_type">N/A</string>
+    <string name="default_lessons">N/A</string>
+    <string name="default_relevantCode">N/A</string>
     <string name="source_label">Source:\u0020</string>
     <string name="default_source">Course</string>
-    <string name="keyword_hint">Keywords</string>
-    <string name="type_hint">Subject Type</string>
-    <string name="lessons_hint">Relevant Lessons</string>
-    <string name="relevantCode_hint">Relevant Code</string>
-    <string name="add_button_text">ADD</string>
-    <string name="search">Search</string>
-    <string name="refresh">Refresh</string>
-    <string name="add">Add</string>
-    <string name="settings">Settings</string>
+
+    <!--Global Strings-->
+    <string name="type_label_hint">Choose a keyword type:</string>
+    <string name="type_label_resource_xml">Resource xml</string>
+    <string name="type_label_manifest_xml">Manifest xml</string>
+    <string name="type_label_java">Java</string>
+    <string name="type_label_gradle">Gradle</string>
+    <string name="type_label_json">JSON</string>
+    <string name="type_label_lesson">Lesson</string>
+    <string name="NotAvailable">N/A</string>
 
     <!--Preferences menu courses options-->
+    <string name="search">Search</string>
+    <string name="refresh">Refresh</string>
+    <string name="add_button_text">ADD</string>
+    <string name="add">Add</string>
+    <string name="settings">Settings</string>
     <string name="user_values">My references</string>
     <string name="GDC_AD_course">Google Developer Challenge:\nAndroid Development</string>
     <string name="ND_AD_course">Udacity Nanodegree:\nAndroid Development</string>
@@ -41,12 +47,6 @@
     <string name="pref_preferred_result_label">Preferred result type</string>
     <string name="pref_preferred_result_key">preferred_result</string>
 
-    <string name="pref_preferred_result_label_resource_xml">Resource xml</string>
-    <string name="pref_preferred_result_label_manifest_xml">Manifest xml</string>
-    <string name="pref_preferred_result_label_java">Java</string>
-    <string name="pref_preferred_result_label_gradle">Gradle</string>
-    <string name="pref_preferred_result_label_json">JSON</string>
-    <string name="pref_preferred_result_label_lesson">Lesson</string>
 
     <string name="pref_preferred_result_value_resource_xml" translatable="false">resource xml</string>
     <string name="pref_preferred_result_value_manifest_xml" translatable="false">manifest xml</string>
@@ -55,7 +55,6 @@
     <string name="pref_preferred_result_value_json" translatable="false">json</string>
     <string name="pref_preferred_result_value_lesson" translatable="false">lesson</string>
 
-
     <string name="search_type">Search Type</string>
 
     <!--Radio Buttons-->
@@ -63,12 +62,12 @@
     <string name="and_operator">All keywords</string>
     <string name="or_operator">Any keyword</string>
 
+    <!--Database strings-->
     <string name="databaseVersionKey">databaseVersion</string>
     <string name="defaultDatabaseVersion">0</string>
     <string name="userIsTheSource">USER</string>
     <string name="courseIsTheSource">COURSE</string>
     <string name="forumIsTheSource">FORUM</string>
-    <string name="UdacityMappingIsTheSource">UM</string>
 
     <string name="courseCode_GDCAD">UD.GDC.AD</string>
     <string name="courseCode_NDAD">UD.ND.AD</string>
@@ -76,14 +75,32 @@
     <string name="udacity_thread">UD.UFT</string>
     <string name="stackoverflow_thread">SO</string>
 
-    <string name="recyclerViewSourceExplanationGDCAD">Udacity Android Developer Challenge</string>
+    <string name="recyclerViewSourceExplanationGDCAD">Udacity Android Developer Challenge Course</string>
     <string name="recyclerViewSourceExplanationNDAD">Udacity Android Developer Nanodegree</string>
     <string name="recyclerViewSourceExplanationFIW">Udacity Firebase in a Weekend course</string>
     <string name="recyclerViewSourceExplanationUSER">User-created</string>
     <string name="recyclerViewSourceExplanationFORUM">Various Forums</string>
 
     <string name="user_keywords">user_keywords</string>
-    <string name="CodeBulterSharedPrefs">CodeBulterSharedPrefs</string>
+    <string name="CodeButlerSharedPrefs">CodeButlerSharedPrefs</string>
+
+    <!--NewEntryActivity Strings-->
+    <string name="keyword_hint">New Keywords</string>
+
+    <string name="lessonsGroupTitle">Lessons:</string>
+    <string name="lessonsReference">Lesson Reference (e.g. UD.GDC.AD.2.4)</string>
+    <string name="lessonsTitle">Lesson Name (e.g. A Brief Intro to Android Studio)</string>
+    <string name="lessonsLink">Web Link (full address)</string>
+
+    <string name="relevantCodeGroupTitle">Relevant Code:</string>
+    <string name="relevantCodeReference">Code Reference (e.g. UD.GDC.AD.T01.01)</string>
+    <string name="relevantCodeLink">Web Link (full address)</string>
+
+    <!--SelectedItemActivity Strings-->
+    <string name="userKeywords">User Keywords:\u0020</string>
+    <string name="resultKeywords">Search Result Keywords:\u0020</string>
+    <string name="resultType">Search Result Type:\u0020</string>
+    <string name="resultSource">Search Result Source:\u0020</string>
 
 
 </resources>

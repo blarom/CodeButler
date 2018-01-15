@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!--MainActivity RecyclerView dimensions-->
     <dimen name="recyclerViewItemHeight">24dp</dimen>
     <dimen name="recyclerViewItemPaddingVertical">4dp</dimen>
     <dimen name="recyclerViewItemPaddingHorizontal">4dp</dimen>
+    <dimen name="recyclerViewItemMarginVertical">4dp</dimen>
     <dimen name="floatingActionButtonMargins">4dp</dimen>
     <dimen name="recyclerViewStartMargin">8dp</dimen>
     <dimen name="recyclerViewTopMargin">8dp</dimen>
     <dimen name="searchButtonsLeftRightMargins">3dp</dimen>
     <dimen name="clearButtonsLeftRightMargin">5dp</dimen>
+    <dimen name="recyclerViewElementSubtextSize">16sp</dimen>
+    <dimen name="recyclerViewElementTextSize">20sp</dimen>
+
+    <!--SelectedItemActivity dimensions-->
+    <dimen name="textItemLeftMargin">10dp</dimen>
+    <dimen name="selectedItemSubgroupLabelTextSize">18sp</dimen>
+    <dimen name="selectedItemGroupTopMargin">30dp</dimen>
+    <dimen name="selectedItemSubgroupTopMargin">10dp</dimen>
+    <dimen name="selectedItemGroupLabelTextSize">20sp</dimen>
+
+    <!--Global dimensions-->
+    <dimen name="cleaButtonWidth">30dp</dimen>
+
+    <!--NewEntryActivity dimensions-->
+    <dimen name="newTextItemLeftMargin">3dp</dimen>
 </resources>

@@ -1,5 +1,17 @@
 package com.codebutler;
 
+//TODO set database initializ
+//TODO adjust recyclerview colors
+//TODO clean selected item results on start
+//TODO add explanations in preferences, incl legend
+//TODO enter performs search
+//TODO hidesoftkeyboard
+//TODO Selecteditems add button on top of scrolllayout
+//TODO large text in recycleview is cut by textview height + need to implement multiple rows
+//TODO title of actionbar in newitemsactivity should be "new item details"
+//TODO title of actionbar in selecteditemsactivity should be "selected item details"
+//TODO create icons for app
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -12,14 +24,13 @@ import android.support.v4.content.Loader;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.preference.PreferenceManager;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
@@ -30,8 +41,6 @@ import android.support.design.widget.FloatingActionButton;
 
 import com.codebutler.data.CodeButlerDbContract;
 import com.codebutler.data.CodeButlerDbHelper;
-
-import android.database.DatabaseUtils;
 
 public class MainActivity extends AppCompatActivity implements
         KeywordEntriesRecycleViewAdapter.ListItemClickHandler,
@@ -62,6 +71,19 @@ public class MainActivity extends AppCompatActivity implements
             CodeButlerDbContract.KeywordsDbEntry.COLUMN_LESSONS,
             CodeButlerDbContract.KeywordsDbEntry.COLUMN_RELEVANT_CODE,
             CodeButlerDbContract.KeywordsDbEntry.COLUMN_SOURCE
+    };
+    public static final String[] LESSONS_TABLE_ELEMENTS = {
+            CodeButlerDbContract.LessonsDbEntry._ID,
+            CodeButlerDbContract.LessonsDbEntry.COLUMN_LESSON_NUMBER,
+            CodeButlerDbContract.LessonsDbEntry.COLUMN_LESSON_TITLE,
+            CodeButlerDbContract.LessonsDbEntry.COLUMN_LINK,
+            CodeButlerDbContract.LessonsDbEntry.COLUMN_SOURCE
+    };
+    public static final String[] CODE_REFERENCES_TABLE_ELEMENTS = {
+            CodeButlerDbContract.CodeReferenceDbEntry._ID,
+            CodeButlerDbContract.CodeReferenceDbEntry.COLUMN_CODE_REFERENCE,
+            CodeButlerDbContract.CodeReferenceDbEntry.COLUMN_LINK,
+            CodeButlerDbContract.CodeReferenceDbEntry.COLUMN_SOURCE
     };
     public static final int INDEX_COLUMN_KEYWORD = 1;
     public static final int INDEX_COLUMN_TYPE = 2;
@@ -118,7 +140,7 @@ public class MainActivity extends AppCompatActivity implements
             }
         });
         mKeywordEditText = findViewById(R.id.keywordEntryEditText);
-        SharedPreferences pref = getApplicationContext().getSharedPreferences(getResources().getString(R.string.CodeBulterSharedPrefs), 0);
+        SharedPreferences pref = getApplicationContext().getSharedPreferences(getResources().getString(R.string.CodeButlerSharedPrefs), 0);
         mKeywordEditText.setText(pref.getString(getResources().getString(R.string.user_keywords), null));
         mShowSources = new Boolean[]{
                 getResources().getBoolean(R.bool.pref_show_user_values_default),
@@ -151,12 +173,12 @@ public class MainActivity extends AppCompatActivity implements
         KEYWORD_GRADLE = getResources().getString(R.string.pref_preferred_result_value_gradle);
         KEYWORD_JSON = getResources().getString(R.string.pref_preferred_result_value_json);
 
-        EXPLANATION_JAVA = getResources().getString(R.string.pref_preferred_result_label_java);
-        EXPLANATION_LESSON= getResources().getString(R.string.pref_preferred_result_label_lesson);
-        EXPLANATION_RESOURCE_XML= getResources().getString(R.string.pref_preferred_result_label_resource_xml);
-        EXPLANATION_MANIFEST_XML = getResources().getString(R.string.pref_preferred_result_label_manifest_xml);
-        EXPLANATION_GRADLE = getResources().getString(R.string.pref_preferred_result_label_gradle);
-        EXPLANATION_JSON = getResources().getString(R.string.pref_preferred_result_label_json);
+        EXPLANATION_JAVA = getResources().getString(R.string.type_label_java);
+        EXPLANATION_LESSON= getResources().getString(R.string.type_label_lesson);
+        EXPLANATION_RESOURCE_XML= getResources().getString(R.string.type_label_resource_xml);
+        EXPLANATION_MANIFEST_XML = getResources().getString(R.string.type_label_manifest_xml);
+        EXPLANATION_GRADLE = getResources().getString(R.string.type_label_gradle);
+        EXPLANATION_JSON = getResources().getString(R.string.type_label_json);
 
         //Initialization methods
         getSearchType();
@@ -167,6 +189,7 @@ public class MainActivity extends AppCompatActivity implements
         mKeywordEntriesRecylcleView.setHasFixedSize(true);
         mKeywordEntriesRecycleViewAdapter = new KeywordEntriesRecycleViewAdapter(this, this);
         mKeywordEntriesRecylcleView.setAdapter(mKeywordEntriesRecycleViewAdapter);
+        mKeywordEntriesRecylcleView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
 
         showLoadingIndicatorInsteadOfRecycleView();
 
@@ -248,7 +271,7 @@ public class MainActivity extends AppCompatActivity implements
         switch (itemThatWasClickedId) {
             case R.id.action_search:dbHelper = new CodeButlerDbHelper(this);
                 //Saving the current value of the EditText
-                SharedPreferences pref = getApplicationContext().getSharedPreferences(getResources().getString(R.string.CodeBulterSharedPrefs), 0); // 0 - for private mode
+                SharedPreferences pref = getApplicationContext().getSharedPreferences(getResources().getString(R.string.CodeButlerSharedPrefs), 0); // 0 - for private mode
                 SharedPreferences.Editor editor = pref.edit();
                 editor.putString(getResources().getString(R.string.user_keywords), mKeywordEditText.getText().toString());
                 editor.apply();
@@ -355,12 +378,8 @@ public class MainActivity extends AppCompatActivity implements
     private void startNewSelectedItemDetailsActivity(int clickedItemIndex) {
         Intent startChildActivityIntent = new Intent(MainActivity.this, SelectedItemDetailsActivity.class);
         startChildActivityIntent.putExtra("RecyclerViewIndex", clickedItemIndex);
+        startChildActivityIntent.putExtra("Keywords", mKeywordEditText.getText().toString());
         startActivity(startChildActivityIntent);
-    }
-    private void openWebPage(String url) {
-        Uri webpage = Uri.parse(url);
-        Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
-        if (intent.resolveActivity(getPackageManager()) != null) startActivity(intent);
     }
     private void showRecycleViewInsteadOfLoadingIndicator() {
         mLoadingIndicator.setVisibility(View.INVISIBLE);
@@ -413,6 +432,8 @@ public class MainActivity extends AppCompatActivity implements
             //create Udacity Mapping database rows from the csv in assets
             CodeButlerDbHelper dbHelper = new CodeButlerDbHelper(this);
             dbHelper.initializeKeywordsDatabase();
+            dbHelper.initializeLessonsDatabase();
+            dbHelper.initializeCodeReferencesDatabase();
 
             //save the current database version
             SharedPreferences.Editor editor = sharedPref.edit();
@@ -421,9 +442,6 @@ public class MainActivity extends AppCompatActivity implements
         }
 
         getSupportLoaderManager().restartLoader(ID_KEYWORD_DATABASE_LOADER, null, this);
-    }
-    private void getCursorDump() {
-        Log.v("Cursor Dump", DatabaseUtils.dumpCursorToString(getContentResolver().query(CodeButlerDbContract.KeywordsDbEntry.CONTENT_URI, KEYWORD_TABLE_ELEMENTS, null, null, null)));
     }
 
     //Helper methods

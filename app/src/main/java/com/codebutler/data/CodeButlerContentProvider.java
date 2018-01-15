@@ -68,10 +68,21 @@ public class CodeButlerContentProvider extends ContentProvider {
         Uri returnUri;
 
         //Insert the element into the database if the Uri matches the relevant table
+        long id;
         switch(match) {
             case KEYWORDS:
-                long id = db.insert(CodeButlerDbContract.KeywordsDbEntry.TABLE_NAME, null, contentValues);
+                id = db.insert(CodeButlerDbContract.KeywordsDbEntry.TABLE_NAME, null, contentValues);
                 if (id > 0) returnUri = ContentUris.withAppendedId(CodeButlerDbContract.KeywordsDbEntry.CONTENT_URI, id);
+                else throw new android.database.SQLException("Failed to insert row into " + uri);
+                break;
+            case LESSONS:
+                id = db.insert(CodeButlerDbContract.LessonsDbEntry.TABLE_NAME, null, contentValues);
+                if (id > 0) returnUri = ContentUris.withAppendedId(CodeButlerDbContract.LessonsDbEntry.CONTENT_URI, id);
+                else throw new android.database.SQLException("Failed to insert row into " + uri);
+                break;
+            case CODE_REFERENCES:
+                id = db.insert(CodeButlerDbContract.CodeReferenceDbEntry.TABLE_NAME, null, contentValues);
+                if (id > 0) returnUri = ContentUris.withAppendedId(CodeButlerDbContract.CodeReferenceDbEntry.CONTENT_URI, id);
                 else throw new android.database.SQLException("Failed to insert row into " + uri);
                 break;
             default:
@@ -136,6 +147,12 @@ public class CodeButlerContentProvider extends ContentProvider {
             case KEYWORDS:
                 retCursor =  db.query(CodeButlerDbContract.KeywordsDbEntry.TABLE_NAME, projection, selection, selectionArgs, null, null, sortOrder);
                 break;
+            case LESSONS:
+                retCursor =  db.query(CodeButlerDbContract.LessonsDbEntry.TABLE_NAME, projection, selection, selectionArgs, null, null, sortOrder);
+                break;
+            case CODE_REFERENCES:
+                retCursor =  db.query(CodeButlerDbContract.CodeReferenceDbEntry.TABLE_NAME, projection, selection, selectionArgs, null, null, sortOrder);
+                break;
             default:
                 throw new UnsupportedOperationException("Unknown uri: " + uri);
         }
@@ -166,15 +183,28 @@ public class CodeButlerContentProvider extends ContentProvider {
         int tasksDeleted;
 
         //Delete the element in the database with the relevant id if the Ur matches the relevant table
+        String id;
         switch (match) {
             case KEYWORD_WITH_ID:
-                String id = uri.getPathSegments().get(1);
+                id = uri.getPathSegments().get(1);
                 tasksDeleted = db.delete(CodeButlerDbContract.KeywordsDbEntry.TABLE_NAME, "_id=?", new String[]{id});
+                break;
+            case LESSON_WITH_ID:
+                id = uri.getPathSegments().get(1);
+                tasksDeleted = db.delete(CodeButlerDbContract.LessonsDbEntry.TABLE_NAME, "_id=?", new String[]{id});
+                break;
+            case CODE_REFERENCE_WITH_ID:
+                id = uri.getPathSegments().get(1);
+                tasksDeleted = db.delete(CodeButlerDbContract.CodeReferenceDbEntry.TABLE_NAME, "_id=?", new String[]{id});
                 break;
             case KEYWORDS:
                 tasksDeleted = db.delete(CodeButlerDbContract.KeywordsDbEntry.TABLE_NAME, selection, selectionArgs);
-                //String argument = uri.getPathSegments().get(2);
-                //tasksDeleted = db.delete(CodeButlerDbContract.KeywordsDbEntry.TABLE_NAME, selection, new String[]{argument});
+                break;
+            case LESSONS:
+                tasksDeleted = db.delete(CodeButlerDbContract.LessonsDbEntry.TABLE_NAME, selection, selectionArgs);
+                break;
+            case CODE_REFERENCES:
+                tasksDeleted = db.delete(CodeButlerDbContract.CodeReferenceDbEntry.TABLE_NAME, selection, selectionArgs);
                 break;
             default:
                 throw new UnsupportedOperationException("Unknown uri: " + uri);
@@ -199,9 +229,20 @@ public class CodeButlerContentProvider extends ContentProvider {
         int hasBeenUpdated = 0;
 
         //Insert the element into the database if the Uri matches the relevant table
+        long id;
         switch(match) {
             case KEYWORDS:
-                long id = db.update(CodeButlerDbContract.KeywordsDbEntry.TABLE_NAME, contentValues, null, selectionArgs);
+                id = db.update(CodeButlerDbContract.KeywordsDbEntry.TABLE_NAME, contentValues, null, selectionArgs);
+                //if (id > 0) hasBeenUpdated = id;
+                //else throw new android.database.SQLException("Failed to update row with uri " + uri);
+                break;
+            case LESSONS:
+                id = db.update(CodeButlerDbContract.LessonsDbEntry.TABLE_NAME, contentValues, null, selectionArgs);
+                //if (id > 0) hasBeenUpdated = id;
+                //else throw new android.database.SQLException("Failed to update row with uri " + uri);
+                break;
+            case CODE_REFERENCES:
+                id = db.update(CodeButlerDbContract.CodeReferenceDbEntry.TABLE_NAME, contentValues, null, selectionArgs);
                 //if (id > 0) hasBeenUpdated = id;
                 //else throw new android.database.SQLException("Failed to update row with uri " + uri);
                 break;

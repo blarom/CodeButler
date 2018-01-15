@@ -2,12 +2,12 @@
 <resources>
 
     <array name="pref_preferred_result_labels">
-        <item>@string/pref_preferred_result_label_resource_xml</item>
-        <item>@string/pref_preferred_result_label_manifest_xml</item>
-        <item>@string/pref_preferred_result_label_java</item>
-        <item>@string/pref_preferred_result_label_json</item>
-        <item>@string/pref_preferred_result_label_gradle</item>
-        <item>@string/pref_preferred_result_label_lesson</item>
+        <item>@string/type_label_resource_xml</item>
+        <item>@string/type_label_manifest_xml</item>
+        <item>@string/type_label_java</item>
+        <item>@string/type_label_json</item>
+        <item>@string/type_label_gradle</item>
+        <item>@string/type_label_lesson</item>
     </array>
 
     <array name="pref_preferred_result_values">

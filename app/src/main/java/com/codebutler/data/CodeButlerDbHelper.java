@@ -20,7 +20,7 @@ public class CodeButlerDbHelper extends SQLiteOpenHelper {
 
 
     private static final String DATABASE_NAME = "codebutler.db";
-    public static final int DATABASE_VERSION = 29;
+    public static final int DATABASE_VERSION = 33;
     private int mOriginalNumberOfColumnsInKeywordsDatabase = 6;
     private int mNewNumberOfColumnsInKeywordsDatabase = 6;
     private Context mContext;
@@ -125,6 +125,73 @@ public class CodeButlerDbHelper extends SQLiteOpenHelper {
                 values.put(KeywordsDbEntry.COLUMN_SOURCE, RowData[4]);
 
                 mContext.getContentResolver().insert(CodeButlerDbContract.KeywordsDbEntry.CONTENT_URI, values);
+            }
+            fileReader.close();
+        } catch (Exception e) {
+            System.out.println("Error in CsvFileReader !!!");
+            e.printStackTrace();
+        } finally {
+            try {
+                if (fileReader != null) {fileReader.close();}
+            } catch (IOException e) {
+                System.out.println("Error while closing fileReader !!!");
+                e.printStackTrace();
+            }
+        }
+    }
+    public void initializeLessonsDatabase() {
+
+        //Inspiration from: https://stackoverflow.com/questions/2887119/populate-android-database-from-csv-file
+        BufferedReader fileReader = null;
+        try {
+            InputStream in = mContext.getAssets().open("UdacityMapper-Lessons.csv");
+            InputStreamReader inputStreamReader = new InputStreamReader(in);
+            fileReader = new BufferedReader(inputStreamReader);
+
+            String reader = "";
+            fileReader.readLine(); //Skips the first row
+            while ((reader = fileReader.readLine()) != null){
+                String[] RowData = reader.split(",");
+                ContentValues values = new ContentValues();
+                values.put(LessonsDbEntry.COLUMN_LESSON_NUMBER, RowData[0]);
+                values.put(LessonsDbEntry.COLUMN_LESSON_TITLE, RowData[1]);
+                values.put(LessonsDbEntry.COLUMN_LINK, RowData[2]);
+                values.put(LessonsDbEntry.COLUMN_SOURCE, RowData[3]);
+
+                mContext.getContentResolver().insert(CodeButlerDbContract.LessonsDbEntry.CONTENT_URI, values);
+            }
+            fileReader.close();
+        } catch (Exception e) {
+            System.out.println("Error in CsvFileReader !!!");
+            e.printStackTrace();
+        } finally {
+            try {
+                if (fileReader != null) {fileReader.close();}
+            } catch (IOException e) {
+                System.out.println("Error while closing fileReader !!!");
+                e.printStackTrace();
+            }
+        }
+    }
+    public void initializeCodeReferencesDatabase() {
+
+        //Inspiration from: https://stackoverflow.com/questions/2887119/populate-android-database-from-csv-file
+        BufferedReader fileReader = null;
+        try {
+            InputStream in = mContext.getAssets().open("UdacityMapper-CodeReferences.csv");
+            InputStreamReader inputStreamReader = new InputStreamReader(in);
+            fileReader = new BufferedReader(inputStreamReader);
+
+            String reader = "";
+            fileReader.readLine(); //Skips the first row
+            while ((reader = fileReader.readLine()) != null){
+                String[] RowData = reader.split(",");
+                ContentValues values = new ContentValues();
+                values.put(CodeReferenceDbEntry.COLUMN_CODE_REFERENCE, RowData[0]);
+                values.put(CodeReferenceDbEntry.COLUMN_LINK, RowData[1]);
+                values.put(CodeReferenceDbEntry.COLUMN_SOURCE, RowData[2]);
+
+                mContext.getContentResolver().insert(CodeButlerDbContract.CodeReferenceDbEntry.CONTENT_URI, values);
             }
             fileReader.close();
         } catch (Exception e) {

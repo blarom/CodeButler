@@ -6,53 +6,72 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_marginStart="@dimen/textItemLeftMargin"
+    android:layout_marginLeft="@dimen/textItemLeftMargin"
     tools:context="com.codebutler.SelectedItemDetailsActivity">
 
-    <LinearLayout
-        android:id="@+id/selectedItemViewsLinearLayout"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/keywordTextView"
+        android:layout_height="wrap_content">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/userKeywordsLabelTextView"
+                style="@style/ItemGroupStyle"
+                android:text="@string/userKeywords" />
 
-        <TextView
-            android:id="@+id/typeTextView"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+            <TextView
+                android:id="@+id/userKeywordsTextView"
+                style="@style/ItemSubgroupStyle" />
 
-        <TextView
-            android:id="@+id/lessonsTextView"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+            <TextView
+                android:id="@+id/databaseKeywordsLabelTextView"
+                style="@style/ItemGroupStyle"
+                android:text="@string/resultKeywords" />
 
-        <TextView
-            android:id="@+id/relevantCodeTextView"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+            <TextView
+                android:id="@+id/databaseKeywordsTextView"
+                style="@style/ItemSubgroupStyle" />
 
-        <TextView
-            android:id="@+id/sourceTextView"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/typeLabelTextView"
+                style="@style/ItemGroupStyle"
+                android:text="@string/resultType" />
 
+            <TextView
+                android:id="@+id/typeTextView"
+                style="@style/ItemSubgroupStyle" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lessonsLinearLayout"
+                android:gravity="start"
+                android:layout_marginTop="@dimen/selectedItemGroupTopMargin"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relevantCodeLinearLayout"
+                android:gravity="start"
+                android:layout_marginTop="@dimen/selectedItemGroupTopMargin"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sourceLabelTextView"
+                style="@style/ItemGroupStyle"
+                android:text="@string/resultSource"/>
+
+            <TextView
+                android:id="@+id/sourceTextView"
+                style="@style/ItemSubgroupStyle" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

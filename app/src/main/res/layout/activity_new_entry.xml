@@ -1,55 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context="com.codebutler.MainActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/add_to_keywordlist_button"
+        android:layout_marginStart="@dimen/textItemLeftMargin"
+        android:layout_marginLeft="@dimen/textItemLeftMargin"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
-        <EditText
-            android:id="@+id/keywordEditText"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:hint="@string/keyword_hint"
-            android:inputType="textPersonName|textCapWords"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/codeLanguageEditText"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:hint="@string/type_hint"
-            android:inputType="textPersonName|textCapWords"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <EditText
+                    android:id="@+id/keywordEditText"
+                    style="@style/ItemSubgroupStyle"
+                    android:hint="@string/keyword_hint"
+                    android:inputType="text"/>
+                <Button
+                    android:id="@+id/keywordEditTextClearButton"
+                    android:layout_width="@dimen/cleaButtonWidth"
+                    android:layout_height="@dimen/cleaButtonWidth"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="@dimen/clearButtonsLeftRightMargin"
+                    android:layout_marginRight="@dimen/clearButtonsLeftRightMargin"
+                    android:drawableLeft="@drawable/ic_clear_black_24dp"
+                    android:drawableStart="@drawable/ic_clear_black_24dp"
+                    android:background="@android:color/transparent"
+                    />
+            </FrameLayout>
 
-        <EditText
-            android:id="@+id/lessonsEditText"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:hint="@string/lessons_hint"
-            android:gravity="center"
-            android:inputType="text"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+            <TextView
+                style="@style/ItemGroupStyle"
+                android:text="@string/type_label_hint"
+                android:layout_marginStart="@dimen/newTextItemLeftMargin"
+                android:layout_marginLeft="@dimen/newTextItemLeftMargin"/>
 
-        <EditText
-            android:id="@+id/relevantCodeEditText"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:hint="@string/relevantCode_hint"
-            android:gravity="center"
-            android:inputType="text"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
-    </LinearLayout>
+            <Spinner
+                android:id="@+id/typeDropDownSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"/>
+
+            <!--Lessons input-->
+            <TextView
+                style="@style/ItemGroupStyle"
+                android:layout_marginStart="@dimen/newTextItemLeftMargin"
+                android:layout_marginLeft="@dimen/newTextItemLeftMargin"
+                android:text="@string/lessonsGroupTitle"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <EditText
+                    style="@style/ItemSubgroupStyle"
+                    android:id="@+id/lessonsReferenceEditText"
+                    android:hint="@string/lessonsReference"
+                    android:inputType="text"/>
+                <Button
+                    android:id="@+id/lessonsReferenceEditTextClearButton"
+                    android:layout_width="@dimen/cleaButtonWidth"
+                    android:layout_height="@dimen/cleaButtonWidth"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="@dimen/clearButtonsLeftRightMargin"
+                    android:layout_marginRight="@dimen/clearButtonsLeftRightMargin"
+                    android:drawableLeft="@drawable/ic_clear_black_24dp"
+                    android:drawableStart="@drawable/ic_clear_black_24dp"
+                    android:background="@android:color/transparent"
+                    />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <EditText
+                    style="@style/ItemSubgroupStyle"
+                    android:id="@+id/lessonsTitleEditText"
+                    android:hint="@string/lessonsTitle"
+                    android:inputType="text"/>
+                <Button
+                    android:id="@+id/lessonsTitleEditTextClearButton"
+                    android:layout_width="@dimen/cleaButtonWidth"
+                    android:layout_height="@dimen/cleaButtonWidth"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="@dimen/clearButtonsLeftRightMargin"
+                    android:layout_marginRight="@dimen/clearButtonsLeftRightMargin"
+                    android:drawableLeft="@drawable/ic_clear_black_24dp"
+                    android:drawableStart="@drawable/ic_clear_black_24dp"
+                    android:background="@android:color/transparent"
+                    />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <EditText
+                    style="@style/ItemSubgroupStyle"
+                    android:id="@+id/lessonsLinkEditText"
+                    android:hint="@string/lessonsLink"
+                    android:inputType="text"/>
+                <Button
+                    android:id="@+id/lessonsLinkEditTextClearButton"
+                    android:layout_width="@dimen/cleaButtonWidth"
+                    android:layout_height="@dimen/cleaButtonWidth"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="@dimen/clearButtonsLeftRightMargin"
+                    android:layout_marginRight="@dimen/clearButtonsLeftRightMargin"
+                    android:drawableLeft="@drawable/ic_clear_black_24dp"
+                    android:drawableStart="@drawable/ic_clear_black_24dp"
+                    android:background="@android:color/transparent"
+                    />
+            </FrameLayout>
+
+            <!--Reference code input-->
+            <TextView
+                style="@style/ItemGroupStyle"
+                android:layout_marginStart="@dimen/newTextItemLeftMargin"
+                android:layout_marginLeft="@dimen/newTextItemLeftMargin"
+                android:text="@string/relevantCodeGroupTitle"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <EditText
+                    style="@style/ItemSubgroupStyle"
+                    android:id="@+id/relevantCodeReferenceEditText"
+                    android:hint="@string/relevantCodeReference"
+                    android:inputType="text"/>
+                <Button
+                    android:id="@+id/relevantCodeReferenceEditTextClearButton"
+                    android:layout_width="@dimen/cleaButtonWidth"
+                    android:layout_height="@dimen/cleaButtonWidth"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="@dimen/clearButtonsLeftRightMargin"
+                    android:layout_marginRight="@dimen/clearButtonsLeftRightMargin"
+                    android:drawableLeft="@drawable/ic_clear_black_24dp"
+                    android:drawableStart="@drawable/ic_clear_black_24dp"
+                    android:background="@android:color/transparent"
+                    />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <EditText
+                    style="@style/ItemSubgroupStyle"
+                    android:id="@+id/relevantCodeLinkEditText"
+                    android:hint="@string/relevantCodeLink"
+                    android:inputType="text"/>
+                <Button
+                    android:id="@+id/relevantCodeLinkEditTextClearButton"
+                    android:layout_width="@dimen/cleaButtonWidth"
+                    android:layout_height="@dimen/cleaButtonWidth"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="@dimen/clearButtonsLeftRightMargin"
+                    android:layout_marginRight="@dimen/clearButtonsLeftRightMargin"
+                    android:drawableLeft="@drawable/ic_clear_black_24dp"
+                    android:drawableStart="@drawable/ic_clear_black_24dp"
+                    android:background="@android:color/transparent"
+                    />
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
 
     <Button
         android:id="@+id/add_to_keywordlist_button"
@@ -58,8 +187,10 @@
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         android:text="@string/add_button_text"
         android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Inverse" />
 
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
