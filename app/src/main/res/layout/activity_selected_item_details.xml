@@ -20,6 +20,7 @@
             <TextView
                 android:id="@+id/userKeywordsLabelTextView"
                 style="@style/ItemGroupStyle"
+                android:layout_marginTop="@dimen/selectedItemSubgroupTopMargin"
                 android:text="@string/userKeywords" />
 
             <TextView

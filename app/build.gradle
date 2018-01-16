@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.codebutler"
-        minSdkVersion 15
+        minSdkVersion 17
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -32,6 +32,7 @@ dependencies {
     compile 'com.android.support:preference-v7:26.1.0'
     compile 'com.android.support:design:26.1.0'
 }
+
 
 
 apply plugin: 'com.google.gms.google-services'

@@ -1,11 +1,16 @@
 package com.codebutler;
 
 import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -14,6 +19,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.codebutler.data.CodeButlerDbContract;
+import com.codebutler.utilities.SharedMethods;
 
 public class NewKeywordEntryActivity extends AppCompatActivity {
 
@@ -31,6 +37,9 @@ public class NewKeywordEntryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_entry);
 
+        //Setting the title of the actionbar
+        if (getSupportActionBar() != null) getSupportActionBar().setTitle(getResources().getString(R.string.newEntry));
+
         //Getting the user inputs to update the SQLite database
         mNewKeywordEditText = findViewById(R.id.keywordEditText);
         mNewLessonsReferenceEditText = findViewById(R.id.lessonsReferenceEditText);
@@ -38,6 +47,13 @@ public class NewKeywordEntryActivity extends AppCompatActivity {
         mNewLessonsLinkEditText = findViewById(R.id.lessonsLinkEditText);
         mNewRelevantCodeReferenceEditText = findViewById(R.id.relevantCodeReferenceEditText);
         mNewRelevantCodeLinkEditText = findViewById(R.id.relevantCodeLinkEditText);
+
+        fixSoftKeyboardBehavior(mNewKeywordEditText);
+        fixSoftKeyboardBehavior(mNewLessonsReferenceEditText);
+        fixSoftKeyboardBehavior(mNewLessonsNameEditText);
+        fixSoftKeyboardBehavior(mNewLessonsLinkEditText);
+        fixSoftKeyboardBehavior(mNewRelevantCodeReferenceEditText);
+        fixSoftKeyboardBehavior(mNewRelevantCodeLinkEditText);
 
         findViewById(R.id.keywordEditTextClearButton).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +89,15 @@ public class NewKeywordEntryActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mNewRelevantCodeLinkEditText.setText("");
+            }
+        });
+
+        findViewById(android.R.id.content).setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                // Remove the software keyboard if the EditText is not in focus
+                SharedMethods.hideSoftKeyboard(NewKeywordEntryActivity.this);
+                return false;
             }
         });
 
@@ -152,7 +177,8 @@ public class NewKeywordEntryActivity extends AppCompatActivity {
                 }
 
                 //Cleaning things up visually
-                mNewKeywordEditText.clearFocus();
+                //mNewKeywordEditText.clearFocus();
+                //findViewById(android.R.id.content).clearFocus();
                 mNewKeywordEditText.getText().clear();
                 mNewLessonsReferenceEditText.getText().clear();
                 mNewLessonsNameEditText.getText().clear();
@@ -162,6 +188,16 @@ public class NewKeywordEntryActivity extends AppCompatActivity {
 
                 // Finish activity (this returns back to MainActivity)
                 finish();
+            }
+        });
+    }
+
+    private void fixSoftKeyboardBehavior(final EditText editText) {
+        editText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                editText.requestFocus();
+                SharedMethods.showSoftKeyboard(NewKeywordEntryActivity.this, editText);
             }
         });
     }

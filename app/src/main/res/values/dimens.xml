@@ -17,7 +17,7 @@
     <!--SelectedItemActivity dimensions-->
     <dimen name="textItemLeftMargin">10dp</dimen>
     <dimen name="selectedItemSubgroupLabelTextSize">18sp</dimen>
-    <dimen name="selectedItemGroupTopMargin">30dp</dimen>
+    <dimen name="selectedItemGroupTopMargin">25dp</dimen>
     <dimen name="selectedItemSubgroupTopMargin">10dp</dimen>
     <dimen name="selectedItemGroupLabelTextSize">20sp</dimen>
 
@@ -26,4 +26,9 @@
 
     <!--NewEntryActivity dimensions-->
     <dimen name="newTextItemLeftMargin">3dp</dimen>
+
+    <!--AboutActivity dimensions-->
+    <dimen name="globalMarginHorizontal">8dp</dimen>
+    <dimen name="globalMarginVertical">8dp</dimen>
+    <dimen name="aboutTextSize">8dp</dimen>
 </resources>

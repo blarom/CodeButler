@@ -8,6 +8,7 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import com.codebutler.MainActivity;
 import com.codebutler.R;
 import com.codebutler.data.CodeButlerDbContract.*;
 
@@ -20,9 +21,9 @@ public class CodeButlerDbHelper extends SQLiteOpenHelper {
 
 
     private static final String DATABASE_NAME = "codebutler.db";
-    public static final int DATABASE_VERSION = 33;
-    private int mOriginalNumberOfColumnsInKeywordsDatabase = 6;
-    private int mNewNumberOfColumnsInKeywordsDatabase = 6;
+    public static final int DATABASE_VERSION = 34;
+    private int mOriginalNumberOfColumnsInKeywordsDatabase = 6; //Don't touch these if you want to keep the user values!
+    private int mNewNumberOfColumnsInKeywordsDatabase = 6; //Don't touch these if you want to keep the user values!
     private Context mContext;
     private Boolean mDatabaseAlreadyExists;
 
@@ -62,24 +63,26 @@ public class CodeButlerDbHelper extends SQLiteOpenHelper {
                 "); ";
 
         if (mDatabaseAlreadyExists == null) { mDatabaseAlreadyExists = false; }
-        if (true) {//(mOriginalNumberOfColumnsInKeywordsDatabase != mNewNumberOfColumnsInKeywordsDatabase) {
+        if (mOriginalNumberOfColumnsInKeywordsDatabase != mNewNumberOfColumnsInKeywordsDatabase) {
             sqLiteDatabase.execSQL(SQL_CREATE_KEYWORDS_TABLE);
             sqLiteDatabase.execSQL(SQL_CREATE_LESSONS_TABLE);
             sqLiteDatabase.execSQL(SQL_CREATE_CODE_TABLE);
         }
         else {
-            if (!mDatabaseAlreadyExists) sqLiteDatabase.execSQL(SQL_CREATE_KEYWORDS_TABLE);
-            sqLiteDatabase.execSQL(SQL_CREATE_LESSONS_TABLE);
-            sqLiteDatabase.execSQL(SQL_CREATE_CODE_TABLE);
+            if (!mDatabaseAlreadyExists) {
+                sqLiteDatabase.execSQL(SQL_CREATE_KEYWORDS_TABLE);
+                sqLiteDatabase.execSQL(SQL_CREATE_LESSONS_TABLE);
+                sqLiteDatabase.execSQL(SQL_CREATE_CODE_TABLE);
+            }
         }
-
-
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
         mDatabaseAlreadyExists = false;
-        if (true) {//(mOriginalNumberOfColumnsInKeywordsDatabase != mNewNumberOfColumnsInKeywordsDatabase) {
+        String selection;
+        String[] selectionArgs;
+        if (mOriginalNumberOfColumnsInKeywordsDatabase != mNewNumberOfColumnsInKeywordsDatabase) {
             sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + KeywordsDbEntry.TABLE_NAME);
             sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + LessonsDbEntry.TABLE_NAME);
             sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + CodeReferenceDbEntry.TABLE_NAME);
@@ -88,17 +91,30 @@ public class CodeButlerDbHelper extends SQLiteOpenHelper {
         else {
             try {
                 //Delete all values from the Udacity Mapping database rows
-                String selection = CodeButlerDbContract.KeywordsDbEntry.COLUMN_SOURCE + "=?";
-                String[] selectionArgs = {"COURSE"};
+                selection = KeywordsDbEntry.COLUMN_SOURCE + "='" + MainActivity.KEYWORD_COURSE + "'" +
+                        " OR " + KeywordsDbEntry.COLUMN_SOURCE + "='" + MainActivity.KEYWORD_FORUM + "'";
+                selectionArgs = null;//{"COURSE"};
                 sqLiteDatabase.delete(KeywordsDbEntry.TABLE_NAME, selection, selectionArgs);
-                sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + LessonsDbEntry.TABLE_NAME);
-                sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + CodeReferenceDbEntry.TABLE_NAME);
-                onCreate(sqLiteDatabase);
-            } catch (SQLException e) {
+
+                selection = LessonsDbEntry.COLUMN_SOURCE + "='" + MainActivity.KEYWORD_COURSE + "'" +
+                        " OR " + LessonsDbEntry.COLUMN_SOURCE + "='" + MainActivity.KEYWORD_FORUM + "'";
+                selectionArgs = null;//{"COURSE"};
+                sqLiteDatabase.delete(LessonsDbEntry.TABLE_NAME, selection, selectionArgs);
+
+                selection = LessonsDbEntry.COLUMN_SOURCE + "='" + MainActivity.KEYWORD_COURSE + "'" +
+                        " OR " + LessonsDbEntry.COLUMN_SOURCE + "='" + MainActivity.KEYWORD_FORUM + "'";
+                selectionArgs = null;//{"COURSE"};
+                sqLiteDatabase.delete(CodeReferenceDbEntry.TABLE_NAME, selection, selectionArgs);
+
                 mDatabaseAlreadyExists = true;
+                onCreate(sqLiteDatabase);
+
+            } catch (SQLException e) {
                 sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + KeywordsDbEntry.TABLE_NAME);
                 sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + LessonsDbEntry.TABLE_NAME);
                 sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + CodeReferenceDbEntry.TABLE_NAME);
+
+                mDatabaseAlreadyExists = false;
                 onCreate(sqLiteDatabase);
             }
         }

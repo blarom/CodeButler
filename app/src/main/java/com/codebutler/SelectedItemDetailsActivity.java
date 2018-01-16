@@ -31,6 +31,9 @@ public class SelectedItemDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selected_item_details);
 
+        //Setting the title of the actionbar
+        if (getSupportActionBar() != null) getSupportActionBar().setTitle(getResources().getString(R.string.selectedItemDetails));
+
         //Getting the values from MainActivity
         Intent intentThatStartedThisActivity = getIntent();
         int item_id = 0;
@@ -40,6 +43,7 @@ public class SelectedItemDetailsActivity extends AppCompatActivity {
         }
         if (intentThatStartedThisActivity.hasExtra("RecyclerViewIndex")) {
             userKeywords = intentThatStartedThisActivity.getStringExtra("Keywords");
+            if (userKeywords.equals("")) userKeywords = getResources().getString(R.string.noKeywords);
         }
 
         //Retrieving the values from the Keywords database

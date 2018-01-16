@@ -26,8 +26,6 @@
             android:layout_height="@dimen/cleaButtonWidth"
             android:layout_gravity="end|center_vertical"
             android:layout_marginEnd="@dimen/clearButtonsLeftRightMargin"
-            android:layout_marginRight="@dimen/clearButtonsLeftRightMargin"
-            android:drawableLeft="@drawable/ic_clear_black_24dp"
             android:drawableStart="@drawable/ic_clear_black_24dp"
             android:background="@android:color/transparent"
             />
@@ -35,11 +33,7 @@
 
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="5dp"
-        android:textSize="20sp"
+        style="@style/MainActivityTitleStyle"
         android:text="@string/search_type"/>
 
     <RadioGroup
@@ -51,38 +45,27 @@
 
         <RadioButton
             android:id="@+id/search_or"
-            android:layout_marginStart="@dimen/searchButtonsLeftRightMargins"
-            android:layout_marginLeft="@dimen/searchButtonsLeftRightMargins"
-            android:layout_marginEnd="@dimen/searchButtonsLeftRightMargins"
-            android:layout_marginRight="@dimen/searchButtonsLeftRightMargins"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/RadioButtonStyle"
             android:layout_weight="1"
             android:checked="true"
             android:text="@string/or_operator"/>
 
         <RadioButton
             android:id="@+id/search_and"
-            android:layout_marginStart="@dimen/searchButtonsLeftRightMargins"
-            android:layout_marginLeft="@dimen/searchButtonsLeftRightMargins"
-            android:layout_marginEnd="@dimen/searchButtonsLeftRightMargins"
-            android:layout_marginRight="@dimen/searchButtonsLeftRightMargins"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/RadioButtonStyle"
             android:layout_weight="1"
             android:text="@string/and_operator"/>
 
         <RadioButton
             android:id="@+id/search_exact"
-            android:layout_marginStart="@dimen/searchButtonsLeftRightMargins"
-            android:layout_marginLeft="@dimen/searchButtonsLeftRightMargins"
-            android:layout_marginEnd="@dimen/searchButtonsLeftRightMargins"
-            android:layout_marginRight="@dimen/searchButtonsLeftRightMargins"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/RadioButtonStyle"
             android:layout_weight="1"
             android:text="@string/exact"/>
     </RadioGroup>
+
+    <TextView
+        style="@style/MainActivityTitleStyle"
+        android:text="@string/results"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/keywords_list_view"

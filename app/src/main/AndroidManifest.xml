@@ -20,6 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
         <activity
             android:name=".NewKeywordEntryActivity"
             android:parentActivityName=".MainActivity">
@@ -27,6 +28,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"/>
         </activity>
+
         <activity
             android:name=".SelectedItemDetailsActivity"
             android:parentActivityName=".MainActivity">
@@ -34,7 +36,17 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"/>
         </activity>
-        <activity android:name=".SettingsActivity">
+
+        <activity
+            android:name=".SettingsActivity">
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
+        <activity
+            android:name=".AboutActivity">
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -43,7 +55,8 @@
 
         <provider
             android:name=".data.CodeButlerContentProvider"
-            android:authorities="com.codebutler"/>
+            android:authorities="com.codebutler"
+            android:exported="false"/>
 
     </application>
 

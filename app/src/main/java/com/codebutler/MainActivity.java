@@ -1,15 +1,6 @@
 package com.codebutler;
 
-//TODO set database initializ
-//TODO adjust recyclerview colors
-//TODO clean selected item results on start
 //TODO add explanations in preferences, incl legend
-//TODO enter performs search
-//TODO hidesoftkeyboard
-//TODO Selecteditems add button on top of scrolllayout
-//TODO large text in recycleview is cut by textview height + need to implement multiple rows
-//TODO title of actionbar in newitemsactivity should be "new item details"
-//TODO title of actionbar in selecteditemsactivity should be "selected item details"
 //TODO create icons for app
 
 import android.content.Context;
@@ -28,9 +19,12 @@ import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
@@ -41,6 +35,7 @@ import android.support.design.widget.FloatingActionButton;
 
 import com.codebutler.data.CodeButlerDbContract;
 import com.codebutler.data.CodeButlerDbHelper;
+import com.codebutler.utilities.SharedMethods;
 
 public class MainActivity extends AppCompatActivity implements
         KeywordEntriesRecycleViewAdapter.ListItemClickHandler,
@@ -142,6 +137,15 @@ public class MainActivity extends AppCompatActivity implements
         mKeywordEditText = findViewById(R.id.keywordEntryEditText);
         SharedPreferences pref = getApplicationContext().getSharedPreferences(getResources().getString(R.string.CodeButlerSharedPrefs), 0);
         mKeywordEditText.setText(pref.getString(getResources().getString(R.string.user_keywords), null));
+        mKeywordEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView textView, int actionId, KeyEvent keyEvent) {
+                if (actionId == EditorInfo.IME_NULL && keyEvent.getAction() == KeyEvent.ACTION_DOWN) {
+                    performSearch();
+                }
+                return true;
+            }
+        });
         mShowSources = new Boolean[]{
                 getResources().getBoolean(R.bool.pref_show_user_values_default),
                 getResources().getBoolean(R.bool.pref_show_GDC_AD_course_default),
@@ -183,6 +187,14 @@ public class MainActivity extends AppCompatActivity implements
         //Initialization methods
         getSearchType();
         setupSharedPreferences();
+        findViewById(android.R.id.content).setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                // Remove the software keyboard if the EditText is not in focus
+                SharedMethods.hideSoftKeyboard(MainActivity.this);
+                return false;
+            }
+        });
 
         //Preparing the RecyclerView
         mKeywordEntriesRecylcleView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
@@ -269,17 +281,8 @@ public class MainActivity extends AppCompatActivity implements
         int itemThatWasClickedId = item.getItemId();
 
         switch (itemThatWasClickedId) {
-            case R.id.action_search:dbHelper = new CodeButlerDbHelper(this);
-                //Saving the current value of the EditText
-                SharedPreferences pref = getApplicationContext().getSharedPreferences(getResources().getString(R.string.CodeButlerSharedPrefs), 0); // 0 - for private mode
-                SharedPreferences.Editor editor = pref.edit();
-                editor.putString(getResources().getString(R.string.user_keywords), mKeywordEditText.getText().toString());
-                editor.apply();
-
-                //Loading the RecycleView adapter with the Loader values
-                getSupportLoaderManager().restartLoader(ID_KEYWORD_DATABASE_LOADER, null, this);
-                mKeywordEntriesRecycleViewAdapter = new KeywordEntriesRecycleViewAdapter(this,  this);
-                mKeywordEntriesRecylcleView.setAdapter(mKeywordEntriesRecycleViewAdapter);
+            case R.id.action_search:
+                performSearch();
                 return true;
             case R.id.action_add:
                 EditText userKeyword = findViewById(R.id.keywordEntryEditText);
@@ -289,8 +292,25 @@ public class MainActivity extends AppCompatActivity implements
                 Intent startSettingsActivity = new Intent(this, SettingsActivity.class);
                 startActivity(startSettingsActivity);
                 return true;
+            case R.id.action_about:
+                Intent startAboutActivity = new Intent(this, AboutActivity.class);
+                startActivity(startAboutActivity);
+                return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+    public void performSearch() {
+        dbHelper = new CodeButlerDbHelper(this);
+        //Saving the current value of the EditText
+        SharedPreferences pref = getApplicationContext().getSharedPreferences(getResources().getString(R.string.CodeButlerSharedPrefs), 0); // 0 - for private mode
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putString(getResources().getString(R.string.user_keywords), mKeywordEditText.getText().toString());
+        editor.apply();
+
+        //Loading the RecycleView adapter with the Loader values
+        getSupportLoaderManager().restartLoader(ID_KEYWORD_DATABASE_LOADER, null, this);
+        mKeywordEntriesRecycleViewAdapter = new KeywordEntriesRecycleViewAdapter(this,  this);
+        mKeywordEntriesRecylcleView.setAdapter(mKeywordEntriesRecycleViewAdapter);
     }
     private void startNewKeywordEntryActivity(String keyword) {
         Intent startChildActivityIntent = new Intent(MainActivity.this, NewKeywordEntryActivity.class);

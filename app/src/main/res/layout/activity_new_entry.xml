@@ -9,13 +9,13 @@
     tools:context="com.codebutler.MainActivity">
 
     <ScrollView
+        android:id="@+id/new_entry_scrollview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toTopOf="@id/add_to_keywordlist_button"
         android:layout_marginStart="@dimen/textItemLeftMargin"
-        android:layout_marginLeft="@dimen/textItemLeftMargin"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
@@ -38,8 +38,6 @@
                     android:layout_height="@dimen/cleaButtonWidth"
                     android:layout_gravity="end|center_vertical"
                     android:layout_marginEnd="@dimen/clearButtonsLeftRightMargin"
-                    android:layout_marginRight="@dimen/clearButtonsLeftRightMargin"
-                    android:drawableLeft="@drawable/ic_clear_black_24dp"
                     android:drawableStart="@drawable/ic_clear_black_24dp"
                     android:background="@android:color/transparent"
                     />
@@ -48,8 +46,7 @@
             <TextView
                 style="@style/ItemGroupStyle"
                 android:text="@string/type_label_hint"
-                android:layout_marginStart="@dimen/newTextItemLeftMargin"
-                android:layout_marginLeft="@dimen/newTextItemLeftMargin"/>
+                android:layout_marginStart="@dimen/newTextItemLeftMargin"/>
 
             <Spinner
                 android:id="@+id/typeDropDownSpinner"
@@ -61,7 +58,6 @@
             <TextView
                 style="@style/ItemGroupStyle"
                 android:layout_marginStart="@dimen/newTextItemLeftMargin"
-                android:layout_marginLeft="@dimen/newTextItemLeftMargin"
                 android:text="@string/lessonsGroupTitle"/>
 
             <FrameLayout
@@ -78,8 +74,6 @@
                     android:layout_height="@dimen/cleaButtonWidth"
                     android:layout_gravity="end|center_vertical"
                     android:layout_marginEnd="@dimen/clearButtonsLeftRightMargin"
-                    android:layout_marginRight="@dimen/clearButtonsLeftRightMargin"
-                    android:drawableLeft="@drawable/ic_clear_black_24dp"
                     android:drawableStart="@drawable/ic_clear_black_24dp"
                     android:background="@android:color/transparent"
                     />
@@ -99,8 +93,6 @@
                     android:layout_height="@dimen/cleaButtonWidth"
                     android:layout_gravity="end|center_vertical"
                     android:layout_marginEnd="@dimen/clearButtonsLeftRightMargin"
-                    android:layout_marginRight="@dimen/clearButtonsLeftRightMargin"
-                    android:drawableLeft="@drawable/ic_clear_black_24dp"
                     android:drawableStart="@drawable/ic_clear_black_24dp"
                     android:background="@android:color/transparent"
                     />
@@ -120,8 +112,6 @@
                     android:layout_height="@dimen/cleaButtonWidth"
                     android:layout_gravity="end|center_vertical"
                     android:layout_marginEnd="@dimen/clearButtonsLeftRightMargin"
-                    android:layout_marginRight="@dimen/clearButtonsLeftRightMargin"
-                    android:drawableLeft="@drawable/ic_clear_black_24dp"
                     android:drawableStart="@drawable/ic_clear_black_24dp"
                     android:background="@android:color/transparent"
                     />
@@ -131,7 +121,6 @@
             <TextView
                 style="@style/ItemGroupStyle"
                 android:layout_marginStart="@dimen/newTextItemLeftMargin"
-                android:layout_marginLeft="@dimen/newTextItemLeftMargin"
                 android:text="@string/relevantCodeGroupTitle"/>
 
             <FrameLayout
@@ -148,8 +137,6 @@
                     android:layout_height="@dimen/cleaButtonWidth"
                     android:layout_gravity="end|center_vertical"
                     android:layout_marginEnd="@dimen/clearButtonsLeftRightMargin"
-                    android:layout_marginRight="@dimen/clearButtonsLeftRightMargin"
-                    android:drawableLeft="@drawable/ic_clear_black_24dp"
                     android:drawableStart="@drawable/ic_clear_black_24dp"
                     android:background="@android:color/transparent"
                     />
@@ -158,22 +145,22 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" >
-                <EditText
-                    style="@style/ItemSubgroupStyle"
-                    android:id="@+id/relevantCodeLinkEditText"
-                    android:hint="@string/relevantCodeLink"
-                    android:inputType="text"/>
+
                 <Button
                     android:id="@+id/relevantCodeLinkEditTextClearButton"
                     android:layout_width="@dimen/cleaButtonWidth"
                     android:layout_height="@dimen/cleaButtonWidth"
                     android:layout_gravity="end|center_vertical"
                     android:layout_marginEnd="@dimen/clearButtonsLeftRightMargin"
-                    android:layout_marginRight="@dimen/clearButtonsLeftRightMargin"
-                    android:drawableLeft="@drawable/ic_clear_black_24dp"
                     android:drawableStart="@drawable/ic_clear_black_24dp"
                     android:background="@android:color/transparent"
                     />
+
+                <EditText
+                    android:id="@+id/relevantCodeLinkEditText"
+                    style="@style/ItemSubgroupStyle"
+                    android:hint="@string/relevantCodeLink"
+                    android:inputType="text"/>
             </FrameLayout>
 
 
@@ -187,6 +174,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/new_entry_scrollview"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         android:text="@string/add_button_text"

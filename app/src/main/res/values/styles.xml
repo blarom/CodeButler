@@ -28,4 +28,28 @@
         <item name="android:layout_marginTop">@dimen/selectedItemSubgroupTopMargin</item>
         <item name="android:textIsSelectable">true</item>
     </style>
+
+    <style name="RadioButtonStyle">
+        <item name="android:layout_marginStart">@dimen/searchButtonsLeftRightMargins</item>
+        <item name="android:layout_marginEnd">@dimen/searchButtonsLeftRightMargins</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="MainActivityTitleStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="AboutActivityTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textSize">18sp</item>
+    </style>
 </resources>
