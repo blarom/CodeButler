@@ -37,6 +37,8 @@ import com.codebutler.data.CodeButlerDbContract;
 import com.codebutler.data.CodeButlerDbHelper;
 import com.codebutler.utilities.SharedMethods;
 
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity implements
         KeywordEntriesRecycleViewAdapter.ListItemClickHandler,
         SharedPreferences.OnSharedPreferenceChangeListener,
@@ -86,6 +88,7 @@ public class MainActivity extends AppCompatActivity implements
     public static final int INDEX_COLUMN_RELEVANT_CODE = 4;
     public static final int INDEX_COLUMN_SOURCE = 5;
     private static final int ID_KEYWORD_DATABASE_LOADER = 666;
+    public static List<String[]> legendTable;
 
     //RecyclerView globals
     public static String KEYWORD_GDC_AD;
@@ -123,6 +126,8 @@ public class MainActivity extends AppCompatActivity implements
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        legendTable = SharedMethods.readCSVFile("UdacityMapper-Legend.csv", this,",");
 
         //Initializing the layout values
         mLoadingIndicator = findViewById(R.id.pb_loading_indicator);

@@ -99,25 +99,19 @@ public class SelectedItemDetailsActivity extends AppCompatActivity {
         lessonsListLinearLayout.setLayoutParams(params);
         lessonsListLinearLayout.removeAllViews();
         TextView newLessonTV = new TextView(getApplicationContext());
-        newLessonTV.setText("Lessons:");
+        newLessonTV.setText(getResources().getString(R.string.Lessons));
         newLessonTV.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.selectedItemGroupLabelTextSize));
         newLessonTV.setGravity(Gravity.CENTER_VERTICAL);
         newLessonTV.setTextColor(getResources().getColor(R.color.textColorPrimary));
         newLessonTV.setTypeface(Typeface.DEFAULT_BOLD);
         lessonsListLinearLayout.addView(newLessonTV);
         for (final String lessonsElement : lessonsList) {
-            newLessonTV = new TextView(getApplicationContext());
-            newLessonTV.setText(lessonsElement);
-            newLessonTV.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.selectedItemSubgroupLabelTextSize));
-            newLessonTV.setGravity(Gravity.CENTER_VERTICAL);
-            newLessonTV.setTextColor(getResources().getColor(R.color.textColorPrimary));
-            if (!lessonsElement.equals(getResources().getString(R.string.NotAvailable))) newLessonTV.setPaintFlags(newLessonTV.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
-            newLessonTV.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    openWebPage(getLessonLink(lessonsElement));
-                }
-            });
+
+            //Converting the reference text into user-readable content
+            String lessonsElementExplained = convertReferenceToReadableText(lessonsElement, getResources().getString(R.string.Lesson));
+
+            //Creating the reference Textview
+            newLessonTV = createTextViewForReference(lessonsElementExplained, lessonsElement);
             lessonsListLinearLayout.addView(newLessonTV);
         }
 
@@ -125,25 +119,19 @@ public class SelectedItemDetailsActivity extends AppCompatActivity {
         relevantCodeListLinearLayout.setLayoutParams(params);
         relevantCodeListLinearLayout.removeAllViews();
         TextView newRelevantCodeTV = new TextView(getApplicationContext());
-        newRelevantCodeTV.setText("Relevant Code:");
+        newRelevantCodeTV.setText(getResources().getString(R.string.RelevantCode));
         newRelevantCodeTV.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.selectedItemGroupLabelTextSize));
         newRelevantCodeTV.setGravity(Gravity.CENTER_VERTICAL);
         newRelevantCodeTV.setTextColor(getResources().getColor(R.color.textColorPrimary));
         newRelevantCodeTV.setTypeface(Typeface.DEFAULT_BOLD);
         relevantCodeListLinearLayout.addView(newRelevantCodeTV);
         for (final String relevantCodeElement : relevantCodeList) {
-            newRelevantCodeTV = new TextView(getApplicationContext());
-            newRelevantCodeTV.setText(relevantCodeElement);
-            newRelevantCodeTV.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.selectedItemSubgroupLabelTextSize));
-            newRelevantCodeTV.setGravity(Gravity.CENTER_VERTICAL);
-            newRelevantCodeTV.setTextColor(getResources().getColor(R.color.textColorPrimary));
-            if (!relevantCodeElement.equals(getResources().getString(R.string.NotAvailable))) newRelevantCodeTV.setPaintFlags(newLessonTV.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
-            newRelevantCodeTV.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    openWebPage(getCodeReferenceLink(relevantCodeElement));
-                }
-            });
+
+            //Converting the reference text into user-readable content
+            String relevantCodeElementExplained = convertReferenceToReadableText(relevantCodeElement, getResources().getString(R.string.Exercise));
+
+            //Creating the reference Textview
+            newRelevantCodeTV = createTextViewForReference(relevantCodeElementExplained, relevantCodeElement);
             relevantCodeListLinearLayout.addView(newRelevantCodeTV);
         }
 
@@ -159,7 +147,64 @@ public class SelectedItemDetailsActivity extends AppCompatActivity {
         mSourceTextView.setText(keywordSource);
 
     }
-    private String getLessonLink(String reference) {
+
+    private TextView createTextViewForReference(String lessonsElementExplained, final String lessonsElement) {
+        TextView lessonTextView = new TextView(getApplicationContext());
+        lessonTextView.setText(lessonsElementExplained);
+        lessonTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.selectedItemSubgroupLabelTextSize));
+        lessonTextView.setGravity(Gravity.CENTER_VERTICAL);
+        lessonTextView.setTextIsSelectable(true);
+        lessonTextView.setTextColor(getResources().getColor(R.color.textColorPrimary));
+        if (!lessonsElement.equals(getResources().getString(R.string.NotAvailable))) lessonTextView.setPaintFlags(lessonTextView.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
+        lessonTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openWebPage(getLessonCharacteristics(lessonsElement)[1]);
+            }
+        });
+        return lessonTextView;
+    }
+    private String convertReferenceToReadableText(String lessonsElement, String type) {
+        List<String> lessonsElementParsed = Arrays.asList(lessonsElement.split("\\."));
+        StringBuilder lessonsElementExplained = new StringBuilder("");
+
+        Boolean foundNumber = false;
+        for (String part : lessonsElementParsed) {
+            Boolean foundAbbreviation = false;
+            for (int i=0; i<MainActivity.legendTable.size(); i++) {
+                if (part.equals(MainActivity.legendTable.get(i)[0])) {
+                    lessonsElementExplained.append(MainActivity.legendTable.get(i)[1]);
+                    lessonsElementExplained.append(" - ");
+                    foundAbbreviation = true;
+                    break;
+                }
+            }
+            if (!foundAbbreviation) {
+                if (part.matches(".*\\d+.*") && !foundNumber) {
+                    //i.e. if the string includes the first number
+                    foundNumber = true;
+                    lessonsElementExplained.append(type);
+                    lessonsElementExplained.append(" ");
+                    lessonsElementExplained.append(part);
+                    lessonsElementExplained.append(".");
+                }
+                else if (part.matches(".*\\d+.*") && foundNumber) {
+                    //i.e. if the string includes a second number
+                    lessonsElementExplained.append(part);
+                    if (type.equals(getResources().getString(R.string.Lesson))) {
+                        lessonsElementExplained.append(" ");
+                        lessonsElementExplained.append(getLessonCharacteristics(lessonsElement)[0]);
+                    }
+                }
+                else {
+                    lessonsElementExplained.append(part);
+                    lessonsElementExplained.append(" ");
+                }
+            }
+        }
+        return lessonsElementExplained.toString();
+    }
+    private String[] getLessonCharacteristics(String reference) {
 
         //Retrieving the values from the Lessons database
         Cursor cursorLessons = getContentResolver().query(
@@ -183,7 +228,7 @@ public class SelectedItemDetailsActivity extends AppCompatActivity {
             }
             cursorLessons.close();
         }
-        return lessonLink;
+        return new String[]{lessonTitle, lessonLink, lessonSource};
     }
     private String getCodeReferenceLink(String reference) {
 

@@ -16,6 +16,7 @@
 
     <!--SelectedItemActivity dimensions-->
     <dimen name="textItemLeftMargin">10dp</dimen>
+    <dimen name="scrollViewMarginBottom">10dp</dimen>
     <dimen name="selectedItemSubgroupLabelTextSize">18sp</dimen>
     <dimen name="selectedItemGroupTopMargin">25dp</dimen>
     <dimen name="selectedItemSubgroupTopMargin">10dp</dimen>

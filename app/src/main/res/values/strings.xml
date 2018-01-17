@@ -101,6 +101,10 @@
     <string name="relevantCodeLink">Web Link (full address)</string>
 
     <!--SelectedItemActivity Strings-->
+    <string name="Lesson">Lesson</string>
+    <string name="Exercise">Exercise</string>
+    <string name="Lessons">Lessons:</string>
+    <string name="RelevantCode">Relevant Code:</string>
     <string name="selectedItemDetails">Selected Item Details</string>
     <string name="noKeywords">(No keywords chosen)</string>
     <string name="userKeywords">User Keywords:\u0020</string>
