@@ -21,11 +21,6 @@ import java.util.List;
 
 public class SelectedItemDetailsActivity extends AppCompatActivity {
 
-    private TextView mUserKeywordsTextView;
-    private TextView mDatabaseKeywordsTextView;
-    private TextView mTypeTextView;
-    private TextView mSourceTextView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -111,7 +106,7 @@ public class SelectedItemDetailsActivity extends AppCompatActivity {
             String lessonsElementExplained = convertReferenceToReadableText(lessonsElement, getResources().getString(R.string.Lesson));
 
             //Creating the reference Textview
-            newLessonTV = createTextViewForReference(lessonsElementExplained, lessonsElement);
+            newLessonTV = createTextViewForReference(lessonsElementExplained, lessonsElement, getResources().getString(R.string.Lesson));
             lessonsListLinearLayout.addView(newLessonTV);
         }
 
@@ -131,35 +126,36 @@ public class SelectedItemDetailsActivity extends AppCompatActivity {
             String relevantCodeElementExplained = convertReferenceToReadableText(relevantCodeElement, getResources().getString(R.string.Exercise));
 
             //Creating the reference Textview
-            newRelevantCodeTV = createTextViewForReference(relevantCodeElementExplained, relevantCodeElement);
+            newRelevantCodeTV = createTextViewForReference(relevantCodeElementExplained, relevantCodeElement, getResources().getString(R.string.Exercise));
             relevantCodeListLinearLayout.addView(newRelevantCodeTV);
         }
 
         //Updating the TextView values in the xml
-        mUserKeywordsTextView = findViewById(R.id.userKeywordsTextView);
-        mDatabaseKeywordsTextView = findViewById(R.id.databaseKeywordsTextView);
-        mTypeTextView = findViewById(R.id.typeTextView);
-        mSourceTextView = findViewById(R.id.sourceTextView);
+        TextView userKeywordsTextView = findViewById(R.id.userKeywordsTextView);
+        TextView databaseKeywordsTextView = findViewById(R.id.databaseKeywordsTextView);
+        TextView typeTextView = findViewById(R.id.typeTextView);
+        TextView sourceTextView = findViewById(R.id.sourceTextView);
 
-        mUserKeywordsTextView.setText(userKeywords);
-        mDatabaseKeywordsTextView.setText(keywordKeyword);
-        mTypeTextView.setText(keywordType);
-        mSourceTextView.setText(keywordSource);
+        userKeywordsTextView.setText(userKeywords);
+        databaseKeywordsTextView.setText(keywordKeyword);
+        typeTextView.setText(keywordType);
+        sourceTextView.setText(keywordSource);
 
     }
 
-    private TextView createTextViewForReference(String lessonsElementExplained, final String lessonsElement) {
+    private TextView createTextViewForReference(String referenceElementExplained, final String referenceElement, final String type) {
         TextView lessonTextView = new TextView(getApplicationContext());
-        lessonTextView.setText(lessonsElementExplained);
+        lessonTextView.setText(referenceElementExplained);
         lessonTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.selectedItemSubgroupLabelTextSize));
         lessonTextView.setGravity(Gravity.CENTER_VERTICAL);
         lessonTextView.setTextIsSelectable(true);
         lessonTextView.setTextColor(getResources().getColor(R.color.textColorPrimary));
-        if (!lessonsElement.equals(getResources().getString(R.string.NotAvailable))) lessonTextView.setPaintFlags(lessonTextView.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
+        if (!referenceElement.equals(getResources().getString(R.string.NotAvailable))) lessonTextView.setPaintFlags(lessonTextView.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
         lessonTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openWebPage(getLessonCharacteristics(lessonsElement)[1]);
+                if (type.equals(getResources().getString(R.string.Lessons))) openWebPage(getLessonCharacteristics(referenceElement)[1]);
+                else if (type.equals(getResources().getString(R.string.RelevantCode))) openWebPage(getCodeReferenceLink(referenceElement));
             }
         });
         return lessonTextView;
@@ -214,14 +210,14 @@ public class SelectedItemDetailsActivity extends AppCompatActivity {
                 null,
                 null);
 
-        String lessonNumber = "";
+        //String lessonNumber = "";
         String lessonTitle = "";
         String lessonLink = "";
         String lessonSource = "";
 
         if (cursorLessons != null) {
             if (cursorLessons.moveToFirst()){
-                lessonNumber = cursorLessons.getString(cursorLessons.getColumnIndex(CodeButlerDbContract.LessonsDbEntry.COLUMN_LESSON_NUMBER));
+                //lessonNumber = cursorLessons.getString(cursorLessons.getColumnIndex(CodeButlerDbContract.LessonsDbEntry.COLUMN_LESSON_NUMBER));
                 lessonTitle = cursorLessons.getString(cursorLessons.getColumnIndex(CodeButlerDbContract.LessonsDbEntry.COLUMN_LESSON_TITLE));
                 lessonLink = cursorLessons.getString(cursorLessons.getColumnIndex(CodeButlerDbContract.LessonsDbEntry.COLUMN_LINK));
                 lessonSource = cursorLessons.getString(cursorLessons.getColumnIndex(CodeButlerDbContract.LessonsDbEntry.COLUMN_SOURCE));
@@ -240,15 +236,15 @@ public class SelectedItemDetailsActivity extends AppCompatActivity {
                 null,
                 null);
 
-        String codeNumber = "";
+        //String codeNumber = "";
         String codeLink = "";
-        String codeSource = "";
+        //String codeSource = "";
 
         if (cursorCode != null) {
             if (cursorCode.moveToFirst()){
-                codeNumber = cursorCode.getString(cursorCode.getColumnIndex(CodeButlerDbContract.CodeReferenceDbEntry.COLUMN_CODE_REFERENCE));
+                //codeNumber = cursorCode.getString(cursorCode.getColumnIndex(CodeButlerDbContract.CodeReferenceDbEntry.COLUMN_CODE_REFERENCE));
                 codeLink = cursorCode.getString(cursorCode.getColumnIndex(CodeButlerDbContract.CodeReferenceDbEntry.COLUMN_LINK));
-                codeSource = cursorCode.getString(cursorCode.getColumnIndex(CodeButlerDbContract.CodeReferenceDbEntry.COLUMN_SOURCE));
+                //codeSource = cursorCode.getString(cursorCode.getColumnIndex(CodeButlerDbContract.CodeReferenceDbEntry.COLUMN_SOURCE));
             }
             cursorCode.close();
         }

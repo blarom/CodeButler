@@ -78,9 +78,9 @@
     <string name="udacity_thread">UD.UFT</string>
     <string name="stackoverflow_thread">SO</string>
 
-    <string name="recyclerViewSourceExplanationGDCAD">Udacity Android Developer Challenge Course</string>
-    <string name="recyclerViewSourceExplanationNDAD">Udacity Android Developer Nanodegree</string>
-    <string name="recyclerViewSourceExplanationFIW">Udacity Firebase in a Weekend course</string>
+    <string name="recyclerViewSourceExplanationGDCAD">Udacity Google Developer Challenge</string>
+    <string name="recyclerViewSourceExplanationNDAD">Udacity Nanodegree - Android Dev.</string>
+    <string name="recyclerViewSourceExplanationFIW">Udacity Firebase in a Weekend Course</string>
     <string name="recyclerViewSourceExplanationUSER">User-created</string>
     <string name="recyclerViewSourceExplanationFORUM">Various Forums</string>
 
