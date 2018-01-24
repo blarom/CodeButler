@@ -94,7 +94,7 @@ public class SelectedItemDetailsActivity extends AppCompatActivity {
         lessonsListLinearLayout.setLayoutParams(params);
         lessonsListLinearLayout.removeAllViews();
         TextView newLessonTV = new TextView(getApplicationContext());
-        newLessonTV.setText(getResources().getString(R.string.Lessons));
+        newLessonTV.setText(getResources().getString(R.string.LessonsLabel));
         newLessonTV.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.selectedItemGroupLabelTextSize));
         newLessonTV.setGravity(Gravity.CENTER_VERTICAL);
         newLessonTV.setTextColor(getResources().getColor(R.color.textColorPrimary));
@@ -114,7 +114,7 @@ public class SelectedItemDetailsActivity extends AppCompatActivity {
         relevantCodeListLinearLayout.setLayoutParams(params);
         relevantCodeListLinearLayout.removeAllViews();
         TextView newRelevantCodeTV = new TextView(getApplicationContext());
-        newRelevantCodeTV.setText(getResources().getString(R.string.RelevantCode));
+        newRelevantCodeTV.setText(getResources().getString(R.string.RelevantCodeLabel));
         newRelevantCodeTV.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.selectedItemGroupLabelTextSize));
         newRelevantCodeTV.setGravity(Gravity.CENTER_VERTICAL);
         newRelevantCodeTV.setTextColor(getResources().getColor(R.color.textColorPrimary));
@@ -126,7 +126,7 @@ public class SelectedItemDetailsActivity extends AppCompatActivity {
             String relevantCodeElementExplained = convertReferenceToReadableText(relevantCodeElement, getResources().getString(R.string.Exercise));
 
             //Creating the reference Textview
-            newRelevantCodeTV = createTextViewForReference(relevantCodeElementExplained, relevantCodeElement, getResources().getString(R.string.Exercise));
+            newRelevantCodeTV = createTextViewForReference(relevantCodeElementExplained, relevantCodeElement, getResources().getString(R.string.RelevantCode));
             relevantCodeListLinearLayout.addView(newRelevantCodeTV);
         }
 
@@ -144,17 +144,18 @@ public class SelectedItemDetailsActivity extends AppCompatActivity {
     }
 
     private TextView createTextViewForReference(String referenceElementExplained, final String referenceElement, final String type) {
-        TextView lessonTextView = new TextView(getApplicationContext());
+        final TextView lessonTextView = new TextView(getApplicationContext());
         lessonTextView.setText(referenceElementExplained);
         lessonTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimension(R.dimen.selectedItemSubgroupLabelTextSize));
         lessonTextView.setGravity(Gravity.CENTER_VERTICAL);
-        lessonTextView.setTextIsSelectable(true);
+        lessonTextView.setTextIsSelectable(false);
         lessonTextView.setTextColor(getResources().getColor(R.color.textColorPrimary));
         if (!referenceElement.equals(getResources().getString(R.string.NotAvailable))) lessonTextView.setPaintFlags(lessonTextView.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
         lessonTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (type.equals(getResources().getString(R.string.Lessons))) openWebPage(getLessonCharacteristics(referenceElement)[1]);
+                lessonTextView.setTextIsSelectable(true);
+                if (type.equals(getResources().getString(R.string.Lesson))) openWebPage(getLessonCharacteristics(referenceElement)[1]);
                 else if (type.equals(getResources().getString(R.string.RelevantCode))) openWebPage(getCodeReferenceLink(referenceElement));
             }
         });

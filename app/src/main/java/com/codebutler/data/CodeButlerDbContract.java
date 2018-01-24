@@ -30,6 +30,9 @@ public class CodeButlerDbContract {
 
         public static String getSelectionForGivenKeywordsAndOperator(String keyword_list, String operator, Boolean[] showSources) {
 
+            //Escaping special characters so that special keywords won't crash the SQLite search
+            keyword_list = keyword_list.replaceAll("'","\'");
+
             //Making sure the user selected something to display
             String returnSQLCommand = null;
             Boolean atLeastOneSourceIsShown = false;

@@ -269,6 +269,13 @@ public class MainActivity extends AppCompatActivity implements
     }
     @Override protected void onDestroy() {
         super.onDestroy();
+
+        //Clearing the edittext if the application is destroyed
+        SharedPreferences pref = getApplicationContext().getSharedPreferences(getResources().getString(R.string.CodeButlerSharedPrefs), 0); // 0 - for private mode
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putString(getResources().getString(R.string.user_keywords), "");
+        editor.apply();
+
         PreferenceManager.getDefaultSharedPreferences(this).unregisterOnSharedPreferenceChangeListener(this);
     }
     @Override protected void onResume() {
